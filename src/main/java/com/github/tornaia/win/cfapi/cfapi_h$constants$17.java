@@ -336,22 +336,22 @@ class cfapi_h$constants$17 extends cfapi_h$constants$16 {
     static final VarHandle _FILE_NOTIFY_EXTENDED_INFORMATION$FileNameLength$VH_ = _FILE_NOTIFY_EXTENDED_INFORMATION$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("FileNameLength"));
     static final java.lang.invoke.VarHandle _FILE_NOTIFY_EXTENDED_INFORMATION$FileNameLength$VH() { return _FILE_NOTIFY_EXTENDED_INFORMATION$FileNameLength$VH_; }
 
-    static final MemoryLayout _FILE_SEGMENT_ELEMENT$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _FILE_SEGMENT_ELEMENT$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_POINTER.withName("Buffer"),
         C_LONGLONG.withName("Alignment")
     ).withName("_FILE_SEGMENT_ELEMENT");
-    static final jdk.incubator.foreign.MemoryLayout _FILE_SEGMENT_ELEMENT$struct$LAYOUT() { return _FILE_SEGMENT_ELEMENT$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _FILE_SEGMENT_ELEMENT$union$LAYOUT() { return _FILE_SEGMENT_ELEMENT$union$LAYOUT_; }
 
     static final MemoryLayout _FILE_SEGMENT_ELEMENT$Buffer$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _FILE_SEGMENT_ELEMENT$Buffer$LAYOUT() { return _FILE_SEGMENT_ELEMENT$Buffer$LAYOUT_; }
 
-    static final VarHandle _FILE_SEGMENT_ELEMENT$Buffer$VH_ = MemoryHandles.asAddressVarHandle(_FILE_SEGMENT_ELEMENT$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Buffer")));
+    static final VarHandle _FILE_SEGMENT_ELEMENT$Buffer$VH_ = MemoryHandles.asAddressVarHandle(_FILE_SEGMENT_ELEMENT$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Buffer")));
     static final java.lang.invoke.VarHandle _FILE_SEGMENT_ELEMENT$Buffer$VH() { return _FILE_SEGMENT_ELEMENT$Buffer$VH_; }
 
     static final MemoryLayout _FILE_SEGMENT_ELEMENT$Alignment$LAYOUT_ = C_LONGLONG;
     static final jdk.incubator.foreign.MemoryLayout _FILE_SEGMENT_ELEMENT$Alignment$LAYOUT() { return _FILE_SEGMENT_ELEMENT$Alignment$LAYOUT_; }
 
-    static final VarHandle _FILE_SEGMENT_ELEMENT$Alignment$VH_ = _FILE_SEGMENT_ELEMENT$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Alignment"));
+    static final VarHandle _FILE_SEGMENT_ELEMENT$Alignment$VH_ = _FILE_SEGMENT_ELEMENT$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Alignment"));
     static final java.lang.invoke.VarHandle _FILE_SEGMENT_ELEMENT$Alignment$VH() { return _FILE_SEGMENT_ELEMENT$Alignment$VH_; }
 
     static final MemoryLayout _REPARSE_GUID_DATA_BUFFER$struct$LAYOUT_ = MemoryLayout.ofStruct(
@@ -389,10 +389,10 @@ class cfapi_h$constants$17 extends cfapi_h$constants$16 {
     static final VarHandle _REPARSE_GUID_DATA_BUFFER$Reserved$VH_ = _REPARSE_GUID_DATA_BUFFER$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Reserved"));
     static final java.lang.invoke.VarHandle _REPARSE_GUID_DATA_BUFFER$Reserved$VH() { return _REPARSE_GUID_DATA_BUFFER$Reserved$VH_; }
 
-    static final MemoryLayout GenericReparseBuffer$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _REPARSE_GUID_DATA_BUFFER$GenericReparseBuffer$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofSequence(1, C_CHAR).withName("DataBuffer")
     );
-    static final jdk.incubator.foreign.MemoryLayout GenericReparseBuffer$struct$LAYOUT() { return GenericReparseBuffer$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _REPARSE_GUID_DATA_BUFFER$GenericReparseBuffer$struct$LAYOUT() { return _REPARSE_GUID_DATA_BUFFER$GenericReparseBuffer$struct$LAYOUT_; }
 
     static final MemoryLayout _SCRUB_DATA_INPUT$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Size"),

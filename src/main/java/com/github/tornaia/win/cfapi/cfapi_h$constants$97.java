@@ -1872,11 +1872,30 @@ class cfapi_h$constants$97 extends cfapi_h$constants$96 {
     ).withName("_SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM");
     static final jdk.incubator.foreign.MemoryLayout _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$struct$LAYOUT() { return _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$struct$LAYOUT_; }
 
-    static final MemoryLayout s$DataOffset$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout s$DataOffset$LAYOUT() { return s$DataOffset$LAYOUT_; }
+    static final MemoryLayout _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        MemoryLayout.ofStruct(
+            MemoryLayout.ofSequence(2, C_LONG).withName("Data")
+        ).withName("CustomStateId"),
+        MemoryLayout.ofStruct(
+            C_LONG.withName("DataOffset"),
+            MemoryLayout.ofSequence(1, C_CHAR).withName("Data"),
+            MemoryLayout.ofPaddingBits(24)
+        ).withName("s")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$union$LAYOUT() { return _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$union$LAYOUT_; }
 
-    static final VarHandle s$DataOffset$VH_ = s$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("DataOffset"));
-    static final java.lang.invoke.VarHandle s$DataOffset$VH() { return s$DataOffset$VH_; }
+    static final MemoryLayout _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$s$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_LONG.withName("DataOffset"),
+        MemoryLayout.ofSequence(1, C_CHAR).withName("Data"),
+        MemoryLayout.ofPaddingBits(24)
+    );
+    static final jdk.incubator.foreign.MemoryLayout _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$s$struct$LAYOUT() { return _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$s$struct$LAYOUT_; }
+
+    static final MemoryLayout _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$s$DataOffset$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$s$DataOffset$LAYOUT() { return _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$s$DataOffset$LAYOUT_; }
+
+    static final VarHandle _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$s$DataOffset$VH_ = _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$s$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("DataOffset"));
+    static final java.lang.invoke.VarHandle _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$s$DataOffset$VH() { return _SERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM$u$s$DataOffset$VH_; }
 
     static final MemoryLayout _SERVICE_DESCRIPTIONA$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_POINTER.withName("lpDescription")

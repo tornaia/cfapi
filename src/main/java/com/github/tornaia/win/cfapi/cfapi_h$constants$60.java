@@ -121,7 +121,7 @@ class cfapi_h$constants$60 extends cfapi_h$constants$59 {
 
     static final int HealthStatusFailed() { return (int)5L; }
 
-    static final MemoryLayout _STORAGE_SPEC_VERSION$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _STORAGE_SPEC_VERSION$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofUnion(
             C_CHAR.withName("SubMinor"),
             C_CHAR.withName("Minor"),
@@ -130,43 +130,43 @@ class cfapi_h$constants$60 extends cfapi_h$constants$59 {
         C_SHORT.withName("MajorVersion"),
         C_LONG.withName("AsUlong")
     ).withName("_STORAGE_SPEC_VERSION");
-    static final jdk.incubator.foreign.MemoryLayout _STORAGE_SPEC_VERSION$struct$LAYOUT() { return _STORAGE_SPEC_VERSION$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_SPEC_VERSION$union$LAYOUT() { return _STORAGE_SPEC_VERSION$union$LAYOUT_; }
 
-    static final MemoryLayout MinorVersion$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _STORAGE_SPEC_VERSION$MinorVersion$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_CHAR.withName("SubMinor"),
         C_CHAR.withName("Minor"),
         C_SHORT.withName("AsUshort")
     );
-    static final jdk.incubator.foreign.MemoryLayout MinorVersion$struct$LAYOUT() { return MinorVersion$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_SPEC_VERSION$MinorVersion$union$LAYOUT() { return _STORAGE_SPEC_VERSION$MinorVersion$union$LAYOUT_; }
 
-    static final MemoryLayout MinorVersion$SubMinor$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout MinorVersion$SubMinor$LAYOUT() { return MinorVersion$SubMinor$LAYOUT_; }
+    static final MemoryLayout _STORAGE_SPEC_VERSION$MinorVersion$SubMinor$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_SPEC_VERSION$MinorVersion$SubMinor$LAYOUT() { return _STORAGE_SPEC_VERSION$MinorVersion$SubMinor$LAYOUT_; }
 
-    static final VarHandle MinorVersion$SubMinor$VH_ = MinorVersion$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("SubMinor"));
-    static final java.lang.invoke.VarHandle MinorVersion$SubMinor$VH() { return MinorVersion$SubMinor$VH_; }
+    static final VarHandle _STORAGE_SPEC_VERSION$MinorVersion$SubMinor$VH_ = _STORAGE_SPEC_VERSION$MinorVersion$union$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("SubMinor"));
+    static final java.lang.invoke.VarHandle _STORAGE_SPEC_VERSION$MinorVersion$SubMinor$VH() { return _STORAGE_SPEC_VERSION$MinorVersion$SubMinor$VH_; }
 
-    static final MemoryLayout MinorVersion$Minor$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout MinorVersion$Minor$LAYOUT() { return MinorVersion$Minor$LAYOUT_; }
+    static final MemoryLayout _STORAGE_SPEC_VERSION$MinorVersion$Minor$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_SPEC_VERSION$MinorVersion$Minor$LAYOUT() { return _STORAGE_SPEC_VERSION$MinorVersion$Minor$LAYOUT_; }
 
-    static final VarHandle MinorVersion$Minor$VH_ = MinorVersion$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Minor"));
-    static final java.lang.invoke.VarHandle MinorVersion$Minor$VH() { return MinorVersion$Minor$VH_; }
+    static final VarHandle _STORAGE_SPEC_VERSION$MinorVersion$Minor$VH_ = _STORAGE_SPEC_VERSION$MinorVersion$union$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Minor"));
+    static final java.lang.invoke.VarHandle _STORAGE_SPEC_VERSION$MinorVersion$Minor$VH() { return _STORAGE_SPEC_VERSION$MinorVersion$Minor$VH_; }
 
-    static final MemoryLayout MinorVersion$AsUshort$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout MinorVersion$AsUshort$LAYOUT() { return MinorVersion$AsUshort$LAYOUT_; }
+    static final MemoryLayout _STORAGE_SPEC_VERSION$MinorVersion$AsUshort$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_SPEC_VERSION$MinorVersion$AsUshort$LAYOUT() { return _STORAGE_SPEC_VERSION$MinorVersion$AsUshort$LAYOUT_; }
 
-    static final VarHandle MinorVersion$AsUshort$VH_ = MinorVersion$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("AsUshort"));
-    static final java.lang.invoke.VarHandle MinorVersion$AsUshort$VH() { return MinorVersion$AsUshort$VH_; }
+    static final VarHandle _STORAGE_SPEC_VERSION$MinorVersion$AsUshort$VH_ = _STORAGE_SPEC_VERSION$MinorVersion$union$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("AsUshort"));
+    static final java.lang.invoke.VarHandle _STORAGE_SPEC_VERSION$MinorVersion$AsUshort$VH() { return _STORAGE_SPEC_VERSION$MinorVersion$AsUshort$VH_; }
 
     static final MemoryLayout _STORAGE_SPEC_VERSION$MajorVersion$LAYOUT_ = C_SHORT;
     static final jdk.incubator.foreign.MemoryLayout _STORAGE_SPEC_VERSION$MajorVersion$LAYOUT() { return _STORAGE_SPEC_VERSION$MajorVersion$LAYOUT_; }
 
-    static final VarHandle _STORAGE_SPEC_VERSION$MajorVersion$VH_ = _STORAGE_SPEC_VERSION$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("MajorVersion"));
+    static final VarHandle _STORAGE_SPEC_VERSION$MajorVersion$VH_ = _STORAGE_SPEC_VERSION$union$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("MajorVersion"));
     static final java.lang.invoke.VarHandle _STORAGE_SPEC_VERSION$MajorVersion$VH() { return _STORAGE_SPEC_VERSION$MajorVersion$VH_; }
 
     static final MemoryLayout _STORAGE_SPEC_VERSION$AsUlong$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _STORAGE_SPEC_VERSION$AsUlong$LAYOUT() { return _STORAGE_SPEC_VERSION$AsUlong$LAYOUT_; }
 
-    static final VarHandle _STORAGE_SPEC_VERSION$AsUlong$VH_ = _STORAGE_SPEC_VERSION$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AsUlong"));
+    static final VarHandle _STORAGE_SPEC_VERSION$AsUlong$VH_ = _STORAGE_SPEC_VERSION$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AsUlong"));
     static final java.lang.invoke.VarHandle _STORAGE_SPEC_VERSION$AsUlong$VH() { return _STORAGE_SPEC_VERSION$AsUlong$VH_; }
 
     static final MemoryLayout _STORAGE_PHYSICAL_DEVICE_DATA$struct$LAYOUT_ = MemoryLayout.ofStruct(
@@ -538,7 +538,7 @@ class cfapi_h$constants$60 extends cfapi_h$constants$59 {
     static final VarHandle _STORAGE_OPERATIONAL_REASON$Reason$VH_ = _STORAGE_OPERATIONAL_REASON$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reason"));
     static final java.lang.invoke.VarHandle _STORAGE_OPERATIONAL_REASON$Reason$VH() { return _STORAGE_OPERATIONAL_REASON$Reason$VH_; }
 
-    static final MemoryLayout RawBytes$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_CHAR.withName("SenseKey"),
             C_CHAR.withName("ASC"),
@@ -552,64 +552,64 @@ class cfapi_h$constants$60 extends cfapi_h$constants$59 {
         ).withName("NVDIMM_N"),
         C_LONG.withName("AsUlong")
     );
-    static final jdk.incubator.foreign.MemoryLayout RawBytes$struct$LAYOUT() { return RawBytes$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$union$LAYOUT() { return _STORAGE_OPERATIONAL_REASON$RawBytes$union$LAYOUT_; }
 
-    static final MemoryLayout ScsiSenseKey$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_CHAR.withName("SenseKey"),
         C_CHAR.withName("ASC"),
         C_CHAR.withName("ASCQ"),
         C_CHAR.withName("Reserved")
     );
-    static final jdk.incubator.foreign.MemoryLayout ScsiSenseKey$struct$LAYOUT() { return ScsiSenseKey$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$struct$LAYOUT() { return _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$struct$LAYOUT_; }
 
-    static final MemoryLayout ScsiSenseKey$SenseKey$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout ScsiSenseKey$SenseKey$LAYOUT() { return ScsiSenseKey$SenseKey$LAYOUT_; }
+    static final MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$SenseKey$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$SenseKey$LAYOUT() { return _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$SenseKey$LAYOUT_; }
 
-    static final VarHandle ScsiSenseKey$SenseKey$VH_ = ScsiSenseKey$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("SenseKey"));
-    static final java.lang.invoke.VarHandle ScsiSenseKey$SenseKey$VH() { return ScsiSenseKey$SenseKey$VH_; }
+    static final VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$SenseKey$VH_ = _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("SenseKey"));
+    static final java.lang.invoke.VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$SenseKey$VH() { return _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$SenseKey$VH_; }
 
-    static final MemoryLayout ScsiSenseKey$ASC$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout ScsiSenseKey$ASC$LAYOUT() { return ScsiSenseKey$ASC$LAYOUT_; }
+    static final MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASC$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASC$LAYOUT() { return _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASC$LAYOUT_; }
 
-    static final VarHandle ScsiSenseKey$ASC$VH_ = ScsiSenseKey$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("ASC"));
-    static final java.lang.invoke.VarHandle ScsiSenseKey$ASC$VH() { return ScsiSenseKey$ASC$VH_; }
+    static final VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASC$VH_ = _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("ASC"));
+    static final java.lang.invoke.VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASC$VH() { return _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASC$VH_; }
 
-    static final MemoryLayout ScsiSenseKey$ASCQ$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout ScsiSenseKey$ASCQ$LAYOUT() { return ScsiSenseKey$ASCQ$LAYOUT_; }
+    static final MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASCQ$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASCQ$LAYOUT() { return _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASCQ$LAYOUT_; }
 
-    static final VarHandle ScsiSenseKey$ASCQ$VH_ = ScsiSenseKey$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("ASCQ"));
-    static final java.lang.invoke.VarHandle ScsiSenseKey$ASCQ$VH() { return ScsiSenseKey$ASCQ$VH_; }
+    static final VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASCQ$VH_ = _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("ASCQ"));
+    static final java.lang.invoke.VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASCQ$VH() { return _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$ASCQ$VH_; }
 
-    static final MemoryLayout ScsiSenseKey$Reserved$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout ScsiSenseKey$Reserved$LAYOUT() { return ScsiSenseKey$Reserved$LAYOUT_; }
+    static final MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$Reserved$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$Reserved$LAYOUT() { return _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$Reserved$LAYOUT_; }
 
-    static final VarHandle ScsiSenseKey$Reserved$VH_ = ScsiSenseKey$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Reserved"));
-    static final java.lang.invoke.VarHandle ScsiSenseKey$Reserved$VH() { return ScsiSenseKey$Reserved$VH_; }
+    static final VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$Reserved$VH_ = _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Reserved"));
+    static final java.lang.invoke.VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$Reserved$VH() { return _STORAGE_OPERATIONAL_REASON$RawBytes$ScsiSenseKey$Reserved$VH_; }
 
-    static final MemoryLayout NVDIMM_N$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_CHAR.withName("CriticalHealth"),
         MemoryLayout.ofSequence(2, C_CHAR).withName("ModuleHealth"),
         C_CHAR.withName("ErrorThresholdStatus")
     );
-    static final jdk.incubator.foreign.MemoryLayout NVDIMM_N$struct$LAYOUT() { return NVDIMM_N$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$struct$LAYOUT() { return _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$struct$LAYOUT_; }
 
-    static final MemoryLayout NVDIMM_N$CriticalHealth$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout NVDIMM_N$CriticalHealth$LAYOUT() { return NVDIMM_N$CriticalHealth$LAYOUT_; }
+    static final MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$CriticalHealth$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$CriticalHealth$LAYOUT() { return _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$CriticalHealth$LAYOUT_; }
 
-    static final VarHandle NVDIMM_N$CriticalHealth$VH_ = NVDIMM_N$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("CriticalHealth"));
-    static final java.lang.invoke.VarHandle NVDIMM_N$CriticalHealth$VH() { return NVDIMM_N$CriticalHealth$VH_; }
+    static final VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$CriticalHealth$VH_ = _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("CriticalHealth"));
+    static final java.lang.invoke.VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$CriticalHealth$VH() { return _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$CriticalHealth$VH_; }
 
-    static final MemoryLayout NVDIMM_N$ErrorThresholdStatus$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout NVDIMM_N$ErrorThresholdStatus$LAYOUT() { return NVDIMM_N$ErrorThresholdStatus$LAYOUT_; }
+    static final MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$ErrorThresholdStatus$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$ErrorThresholdStatus$LAYOUT() { return _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$ErrorThresholdStatus$LAYOUT_; }
 
-    static final VarHandle NVDIMM_N$ErrorThresholdStatus$VH_ = NVDIMM_N$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("ErrorThresholdStatus"));
-    static final java.lang.invoke.VarHandle NVDIMM_N$ErrorThresholdStatus$VH() { return NVDIMM_N$ErrorThresholdStatus$VH_; }
+    static final VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$ErrorThresholdStatus$VH_ = _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("ErrorThresholdStatus"));
+    static final java.lang.invoke.VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$ErrorThresholdStatus$VH() { return _STORAGE_OPERATIONAL_REASON$RawBytes$NVDIMM_N$ErrorThresholdStatus$VH_; }
 
-    static final MemoryLayout RawBytes$AsUlong$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout RawBytes$AsUlong$LAYOUT() { return RawBytes$AsUlong$LAYOUT_; }
+    static final MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$AsUlong$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_OPERATIONAL_REASON$RawBytes$AsUlong$LAYOUT() { return _STORAGE_OPERATIONAL_REASON$RawBytes$AsUlong$LAYOUT_; }
 
-    static final VarHandle RawBytes$AsUlong$VH_ = RawBytes$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AsUlong"));
-    static final java.lang.invoke.VarHandle RawBytes$AsUlong$VH() { return RawBytes$AsUlong$VH_; }
+    static final VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$AsUlong$VH_ = _STORAGE_OPERATIONAL_REASON$RawBytes$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AsUlong"));
+    static final java.lang.invoke.VarHandle _STORAGE_OPERATIONAL_REASON$RawBytes$AsUlong$VH() { return _STORAGE_OPERATIONAL_REASON$RawBytes$AsUlong$VH_; }
 
     static final MemoryLayout _STORAGE_DEVICE_MANAGEMENT_STATUS$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Version"),
@@ -782,7 +782,7 @@ class cfapi_h$constants$60 extends cfapi_h$constants$59 {
     static final VarHandle _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneCount$VH_ = _STORAGE_ZONED_DEVICE_DESCRIPTOR$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ZoneCount"));
     static final java.lang.invoke.VarHandle _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneCount$VH() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneCount$VH_; }
 
-    static final MemoryLayout ZoneAttributes$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_LONG.withName("MaxOpenZoneCount"),
             C_CHAR.withName("UnrestrictedRead"),
@@ -793,44 +793,44 @@ class cfapi_h$constants$60 extends cfapi_h$constants$59 {
             C_LONG.withName("Reserved")
         ).withName("SequentialPreferredZone")
     );
-    static final jdk.incubator.foreign.MemoryLayout ZoneAttributes$struct$LAYOUT() { return ZoneAttributes$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$union$LAYOUT() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$union$LAYOUT_; }
 
-    static final MemoryLayout SequentialRequiredZone$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("MaxOpenZoneCount"),
         C_CHAR.withName("UnrestrictedRead"),
         MemoryLayout.ofSequence(3, C_CHAR).withName("Reserved")
     );
-    static final jdk.incubator.foreign.MemoryLayout SequentialRequiredZone$struct$LAYOUT() { return SequentialRequiredZone$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$struct$LAYOUT() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$struct$LAYOUT_; }
 
-    static final MemoryLayout SequentialRequiredZone$MaxOpenZoneCount$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout SequentialRequiredZone$MaxOpenZoneCount$LAYOUT() { return SequentialRequiredZone$MaxOpenZoneCount$LAYOUT_; }
+    static final MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$MaxOpenZoneCount$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$MaxOpenZoneCount$LAYOUT() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$MaxOpenZoneCount$LAYOUT_; }
 
-    static final VarHandle SequentialRequiredZone$MaxOpenZoneCount$VH_ = SequentialRequiredZone$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MaxOpenZoneCount"));
-    static final java.lang.invoke.VarHandle SequentialRequiredZone$MaxOpenZoneCount$VH() { return SequentialRequiredZone$MaxOpenZoneCount$VH_; }
+    static final VarHandle _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$MaxOpenZoneCount$VH_ = _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MaxOpenZoneCount"));
+    static final java.lang.invoke.VarHandle _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$MaxOpenZoneCount$VH() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$MaxOpenZoneCount$VH_; }
 
-    static final MemoryLayout SequentialRequiredZone$UnrestrictedRead$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout SequentialRequiredZone$UnrestrictedRead$LAYOUT() { return SequentialRequiredZone$UnrestrictedRead$LAYOUT_; }
+    static final MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$UnrestrictedRead$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$UnrestrictedRead$LAYOUT() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$UnrestrictedRead$LAYOUT_; }
 
-    static final VarHandle SequentialRequiredZone$UnrestrictedRead$VH_ = SequentialRequiredZone$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("UnrestrictedRead"));
-    static final java.lang.invoke.VarHandle SequentialRequiredZone$UnrestrictedRead$VH() { return SequentialRequiredZone$UnrestrictedRead$VH_; }
+    static final VarHandle _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$UnrestrictedRead$VH_ = _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("UnrestrictedRead"));
+    static final java.lang.invoke.VarHandle _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$UnrestrictedRead$VH() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialRequiredZone$UnrestrictedRead$VH_; }
 
-    static final MemoryLayout SequentialPreferredZone$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("OptimalOpenZoneCount"),
         C_LONG.withName("Reserved")
     );
-    static final jdk.incubator.foreign.MemoryLayout SequentialPreferredZone$struct$LAYOUT() { return SequentialPreferredZone$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$struct$LAYOUT() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$struct$LAYOUT_; }
 
-    static final MemoryLayout SequentialPreferredZone$OptimalOpenZoneCount$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout SequentialPreferredZone$OptimalOpenZoneCount$LAYOUT() { return SequentialPreferredZone$OptimalOpenZoneCount$LAYOUT_; }
+    static final MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$OptimalOpenZoneCount$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$OptimalOpenZoneCount$LAYOUT() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$OptimalOpenZoneCount$LAYOUT_; }
 
-    static final VarHandle SequentialPreferredZone$OptimalOpenZoneCount$VH_ = SequentialPreferredZone$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("OptimalOpenZoneCount"));
-    static final java.lang.invoke.VarHandle SequentialPreferredZone$OptimalOpenZoneCount$VH() { return SequentialPreferredZone$OptimalOpenZoneCount$VH_; }
+    static final VarHandle _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$OptimalOpenZoneCount$VH_ = _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("OptimalOpenZoneCount"));
+    static final java.lang.invoke.VarHandle _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$OptimalOpenZoneCount$VH() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$OptimalOpenZoneCount$VH_; }
 
-    static final MemoryLayout SequentialPreferredZone$Reserved$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout SequentialPreferredZone$Reserved$LAYOUT() { return SequentialPreferredZone$Reserved$LAYOUT_; }
+    static final MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$Reserved$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$Reserved$LAYOUT() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$Reserved$LAYOUT_; }
 
-    static final VarHandle SequentialPreferredZone$Reserved$VH_ = SequentialPreferredZone$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reserved"));
-    static final java.lang.invoke.VarHandle SequentialPreferredZone$Reserved$VH() { return SequentialPreferredZone$Reserved$VH_; }
+    static final VarHandle _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$Reserved$VH_ = _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reserved"));
+    static final java.lang.invoke.VarHandle _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$Reserved$VH() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneAttributes$SequentialPreferredZone$Reserved$VH_; }
 
     static final MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneGroupCount$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneGroupCount$LAYOUT() { return _STORAGE_ZONED_DEVICE_DESCRIPTOR$ZoneGroupCount$LAYOUT_; }
@@ -1006,6 +1006,11 @@ class cfapi_h$constants$60 extends cfapi_h$constants$59 {
 
     static final VarHandle _STORAGE_HW_ENDURANCE_INFO$GroupId$VH_ = _STORAGE_HW_ENDURANCE_INFO$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("GroupId"));
     static final java.lang.invoke.VarHandle _STORAGE_HW_ENDURANCE_INFO$GroupId$VH() { return _STORAGE_HW_ENDURANCE_INFO$GroupId$VH_; }
+
+    static final MemoryLayout _STORAGE_HW_ENDURANCE_INFO$Flags$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_INT
+    );
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_HW_ENDURANCE_INFO$Flags$struct$LAYOUT() { return _STORAGE_HW_ENDURANCE_INFO$Flags$struct$LAYOUT_; }
 
     static final MemoryLayout _STORAGE_HW_ENDURANCE_INFO$LifePercentage$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _STORAGE_HW_ENDURANCE_INFO$LifePercentage$LAYOUT() { return _STORAGE_HW_ENDURANCE_INFO$LifePercentage$LAYOUT_; }
@@ -1276,10 +1281,10 @@ class cfapi_h$constants$60 extends cfapi_h$constants$59 {
     ).withName("_STORAGE_OFFLOAD_TOKEN");
     static final jdk.incubator.foreign.MemoryLayout _STORAGE_OFFLOAD_TOKEN$struct$LAYOUT() { return _STORAGE_OFFLOAD_TOKEN$struct$LAYOUT_; }
 
-    static final MemoryLayout StorageOffloadZeroDataToken$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _STORAGE_OFFLOAD_TOKEN$StorageOffloadZeroDataToken$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofSequence(504, C_CHAR).withName("Reserved2")
     );
-    static final jdk.incubator.foreign.MemoryLayout StorageOffloadZeroDataToken$struct$LAYOUT() { return StorageOffloadZeroDataToken$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_OFFLOAD_TOKEN$StorageOffloadZeroDataToken$struct$LAYOUT() { return _STORAGE_OFFLOAD_TOKEN$StorageOffloadZeroDataToken$struct$LAYOUT_; }
 
     static final MemoryLayout _DEVICE_DSM_OFFLOAD_READ_PARAMETERS$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Flags"),

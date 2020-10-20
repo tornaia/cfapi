@@ -385,23 +385,23 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
     ).withName("_IMAGE_SECTION_HEADER");
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_SECTION_HEADER$struct$LAYOUT() { return _IMAGE_SECTION_HEADER$struct$LAYOUT_; }
 
-    static final MemoryLayout Misc$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _IMAGE_SECTION_HEADER$Misc$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("PhysicalAddress"),
         C_LONG.withName("VirtualSize")
     );
-    static final jdk.incubator.foreign.MemoryLayout Misc$struct$LAYOUT() { return Misc$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_SECTION_HEADER$Misc$union$LAYOUT() { return _IMAGE_SECTION_HEADER$Misc$union$LAYOUT_; }
 
-    static final MemoryLayout Misc$PhysicalAddress$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Misc$PhysicalAddress$LAYOUT() { return Misc$PhysicalAddress$LAYOUT_; }
+    static final MemoryLayout _IMAGE_SECTION_HEADER$Misc$PhysicalAddress$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_SECTION_HEADER$Misc$PhysicalAddress$LAYOUT() { return _IMAGE_SECTION_HEADER$Misc$PhysicalAddress$LAYOUT_; }
 
-    static final VarHandle Misc$PhysicalAddress$VH_ = Misc$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("PhysicalAddress"));
-    static final java.lang.invoke.VarHandle Misc$PhysicalAddress$VH() { return Misc$PhysicalAddress$VH_; }
+    static final VarHandle _IMAGE_SECTION_HEADER$Misc$PhysicalAddress$VH_ = _IMAGE_SECTION_HEADER$Misc$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("PhysicalAddress"));
+    static final java.lang.invoke.VarHandle _IMAGE_SECTION_HEADER$Misc$PhysicalAddress$VH() { return _IMAGE_SECTION_HEADER$Misc$PhysicalAddress$VH_; }
 
-    static final MemoryLayout Misc$VirtualSize$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Misc$VirtualSize$LAYOUT() { return Misc$VirtualSize$LAYOUT_; }
+    static final MemoryLayout _IMAGE_SECTION_HEADER$Misc$VirtualSize$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_SECTION_HEADER$Misc$VirtualSize$LAYOUT() { return _IMAGE_SECTION_HEADER$Misc$VirtualSize$LAYOUT_; }
 
-    static final VarHandle Misc$VirtualSize$VH_ = Misc$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("VirtualSize"));
-    static final java.lang.invoke.VarHandle Misc$VirtualSize$VH() { return Misc$VirtualSize$VH_; }
+    static final VarHandle _IMAGE_SECTION_HEADER$Misc$VirtualSize$VH_ = _IMAGE_SECTION_HEADER$Misc$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("VirtualSize"));
+    static final java.lang.invoke.VarHandle _IMAGE_SECTION_HEADER$Misc$VirtualSize$VH() { return _IMAGE_SECTION_HEADER$Misc$VirtualSize$VH_; }
 
     static final MemoryLayout _IMAGE_SECTION_HEADER$VirtualAddress$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_SECTION_HEADER$VirtualAddress$LAYOUT() { return _IMAGE_SECTION_HEADER$VirtualAddress$LAYOUT_; }
@@ -468,7 +468,7 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
     ).withName("_IMAGE_SYMBOL");
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL$struct$LAYOUT() { return _IMAGE_SYMBOL$struct$LAYOUT_; }
 
-    static final MemoryLayout N$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _IMAGE_SYMBOL$N$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofSequence(8, C_CHAR).withName("ShortName"),
         MemoryLayout.ofStruct(
             C_LONG.withName("Short"),
@@ -476,25 +476,25 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
         ).withName("Name"),
         MemoryLayout.ofSequence(2, C_LONG).withName("LongName")
     );
-    static final jdk.incubator.foreign.MemoryLayout N$struct$LAYOUT() { return N$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL$N$union$LAYOUT() { return _IMAGE_SYMBOL$N$union$LAYOUT_; }
 
-    static final MemoryLayout Name$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _IMAGE_SYMBOL$N$Name$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Short"),
         C_LONG.withName("Long")
     );
-    static final jdk.incubator.foreign.MemoryLayout Name$struct$LAYOUT() { return Name$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL$N$Name$struct$LAYOUT() { return _IMAGE_SYMBOL$N$Name$struct$LAYOUT_; }
 
-    static final MemoryLayout Name$Short$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Name$Short$LAYOUT() { return Name$Short$LAYOUT_; }
+    static final MemoryLayout _IMAGE_SYMBOL$N$Name$Short$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL$N$Name$Short$LAYOUT() { return _IMAGE_SYMBOL$N$Name$Short$LAYOUT_; }
 
-    static final VarHandle Name$Short$VH_ = Name$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Short"));
-    static final java.lang.invoke.VarHandle Name$Short$VH() { return Name$Short$VH_; }
+    static final VarHandle _IMAGE_SYMBOL$N$Name$Short$VH_ = _IMAGE_SYMBOL$N$Name$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Short"));
+    static final java.lang.invoke.VarHandle _IMAGE_SYMBOL$N$Name$Short$VH() { return _IMAGE_SYMBOL$N$Name$Short$VH_; }
 
-    static final MemoryLayout Name$Long$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Name$Long$LAYOUT() { return Name$Long$LAYOUT_; }
+    static final MemoryLayout _IMAGE_SYMBOL$N$Name$Long$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL$N$Name$Long$LAYOUT() { return _IMAGE_SYMBOL$N$Name$Long$LAYOUT_; }
 
-    static final VarHandle Name$Long$VH_ = Name$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Long"));
-    static final java.lang.invoke.VarHandle Name$Long$VH() { return Name$Long$VH_; }
+    static final VarHandle _IMAGE_SYMBOL$N$Name$Long$VH_ = _IMAGE_SYMBOL$N$Name$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Long"));
+    static final java.lang.invoke.VarHandle _IMAGE_SYMBOL$N$Name$Long$VH() { return _IMAGE_SYMBOL$N$Name$Long$VH_; }
 
     static final MemoryLayout _IMAGE_SYMBOL$Value$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL$Value$LAYOUT() { return _IMAGE_SYMBOL$Value$LAYOUT_; }
@@ -542,6 +542,34 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
         C_CHAR.withName("NumberOfAuxSymbols")
     ).withName("_IMAGE_SYMBOL_EX");
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL_EX$struct$LAYOUT() { return _IMAGE_SYMBOL_EX$struct$LAYOUT_; }
+
+    static final MemoryLayout _IMAGE_SYMBOL_EX$N$union$LAYOUT_ = MemoryLayout.ofUnion(
+        MemoryLayout.ofSequence(8, C_CHAR).withName("ShortName"),
+        MemoryLayout.ofStruct(
+            C_LONG.withName("Short"),
+            C_LONG.withName("Long")
+        ).withName("Name"),
+        MemoryLayout.ofSequence(2, C_LONG).withName("LongName")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL_EX$N$union$LAYOUT() { return _IMAGE_SYMBOL_EX$N$union$LAYOUT_; }
+
+    static final MemoryLayout _IMAGE_SYMBOL_EX$N$Name$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_LONG.withName("Short"),
+        C_LONG.withName("Long")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL_EX$N$Name$struct$LAYOUT() { return _IMAGE_SYMBOL_EX$N$Name$struct$LAYOUT_; }
+
+    static final MemoryLayout _IMAGE_SYMBOL_EX$N$Name$Short$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL_EX$N$Name$Short$LAYOUT() { return _IMAGE_SYMBOL_EX$N$Name$Short$LAYOUT_; }
+
+    static final VarHandle _IMAGE_SYMBOL_EX$N$Name$Short$VH_ = _IMAGE_SYMBOL_EX$N$Name$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Short"));
+    static final java.lang.invoke.VarHandle _IMAGE_SYMBOL_EX$N$Name$Short$VH() { return _IMAGE_SYMBOL_EX$N$Name$Short$VH_; }
+
+    static final MemoryLayout _IMAGE_SYMBOL_EX$N$Name$Long$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL_EX$N$Name$Long$LAYOUT() { return _IMAGE_SYMBOL_EX$N$Name$Long$LAYOUT_; }
+
+    static final VarHandle _IMAGE_SYMBOL_EX$N$Name$Long$VH_ = _IMAGE_SYMBOL_EX$N$Name$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Long"));
+    static final java.lang.invoke.VarHandle _IMAGE_SYMBOL_EX$N$Name$Long$VH() { return _IMAGE_SYMBOL_EX$N$Name$Long$VH_; }
 
     static final MemoryLayout _IMAGE_SYMBOL_EX$Value$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_SYMBOL_EX$Value$LAYOUT() { return _IMAGE_SYMBOL_EX$Value$LAYOUT_; }
@@ -599,7 +627,7 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
     static final VarHandle IMAGE_AUX_SYMBOL_TOKEN_DEF$SymbolTableIndex$VH_ = IMAGE_AUX_SYMBOL_TOKEN_DEF$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SymbolTableIndex"));
     static final java.lang.invoke.VarHandle IMAGE_AUX_SYMBOL_TOKEN_DEF$SymbolTableIndex$VH() { return IMAGE_AUX_SYMBOL_TOKEN_DEF$SymbolTableIndex$VH_; }
 
-    static final MemoryLayout _IMAGE_AUX_SYMBOL$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_LONG.withName("TagIndex"),
             MemoryLayout.ofUnion(
@@ -644,9 +672,9 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
             MemoryLayout.ofSequence(14, C_CHAR).withName("rgbReserved")
         ).withName("CRC")
     ).withName("_IMAGE_AUX_SYMBOL");
-    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$union$LAYOUT() { return _IMAGE_AUX_SYMBOL$union$LAYOUT_; }
 
-    static final MemoryLayout Sym$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("TagIndex"),
         MemoryLayout.ofUnion(
             MemoryLayout.ofStruct(
@@ -666,39 +694,48 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
         ).withName("FcnAry"),
         C_SHORT.withName("TvIndex")
     );
-    static final jdk.incubator.foreign.MemoryLayout Sym$struct$LAYOUT() { return Sym$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$struct$LAYOUT_; }
 
-    static final MemoryLayout Sym$TagIndex$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Sym$TagIndex$LAYOUT() { return Sym$TagIndex$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$TagIndex$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$TagIndex$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$TagIndex$LAYOUT_; }
 
-    static final VarHandle Sym$TagIndex$VH_ = Sym$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("TagIndex"));
-    static final java.lang.invoke.VarHandle Sym$TagIndex$VH() { return Sym$TagIndex$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Sym$TagIndex$VH_ = _IMAGE_AUX_SYMBOL$Sym$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("TagIndex"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Sym$TagIndex$VH() { return _IMAGE_AUX_SYMBOL$Sym$TagIndex$VH_; }
 
-    static final MemoryLayout LnSz$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$Misc$union$LAYOUT_ = MemoryLayout.ofUnion(
+        MemoryLayout.ofStruct(
+            C_SHORT.withName("Linenumber"),
+            C_SHORT.withName("Size")
+        ).withName("LnSz"),
+        C_LONG.withName("TotalSize")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$Misc$union$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$Misc$union$LAYOUT_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("Linenumber"),
         C_SHORT.withName("Size")
     );
-    static final jdk.incubator.foreign.MemoryLayout LnSz$struct$LAYOUT() { return LnSz$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$struct$LAYOUT_; }
 
-    static final MemoryLayout LnSz$Linenumber$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout LnSz$Linenumber$LAYOUT() { return LnSz$Linenumber$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Linenumber$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Linenumber$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Linenumber$LAYOUT_; }
 
-    static final VarHandle LnSz$Linenumber$VH_ = LnSz$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Linenumber"));
-    static final java.lang.invoke.VarHandle LnSz$Linenumber$VH() { return LnSz$Linenumber$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Linenumber$VH_ = _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Linenumber"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Linenumber$VH() { return _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Linenumber$VH_; }
 
-    static final MemoryLayout LnSz$Size$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout LnSz$Size$LAYOUT() { return LnSz$Size$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Size$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Size$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Size$LAYOUT_; }
 
-    static final VarHandle LnSz$Size$VH_ = LnSz$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Size"));
-    static final java.lang.invoke.VarHandle LnSz$Size$VH() { return LnSz$Size$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Size$VH_ = _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Size"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Size$VH() { return _IMAGE_AUX_SYMBOL$Sym$Misc$LnSz$Size$VH_; }
 
-    static final MemoryLayout Misc$TotalSize$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Misc$TotalSize$LAYOUT() { return Misc$TotalSize$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$Misc$TotalSize$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$Misc$TotalSize$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$Misc$TotalSize$LAYOUT_; }
 
-    static final VarHandle Misc$TotalSize$VH_ = Misc$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("TotalSize"));
-    static final java.lang.invoke.VarHandle Misc$TotalSize$VH() { return Misc$TotalSize$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Sym$Misc$TotalSize$VH_ = _IMAGE_AUX_SYMBOL$Sym$Misc$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("TotalSize"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Sym$Misc$TotalSize$VH() { return _IMAGE_AUX_SYMBOL$Sym$Misc$TotalSize$VH_; }
 
-    static final MemoryLayout FcnAry$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$FcnAry$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_LONG.withName("PointerToLinenumber"),
             C_LONG.withName("PointerToNextFunction")
@@ -707,43 +744,43 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
             MemoryLayout.ofSequence(4, C_SHORT).withName("Dimension")
         ).withName("Array")
     );
-    static final jdk.incubator.foreign.MemoryLayout FcnAry$struct$LAYOUT() { return FcnAry$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$FcnAry$union$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$FcnAry$union$LAYOUT_; }
 
-    static final MemoryLayout Function$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("PointerToLinenumber"),
         C_LONG.withName("PointerToNextFunction")
     );
-    static final jdk.incubator.foreign.MemoryLayout Function$struct$LAYOUT() { return Function$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$struct$LAYOUT_; }
 
-    static final MemoryLayout Function$PointerToLinenumber$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Function$PointerToLinenumber$LAYOUT() { return Function$PointerToLinenumber$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToLinenumber$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToLinenumber$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToLinenumber$LAYOUT_; }
 
-    static final VarHandle Function$PointerToLinenumber$VH_ = Function$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("PointerToLinenumber"));
-    static final java.lang.invoke.VarHandle Function$PointerToLinenumber$VH() { return Function$PointerToLinenumber$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToLinenumber$VH_ = _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("PointerToLinenumber"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToLinenumber$VH() { return _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToLinenumber$VH_; }
 
-    static final MemoryLayout Function$PointerToNextFunction$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Function$PointerToNextFunction$LAYOUT() { return Function$PointerToNextFunction$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToNextFunction$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToNextFunction$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToNextFunction$LAYOUT_; }
 
-    static final VarHandle Function$PointerToNextFunction$VH_ = Function$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("PointerToNextFunction"));
-    static final java.lang.invoke.VarHandle Function$PointerToNextFunction$VH() { return Function$PointerToNextFunction$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToNextFunction$VH_ = _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("PointerToNextFunction"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToNextFunction$VH() { return _IMAGE_AUX_SYMBOL$Sym$FcnAry$Function$PointerToNextFunction$VH_; }
 
-    static final MemoryLayout Array$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$FcnAry$Array$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofSequence(4, C_SHORT).withName("Dimension")
     );
-    static final jdk.incubator.foreign.MemoryLayout Array$struct$LAYOUT() { return Array$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$FcnAry$Array$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$FcnAry$Array$struct$LAYOUT_; }
 
-    static final MemoryLayout Sym$TvIndex$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Sym$TvIndex$LAYOUT() { return Sym$TvIndex$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Sym$TvIndex$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Sym$TvIndex$LAYOUT() { return _IMAGE_AUX_SYMBOL$Sym$TvIndex$LAYOUT_; }
 
-    static final VarHandle Sym$TvIndex$VH_ = Sym$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("TvIndex"));
-    static final java.lang.invoke.VarHandle Sym$TvIndex$VH() { return Sym$TvIndex$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Sym$TvIndex$VH_ = _IMAGE_AUX_SYMBOL$Sym$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("TvIndex"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Sym$TvIndex$VH() { return _IMAGE_AUX_SYMBOL$Sym$TvIndex$VH_; }
 
-    static final MemoryLayout File$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$File$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofSequence(18, C_CHAR).withName("Name")
     );
-    static final jdk.incubator.foreign.MemoryLayout File$struct$LAYOUT() { return File$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$File$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL$File$struct$LAYOUT_; }
 
-    static final MemoryLayout Section$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Section$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Length"),
         C_SHORT.withName("NumberOfRelocations"),
         C_SHORT.withName("NumberOfLinenumbers"),
@@ -753,69 +790,69 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
         C_CHAR.withName("bReserved"),
         C_SHORT.withName("HighNumber")
     );
-    static final jdk.incubator.foreign.MemoryLayout Section$struct$LAYOUT() { return Section$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Section$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL$Section$struct$LAYOUT_; }
 
-    static final MemoryLayout Section$Length$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Section$Length$LAYOUT() { return Section$Length$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Section$Length$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Section$Length$LAYOUT() { return _IMAGE_AUX_SYMBOL$Section$Length$LAYOUT_; }
 
-    static final VarHandle Section$Length$VH_ = Section$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Length"));
-    static final java.lang.invoke.VarHandle Section$Length$VH() { return Section$Length$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Section$Length$VH_ = _IMAGE_AUX_SYMBOL$Section$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Length"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Section$Length$VH() { return _IMAGE_AUX_SYMBOL$Section$Length$VH_; }
 
-    static final MemoryLayout Section$NumberOfRelocations$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Section$NumberOfRelocations$LAYOUT() { return Section$NumberOfRelocations$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Section$NumberOfRelocations$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Section$NumberOfRelocations$LAYOUT() { return _IMAGE_AUX_SYMBOL$Section$NumberOfRelocations$LAYOUT_; }
 
-    static final VarHandle Section$NumberOfRelocations$VH_ = Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("NumberOfRelocations"));
-    static final java.lang.invoke.VarHandle Section$NumberOfRelocations$VH() { return Section$NumberOfRelocations$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Section$NumberOfRelocations$VH_ = _IMAGE_AUX_SYMBOL$Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("NumberOfRelocations"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Section$NumberOfRelocations$VH() { return _IMAGE_AUX_SYMBOL$Section$NumberOfRelocations$VH_; }
 
-    static final MemoryLayout Section$NumberOfLinenumbers$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Section$NumberOfLinenumbers$LAYOUT() { return Section$NumberOfLinenumbers$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Section$NumberOfLinenumbers$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Section$NumberOfLinenumbers$LAYOUT() { return _IMAGE_AUX_SYMBOL$Section$NumberOfLinenumbers$LAYOUT_; }
 
-    static final VarHandle Section$NumberOfLinenumbers$VH_ = Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("NumberOfLinenumbers"));
-    static final java.lang.invoke.VarHandle Section$NumberOfLinenumbers$VH() { return Section$NumberOfLinenumbers$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Section$NumberOfLinenumbers$VH_ = _IMAGE_AUX_SYMBOL$Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("NumberOfLinenumbers"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Section$NumberOfLinenumbers$VH() { return _IMAGE_AUX_SYMBOL$Section$NumberOfLinenumbers$VH_; }
 
-    static final MemoryLayout Section$CheckSum$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Section$CheckSum$LAYOUT() { return Section$CheckSum$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Section$CheckSum$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Section$CheckSum$LAYOUT() { return _IMAGE_AUX_SYMBOL$Section$CheckSum$LAYOUT_; }
 
-    static final VarHandle Section$CheckSum$VH_ = Section$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CheckSum"));
-    static final java.lang.invoke.VarHandle Section$CheckSum$VH() { return Section$CheckSum$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Section$CheckSum$VH_ = _IMAGE_AUX_SYMBOL$Section$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CheckSum"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Section$CheckSum$VH() { return _IMAGE_AUX_SYMBOL$Section$CheckSum$VH_; }
 
-    static final MemoryLayout Section$Number$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Section$Number$LAYOUT() { return Section$Number$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Section$Number$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Section$Number$LAYOUT() { return _IMAGE_AUX_SYMBOL$Section$Number$LAYOUT_; }
 
-    static final VarHandle Section$Number$VH_ = Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Number"));
-    static final java.lang.invoke.VarHandle Section$Number$VH() { return Section$Number$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Section$Number$VH_ = _IMAGE_AUX_SYMBOL$Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Number"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Section$Number$VH() { return _IMAGE_AUX_SYMBOL$Section$Number$VH_; }
 
-    static final MemoryLayout Section$Selection$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout Section$Selection$LAYOUT() { return Section$Selection$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Section$Selection$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Section$Selection$LAYOUT() { return _IMAGE_AUX_SYMBOL$Section$Selection$LAYOUT_; }
 
-    static final VarHandle Section$Selection$VH_ = Section$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Selection"));
-    static final java.lang.invoke.VarHandle Section$Selection$VH() { return Section$Selection$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Section$Selection$VH_ = _IMAGE_AUX_SYMBOL$Section$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Selection"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Section$Selection$VH() { return _IMAGE_AUX_SYMBOL$Section$Selection$VH_; }
 
-    static final MemoryLayout Section$bReserved$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout Section$bReserved$LAYOUT() { return Section$bReserved$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Section$bReserved$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Section$bReserved$LAYOUT() { return _IMAGE_AUX_SYMBOL$Section$bReserved$LAYOUT_; }
 
-    static final VarHandle Section$bReserved$VH_ = Section$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("bReserved"));
-    static final java.lang.invoke.VarHandle Section$bReserved$VH() { return Section$bReserved$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Section$bReserved$VH_ = _IMAGE_AUX_SYMBOL$Section$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("bReserved"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Section$bReserved$VH() { return _IMAGE_AUX_SYMBOL$Section$bReserved$VH_; }
 
-    static final MemoryLayout Section$HighNumber$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Section$HighNumber$LAYOUT() { return Section$HighNumber$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$Section$HighNumber$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$Section$HighNumber$LAYOUT() { return _IMAGE_AUX_SYMBOL$Section$HighNumber$LAYOUT_; }
 
-    static final VarHandle Section$HighNumber$VH_ = Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("HighNumber"));
-    static final java.lang.invoke.VarHandle Section$HighNumber$VH() { return Section$HighNumber$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$Section$HighNumber$VH_ = _IMAGE_AUX_SYMBOL$Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("HighNumber"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$Section$HighNumber$VH() { return _IMAGE_AUX_SYMBOL$Section$HighNumber$VH_; }
 
-    static final MemoryLayout CRC$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$CRC$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("crc"),
         MemoryLayout.ofSequence(14, C_CHAR).withName("rgbReserved")
     );
-    static final jdk.incubator.foreign.MemoryLayout CRC$struct$LAYOUT() { return CRC$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$CRC$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL$CRC$struct$LAYOUT_; }
 
-    static final MemoryLayout CRC$crc$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout CRC$crc$LAYOUT() { return CRC$crc$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL$CRC$crc$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL$CRC$crc$LAYOUT() { return _IMAGE_AUX_SYMBOL$CRC$crc$LAYOUT_; }
 
-    static final VarHandle CRC$crc$VH_ = CRC$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("crc"));
-    static final java.lang.invoke.VarHandle CRC$crc$VH() { return CRC$crc$VH_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL$CRC$crc$VH_ = _IMAGE_AUX_SYMBOL$CRC$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("crc"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL$CRC$crc$VH() { return _IMAGE_AUX_SYMBOL$CRC$crc$VH_; }
 
-    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_LONG.withName("WeakDefaultSymIndex"),
             C_LONG.withName("WeakSearchType"),
@@ -847,19 +884,104 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
             MemoryLayout.ofSequence(16, C_CHAR).withName("rgbReserved")
         ).withName("CRC")
     ).withName("_IMAGE_AUX_SYMBOL_EX");
-    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$union$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$union$LAYOUT_; }
 
-    static final MemoryLayout Sym$WeakDefaultSymIndex$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Sym$WeakDefaultSymIndex$LAYOUT() { return Sym$WeakDefaultSymIndex$LAYOUT_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Sym$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_LONG.withName("WeakDefaultSymIndex"),
+        C_LONG.withName("WeakSearchType"),
+        MemoryLayout.ofSequence(12, C_CHAR).withName("rgbReserved")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Sym$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Sym$struct$LAYOUT_; }
 
-    static final VarHandle Sym$WeakDefaultSymIndex$VH_ = Sym$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("WeakDefaultSymIndex"));
-    static final java.lang.invoke.VarHandle Sym$WeakDefaultSymIndex$VH() { return Sym$WeakDefaultSymIndex$VH_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Sym$WeakDefaultSymIndex$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Sym$WeakDefaultSymIndex$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Sym$WeakDefaultSymIndex$LAYOUT_; }
 
-    static final MemoryLayout Sym$WeakSearchType$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Sym$WeakSearchType$LAYOUT() { return Sym$WeakSearchType$LAYOUT_; }
+    static final VarHandle _IMAGE_AUX_SYMBOL_EX$Sym$WeakDefaultSymIndex$VH_ = _IMAGE_AUX_SYMBOL_EX$Sym$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("WeakDefaultSymIndex"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL_EX$Sym$WeakDefaultSymIndex$VH() { return _IMAGE_AUX_SYMBOL_EX$Sym$WeakDefaultSymIndex$VH_; }
 
-    static final VarHandle Sym$WeakSearchType$VH_ = Sym$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("WeakSearchType"));
-    static final java.lang.invoke.VarHandle Sym$WeakSearchType$VH() { return Sym$WeakSearchType$VH_; }
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Sym$WeakSearchType$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Sym$WeakSearchType$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Sym$WeakSearchType$LAYOUT_; }
+
+    static final VarHandle _IMAGE_AUX_SYMBOL_EX$Sym$WeakSearchType$VH_ = _IMAGE_AUX_SYMBOL_EX$Sym$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("WeakSearchType"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL_EX$Sym$WeakSearchType$VH() { return _IMAGE_AUX_SYMBOL_EX$Sym$WeakSearchType$VH_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$File$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        MemoryLayout.ofSequence(20, C_CHAR).withName("Name")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$File$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$File$struct$LAYOUT_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_LONG.withName("Length"),
+        C_SHORT.withName("NumberOfRelocations"),
+        C_SHORT.withName("NumberOfLinenumbers"),
+        C_LONG.withName("CheckSum"),
+        C_SHORT.withName("Number"),
+        C_CHAR.withName("Selection"),
+        C_CHAR.withName("bReserved"),
+        C_SHORT.withName("HighNumber"),
+        MemoryLayout.ofSequence(2, C_CHAR).withName("rgbReserved")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Section$struct$LAYOUT_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$Length$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$Length$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Section$Length$LAYOUT_; }
+
+    static final VarHandle _IMAGE_AUX_SYMBOL_EX$Section$Length$VH_ = _IMAGE_AUX_SYMBOL_EX$Section$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Length"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL_EX$Section$Length$VH() { return _IMAGE_AUX_SYMBOL_EX$Section$Length$VH_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$NumberOfRelocations$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$NumberOfRelocations$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Section$NumberOfRelocations$LAYOUT_; }
+
+    static final VarHandle _IMAGE_AUX_SYMBOL_EX$Section$NumberOfRelocations$VH_ = _IMAGE_AUX_SYMBOL_EX$Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("NumberOfRelocations"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL_EX$Section$NumberOfRelocations$VH() { return _IMAGE_AUX_SYMBOL_EX$Section$NumberOfRelocations$VH_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$NumberOfLinenumbers$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$NumberOfLinenumbers$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Section$NumberOfLinenumbers$LAYOUT_; }
+
+    static final VarHandle _IMAGE_AUX_SYMBOL_EX$Section$NumberOfLinenumbers$VH_ = _IMAGE_AUX_SYMBOL_EX$Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("NumberOfLinenumbers"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL_EX$Section$NumberOfLinenumbers$VH() { return _IMAGE_AUX_SYMBOL_EX$Section$NumberOfLinenumbers$VH_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$CheckSum$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$CheckSum$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Section$CheckSum$LAYOUT_; }
+
+    static final VarHandle _IMAGE_AUX_SYMBOL_EX$Section$CheckSum$VH_ = _IMAGE_AUX_SYMBOL_EX$Section$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CheckSum"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL_EX$Section$CheckSum$VH() { return _IMAGE_AUX_SYMBOL_EX$Section$CheckSum$VH_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$Number$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$Number$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Section$Number$LAYOUT_; }
+
+    static final VarHandle _IMAGE_AUX_SYMBOL_EX$Section$Number$VH_ = _IMAGE_AUX_SYMBOL_EX$Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Number"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL_EX$Section$Number$VH() { return _IMAGE_AUX_SYMBOL_EX$Section$Number$VH_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$Selection$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$Selection$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Section$Selection$LAYOUT_; }
+
+    static final VarHandle _IMAGE_AUX_SYMBOL_EX$Section$Selection$VH_ = _IMAGE_AUX_SYMBOL_EX$Section$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Selection"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL_EX$Section$Selection$VH() { return _IMAGE_AUX_SYMBOL_EX$Section$Selection$VH_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$bReserved$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$bReserved$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Section$bReserved$LAYOUT_; }
+
+    static final VarHandle _IMAGE_AUX_SYMBOL_EX$Section$bReserved$VH_ = _IMAGE_AUX_SYMBOL_EX$Section$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("bReserved"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL_EX$Section$bReserved$VH() { return _IMAGE_AUX_SYMBOL_EX$Section$bReserved$VH_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$HighNumber$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$Section$HighNumber$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$Section$HighNumber$LAYOUT_; }
+
+    static final VarHandle _IMAGE_AUX_SYMBOL_EX$Section$HighNumber$VH_ = _IMAGE_AUX_SYMBOL_EX$Section$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("HighNumber"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL_EX$Section$HighNumber$VH() { return _IMAGE_AUX_SYMBOL_EX$Section$HighNumber$VH_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$CRC$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_LONG.withName("crc"),
+        MemoryLayout.ofSequence(16, C_CHAR).withName("rgbReserved")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$CRC$struct$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$CRC$struct$LAYOUT_; }
+
+    static final MemoryLayout _IMAGE_AUX_SYMBOL_EX$CRC$crc$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_AUX_SYMBOL_EX$CRC$crc$LAYOUT() { return _IMAGE_AUX_SYMBOL_EX$CRC$crc$LAYOUT_; }
+
+    static final VarHandle _IMAGE_AUX_SYMBOL_EX$CRC$crc$VH_ = _IMAGE_AUX_SYMBOL_EX$CRC$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("crc"));
+    static final java.lang.invoke.VarHandle _IMAGE_AUX_SYMBOL_EX$CRC$crc$VH() { return _IMAGE_AUX_SYMBOL_EX$CRC$crc$VH_; }
 
     static final int IMAGE_AUX_SYMBOL_TYPE_TOKEN_DEF() { return (int)1L; }
 
@@ -904,23 +1026,23 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
     ).withName("_IMAGE_LINENUMBER");
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_LINENUMBER$struct$LAYOUT() { return _IMAGE_LINENUMBER$struct$LAYOUT_; }
 
-    static final MemoryLayout Type$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _IMAGE_LINENUMBER$Type$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("SymbolTableIndex"),
         C_LONG.withName("VirtualAddress")
     );
-    static final jdk.incubator.foreign.MemoryLayout Type$struct$LAYOUT() { return Type$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_LINENUMBER$Type$union$LAYOUT() { return _IMAGE_LINENUMBER$Type$union$LAYOUT_; }
 
-    static final MemoryLayout Type$SymbolTableIndex$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Type$SymbolTableIndex$LAYOUT() { return Type$SymbolTableIndex$LAYOUT_; }
+    static final MemoryLayout _IMAGE_LINENUMBER$Type$SymbolTableIndex$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_LINENUMBER$Type$SymbolTableIndex$LAYOUT() { return _IMAGE_LINENUMBER$Type$SymbolTableIndex$LAYOUT_; }
 
-    static final VarHandle Type$SymbolTableIndex$VH_ = Type$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SymbolTableIndex"));
-    static final java.lang.invoke.VarHandle Type$SymbolTableIndex$VH() { return Type$SymbolTableIndex$VH_; }
+    static final VarHandle _IMAGE_LINENUMBER$Type$SymbolTableIndex$VH_ = _IMAGE_LINENUMBER$Type$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SymbolTableIndex"));
+    static final java.lang.invoke.VarHandle _IMAGE_LINENUMBER$Type$SymbolTableIndex$VH() { return _IMAGE_LINENUMBER$Type$SymbolTableIndex$VH_; }
 
-    static final MemoryLayout Type$VirtualAddress$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Type$VirtualAddress$LAYOUT() { return Type$VirtualAddress$LAYOUT_; }
+    static final MemoryLayout _IMAGE_LINENUMBER$Type$VirtualAddress$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_LINENUMBER$Type$VirtualAddress$LAYOUT() { return _IMAGE_LINENUMBER$Type$VirtualAddress$LAYOUT_; }
 
-    static final VarHandle Type$VirtualAddress$VH_ = Type$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("VirtualAddress"));
-    static final java.lang.invoke.VarHandle Type$VirtualAddress$VH() { return Type$VirtualAddress$VH_; }
+    static final VarHandle _IMAGE_LINENUMBER$Type$VirtualAddress$VH_ = _IMAGE_LINENUMBER$Type$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("VirtualAddress"));
+    static final java.lang.invoke.VarHandle _IMAGE_LINENUMBER$Type$VirtualAddress$VH() { return _IMAGE_LINENUMBER$Type$VirtualAddress$VH_; }
 
     static final MemoryLayout _IMAGE_LINENUMBER$Linenumber$LAYOUT_ = C_SHORT;
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_LINENUMBER$Linenumber$LAYOUT() { return _IMAGE_LINENUMBER$Linenumber$LAYOUT_; }
@@ -1061,37 +1183,37 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
     ).withName("_IMAGE_THUNK_DATA64");
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA64$struct$LAYOUT() { return _IMAGE_THUNK_DATA64$struct$LAYOUT_; }
 
-    static final MemoryLayout u1$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _IMAGE_THUNK_DATA64$u1$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONGLONG.withName("ForwarderString"),
         C_LONGLONG.withName("Function"),
         C_LONGLONG.withName("Ordinal"),
         C_LONGLONG.withName("AddressOfData")
     );
-    static final jdk.incubator.foreign.MemoryLayout u1$struct$LAYOUT() { return u1$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA64$u1$union$LAYOUT() { return _IMAGE_THUNK_DATA64$u1$union$LAYOUT_; }
 
-    static final MemoryLayout u1$ForwarderString$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout u1$ForwarderString$LAYOUT() { return u1$ForwarderString$LAYOUT_; }
+    static final MemoryLayout _IMAGE_THUNK_DATA64$u1$ForwarderString$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA64$u1$ForwarderString$LAYOUT() { return _IMAGE_THUNK_DATA64$u1$ForwarderString$LAYOUT_; }
 
-    static final VarHandle u1$ForwarderString$VH_ = u1$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("ForwarderString"));
-    static final java.lang.invoke.VarHandle u1$ForwarderString$VH() { return u1$ForwarderString$VH_; }
+    static final VarHandle _IMAGE_THUNK_DATA64$u1$ForwarderString$VH_ = _IMAGE_THUNK_DATA64$u1$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("ForwarderString"));
+    static final java.lang.invoke.VarHandle _IMAGE_THUNK_DATA64$u1$ForwarderString$VH() { return _IMAGE_THUNK_DATA64$u1$ForwarderString$VH_; }
 
-    static final MemoryLayout u1$Function$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout u1$Function$LAYOUT() { return u1$Function$LAYOUT_; }
+    static final MemoryLayout _IMAGE_THUNK_DATA64$u1$Function$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA64$u1$Function$LAYOUT() { return _IMAGE_THUNK_DATA64$u1$Function$LAYOUT_; }
 
-    static final VarHandle u1$Function$VH_ = u1$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Function"));
-    static final java.lang.invoke.VarHandle u1$Function$VH() { return u1$Function$VH_; }
+    static final VarHandle _IMAGE_THUNK_DATA64$u1$Function$VH_ = _IMAGE_THUNK_DATA64$u1$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Function"));
+    static final java.lang.invoke.VarHandle _IMAGE_THUNK_DATA64$u1$Function$VH() { return _IMAGE_THUNK_DATA64$u1$Function$VH_; }
 
-    static final MemoryLayout u1$Ordinal$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout u1$Ordinal$LAYOUT() { return u1$Ordinal$LAYOUT_; }
+    static final MemoryLayout _IMAGE_THUNK_DATA64$u1$Ordinal$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA64$u1$Ordinal$LAYOUT() { return _IMAGE_THUNK_DATA64$u1$Ordinal$LAYOUT_; }
 
-    static final VarHandle u1$Ordinal$VH_ = u1$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Ordinal"));
-    static final java.lang.invoke.VarHandle u1$Ordinal$VH() { return u1$Ordinal$VH_; }
+    static final VarHandle _IMAGE_THUNK_DATA64$u1$Ordinal$VH_ = _IMAGE_THUNK_DATA64$u1$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Ordinal"));
+    static final java.lang.invoke.VarHandle _IMAGE_THUNK_DATA64$u1$Ordinal$VH() { return _IMAGE_THUNK_DATA64$u1$Ordinal$VH_; }
 
-    static final MemoryLayout u1$AddressOfData$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout u1$AddressOfData$LAYOUT() { return u1$AddressOfData$LAYOUT_; }
+    static final MemoryLayout _IMAGE_THUNK_DATA64$u1$AddressOfData$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA64$u1$AddressOfData$LAYOUT() { return _IMAGE_THUNK_DATA64$u1$AddressOfData$LAYOUT_; }
 
-    static final VarHandle u1$AddressOfData$VH_ = u1$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("AddressOfData"));
-    static final java.lang.invoke.VarHandle u1$AddressOfData$VH() { return u1$AddressOfData$VH_; }
+    static final VarHandle _IMAGE_THUNK_DATA64$u1$AddressOfData$VH_ = _IMAGE_THUNK_DATA64$u1$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("AddressOfData"));
+    static final java.lang.invoke.VarHandle _IMAGE_THUNK_DATA64$u1$AddressOfData$VH() { return _IMAGE_THUNK_DATA64$u1$AddressOfData$VH_; }
 
     static final MemoryLayout _IMAGE_THUNK_DATA32$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofUnion(
@@ -1102,6 +1224,38 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
         ).withName("u1")
     ).withName("_IMAGE_THUNK_DATA32");
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA32$struct$LAYOUT() { return _IMAGE_THUNK_DATA32$struct$LAYOUT_; }
+
+    static final MemoryLayout _IMAGE_THUNK_DATA32$u1$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_LONG.withName("ForwarderString"),
+        C_LONG.withName("Function"),
+        C_LONG.withName("Ordinal"),
+        C_LONG.withName("AddressOfData")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA32$u1$union$LAYOUT() { return _IMAGE_THUNK_DATA32$u1$union$LAYOUT_; }
+
+    static final MemoryLayout _IMAGE_THUNK_DATA32$u1$ForwarderString$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA32$u1$ForwarderString$LAYOUT() { return _IMAGE_THUNK_DATA32$u1$ForwarderString$LAYOUT_; }
+
+    static final VarHandle _IMAGE_THUNK_DATA32$u1$ForwarderString$VH_ = _IMAGE_THUNK_DATA32$u1$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ForwarderString"));
+    static final java.lang.invoke.VarHandle _IMAGE_THUNK_DATA32$u1$ForwarderString$VH() { return _IMAGE_THUNK_DATA32$u1$ForwarderString$VH_; }
+
+    static final MemoryLayout _IMAGE_THUNK_DATA32$u1$Function$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA32$u1$Function$LAYOUT() { return _IMAGE_THUNK_DATA32$u1$Function$LAYOUT_; }
+
+    static final VarHandle _IMAGE_THUNK_DATA32$u1$Function$VH_ = _IMAGE_THUNK_DATA32$u1$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Function"));
+    static final java.lang.invoke.VarHandle _IMAGE_THUNK_DATA32$u1$Function$VH() { return _IMAGE_THUNK_DATA32$u1$Function$VH_; }
+
+    static final MemoryLayout _IMAGE_THUNK_DATA32$u1$Ordinal$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA32$u1$Ordinal$LAYOUT() { return _IMAGE_THUNK_DATA32$u1$Ordinal$LAYOUT_; }
+
+    static final VarHandle _IMAGE_THUNK_DATA32$u1$Ordinal$VH_ = _IMAGE_THUNK_DATA32$u1$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Ordinal"));
+    static final java.lang.invoke.VarHandle _IMAGE_THUNK_DATA32$u1$Ordinal$VH() { return _IMAGE_THUNK_DATA32$u1$Ordinal$VH_; }
+
+    static final MemoryLayout _IMAGE_THUNK_DATA32$u1$AddressOfData$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_THUNK_DATA32$u1$AddressOfData$LAYOUT() { return _IMAGE_THUNK_DATA32$u1$AddressOfData$LAYOUT_; }
+
+    static final VarHandle _IMAGE_THUNK_DATA32$u1$AddressOfData$VH_ = _IMAGE_THUNK_DATA32$u1$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AddressOfData"));
+    static final java.lang.invoke.VarHandle _IMAGE_THUNK_DATA32$u1$AddressOfData$VH() { return _IMAGE_THUNK_DATA32$u1$AddressOfData$VH_; }
 
     static final MemoryLayout _IMAGE_TLS_DIRECTORY64$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONGLONG.withName("StartAddressOfRawData"),
@@ -1308,17 +1462,17 @@ class cfapi_h$constants$20 extends cfapi_h$constants$19 {
     ).withName("_IMAGE_DELAYLOAD_DESCRIPTOR");
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_DELAYLOAD_DESCRIPTOR$struct$LAYOUT() { return _IMAGE_DELAYLOAD_DESCRIPTOR$struct$LAYOUT_; }
 
-    static final MemoryLayout Attributes$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _IMAGE_DELAYLOAD_DESCRIPTOR$Attributes$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("AllAttributes"),
         C_INT
     );
-    static final jdk.incubator.foreign.MemoryLayout Attributes$struct$LAYOUT() { return Attributes$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_DELAYLOAD_DESCRIPTOR$Attributes$union$LAYOUT() { return _IMAGE_DELAYLOAD_DESCRIPTOR$Attributes$union$LAYOUT_; }
 
-    static final MemoryLayout Attributes$AllAttributes$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Attributes$AllAttributes$LAYOUT() { return Attributes$AllAttributes$LAYOUT_; }
+    static final MemoryLayout _IMAGE_DELAYLOAD_DESCRIPTOR$Attributes$AllAttributes$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_DELAYLOAD_DESCRIPTOR$Attributes$AllAttributes$LAYOUT() { return _IMAGE_DELAYLOAD_DESCRIPTOR$Attributes$AllAttributes$LAYOUT_; }
 
-    static final VarHandle Attributes$AllAttributes$VH_ = Attributes$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AllAttributes"));
-    static final java.lang.invoke.VarHandle Attributes$AllAttributes$VH() { return Attributes$AllAttributes$VH_; }
+    static final VarHandle _IMAGE_DELAYLOAD_DESCRIPTOR$Attributes$AllAttributes$VH_ = _IMAGE_DELAYLOAD_DESCRIPTOR$Attributes$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AllAttributes"));
+    static final java.lang.invoke.VarHandle _IMAGE_DELAYLOAD_DESCRIPTOR$Attributes$AllAttributes$VH() { return _IMAGE_DELAYLOAD_DESCRIPTOR$Attributes$AllAttributes$VH_; }
 
     static final MemoryLayout _IMAGE_DELAYLOAD_DESCRIPTOR$DllNameRVA$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _IMAGE_DELAYLOAD_DESCRIPTOR$DllNameRVA$LAYOUT() { return _IMAGE_DELAYLOAD_DESCRIPTOR$DllNameRVA$LAYOUT_; }

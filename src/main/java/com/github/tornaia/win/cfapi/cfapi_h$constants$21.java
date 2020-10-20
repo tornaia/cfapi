@@ -742,16 +742,16 @@ class cfapi_h$constants$21 extends cfapi_h$constants$20 {
     static final VarHandle _IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY$UnwindData$VH_ = _IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("UnwindData"));
     static final java.lang.invoke.VarHandle _IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY$UnwindData$VH() { return _IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY$UnwindData$VH_; }
 
-    static final MemoryLayout IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("HeaderData"),
         C_INT
     ).withName("IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA");
-    static final jdk.incubator.foreign.MemoryLayout IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$struct$LAYOUT() { return IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$union$LAYOUT() { return IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$union$LAYOUT_; }
 
     static final MemoryLayout IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$HeaderData$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$HeaderData$LAYOUT() { return IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$HeaderData$LAYOUT_; }
 
-    static final VarHandle IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$HeaderData$VH_ = IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("HeaderData"));
+    static final VarHandle IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$HeaderData$VH_ = IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("HeaderData"));
     static final java.lang.invoke.VarHandle IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$HeaderData$VH() { return IMAGE_ARM64_RUNTIME_FUNCTION_ENTRY_XDATA$HeaderData$VH_; }
 
     static final MemoryLayout _IMAGE_ALPHA64_RUNTIME_FUNCTION_ENTRY$struct$LAYOUT_ = MemoryLayout.ofStruct(

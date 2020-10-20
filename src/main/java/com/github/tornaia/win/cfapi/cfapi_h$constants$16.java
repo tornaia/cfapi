@@ -1041,27 +1041,27 @@ class cfapi_h$constants$16 extends cfapi_h$constants$15 {
     static final VarHandle _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$Relationship$VH_ = _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Relationship"));
     static final java.lang.invoke.VarHandle _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$Relationship$VH() { return _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$Relationship$VH_; }
 
-    static final MemoryLayout ProcessorCore$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$ProcessorCore$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_CHAR.withName("Flags")
     );
-    static final jdk.incubator.foreign.MemoryLayout ProcessorCore$struct$LAYOUT() { return ProcessorCore$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$ProcessorCore$struct$LAYOUT() { return _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$ProcessorCore$struct$LAYOUT_; }
 
-    static final MemoryLayout ProcessorCore$Flags$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout ProcessorCore$Flags$LAYOUT() { return ProcessorCore$Flags$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$ProcessorCore$Flags$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$ProcessorCore$Flags$LAYOUT() { return _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$ProcessorCore$Flags$LAYOUT_; }
 
-    static final VarHandle ProcessorCore$Flags$VH_ = ProcessorCore$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle ProcessorCore$Flags$VH() { return ProcessorCore$Flags$VH_; }
+    static final VarHandle _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$ProcessorCore$Flags$VH_ = _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$ProcessorCore$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$ProcessorCore$Flags$VH() { return _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$ProcessorCore$Flags$VH_; }
 
-    static final MemoryLayout NumaNode$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$NumaNode$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("NodeNumber")
     );
-    static final jdk.incubator.foreign.MemoryLayout NumaNode$struct$LAYOUT() { return NumaNode$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$NumaNode$struct$LAYOUT() { return _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$NumaNode$struct$LAYOUT_; }
 
-    static final MemoryLayout NumaNode$NodeNumber$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout NumaNode$NodeNumber$LAYOUT() { return NumaNode$NodeNumber$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$NumaNode$NodeNumber$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$NumaNode$NodeNumber$LAYOUT() { return _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$NumaNode$NodeNumber$LAYOUT_; }
 
-    static final VarHandle NumaNode$NodeNumber$VH_ = NumaNode$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("NodeNumber"));
-    static final java.lang.invoke.VarHandle NumaNode$NodeNumber$VH() { return NumaNode$NodeNumber$VH_; }
+    static final VarHandle _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$NumaNode$NodeNumber$VH_ = _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$NumaNode$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("NodeNumber"));
+    static final java.lang.invoke.VarHandle _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$NumaNode$NodeNumber$VH() { return _SYSTEM_LOGICAL_PROCESSOR_INFORMATION$NumaNode$NodeNumber$VH_; }
 
     static final MemoryLayout _PROCESSOR_RELATIONSHIP$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_CHAR.withName("Flags"),
@@ -1303,7 +1303,7 @@ class cfapi_h$constants$16 extends cfapi_h$constants$15 {
     static final VarHandle _SYSTEM_CPU_SET_INFORMATION$Type$VH_ = _SYSTEM_CPU_SET_INFORMATION$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Type"));
     static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$Type$VH() { return _SYSTEM_CPU_SET_INFORMATION$Type$VH_; }
 
-    static final MemoryLayout CpuSet$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Id"),
         C_SHORT.withName("Group"),
         C_CHAR.withName("LogicalProcessorIndex"),
@@ -1317,73 +1317,73 @@ class cfapi_h$constants$16 extends cfapi_h$constants$15 {
         C_CHAR.withName("SchedulingClass"),
         C_LONGLONG.withName("AllocationTag")
     );
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$struct$LAYOUT() { return CpuSet$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_; }
 
-    static final MemoryLayout CpuSet$Id$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$Id$LAYOUT() { return CpuSet$Id$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$Id$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$Id$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$Id$LAYOUT_; }
 
-    static final VarHandle CpuSet$Id$VH_ = CpuSet$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Id"));
-    static final java.lang.invoke.VarHandle CpuSet$Id$VH() { return CpuSet$Id$VH_; }
+    static final VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$Id$VH_ = _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Id"));
+    static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$Id$VH() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$Id$VH_; }
 
-    static final MemoryLayout CpuSet$Group$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$Group$LAYOUT() { return CpuSet$Group$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$Group$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$Group$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$Group$LAYOUT_; }
 
-    static final VarHandle CpuSet$Group$VH_ = CpuSet$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Group"));
-    static final java.lang.invoke.VarHandle CpuSet$Group$VH() { return CpuSet$Group$VH_; }
+    static final VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$Group$VH_ = _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Group"));
+    static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$Group$VH() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$Group$VH_; }
 
-    static final MemoryLayout CpuSet$LogicalProcessorIndex$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$LogicalProcessorIndex$LAYOUT() { return CpuSet$LogicalProcessorIndex$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$LogicalProcessorIndex$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$LogicalProcessorIndex$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$LogicalProcessorIndex$LAYOUT_; }
 
-    static final VarHandle CpuSet$LogicalProcessorIndex$VH_ = CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("LogicalProcessorIndex"));
-    static final java.lang.invoke.VarHandle CpuSet$LogicalProcessorIndex$VH() { return CpuSet$LogicalProcessorIndex$VH_; }
+    static final VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$LogicalProcessorIndex$VH_ = _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("LogicalProcessorIndex"));
+    static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$LogicalProcessorIndex$VH() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$LogicalProcessorIndex$VH_; }
 
-    static final MemoryLayout CpuSet$CoreIndex$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$CoreIndex$LAYOUT() { return CpuSet$CoreIndex$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$CoreIndex$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$CoreIndex$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$CoreIndex$LAYOUT_; }
 
-    static final VarHandle CpuSet$CoreIndex$VH_ = CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("CoreIndex"));
-    static final java.lang.invoke.VarHandle CpuSet$CoreIndex$VH() { return CpuSet$CoreIndex$VH_; }
+    static final VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$CoreIndex$VH_ = _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("CoreIndex"));
+    static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$CoreIndex$VH() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$CoreIndex$VH_; }
 
-    static final MemoryLayout CpuSet$LastLevelCacheIndex$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$LastLevelCacheIndex$LAYOUT() { return CpuSet$LastLevelCacheIndex$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$LastLevelCacheIndex$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$LastLevelCacheIndex$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$LastLevelCacheIndex$LAYOUT_; }
 
-    static final VarHandle CpuSet$LastLevelCacheIndex$VH_ = CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("LastLevelCacheIndex"));
-    static final java.lang.invoke.VarHandle CpuSet$LastLevelCacheIndex$VH() { return CpuSet$LastLevelCacheIndex$VH_; }
+    static final VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$LastLevelCacheIndex$VH_ = _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("LastLevelCacheIndex"));
+    static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$LastLevelCacheIndex$VH() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$LastLevelCacheIndex$VH_; }
 
-    static final MemoryLayout CpuSet$NumaNodeIndex$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$NumaNodeIndex$LAYOUT() { return CpuSet$NumaNodeIndex$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$NumaNodeIndex$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$NumaNodeIndex$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$NumaNodeIndex$LAYOUT_; }
 
-    static final VarHandle CpuSet$NumaNodeIndex$VH_ = CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("NumaNodeIndex"));
-    static final java.lang.invoke.VarHandle CpuSet$NumaNodeIndex$VH() { return CpuSet$NumaNodeIndex$VH_; }
+    static final VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$NumaNodeIndex$VH_ = _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("NumaNodeIndex"));
+    static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$NumaNodeIndex$VH() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$NumaNodeIndex$VH_; }
 
-    static final MemoryLayout CpuSet$EfficiencyClass$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$EfficiencyClass$LAYOUT() { return CpuSet$EfficiencyClass$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$EfficiencyClass$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$EfficiencyClass$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$EfficiencyClass$LAYOUT_; }
 
-    static final VarHandle CpuSet$EfficiencyClass$VH_ = CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("EfficiencyClass"));
-    static final java.lang.invoke.VarHandle CpuSet$EfficiencyClass$VH() { return CpuSet$EfficiencyClass$VH_; }
+    static final VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$EfficiencyClass$VH_ = _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("EfficiencyClass"));
+    static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$EfficiencyClass$VH() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$EfficiencyClass$VH_; }
 
-    static final MemoryLayout CpuSet$AllFlags$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$AllFlags$LAYOUT() { return CpuSet$AllFlags$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllFlags$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllFlags$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllFlags$LAYOUT_; }
 
-    static final VarHandle CpuSet$AllFlags$VH_ = CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("AllFlags"));
-    static final java.lang.invoke.VarHandle CpuSet$AllFlags$VH() { return CpuSet$AllFlags$VH_; }
+    static final VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllFlags$VH_ = _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("AllFlags"));
+    static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllFlags$VH() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllFlags$VH_; }
 
-    static final MemoryLayout CpuSet$Reserved$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$Reserved$LAYOUT() { return CpuSet$Reserved$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$Reserved$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$Reserved$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$Reserved$LAYOUT_; }
 
-    static final VarHandle CpuSet$Reserved$VH_ = CpuSet$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reserved"));
-    static final java.lang.invoke.VarHandle CpuSet$Reserved$VH() { return CpuSet$Reserved$VH_; }
+    static final VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$Reserved$VH_ = _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reserved"));
+    static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$Reserved$VH() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$Reserved$VH_; }
 
-    static final MemoryLayout CpuSet$SchedulingClass$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$SchedulingClass$LAYOUT() { return CpuSet$SchedulingClass$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$SchedulingClass$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$SchedulingClass$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$SchedulingClass$LAYOUT_; }
 
-    static final VarHandle CpuSet$SchedulingClass$VH_ = CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("SchedulingClass"));
-    static final java.lang.invoke.VarHandle CpuSet$SchedulingClass$VH() { return CpuSet$SchedulingClass$VH_; }
+    static final VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$SchedulingClass$VH_ = _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("SchedulingClass"));
+    static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$SchedulingClass$VH() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$SchedulingClass$VH_; }
 
-    static final MemoryLayout CpuSet$AllocationTag$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout CpuSet$AllocationTag$LAYOUT() { return CpuSet$AllocationTag$LAYOUT_; }
+    static final MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllocationTag$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllocationTag$LAYOUT() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllocationTag$LAYOUT_; }
 
-    static final VarHandle CpuSet$AllocationTag$VH_ = CpuSet$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("AllocationTag"));
-    static final java.lang.invoke.VarHandle CpuSet$AllocationTag$VH() { return CpuSet$AllocationTag$VH_; }
+    static final VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllocationTag$VH_ = _SYSTEM_CPU_SET_INFORMATION$CpuSet$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("AllocationTag"));
+    static final java.lang.invoke.VarHandle _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllocationTag$VH() { return _SYSTEM_CPU_SET_INFORMATION$CpuSet$AllocationTag$VH_; }
 
     static final MemoryLayout _SYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONGLONG.withName("CycleTime")

@@ -1701,7 +1701,7 @@ class cfapi_h$constants$13 extends cfapi_h$constants$12 {
     static final VarHandle _LDT_ENTRY$BaseLow$VH_ = _LDT_ENTRY$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("BaseLow"));
     static final java.lang.invoke.VarHandle _LDT_ENTRY$BaseLow$VH() { return _LDT_ENTRY$BaseLow$VH_; }
 
-    static final MemoryLayout HighWord$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _LDT_ENTRY$HighWord$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_CHAR.withName("BaseMid"),
             C_CHAR.withName("Flags1"),
@@ -1712,44 +1712,44 @@ class cfapi_h$constants$13 extends cfapi_h$constants$12 {
             C_INT
         ).withName("Bits")
     );
-    static final jdk.incubator.foreign.MemoryLayout HighWord$struct$LAYOUT() { return HighWord$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _LDT_ENTRY$HighWord$union$LAYOUT() { return _LDT_ENTRY$HighWord$union$LAYOUT_; }
 
-    static final MemoryLayout Bytes$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_CHAR.withName("BaseMid"),
         C_CHAR.withName("Flags1"),
         C_CHAR.withName("Flags2"),
         C_CHAR.withName("BaseHi")
     );
-    static final jdk.incubator.foreign.MemoryLayout Bytes$struct$LAYOUT() { return Bytes$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _LDT_ENTRY$HighWord$Bytes$struct$LAYOUT() { return _LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_; }
 
-    static final MemoryLayout Bytes$BaseMid$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout Bytes$BaseMid$LAYOUT() { return Bytes$BaseMid$LAYOUT_; }
+    static final MemoryLayout _LDT_ENTRY$HighWord$Bytes$BaseMid$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _LDT_ENTRY$HighWord$Bytes$BaseMid$LAYOUT() { return _LDT_ENTRY$HighWord$Bytes$BaseMid$LAYOUT_; }
 
-    static final VarHandle Bytes$BaseMid$VH_ = Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("BaseMid"));
-    static final java.lang.invoke.VarHandle Bytes$BaseMid$VH() { return Bytes$BaseMid$VH_; }
+    static final VarHandle _LDT_ENTRY$HighWord$Bytes$BaseMid$VH_ = _LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("BaseMid"));
+    static final java.lang.invoke.VarHandle _LDT_ENTRY$HighWord$Bytes$BaseMid$VH() { return _LDT_ENTRY$HighWord$Bytes$BaseMid$VH_; }
 
-    static final MemoryLayout Bytes$Flags1$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout Bytes$Flags1$LAYOUT() { return Bytes$Flags1$LAYOUT_; }
+    static final MemoryLayout _LDT_ENTRY$HighWord$Bytes$Flags1$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _LDT_ENTRY$HighWord$Bytes$Flags1$LAYOUT() { return _LDT_ENTRY$HighWord$Bytes$Flags1$LAYOUT_; }
 
-    static final VarHandle Bytes$Flags1$VH_ = Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Flags1"));
-    static final java.lang.invoke.VarHandle Bytes$Flags1$VH() { return Bytes$Flags1$VH_; }
+    static final VarHandle _LDT_ENTRY$HighWord$Bytes$Flags1$VH_ = _LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Flags1"));
+    static final java.lang.invoke.VarHandle _LDT_ENTRY$HighWord$Bytes$Flags1$VH() { return _LDT_ENTRY$HighWord$Bytes$Flags1$VH_; }
 
-    static final MemoryLayout Bytes$Flags2$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout Bytes$Flags2$LAYOUT() { return Bytes$Flags2$LAYOUT_; }
+    static final MemoryLayout _LDT_ENTRY$HighWord$Bytes$Flags2$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _LDT_ENTRY$HighWord$Bytes$Flags2$LAYOUT() { return _LDT_ENTRY$HighWord$Bytes$Flags2$LAYOUT_; }
 
-    static final VarHandle Bytes$Flags2$VH_ = Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Flags2"));
-    static final java.lang.invoke.VarHandle Bytes$Flags2$VH() { return Bytes$Flags2$VH_; }
+    static final VarHandle _LDT_ENTRY$HighWord$Bytes$Flags2$VH_ = _LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Flags2"));
+    static final java.lang.invoke.VarHandle _LDT_ENTRY$HighWord$Bytes$Flags2$VH() { return _LDT_ENTRY$HighWord$Bytes$Flags2$VH_; }
 
-    static final MemoryLayout Bytes$BaseHi$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout Bytes$BaseHi$LAYOUT() { return Bytes$BaseHi$LAYOUT_; }
+    static final MemoryLayout _LDT_ENTRY$HighWord$Bytes$BaseHi$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _LDT_ENTRY$HighWord$Bytes$BaseHi$LAYOUT() { return _LDT_ENTRY$HighWord$Bytes$BaseHi$LAYOUT_; }
 
-    static final VarHandle Bytes$BaseHi$VH_ = Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("BaseHi"));
-    static final java.lang.invoke.VarHandle Bytes$BaseHi$VH() { return Bytes$BaseHi$VH_; }
+    static final VarHandle _LDT_ENTRY$HighWord$Bytes$BaseHi$VH_ = _LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("BaseHi"));
+    static final java.lang.invoke.VarHandle _LDT_ENTRY$HighWord$Bytes$BaseHi$VH() { return _LDT_ENTRY$HighWord$Bytes$BaseHi$VH_; }
 
-    static final MemoryLayout Bits$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _LDT_ENTRY$HighWord$Bits$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT
     );
-    static final jdk.incubator.foreign.MemoryLayout Bits$struct$LAYOUT() { return Bits$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _LDT_ENTRY$HighWord$Bits$struct$LAYOUT() { return _LDT_ENTRY$HighWord$Bits$struct$LAYOUT_; }
 
     static final FunctionDescriptor ReadAcquire8$FUNC_ = FunctionDescriptor.of(C_CHAR,
         C_POINTER

@@ -2225,7 +2225,7 @@ class cfapi_h$constants$47 extends cfapi_h$constants$46 {
 
     static final int RpcClientCancel() { return (int)4L; }
 
-    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_POINTER.withName("NotificationRoutine"),
             C_POINTER.withName("hThread")
@@ -2245,88 +2245,88 @@ class cfapi_h$constants$47 extends cfapi_h$constants$46 {
         C_POINTER.withName("hEvent"),
         C_POINTER.withName("NotificationRoutine")
     ).withName("_RPC_ASYNC_NOTIFICATION_INFO");
-    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$struct$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$union$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$union$LAYOUT_; }
 
-    static final MemoryLayout APC$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$APC$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_POINTER.withName("NotificationRoutine"),
         C_POINTER.withName("hThread")
     );
-    static final jdk.incubator.foreign.MemoryLayout APC$struct$LAYOUT() { return APC$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$APC$struct$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$APC$struct$LAYOUT_; }
 
-    static final MemoryLayout APC$NotificationRoutine$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout APC$NotificationRoutine$LAYOUT() { return APC$NotificationRoutine$LAYOUT_; }
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$APC$NotificationRoutine$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$APC$NotificationRoutine$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$APC$NotificationRoutine$LAYOUT_; }
 
-    static final VarHandle APC$NotificationRoutine$VH_ = MemoryHandles.asAddressVarHandle(APC$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("NotificationRoutine")));
-    static final java.lang.invoke.VarHandle APC$NotificationRoutine$VH() { return APC$NotificationRoutine$VH_; }
+    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$APC$NotificationRoutine$VH_ = MemoryHandles.asAddressVarHandle(_RPC_ASYNC_NOTIFICATION_INFO$APC$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("NotificationRoutine")));
+    static final java.lang.invoke.VarHandle _RPC_ASYNC_NOTIFICATION_INFO$APC$NotificationRoutine$VH() { return _RPC_ASYNC_NOTIFICATION_INFO$APC$NotificationRoutine$VH_; }
 
-    static final MemoryLayout APC$hThread$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout APC$hThread$LAYOUT() { return APC$hThread$LAYOUT_; }
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$APC$hThread$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$APC$hThread$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$APC$hThread$LAYOUT_; }
 
-    static final VarHandle APC$hThread$VH_ = MemoryHandles.asAddressVarHandle(APC$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hThread")));
-    static final java.lang.invoke.VarHandle APC$hThread$VH() { return APC$hThread$VH_; }
+    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$APC$hThread$VH_ = MemoryHandles.asAddressVarHandle(_RPC_ASYNC_NOTIFICATION_INFO$APC$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hThread")));
+    static final java.lang.invoke.VarHandle _RPC_ASYNC_NOTIFICATION_INFO$APC$hThread$VH() { return _RPC_ASYNC_NOTIFICATION_INFO$APC$hThread$VH_; }
 
-    static final MemoryLayout IOC$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$IOC$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_POINTER.withName("hIOPort"),
         C_LONG.withName("dwNumberOfBytesTransferred"),
         MemoryLayout.ofPaddingBits(32),
         C_LONGLONG.withName("dwCompletionKey"),
         C_POINTER.withName("lpOverlapped")
     );
-    static final jdk.incubator.foreign.MemoryLayout IOC$struct$LAYOUT() { return IOC$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$IOC$struct$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$IOC$struct$LAYOUT_; }
 
-    static final MemoryLayout IOC$hIOPort$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout IOC$hIOPort$LAYOUT() { return IOC$hIOPort$LAYOUT_; }
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$IOC$hIOPort$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$IOC$hIOPort$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$IOC$hIOPort$LAYOUT_; }
 
-    static final VarHandle IOC$hIOPort$VH_ = MemoryHandles.asAddressVarHandle(IOC$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hIOPort")));
-    static final java.lang.invoke.VarHandle IOC$hIOPort$VH() { return IOC$hIOPort$VH_; }
+    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$IOC$hIOPort$VH_ = MemoryHandles.asAddressVarHandle(_RPC_ASYNC_NOTIFICATION_INFO$IOC$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hIOPort")));
+    static final java.lang.invoke.VarHandle _RPC_ASYNC_NOTIFICATION_INFO$IOC$hIOPort$VH() { return _RPC_ASYNC_NOTIFICATION_INFO$IOC$hIOPort$VH_; }
 
-    static final MemoryLayout IOC$dwNumberOfBytesTransferred$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout IOC$dwNumberOfBytesTransferred$LAYOUT() { return IOC$dwNumberOfBytesTransferred$LAYOUT_; }
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwNumberOfBytesTransferred$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwNumberOfBytesTransferred$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwNumberOfBytesTransferred$LAYOUT_; }
 
-    static final VarHandle IOC$dwNumberOfBytesTransferred$VH_ = IOC$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwNumberOfBytesTransferred"));
-    static final java.lang.invoke.VarHandle IOC$dwNumberOfBytesTransferred$VH() { return IOC$dwNumberOfBytesTransferred$VH_; }
+    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwNumberOfBytesTransferred$VH_ = _RPC_ASYNC_NOTIFICATION_INFO$IOC$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwNumberOfBytesTransferred"));
+    static final java.lang.invoke.VarHandle _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwNumberOfBytesTransferred$VH() { return _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwNumberOfBytesTransferred$VH_; }
 
-    static final MemoryLayout IOC$dwCompletionKey$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout IOC$dwCompletionKey$LAYOUT() { return IOC$dwCompletionKey$LAYOUT_; }
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwCompletionKey$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwCompletionKey$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwCompletionKey$LAYOUT_; }
 
-    static final VarHandle IOC$dwCompletionKey$VH_ = IOC$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("dwCompletionKey"));
-    static final java.lang.invoke.VarHandle IOC$dwCompletionKey$VH() { return IOC$dwCompletionKey$VH_; }
+    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwCompletionKey$VH_ = _RPC_ASYNC_NOTIFICATION_INFO$IOC$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("dwCompletionKey"));
+    static final java.lang.invoke.VarHandle _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwCompletionKey$VH() { return _RPC_ASYNC_NOTIFICATION_INFO$IOC$dwCompletionKey$VH_; }
 
-    static final MemoryLayout IOC$lpOverlapped$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout IOC$lpOverlapped$LAYOUT() { return IOC$lpOverlapped$LAYOUT_; }
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$IOC$lpOverlapped$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$IOC$lpOverlapped$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$IOC$lpOverlapped$LAYOUT_; }
 
-    static final VarHandle IOC$lpOverlapped$VH_ = MemoryHandles.asAddressVarHandle(IOC$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpOverlapped")));
-    static final java.lang.invoke.VarHandle IOC$lpOverlapped$VH() { return IOC$lpOverlapped$VH_; }
+    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$IOC$lpOverlapped$VH_ = MemoryHandles.asAddressVarHandle(_RPC_ASYNC_NOTIFICATION_INFO$IOC$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpOverlapped")));
+    static final java.lang.invoke.VarHandle _RPC_ASYNC_NOTIFICATION_INFO$IOC$lpOverlapped$VH() { return _RPC_ASYNC_NOTIFICATION_INFO$IOC$lpOverlapped$VH_; }
 
-    static final MemoryLayout HWND$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$HWND$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_POINTER.withName("hWnd"),
         C_INT.withName("Msg"),
         MemoryLayout.ofPaddingBits(32)
     );
-    static final jdk.incubator.foreign.MemoryLayout HWND$struct$LAYOUT() { return HWND$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$HWND$struct$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$HWND$struct$LAYOUT_; }
 
-    static final MemoryLayout HWND$hWnd$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout HWND$hWnd$LAYOUT() { return HWND$hWnd$LAYOUT_; }
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$HWND$hWnd$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$HWND$hWnd$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$HWND$hWnd$LAYOUT_; }
 
-    static final VarHandle HWND$hWnd$VH_ = MemoryHandles.asAddressVarHandle(HWND$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hWnd")));
-    static final java.lang.invoke.VarHandle HWND$hWnd$VH() { return HWND$hWnd$VH_; }
+    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$HWND$hWnd$VH_ = MemoryHandles.asAddressVarHandle(_RPC_ASYNC_NOTIFICATION_INFO$HWND$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hWnd")));
+    static final java.lang.invoke.VarHandle _RPC_ASYNC_NOTIFICATION_INFO$HWND$hWnd$VH() { return _RPC_ASYNC_NOTIFICATION_INFO$HWND$hWnd$VH_; }
 
-    static final MemoryLayout HWND$Msg$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout HWND$Msg$LAYOUT() { return HWND$Msg$LAYOUT_; }
+    static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$HWND$Msg$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$HWND$Msg$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$HWND$Msg$LAYOUT_; }
 
-    static final VarHandle HWND$Msg$VH_ = HWND$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Msg"));
-    static final java.lang.invoke.VarHandle HWND$Msg$VH() { return HWND$Msg$VH_; }
+    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$HWND$Msg$VH_ = _RPC_ASYNC_NOTIFICATION_INFO$HWND$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Msg"));
+    static final java.lang.invoke.VarHandle _RPC_ASYNC_NOTIFICATION_INFO$HWND$Msg$VH() { return _RPC_ASYNC_NOTIFICATION_INFO$HWND$Msg$VH_; }
 
     static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$hEvent$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$hEvent$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$hEvent$LAYOUT_; }
 
-    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$hEvent$VH_ = MemoryHandles.asAddressVarHandle(_RPC_ASYNC_NOTIFICATION_INFO$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hEvent")));
+    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$hEvent$VH_ = MemoryHandles.asAddressVarHandle(_RPC_ASYNC_NOTIFICATION_INFO$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hEvent")));
     static final java.lang.invoke.VarHandle _RPC_ASYNC_NOTIFICATION_INFO$hEvent$VH() { return _RPC_ASYNC_NOTIFICATION_INFO$hEvent$VH_; }
 
     static final MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$NotificationRoutine$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _RPC_ASYNC_NOTIFICATION_INFO$NotificationRoutine$LAYOUT() { return _RPC_ASYNC_NOTIFICATION_INFO$NotificationRoutine$LAYOUT_; }
 
-    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$NotificationRoutine$VH_ = MemoryHandles.asAddressVarHandle(_RPC_ASYNC_NOTIFICATION_INFO$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("NotificationRoutine")));
+    static final VarHandle _RPC_ASYNC_NOTIFICATION_INFO$NotificationRoutine$VH_ = MemoryHandles.asAddressVarHandle(_RPC_ASYNC_NOTIFICATION_INFO$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("NotificationRoutine")));
     static final java.lang.invoke.VarHandle _RPC_ASYNC_NOTIFICATION_INFO$NotificationRoutine$VH() { return _RPC_ASYNC_NOTIFICATION_INFO$NotificationRoutine$VH_; }
 
     static final MemoryLayout _RPC_ASYNC_STATE$struct$LAYOUT_ = MemoryLayout.ofStruct(
@@ -2550,35 +2550,49 @@ class cfapi_h$constants$47 extends cfapi_h$constants$46 {
     static final VarHandle tagRPC_EE_INFO_PARAM$ParameterType$VH_ = tagRPC_EE_INFO_PARAM$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ParameterType"));
     static final java.lang.invoke.VarHandle tagRPC_EE_INFO_PARAM$ParameterType$VH() { return tagRPC_EE_INFO_PARAM$ParameterType$VH_; }
 
-    static final MemoryLayout u$AnsiString$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout u$AnsiString$LAYOUT() { return u$AnsiString$LAYOUT_; }
+    static final MemoryLayout tagRPC_EE_INFO_PARAM$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("AnsiString"),
+        C_POINTER.withName("UnicodeString"),
+        C_LONG.withName("LVal"),
+        C_SHORT.withName("SVal"),
+        C_LONGLONG.withName("PVal"),
+        MemoryLayout.ofStruct(
+            C_POINTER.withName("Buffer"),
+            C_SHORT.withName("Size"),
+            MemoryLayout.ofPaddingBits(48)
+        ).withName("BVal")
+    );
+    static final jdk.incubator.foreign.MemoryLayout tagRPC_EE_INFO_PARAM$u$union$LAYOUT() { return tagRPC_EE_INFO_PARAM$u$union$LAYOUT_; }
 
-    static final VarHandle u$AnsiString$VH_ = MemoryHandles.asAddressVarHandle(u$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("AnsiString")));
-    static final java.lang.invoke.VarHandle u$AnsiString$VH() { return u$AnsiString$VH_; }
+    static final MemoryLayout tagRPC_EE_INFO_PARAM$u$AnsiString$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout tagRPC_EE_INFO_PARAM$u$AnsiString$LAYOUT() { return tagRPC_EE_INFO_PARAM$u$AnsiString$LAYOUT_; }
 
-    static final MemoryLayout u$UnicodeString$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout u$UnicodeString$LAYOUT() { return u$UnicodeString$LAYOUT_; }
+    static final VarHandle tagRPC_EE_INFO_PARAM$u$AnsiString$VH_ = MemoryHandles.asAddressVarHandle(tagRPC_EE_INFO_PARAM$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("AnsiString")));
+    static final java.lang.invoke.VarHandle tagRPC_EE_INFO_PARAM$u$AnsiString$VH() { return tagRPC_EE_INFO_PARAM$u$AnsiString$VH_; }
 
-    static final VarHandle u$UnicodeString$VH_ = MemoryHandles.asAddressVarHandle(u$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("UnicodeString")));
-    static final java.lang.invoke.VarHandle u$UnicodeString$VH() { return u$UnicodeString$VH_; }
+    static final MemoryLayout tagRPC_EE_INFO_PARAM$u$UnicodeString$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout tagRPC_EE_INFO_PARAM$u$UnicodeString$LAYOUT() { return tagRPC_EE_INFO_PARAM$u$UnicodeString$LAYOUT_; }
 
-    static final MemoryLayout u$LVal$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout u$LVal$LAYOUT() { return u$LVal$LAYOUT_; }
+    static final VarHandle tagRPC_EE_INFO_PARAM$u$UnicodeString$VH_ = MemoryHandles.asAddressVarHandle(tagRPC_EE_INFO_PARAM$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("UnicodeString")));
+    static final java.lang.invoke.VarHandle tagRPC_EE_INFO_PARAM$u$UnicodeString$VH() { return tagRPC_EE_INFO_PARAM$u$UnicodeString$VH_; }
 
-    static final VarHandle u$LVal$VH_ = u$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("LVal"));
-    static final java.lang.invoke.VarHandle u$LVal$VH() { return u$LVal$VH_; }
+    static final MemoryLayout tagRPC_EE_INFO_PARAM$u$LVal$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagRPC_EE_INFO_PARAM$u$LVal$LAYOUT() { return tagRPC_EE_INFO_PARAM$u$LVal$LAYOUT_; }
 
-    static final MemoryLayout u$SVal$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout u$SVal$LAYOUT() { return u$SVal$LAYOUT_; }
+    static final VarHandle tagRPC_EE_INFO_PARAM$u$LVal$VH_ = tagRPC_EE_INFO_PARAM$u$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("LVal"));
+    static final java.lang.invoke.VarHandle tagRPC_EE_INFO_PARAM$u$LVal$VH() { return tagRPC_EE_INFO_PARAM$u$LVal$VH_; }
 
-    static final VarHandle u$SVal$VH_ = u$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("SVal"));
-    static final java.lang.invoke.VarHandle u$SVal$VH() { return u$SVal$VH_; }
+    static final MemoryLayout tagRPC_EE_INFO_PARAM$u$SVal$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout tagRPC_EE_INFO_PARAM$u$SVal$LAYOUT() { return tagRPC_EE_INFO_PARAM$u$SVal$LAYOUT_; }
 
-    static final MemoryLayout u$PVal$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout u$PVal$LAYOUT() { return u$PVal$LAYOUT_; }
+    static final VarHandle tagRPC_EE_INFO_PARAM$u$SVal$VH_ = tagRPC_EE_INFO_PARAM$u$union$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("SVal"));
+    static final java.lang.invoke.VarHandle tagRPC_EE_INFO_PARAM$u$SVal$VH() { return tagRPC_EE_INFO_PARAM$u$SVal$VH_; }
 
-    static final VarHandle u$PVal$VH_ = u$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("PVal"));
-    static final java.lang.invoke.VarHandle u$PVal$VH() { return u$PVal$VH_; }
+    static final MemoryLayout tagRPC_EE_INFO_PARAM$u$PVal$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout tagRPC_EE_INFO_PARAM$u$PVal$LAYOUT() { return tagRPC_EE_INFO_PARAM$u$PVal$LAYOUT_; }
+
+    static final VarHandle tagRPC_EE_INFO_PARAM$u$PVal$VH_ = tagRPC_EE_INFO_PARAM$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("PVal"));
+    static final java.lang.invoke.VarHandle tagRPC_EE_INFO_PARAM$u$PVal$VH() { return tagRPC_EE_INFO_PARAM$u$PVal$VH_; }
 
     static final MemoryLayout tagRPC_EXTENDED_ERROR_INFO$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Version"),
@@ -2643,6 +2657,24 @@ class cfapi_h$constants$47 extends cfapi_h$constants$46 {
 
     static final VarHandle tagRPC_EXTENDED_ERROR_INFO$ProcessID$VH_ = tagRPC_EXTENDED_ERROR_INFO$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ProcessID"));
     static final java.lang.invoke.VarHandle tagRPC_EXTENDED_ERROR_INFO$ProcessID$VH() { return tagRPC_EXTENDED_ERROR_INFO$ProcessID$VH_; }
+
+    static final MemoryLayout tagRPC_EXTENDED_ERROR_INFO$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        MemoryLayout.ofStruct(
+            C_SHORT.withName("wYear"),
+            C_SHORT.withName("wMonth"),
+            C_SHORT.withName("wDayOfWeek"),
+            C_SHORT.withName("wDay"),
+            C_SHORT.withName("wHour"),
+            C_SHORT.withName("wMinute"),
+            C_SHORT.withName("wSecond"),
+            C_SHORT.withName("wMilliseconds")
+        ).withName("SystemTime"),
+        MemoryLayout.ofStruct(
+            C_LONG.withName("dwLowDateTime"),
+            C_LONG.withName("dwHighDateTime")
+        ).withName("FileTime")
+    );
+    static final jdk.incubator.foreign.MemoryLayout tagRPC_EXTENDED_ERROR_INFO$u$union$LAYOUT() { return tagRPC_EXTENDED_ERROR_INFO$u$union$LAYOUT_; }
 
     static final MemoryLayout tagRPC_EXTENDED_ERROR_INFO$GeneratingComponent$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout tagRPC_EXTENDED_ERROR_INFO$GeneratingComponent$LAYOUT() { return tagRPC_EXTENDED_ERROR_INFO$GeneratingComponent$LAYOUT_; }

@@ -446,44 +446,44 @@ class cfapi_h$constants$15 extends cfapi_h$constants$14 {
     static final VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$ValueCount$VH_ = _CLAIM_SECURITY_ATTRIBUTE_V1$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ValueCount"));
     static final java.lang.invoke.VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$ValueCount$VH() { return _CLAIM_SECURITY_ATTRIBUTE_V1$ValueCount$VH_; }
 
-    static final MemoryLayout Values$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_POINTER.withName("pInt64"),
         C_POINTER.withName("pUint64"),
         C_POINTER.withName("ppString"),
         C_POINTER.withName("pFqbn"),
         C_POINTER.withName("pOctetString")
     );
-    static final jdk.incubator.foreign.MemoryLayout Values$struct$LAYOUT() { return Values$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$union$LAYOUT() { return _CLAIM_SECURITY_ATTRIBUTE_V1$Values$union$LAYOUT_; }
 
-    static final MemoryLayout Values$pInt64$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Values$pInt64$LAYOUT() { return Values$pInt64$LAYOUT_; }
+    static final MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pInt64$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pInt64$LAYOUT() { return _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pInt64$LAYOUT_; }
 
-    static final VarHandle Values$pInt64$VH_ = MemoryHandles.asAddressVarHandle(Values$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pInt64")));
-    static final java.lang.invoke.VarHandle Values$pInt64$VH() { return Values$pInt64$VH_; }
+    static final VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pInt64$VH_ = MemoryHandles.asAddressVarHandle(_CLAIM_SECURITY_ATTRIBUTE_V1$Values$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pInt64")));
+    static final java.lang.invoke.VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pInt64$VH() { return _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pInt64$VH_; }
 
-    static final MemoryLayout Values$pUint64$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Values$pUint64$LAYOUT() { return Values$pUint64$LAYOUT_; }
+    static final MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pUint64$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pUint64$LAYOUT() { return _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pUint64$LAYOUT_; }
 
-    static final VarHandle Values$pUint64$VH_ = MemoryHandles.asAddressVarHandle(Values$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pUint64")));
-    static final java.lang.invoke.VarHandle Values$pUint64$VH() { return Values$pUint64$VH_; }
+    static final VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pUint64$VH_ = MemoryHandles.asAddressVarHandle(_CLAIM_SECURITY_ATTRIBUTE_V1$Values$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pUint64")));
+    static final java.lang.invoke.VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pUint64$VH() { return _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pUint64$VH_; }
 
-    static final MemoryLayout Values$ppString$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Values$ppString$LAYOUT() { return Values$ppString$LAYOUT_; }
+    static final MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$ppString$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$ppString$LAYOUT() { return _CLAIM_SECURITY_ATTRIBUTE_V1$Values$ppString$LAYOUT_; }
 
-    static final VarHandle Values$ppString$VH_ = MemoryHandles.asAddressVarHandle(Values$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("ppString")));
-    static final java.lang.invoke.VarHandle Values$ppString$VH() { return Values$ppString$VH_; }
+    static final VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$Values$ppString$VH_ = MemoryHandles.asAddressVarHandle(_CLAIM_SECURITY_ATTRIBUTE_V1$Values$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("ppString")));
+    static final java.lang.invoke.VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$Values$ppString$VH() { return _CLAIM_SECURITY_ATTRIBUTE_V1$Values$ppString$VH_; }
 
-    static final MemoryLayout Values$pFqbn$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Values$pFqbn$LAYOUT() { return Values$pFqbn$LAYOUT_; }
+    static final MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pFqbn$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pFqbn$LAYOUT() { return _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pFqbn$LAYOUT_; }
 
-    static final VarHandle Values$pFqbn$VH_ = MemoryHandles.asAddressVarHandle(Values$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pFqbn")));
-    static final java.lang.invoke.VarHandle Values$pFqbn$VH() { return Values$pFqbn$VH_; }
+    static final VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pFqbn$VH_ = MemoryHandles.asAddressVarHandle(_CLAIM_SECURITY_ATTRIBUTE_V1$Values$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pFqbn")));
+    static final java.lang.invoke.VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pFqbn$VH() { return _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pFqbn$VH_; }
 
-    static final MemoryLayout Values$pOctetString$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Values$pOctetString$LAYOUT() { return Values$pOctetString$LAYOUT_; }
+    static final MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pOctetString$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pOctetString$LAYOUT() { return _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pOctetString$LAYOUT_; }
 
-    static final VarHandle Values$pOctetString$VH_ = MemoryHandles.asAddressVarHandle(Values$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pOctetString")));
-    static final java.lang.invoke.VarHandle Values$pOctetString$VH() { return Values$pOctetString$VH_; }
+    static final VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pOctetString$VH_ = MemoryHandles.asAddressVarHandle(_CLAIM_SECURITY_ATTRIBUTE_V1$Values$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pOctetString")));
+    static final java.lang.invoke.VarHandle _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pOctetString$VH() { return _CLAIM_SECURITY_ATTRIBUTE_V1$Values$pOctetString$VH_; }
 
     static final MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Name"),
@@ -531,6 +531,15 @@ class cfapi_h$constants$15 extends cfapi_h$constants$14 {
     static final VarHandle _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1$ValueCount$VH_ = _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ValueCount"));
     static final java.lang.invoke.VarHandle _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1$ValueCount$VH() { return _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1$ValueCount$VH_; }
 
+    static final MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1$Values$union$LAYOUT_ = MemoryLayout.ofUnion(
+        MemoryLayout.ofSequence(1, C_LONG).withName("pInt64"),
+        MemoryLayout.ofSequence(1, C_LONG).withName("pUint64"),
+        MemoryLayout.ofSequence(1, C_LONG).withName("ppString"),
+        MemoryLayout.ofSequence(1, C_LONG).withName("pFqbn"),
+        MemoryLayout.ofSequence(1, C_LONG).withName("pOctetString")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1$Values$union$LAYOUT() { return _CLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1$Values$union$LAYOUT_; }
+
     static final MemoryLayout _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("Version"),
         C_SHORT.withName("Reserved"),
@@ -559,16 +568,16 @@ class cfapi_h$constants$15 extends cfapi_h$constants$14 {
     static final VarHandle _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$AttributeCount$VH_ = _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AttributeCount"));
     static final java.lang.invoke.VarHandle _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$AttributeCount$VH() { return _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$AttributeCount$VH_; }
 
-    static final MemoryLayout Attribute$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$Attribute$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_POINTER.withName("pAttributeV1")
     );
-    static final jdk.incubator.foreign.MemoryLayout Attribute$struct$LAYOUT() { return Attribute$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$Attribute$union$LAYOUT() { return _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$Attribute$union$LAYOUT_; }
 
-    static final MemoryLayout Attribute$pAttributeV1$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Attribute$pAttributeV1$LAYOUT() { return Attribute$pAttributeV1$LAYOUT_; }
+    static final MemoryLayout _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$Attribute$pAttributeV1$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$Attribute$pAttributeV1$LAYOUT() { return _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$Attribute$pAttributeV1$LAYOUT_; }
 
-    static final VarHandle Attribute$pAttributeV1$VH_ = MemoryHandles.asAddressVarHandle(Attribute$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pAttributeV1")));
-    static final java.lang.invoke.VarHandle Attribute$pAttributeV1$VH() { return Attribute$pAttributeV1$VH_; }
+    static final VarHandle _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$Attribute$pAttributeV1$VH_ = MemoryHandles.asAddressVarHandle(_CLAIM_SECURITY_ATTRIBUTES_INFORMATION$Attribute$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pAttributeV1")));
+    static final java.lang.invoke.VarHandle _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$Attribute$pAttributeV1$VH() { return _CLAIM_SECURITY_ATTRIBUTES_INFORMATION$Attribute$pAttributeV1$VH_; }
 
     static final MemoryLayout _SECURITY_QUALITY_OF_SERVICE$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Length"),
@@ -1040,16 +1049,16 @@ class cfapi_h$constants$15 extends cfapi_h$constants$14 {
     static final VarHandle _QUOTA_LIMITS$PagefileLimit$VH_ = _QUOTA_LIMITS$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("PagefileLimit"));
     static final java.lang.invoke.VarHandle _QUOTA_LIMITS$PagefileLimit$VH() { return _QUOTA_LIMITS$PagefileLimit$VH_; }
 
-    static final MemoryLayout _RATE_QUOTA_LIMIT$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _RATE_QUOTA_LIMIT$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("RateData"),
         C_INT
     ).withName("_RATE_QUOTA_LIMIT");
-    static final jdk.incubator.foreign.MemoryLayout _RATE_QUOTA_LIMIT$struct$LAYOUT() { return _RATE_QUOTA_LIMIT$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _RATE_QUOTA_LIMIT$union$LAYOUT() { return _RATE_QUOTA_LIMIT$union$LAYOUT_; }
 
     static final MemoryLayout _RATE_QUOTA_LIMIT$RateData$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _RATE_QUOTA_LIMIT$RateData$LAYOUT() { return _RATE_QUOTA_LIMIT$RateData$LAYOUT_; }
 
-    static final VarHandle _RATE_QUOTA_LIMIT$RateData$VH_ = _RATE_QUOTA_LIMIT$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("RateData"));
+    static final VarHandle _RATE_QUOTA_LIMIT$RateData$VH_ = _RATE_QUOTA_LIMIT$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("RateData"));
     static final java.lang.invoke.VarHandle _RATE_QUOTA_LIMIT$RateData$VH() { return _RATE_QUOTA_LIMIT$RateData$VH_; }
 
     static final MemoryLayout _QUOTA_LIMITS_EX$struct$LAYOUT_ = MemoryLayout.ofStruct(

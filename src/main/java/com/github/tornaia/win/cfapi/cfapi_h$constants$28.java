@@ -2611,12 +2611,12 @@ class cfapi_h$constants$28 extends cfapi_h$constants$27 {
     static final VarHandle _FILE_REMOTE_PROTOCOL_INFO$Flags$VH_ = _FILE_REMOTE_PROTOCOL_INFO$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
     static final java.lang.invoke.VarHandle _FILE_REMOTE_PROTOCOL_INFO$Flags$VH() { return _FILE_REMOTE_PROTOCOL_INFO$Flags$VH_; }
 
-    static final MemoryLayout GenericReserved$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$GenericReserved$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofSequence(8, C_LONG).withName("Reserved")
     );
-    static final jdk.incubator.foreign.MemoryLayout GenericReserved$struct$LAYOUT() { return GenericReserved$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$GenericReserved$struct$LAYOUT() { return _FILE_REMOTE_PROTOCOL_INFO$GenericReserved$struct$LAYOUT_; }
 
-    static final MemoryLayout ProtocolSpecific$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             MemoryLayout.ofStruct(
                 C_LONG.withName("Capabilities")
@@ -2628,9 +2628,9 @@ class cfapi_h$constants$28 extends cfapi_h$constants$27 {
         ).withName("Smb2"),
         MemoryLayout.ofSequence(16, C_LONG).withName("Reserved")
     );
-    static final jdk.incubator.foreign.MemoryLayout ProtocolSpecific$struct$LAYOUT() { return ProtocolSpecific$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$union$LAYOUT() { return _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$union$LAYOUT_; }
 
-    static final MemoryLayout Smb2$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofStruct(
             C_LONG.withName("Capabilities")
         ).withName("Server"),
@@ -2639,36 +2639,36 @@ class cfapi_h$constants$28 extends cfapi_h$constants$27 {
             C_LONG.withName("CachingFlags")
         ).withName("Share")
     );
-    static final jdk.incubator.foreign.MemoryLayout Smb2$struct$LAYOUT() { return Smb2$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$struct$LAYOUT() { return _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$struct$LAYOUT_; }
 
-    static final MemoryLayout Server$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Server$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Capabilities")
     );
-    static final jdk.incubator.foreign.MemoryLayout Server$struct$LAYOUT() { return Server$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Server$struct$LAYOUT() { return _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Server$struct$LAYOUT_; }
 
-    static final MemoryLayout Server$Capabilities$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Server$Capabilities$LAYOUT() { return Server$Capabilities$LAYOUT_; }
+    static final MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Server$Capabilities$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Server$Capabilities$LAYOUT() { return _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Server$Capabilities$LAYOUT_; }
 
-    static final VarHandle Server$Capabilities$VH_ = Server$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Capabilities"));
-    static final java.lang.invoke.VarHandle Server$Capabilities$VH() { return Server$Capabilities$VH_; }
+    static final VarHandle _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Server$Capabilities$VH_ = _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Server$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Capabilities"));
+    static final java.lang.invoke.VarHandle _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Server$Capabilities$VH() { return _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Server$Capabilities$VH_; }
 
-    static final MemoryLayout Share$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Capabilities"),
         C_LONG.withName("CachingFlags")
     );
-    static final jdk.incubator.foreign.MemoryLayout Share$struct$LAYOUT() { return Share$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$struct$LAYOUT() { return _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$struct$LAYOUT_; }
 
-    static final MemoryLayout Share$Capabilities$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Share$Capabilities$LAYOUT() { return Share$Capabilities$LAYOUT_; }
+    static final MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$Capabilities$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$Capabilities$LAYOUT() { return _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$Capabilities$LAYOUT_; }
 
-    static final VarHandle Share$Capabilities$VH_ = Share$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Capabilities"));
-    static final java.lang.invoke.VarHandle Share$Capabilities$VH() { return Share$Capabilities$VH_; }
+    static final VarHandle _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$Capabilities$VH_ = _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Capabilities"));
+    static final java.lang.invoke.VarHandle _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$Capabilities$VH() { return _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$Capabilities$VH_; }
 
-    static final MemoryLayout Share$CachingFlags$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Share$CachingFlags$LAYOUT() { return Share$CachingFlags$LAYOUT_; }
+    static final MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$CachingFlags$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$CachingFlags$LAYOUT() { return _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$CachingFlags$LAYOUT_; }
 
-    static final VarHandle Share$CachingFlags$VH_ = Share$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CachingFlags"));
-    static final java.lang.invoke.VarHandle Share$CachingFlags$VH() { return Share$CachingFlags$VH_; }
+    static final VarHandle _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$CachingFlags$VH_ = _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CachingFlags"));
+    static final java.lang.invoke.VarHandle _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$CachingFlags$VH() { return _FILE_REMOTE_PROTOCOL_INFO$ProtocolSpecific$Smb2$Share$CachingFlags$VH_; }
 
     static final FunctionDescriptor GetFileInformationByHandleEx$FUNC_ = FunctionDescriptor.of(C_INT,
         C_POINTER,

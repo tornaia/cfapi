@@ -1361,16 +1361,24 @@ class cfapi_h$constants$23 extends cfapi_h$constants$22 {
     static final VarHandle _TP_CALLBACK_ENVIRON_V3$FinalizationCallback$VH_ = MemoryHandles.asAddressVarHandle(_TP_CALLBACK_ENVIRON_V3$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("FinalizationCallback")));
     static final java.lang.invoke.VarHandle _TP_CALLBACK_ENVIRON_V3$FinalizationCallback$VH() { return _TP_CALLBACK_ENVIRON_V3$FinalizationCallback$VH_; }
 
-    static final MemoryLayout u$Flags$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout u$Flags$LAYOUT() { return u$Flags$LAYOUT_; }
+    static final MemoryLayout _TP_CALLBACK_ENVIRON_V3$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_LONG.withName("Flags"),
+        MemoryLayout.ofStruct(
+            C_INT
+        ).withName("s")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _TP_CALLBACK_ENVIRON_V3$u$union$LAYOUT() { return _TP_CALLBACK_ENVIRON_V3$u$union$LAYOUT_; }
 
-    static final VarHandle u$Flags$VH_ = u$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle u$Flags$VH() { return u$Flags$VH_; }
+    static final MemoryLayout _TP_CALLBACK_ENVIRON_V3$u$Flags$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _TP_CALLBACK_ENVIRON_V3$u$Flags$LAYOUT() { return _TP_CALLBACK_ENVIRON_V3$u$Flags$LAYOUT_; }
 
-    static final MemoryLayout s$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final VarHandle _TP_CALLBACK_ENVIRON_V3$u$Flags$VH_ = _TP_CALLBACK_ENVIRON_V3$u$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle _TP_CALLBACK_ENVIRON_V3$u$Flags$VH() { return _TP_CALLBACK_ENVIRON_V3$u$Flags$VH_; }
+
+    static final MemoryLayout _TP_CALLBACK_ENVIRON_V3$u$s$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT
     );
-    static final jdk.incubator.foreign.MemoryLayout s$struct$LAYOUT() { return s$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _TP_CALLBACK_ENVIRON_V3$u$s$struct$LAYOUT() { return _TP_CALLBACK_ENVIRON_V3$u$s$struct$LAYOUT_; }
 
     static final MemoryLayout _TP_CALLBACK_ENVIRON_V3$CallbackPriority$LAYOUT_ = C_INT;
     static final jdk.incubator.foreign.MemoryLayout _TP_CALLBACK_ENVIRON_V3$CallbackPriority$LAYOUT() { return _TP_CALLBACK_ENVIRON_V3$CallbackPriority$LAYOUT_; }

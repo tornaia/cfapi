@@ -154,23 +154,23 @@ class cfapi_h$constants$40 extends cfapi_h$constants$39 {
     static final VarHandle _KEY_EVENT_RECORD$wVirtualScanCode$VH_ = _KEY_EVENT_RECORD$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("wVirtualScanCode"));
     static final java.lang.invoke.VarHandle _KEY_EVENT_RECORD$wVirtualScanCode$VH() { return _KEY_EVENT_RECORD$wVirtualScanCode$VH_; }
 
-    static final MemoryLayout uChar$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _KEY_EVENT_RECORD$uChar$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_SHORT.withName("UnicodeChar"),
         C_CHAR.withName("AsciiChar")
     );
-    static final jdk.incubator.foreign.MemoryLayout uChar$struct$LAYOUT() { return uChar$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _KEY_EVENT_RECORD$uChar$union$LAYOUT() { return _KEY_EVENT_RECORD$uChar$union$LAYOUT_; }
 
-    static final MemoryLayout uChar$UnicodeChar$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout uChar$UnicodeChar$LAYOUT() { return uChar$UnicodeChar$LAYOUT_; }
+    static final MemoryLayout _KEY_EVENT_RECORD$uChar$UnicodeChar$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _KEY_EVENT_RECORD$uChar$UnicodeChar$LAYOUT() { return _KEY_EVENT_RECORD$uChar$UnicodeChar$LAYOUT_; }
 
-    static final VarHandle uChar$UnicodeChar$VH_ = uChar$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("UnicodeChar"));
-    static final java.lang.invoke.VarHandle uChar$UnicodeChar$VH() { return uChar$UnicodeChar$VH_; }
+    static final VarHandle _KEY_EVENT_RECORD$uChar$UnicodeChar$VH_ = _KEY_EVENT_RECORD$uChar$union$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("UnicodeChar"));
+    static final java.lang.invoke.VarHandle _KEY_EVENT_RECORD$uChar$UnicodeChar$VH() { return _KEY_EVENT_RECORD$uChar$UnicodeChar$VH_; }
 
-    static final MemoryLayout uChar$AsciiChar$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout uChar$AsciiChar$LAYOUT() { return uChar$AsciiChar$LAYOUT_; }
+    static final MemoryLayout _KEY_EVENT_RECORD$uChar$AsciiChar$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _KEY_EVENT_RECORD$uChar$AsciiChar$LAYOUT() { return _KEY_EVENT_RECORD$uChar$AsciiChar$LAYOUT_; }
 
-    static final VarHandle uChar$AsciiChar$VH_ = uChar$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("AsciiChar"));
-    static final java.lang.invoke.VarHandle uChar$AsciiChar$VH() { return uChar$AsciiChar$VH_; }
+    static final VarHandle _KEY_EVENT_RECORD$uChar$AsciiChar$VH_ = _KEY_EVENT_RECORD$uChar$union$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("AsciiChar"));
+    static final java.lang.invoke.VarHandle _KEY_EVENT_RECORD$uChar$AsciiChar$VH() { return _KEY_EVENT_RECORD$uChar$AsciiChar$VH_; }
 
     static final MemoryLayout _KEY_EVENT_RECORD$dwControlKeyState$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _KEY_EVENT_RECORD$dwControlKeyState$LAYOUT() { return _KEY_EVENT_RECORD$dwControlKeyState$LAYOUT_; }
@@ -283,7 +283,7 @@ class cfapi_h$constants$40 extends cfapi_h$constants$39 {
     static final VarHandle _INPUT_RECORD$EventType$VH_ = _INPUT_RECORD$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("EventType"));
     static final java.lang.invoke.VarHandle _INPUT_RECORD$EventType$VH() { return _INPUT_RECORD$EventType$VH_; }
 
-    static final MemoryLayout Event$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _INPUT_RECORD$Event$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_INT.withName("bKeyDown"),
             C_SHORT.withName("wRepeatCount"),
@@ -317,7 +317,7 @@ class cfapi_h$constants$40 extends cfapi_h$constants$39 {
             C_INT.withName("bSetFocus")
         ).withName("FocusEvent")
     );
-    static final jdk.incubator.foreign.MemoryLayout Event$struct$LAYOUT() { return Event$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _INPUT_RECORD$Event$union$LAYOUT() { return _INPUT_RECORD$Event$union$LAYOUT_; }
 
     static final MemoryLayout _CHAR_INFO$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofUnion(
@@ -328,23 +328,23 @@ class cfapi_h$constants$40 extends cfapi_h$constants$39 {
     ).withName("_CHAR_INFO");
     static final jdk.incubator.foreign.MemoryLayout _CHAR_INFO$struct$LAYOUT() { return _CHAR_INFO$struct$LAYOUT_; }
 
-    static final MemoryLayout Char$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _CHAR_INFO$Char$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_SHORT.withName("UnicodeChar"),
         C_CHAR.withName("AsciiChar")
     );
-    static final jdk.incubator.foreign.MemoryLayout Char$struct$LAYOUT() { return Char$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _CHAR_INFO$Char$union$LAYOUT() { return _CHAR_INFO$Char$union$LAYOUT_; }
 
-    static final MemoryLayout Char$UnicodeChar$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Char$UnicodeChar$LAYOUT() { return Char$UnicodeChar$LAYOUT_; }
+    static final MemoryLayout _CHAR_INFO$Char$UnicodeChar$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _CHAR_INFO$Char$UnicodeChar$LAYOUT() { return _CHAR_INFO$Char$UnicodeChar$LAYOUT_; }
 
-    static final VarHandle Char$UnicodeChar$VH_ = Char$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("UnicodeChar"));
-    static final java.lang.invoke.VarHandle Char$UnicodeChar$VH() { return Char$UnicodeChar$VH_; }
+    static final VarHandle _CHAR_INFO$Char$UnicodeChar$VH_ = _CHAR_INFO$Char$union$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("UnicodeChar"));
+    static final java.lang.invoke.VarHandle _CHAR_INFO$Char$UnicodeChar$VH() { return _CHAR_INFO$Char$UnicodeChar$VH_; }
 
-    static final MemoryLayout Char$AsciiChar$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout Char$AsciiChar$LAYOUT() { return Char$AsciiChar$LAYOUT_; }
+    static final MemoryLayout _CHAR_INFO$Char$AsciiChar$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _CHAR_INFO$Char$AsciiChar$LAYOUT() { return _CHAR_INFO$Char$AsciiChar$LAYOUT_; }
 
-    static final VarHandle Char$AsciiChar$VH_ = Char$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("AsciiChar"));
-    static final java.lang.invoke.VarHandle Char$AsciiChar$VH() { return Char$AsciiChar$VH_; }
+    static final VarHandle _CHAR_INFO$Char$AsciiChar$VH_ = _CHAR_INFO$Char$union$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("AsciiChar"));
+    static final java.lang.invoke.VarHandle _CHAR_INFO$Char$AsciiChar$VH() { return _CHAR_INFO$Char$AsciiChar$VH_; }
 
     static final MemoryLayout _CHAR_INFO$Attributes$LAYOUT_ = C_SHORT;
     static final jdk.incubator.foreign.MemoryLayout _CHAR_INFO$Attributes$LAYOUT() { return _CHAR_INFO$Attributes$LAYOUT_; }

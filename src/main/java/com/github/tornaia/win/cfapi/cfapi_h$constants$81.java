@@ -1607,29 +1607,29 @@ class cfapi_h$constants$81 extends cfapi_h$constants$80 {
 
     static final int DESCKIND_MAX() { return (int)5L; }
 
-    static final MemoryLayout tagBINDPTR$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout tagBINDPTR$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_POINTER.withName("lpfuncdesc"),
         C_POINTER.withName("lpvardesc"),
         C_POINTER.withName("lptcomp")
     ).withName("tagBINDPTR");
-    static final jdk.incubator.foreign.MemoryLayout tagBINDPTR$struct$LAYOUT() { return tagBINDPTR$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout tagBINDPTR$union$LAYOUT() { return tagBINDPTR$union$LAYOUT_; }
 
     static final MemoryLayout tagBINDPTR$lpfuncdesc$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout tagBINDPTR$lpfuncdesc$LAYOUT() { return tagBINDPTR$lpfuncdesc$LAYOUT_; }
 
-    static final VarHandle tagBINDPTR$lpfuncdesc$VH_ = MemoryHandles.asAddressVarHandle(tagBINDPTR$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpfuncdesc")));
+    static final VarHandle tagBINDPTR$lpfuncdesc$VH_ = MemoryHandles.asAddressVarHandle(tagBINDPTR$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpfuncdesc")));
     static final java.lang.invoke.VarHandle tagBINDPTR$lpfuncdesc$VH() { return tagBINDPTR$lpfuncdesc$VH_; }
 
     static final MemoryLayout tagBINDPTR$lpvardesc$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout tagBINDPTR$lpvardesc$LAYOUT() { return tagBINDPTR$lpvardesc$LAYOUT_; }
 
-    static final VarHandle tagBINDPTR$lpvardesc$VH_ = MemoryHandles.asAddressVarHandle(tagBINDPTR$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpvardesc")));
+    static final VarHandle tagBINDPTR$lpvardesc$VH_ = MemoryHandles.asAddressVarHandle(tagBINDPTR$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpvardesc")));
     static final java.lang.invoke.VarHandle tagBINDPTR$lpvardesc$VH() { return tagBINDPTR$lpvardesc$VH_; }
 
     static final MemoryLayout tagBINDPTR$lptcomp$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout tagBINDPTR$lptcomp$LAYOUT() { return tagBINDPTR$lptcomp$LAYOUT_; }
 
-    static final VarHandle tagBINDPTR$lptcomp$VH_ = MemoryHandles.asAddressVarHandle(tagBINDPTR$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lptcomp")));
+    static final VarHandle tagBINDPTR$lptcomp$VH_ = MemoryHandles.asAddressVarHandle(tagBINDPTR$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lptcomp")));
     static final java.lang.invoke.VarHandle tagBINDPTR$lptcomp$VH() { return tagBINDPTR$lptcomp$VH_; }
 
     static final MemoryLayout IID_ITypeComp$LAYOUT_ = MemoryLayout.ofStruct(

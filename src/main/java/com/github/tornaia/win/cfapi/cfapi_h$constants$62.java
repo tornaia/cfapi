@@ -1367,10 +1367,10 @@ class cfapi_h$constants$62 extends cfapi_h$constants$61 {
     static final VarHandle _SCM_PD_REINITIALIZE_MEDIA_INPUT$Size$VH_ = _SCM_PD_REINITIALIZE_MEDIA_INPUT$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Size"));
     static final java.lang.invoke.VarHandle _SCM_PD_REINITIALIZE_MEDIA_INPUT$Size$VH() { return _SCM_PD_REINITIALIZE_MEDIA_INPUT$Size$VH_; }
 
-    static final MemoryLayout Options$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _SCM_PD_REINITIALIZE_MEDIA_INPUT$Options$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT
     );
-    static final jdk.incubator.foreign.MemoryLayout Options$struct$LAYOUT() { return Options$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _SCM_PD_REINITIALIZE_MEDIA_INPUT$Options$struct$LAYOUT() { return _SCM_PD_REINITIALIZE_MEDIA_INPUT$Options$struct$LAYOUT_; }
 
     static final int ScmPhysicalDeviceReinit_Success() { return (int)0L; }
 

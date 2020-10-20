@@ -1130,7 +1130,7 @@ class cfapi_h$constants$49 extends cfapi_h$constants$48 {
     ).withName("in_addr");
     static final jdk.incubator.foreign.MemoryLayout in_addr$struct$LAYOUT() { return in_addr$struct$LAYOUT_; }
 
-    static final MemoryLayout S_un$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout in_addr$S_un$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_CHAR.withName("s_b1"),
             C_CHAR.withName("s_b2"),
@@ -1143,63 +1143,63 @@ class cfapi_h$constants$49 extends cfapi_h$constants$48 {
         ).withName("S_un_w"),
         C_LONG.withName("S_addr")
     );
-    static final jdk.incubator.foreign.MemoryLayout S_un$struct$LAYOUT() { return S_un$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout in_addr$S_un$union$LAYOUT() { return in_addr$S_un$union$LAYOUT_; }
 
-    static final MemoryLayout S_un_b$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout in_addr$S_un$S_un_b$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_CHAR.withName("s_b1"),
         C_CHAR.withName("s_b2"),
         C_CHAR.withName("s_b3"),
         C_CHAR.withName("s_b4")
     );
-    static final jdk.incubator.foreign.MemoryLayout S_un_b$struct$LAYOUT() { return S_un_b$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout in_addr$S_un$S_un_b$struct$LAYOUT() { return in_addr$S_un$S_un_b$struct$LAYOUT_; }
 
-    static final MemoryLayout S_un_b$s_b1$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout S_un_b$s_b1$LAYOUT() { return S_un_b$s_b1$LAYOUT_; }
+    static final MemoryLayout in_addr$S_un$S_un_b$s_b1$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout in_addr$S_un$S_un_b$s_b1$LAYOUT() { return in_addr$S_un$S_un_b$s_b1$LAYOUT_; }
 
-    static final VarHandle S_un_b$s_b1$VH_ = S_un_b$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("s_b1"));
-    static final java.lang.invoke.VarHandle S_un_b$s_b1$VH() { return S_un_b$s_b1$VH_; }
+    static final VarHandle in_addr$S_un$S_un_b$s_b1$VH_ = in_addr$S_un$S_un_b$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("s_b1"));
+    static final java.lang.invoke.VarHandle in_addr$S_un$S_un_b$s_b1$VH() { return in_addr$S_un$S_un_b$s_b1$VH_; }
 
-    static final MemoryLayout S_un_b$s_b2$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout S_un_b$s_b2$LAYOUT() { return S_un_b$s_b2$LAYOUT_; }
+    static final MemoryLayout in_addr$S_un$S_un_b$s_b2$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout in_addr$S_un$S_un_b$s_b2$LAYOUT() { return in_addr$S_un$S_un_b$s_b2$LAYOUT_; }
 
-    static final VarHandle S_un_b$s_b2$VH_ = S_un_b$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("s_b2"));
-    static final java.lang.invoke.VarHandle S_un_b$s_b2$VH() { return S_un_b$s_b2$VH_; }
+    static final VarHandle in_addr$S_un$S_un_b$s_b2$VH_ = in_addr$S_un$S_un_b$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("s_b2"));
+    static final java.lang.invoke.VarHandle in_addr$S_un$S_un_b$s_b2$VH() { return in_addr$S_un$S_un_b$s_b2$VH_; }
 
-    static final MemoryLayout S_un_b$s_b3$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout S_un_b$s_b3$LAYOUT() { return S_un_b$s_b3$LAYOUT_; }
+    static final MemoryLayout in_addr$S_un$S_un_b$s_b3$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout in_addr$S_un$S_un_b$s_b3$LAYOUT() { return in_addr$S_un$S_un_b$s_b3$LAYOUT_; }
 
-    static final VarHandle S_un_b$s_b3$VH_ = S_un_b$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("s_b3"));
-    static final java.lang.invoke.VarHandle S_un_b$s_b3$VH() { return S_un_b$s_b3$VH_; }
+    static final VarHandle in_addr$S_un$S_un_b$s_b3$VH_ = in_addr$S_un$S_un_b$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("s_b3"));
+    static final java.lang.invoke.VarHandle in_addr$S_un$S_un_b$s_b3$VH() { return in_addr$S_un$S_un_b$s_b3$VH_; }
 
-    static final MemoryLayout S_un_b$s_b4$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout S_un_b$s_b4$LAYOUT() { return S_un_b$s_b4$LAYOUT_; }
+    static final MemoryLayout in_addr$S_un$S_un_b$s_b4$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout in_addr$S_un$S_un_b$s_b4$LAYOUT() { return in_addr$S_un$S_un_b$s_b4$LAYOUT_; }
 
-    static final VarHandle S_un_b$s_b4$VH_ = S_un_b$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("s_b4"));
-    static final java.lang.invoke.VarHandle S_un_b$s_b4$VH() { return S_un_b$s_b4$VH_; }
+    static final VarHandle in_addr$S_un$S_un_b$s_b4$VH_ = in_addr$S_un$S_un_b$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("s_b4"));
+    static final java.lang.invoke.VarHandle in_addr$S_un$S_un_b$s_b4$VH() { return in_addr$S_un$S_un_b$s_b4$VH_; }
 
-    static final MemoryLayout S_un_w$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout in_addr$S_un$S_un_w$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("s_w1"),
         C_SHORT.withName("s_w2")
     );
-    static final jdk.incubator.foreign.MemoryLayout S_un_w$struct$LAYOUT() { return S_un_w$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout in_addr$S_un$S_un_w$struct$LAYOUT() { return in_addr$S_un$S_un_w$struct$LAYOUT_; }
 
-    static final MemoryLayout S_un_w$s_w1$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout S_un_w$s_w1$LAYOUT() { return S_un_w$s_w1$LAYOUT_; }
+    static final MemoryLayout in_addr$S_un$S_un_w$s_w1$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout in_addr$S_un$S_un_w$s_w1$LAYOUT() { return in_addr$S_un$S_un_w$s_w1$LAYOUT_; }
 
-    static final VarHandle S_un_w$s_w1$VH_ = S_un_w$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("s_w1"));
-    static final java.lang.invoke.VarHandle S_un_w$s_w1$VH() { return S_un_w$s_w1$VH_; }
+    static final VarHandle in_addr$S_un$S_un_w$s_w1$VH_ = in_addr$S_un$S_un_w$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("s_w1"));
+    static final java.lang.invoke.VarHandle in_addr$S_un$S_un_w$s_w1$VH() { return in_addr$S_un$S_un_w$s_w1$VH_; }
 
-    static final MemoryLayout S_un_w$s_w2$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout S_un_w$s_w2$LAYOUT() { return S_un_w$s_w2$LAYOUT_; }
+    static final MemoryLayout in_addr$S_un$S_un_w$s_w2$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout in_addr$S_un$S_un_w$s_w2$LAYOUT() { return in_addr$S_un$S_un_w$s_w2$LAYOUT_; }
 
-    static final VarHandle S_un_w$s_w2$VH_ = S_un_w$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("s_w2"));
-    static final java.lang.invoke.VarHandle S_un_w$s_w2$VH() { return S_un_w$s_w2$VH_; }
+    static final VarHandle in_addr$S_un$S_un_w$s_w2$VH_ = in_addr$S_un$S_un_w$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("s_w2"));
+    static final java.lang.invoke.VarHandle in_addr$S_un$S_un_w$s_w2$VH() { return in_addr$S_un$S_un_w$s_w2$VH_; }
 
-    static final MemoryLayout S_un$S_addr$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout S_un$S_addr$LAYOUT() { return S_un$S_addr$LAYOUT_; }
+    static final MemoryLayout in_addr$S_un$S_addr$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout in_addr$S_un$S_addr$LAYOUT() { return in_addr$S_un$S_addr$LAYOUT_; }
 
-    static final VarHandle S_un$S_addr$VH_ = S_un$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("S_addr"));
-    static final java.lang.invoke.VarHandle S_un$S_addr$VH() { return S_un$S_addr$VH_; }
+    static final VarHandle in_addr$S_un$S_addr$VH_ = in_addr$S_un$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("S_addr"));
+    static final java.lang.invoke.VarHandle in_addr$S_un$S_addr$VH() { return in_addr$S_un$S_addr$VH_; }
 
     static final MemoryLayout sockaddr_in$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("sin_family"),

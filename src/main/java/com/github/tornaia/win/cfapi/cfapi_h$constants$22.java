@@ -500,7 +500,7 @@ class cfapi_h$constants$22 extends cfapi_h$constants$21 {
     static final VarHandle _SLIST_ENTRY$Next$VH_ = MemoryHandles.asAddressVarHandle(_SLIST_ENTRY$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Next")));
     static final java.lang.invoke.VarHandle _SLIST_ENTRY$Next$VH() { return _SLIST_ENTRY$Next$VH_; }
 
-    static final MemoryLayout _SLIST_HEADER$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _SLIST_HEADER$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONGLONG.withName("Alignment"),
         C_LONGLONG.withName("Region"),
         MemoryLayout.ofStruct(
@@ -508,25 +508,25 @@ class cfapi_h$constants$22 extends cfapi_h$constants$21 {
             C_LONGLONG
         ).withName("HeaderX64")
     ).withName("_SLIST_HEADER");
-    static final jdk.incubator.foreign.MemoryLayout _SLIST_HEADER$struct$LAYOUT() { return _SLIST_HEADER$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _SLIST_HEADER$union$LAYOUT() { return _SLIST_HEADER$union$LAYOUT_; }
 
     static final MemoryLayout _SLIST_HEADER$Alignment$LAYOUT_ = C_LONGLONG;
     static final jdk.incubator.foreign.MemoryLayout _SLIST_HEADER$Alignment$LAYOUT() { return _SLIST_HEADER$Alignment$LAYOUT_; }
 
-    static final VarHandle _SLIST_HEADER$Alignment$VH_ = _SLIST_HEADER$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Alignment"));
+    static final VarHandle _SLIST_HEADER$Alignment$VH_ = _SLIST_HEADER$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Alignment"));
     static final java.lang.invoke.VarHandle _SLIST_HEADER$Alignment$VH() { return _SLIST_HEADER$Alignment$VH_; }
 
     static final MemoryLayout _SLIST_HEADER$Region$LAYOUT_ = C_LONGLONG;
     static final jdk.incubator.foreign.MemoryLayout _SLIST_HEADER$Region$LAYOUT() { return _SLIST_HEADER$Region$LAYOUT_; }
 
-    static final VarHandle _SLIST_HEADER$Region$VH_ = _SLIST_HEADER$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Region"));
+    static final VarHandle _SLIST_HEADER$Region$VH_ = _SLIST_HEADER$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Region"));
     static final java.lang.invoke.VarHandle _SLIST_HEADER$Region$VH() { return _SLIST_HEADER$Region$VH_; }
 
-    static final MemoryLayout HeaderX64$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _SLIST_HEADER$HeaderX64$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONGLONG,
         C_LONGLONG
     );
-    static final jdk.incubator.foreign.MemoryLayout HeaderX64$struct$LAYOUT() { return HeaderX64$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _SLIST_HEADER$HeaderX64$struct$LAYOUT() { return _SLIST_HEADER$HeaderX64$struct$LAYOUT_; }
 
     static final FunctionDescriptor RtlInitializeSListHead$FUNC_ = FunctionDescriptor.ofVoid(
         C_POINTER
@@ -626,15 +626,15 @@ class cfapi_h$constants$22 extends cfapi_h$constants$21 {
     );
     static final java.lang.invoke.MethodHandle RtlGetReturnAddressHijackTarget$MH() { return RtlGetReturnAddressHijackTarget$MH_; }
 
-    static final MemoryLayout _RTL_RUN_ONCE$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _RTL_RUN_ONCE$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_POINTER.withName("Ptr")
     ).withName("_RTL_RUN_ONCE");
-    static final jdk.incubator.foreign.MemoryLayout _RTL_RUN_ONCE$struct$LAYOUT() { return _RTL_RUN_ONCE$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _RTL_RUN_ONCE$union$LAYOUT() { return _RTL_RUN_ONCE$union$LAYOUT_; }
 
     static final MemoryLayout _RTL_RUN_ONCE$Ptr$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _RTL_RUN_ONCE$Ptr$LAYOUT() { return _RTL_RUN_ONCE$Ptr$LAYOUT_; }
 
-    static final VarHandle _RTL_RUN_ONCE$Ptr$VH_ = MemoryHandles.asAddressVarHandle(_RTL_RUN_ONCE$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Ptr")));
+    static final VarHandle _RTL_RUN_ONCE$Ptr$VH_ = MemoryHandles.asAddressVarHandle(_RTL_RUN_ONCE$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Ptr")));
     static final java.lang.invoke.VarHandle _RTL_RUN_ONCE$Ptr$VH() { return _RTL_RUN_ONCE$Ptr$VH_; }
 
     static final MemoryLayout _RTL_BARRIER$struct$LAYOUT_ = MemoryLayout.ofStruct(
@@ -1405,77 +1405,93 @@ class cfapi_h$constants$22 extends cfapi_h$constants$21 {
     static final VarHandle _IMAGE_POLICY_ENTRY$PolicyId$VH_ = _IMAGE_POLICY_ENTRY$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("PolicyId"));
     static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$PolicyId$VH() { return _IMAGE_POLICY_ENTRY$PolicyId$VH_; }
 
-    static final MemoryLayout u$None$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout u$None$LAYOUT() { return u$None$LAYOUT_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("None"),
+        C_CHAR.withName("BoolValue"),
+        C_CHAR.withName("Int8Value"),
+        C_CHAR.withName("UInt8Value"),
+        C_SHORT.withName("Int16Value"),
+        C_SHORT.withName("UInt16Value"),
+        C_INT.withName("Int32Value"),
+        C_INT.withName("UInt32Value"),
+        C_LONGLONG.withName("Int64Value"),
+        C_LONGLONG.withName("UInt64Value"),
+        C_POINTER.withName("AnsiStringValue"),
+        C_POINTER.withName("UnicodeStringValue")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$union$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$union$LAYOUT_; }
 
-    static final VarHandle u$None$VH_ = MemoryHandles.asAddressVarHandle(u$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("None")));
-    static final java.lang.invoke.VarHandle u$None$VH() { return u$None$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$None$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$None$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$None$LAYOUT_; }
 
-    static final MemoryLayout u$BoolValue$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout u$BoolValue$LAYOUT() { return u$BoolValue$LAYOUT_; }
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$None$VH_ = MemoryHandles.asAddressVarHandle(_IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("None")));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$None$VH() { return _IMAGE_POLICY_ENTRY$u$None$VH_; }
 
-    static final VarHandle u$BoolValue$VH_ = u$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("BoolValue"));
-    static final java.lang.invoke.VarHandle u$BoolValue$VH() { return u$BoolValue$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$BoolValue$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$BoolValue$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$BoolValue$LAYOUT_; }
 
-    static final MemoryLayout u$Int8Value$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout u$Int8Value$LAYOUT() { return u$Int8Value$LAYOUT_; }
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$BoolValue$VH_ = _IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("BoolValue"));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$BoolValue$VH() { return _IMAGE_POLICY_ENTRY$u$BoolValue$VH_; }
 
-    static final VarHandle u$Int8Value$VH_ = u$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Int8Value"));
-    static final java.lang.invoke.VarHandle u$Int8Value$VH() { return u$Int8Value$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$Int8Value$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$Int8Value$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$Int8Value$LAYOUT_; }
 
-    static final MemoryLayout u$UInt8Value$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout u$UInt8Value$LAYOUT() { return u$UInt8Value$LAYOUT_; }
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$Int8Value$VH_ = _IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Int8Value"));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$Int8Value$VH() { return _IMAGE_POLICY_ENTRY$u$Int8Value$VH_; }
 
-    static final VarHandle u$UInt8Value$VH_ = u$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("UInt8Value"));
-    static final java.lang.invoke.VarHandle u$UInt8Value$VH() { return u$UInt8Value$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$UInt8Value$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$UInt8Value$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$UInt8Value$LAYOUT_; }
 
-    static final MemoryLayout u$Int16Value$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout u$Int16Value$LAYOUT() { return u$Int16Value$LAYOUT_; }
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$UInt8Value$VH_ = _IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("UInt8Value"));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$UInt8Value$VH() { return _IMAGE_POLICY_ENTRY$u$UInt8Value$VH_; }
 
-    static final VarHandle u$Int16Value$VH_ = u$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Int16Value"));
-    static final java.lang.invoke.VarHandle u$Int16Value$VH() { return u$Int16Value$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$Int16Value$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$Int16Value$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$Int16Value$LAYOUT_; }
 
-    static final MemoryLayout u$UInt16Value$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout u$UInt16Value$LAYOUT() { return u$UInt16Value$LAYOUT_; }
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$Int16Value$VH_ = _IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Int16Value"));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$Int16Value$VH() { return _IMAGE_POLICY_ENTRY$u$Int16Value$VH_; }
 
-    static final VarHandle u$UInt16Value$VH_ = u$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("UInt16Value"));
-    static final java.lang.invoke.VarHandle u$UInt16Value$VH() { return u$UInt16Value$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$UInt16Value$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$UInt16Value$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$UInt16Value$LAYOUT_; }
 
-    static final MemoryLayout u$Int32Value$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout u$Int32Value$LAYOUT() { return u$Int32Value$LAYOUT_; }
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$UInt16Value$VH_ = _IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("UInt16Value"));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$UInt16Value$VH() { return _IMAGE_POLICY_ENTRY$u$UInt16Value$VH_; }
 
-    static final VarHandle u$Int32Value$VH_ = u$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Int32Value"));
-    static final java.lang.invoke.VarHandle u$Int32Value$VH() { return u$Int32Value$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$Int32Value$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$Int32Value$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$Int32Value$LAYOUT_; }
 
-    static final MemoryLayout u$UInt32Value$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout u$UInt32Value$LAYOUT() { return u$UInt32Value$LAYOUT_; }
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$Int32Value$VH_ = _IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Int32Value"));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$Int32Value$VH() { return _IMAGE_POLICY_ENTRY$u$Int32Value$VH_; }
 
-    static final VarHandle u$UInt32Value$VH_ = u$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("UInt32Value"));
-    static final java.lang.invoke.VarHandle u$UInt32Value$VH() { return u$UInt32Value$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$UInt32Value$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$UInt32Value$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$UInt32Value$LAYOUT_; }
 
-    static final MemoryLayout u$Int64Value$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout u$Int64Value$LAYOUT() { return u$Int64Value$LAYOUT_; }
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$UInt32Value$VH_ = _IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("UInt32Value"));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$UInt32Value$VH() { return _IMAGE_POLICY_ENTRY$u$UInt32Value$VH_; }
 
-    static final VarHandle u$Int64Value$VH_ = u$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Int64Value"));
-    static final java.lang.invoke.VarHandle u$Int64Value$VH() { return u$Int64Value$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$Int64Value$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$Int64Value$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$Int64Value$LAYOUT_; }
 
-    static final MemoryLayout u$UInt64Value$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout u$UInt64Value$LAYOUT() { return u$UInt64Value$LAYOUT_; }
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$Int64Value$VH_ = _IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Int64Value"));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$Int64Value$VH() { return _IMAGE_POLICY_ENTRY$u$Int64Value$VH_; }
 
-    static final VarHandle u$UInt64Value$VH_ = u$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("UInt64Value"));
-    static final java.lang.invoke.VarHandle u$UInt64Value$VH() { return u$UInt64Value$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$UInt64Value$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$UInt64Value$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$UInt64Value$LAYOUT_; }
 
-    static final MemoryLayout u$AnsiStringValue$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout u$AnsiStringValue$LAYOUT() { return u$AnsiStringValue$LAYOUT_; }
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$UInt64Value$VH_ = _IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("UInt64Value"));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$UInt64Value$VH() { return _IMAGE_POLICY_ENTRY$u$UInt64Value$VH_; }
 
-    static final VarHandle u$AnsiStringValue$VH_ = MemoryHandles.asAddressVarHandle(u$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("AnsiStringValue")));
-    static final java.lang.invoke.VarHandle u$AnsiStringValue$VH() { return u$AnsiStringValue$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$AnsiStringValue$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$AnsiStringValue$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$AnsiStringValue$LAYOUT_; }
 
-    static final MemoryLayout u$UnicodeStringValue$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout u$UnicodeStringValue$LAYOUT() { return u$UnicodeStringValue$LAYOUT_; }
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$AnsiStringValue$VH_ = MemoryHandles.asAddressVarHandle(_IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("AnsiStringValue")));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$AnsiStringValue$VH() { return _IMAGE_POLICY_ENTRY$u$AnsiStringValue$VH_; }
 
-    static final VarHandle u$UnicodeStringValue$VH_ = MemoryHandles.asAddressVarHandle(u$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("UnicodeStringValue")));
-    static final java.lang.invoke.VarHandle u$UnicodeStringValue$VH() { return u$UnicodeStringValue$VH_; }
+    static final MemoryLayout _IMAGE_POLICY_ENTRY$u$UnicodeStringValue$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _IMAGE_POLICY_ENTRY$u$UnicodeStringValue$LAYOUT() { return _IMAGE_POLICY_ENTRY$u$UnicodeStringValue$LAYOUT_; }
+
+    static final VarHandle _IMAGE_POLICY_ENTRY$u$UnicodeStringValue$VH_ = MemoryHandles.asAddressVarHandle(_IMAGE_POLICY_ENTRY$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("UnicodeStringValue")));
+    static final java.lang.invoke.VarHandle _IMAGE_POLICY_ENTRY$u$UnicodeStringValue$VH() { return _IMAGE_POLICY_ENTRY$u$UnicodeStringValue$VH_; }
 
     static final MemoryLayout _IMAGE_POLICY_METADATA$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_CHAR.withName("Version"),

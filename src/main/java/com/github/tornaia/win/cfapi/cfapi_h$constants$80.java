@@ -1664,7 +1664,7 @@ class cfapi_h$constants$80 extends cfapi_h$constants$79 {
     static final VarHandle _wireSAFEARRAY_UNION$sfType$VH_ = _wireSAFEARRAY_UNION$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("sfType"));
     static final java.lang.invoke.VarHandle _wireSAFEARRAY_UNION$sfType$VH() { return _wireSAFEARRAY_UNION$sfType$VH_; }
 
-    static final MemoryLayout __MIDL_IOleAutomationTypes_0001$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _wireSAFEARRAY_UNION$__MIDL_IOleAutomationTypes_0001$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_LONG.withName("Size"),
             MemoryLayout.ofPaddingBits(32),
@@ -1722,7 +1722,7 @@ class cfapi_h$constants$80 extends cfapi_h$constants$79 {
             C_POINTER.withName("pData")
         ).withName("HyperStr")
     ).withName("__MIDL_IOleAutomationTypes_0001");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IOleAutomationTypes_0001$struct$LAYOUT() { return __MIDL_IOleAutomationTypes_0001$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _wireSAFEARRAY_UNION$__MIDL_IOleAutomationTypes_0001$union$LAYOUT() { return _wireSAFEARRAY_UNION$__MIDL_IOleAutomationTypes_0001$union$LAYOUT_; }
 
     static final MemoryLayout _wireSAFEARRAY$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("cDims"),

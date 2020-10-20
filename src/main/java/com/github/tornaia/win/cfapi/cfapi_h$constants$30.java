@@ -1610,10 +1610,10 @@ class cfapi_h$constants$30 extends cfapi_h$constants$29 {
     static final VarHandle DISPLAYCONFIG_VIDEO_SIGNAL_INFO$pixelRate$VH_ = DISPLAYCONFIG_VIDEO_SIGNAL_INFO$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pixelRate"));
     static final java.lang.invoke.VarHandle DISPLAYCONFIG_VIDEO_SIGNAL_INFO$pixelRate$VH() { return DISPLAYCONFIG_VIDEO_SIGNAL_INFO$pixelRate$VH_; }
 
-    static final MemoryLayout AdditionalSignalInfo$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout DISPLAYCONFIG_VIDEO_SIGNAL_INFO$AdditionalSignalInfo$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT
     );
-    static final jdk.incubator.foreign.MemoryLayout AdditionalSignalInfo$struct$LAYOUT() { return AdditionalSignalInfo$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout DISPLAYCONFIG_VIDEO_SIGNAL_INFO$AdditionalSignalInfo$struct$LAYOUT() { return DISPLAYCONFIG_VIDEO_SIGNAL_INFO$AdditionalSignalInfo$struct$LAYOUT_; }
 
     static final MemoryLayout DISPLAYCONFIG_VIDEO_SIGNAL_INFO$videoStandard$LAYOUT_ = C_INT;
     static final jdk.incubator.foreign.MemoryLayout DISPLAYCONFIG_VIDEO_SIGNAL_INFO$videoStandard$LAYOUT() { return DISPLAYCONFIG_VIDEO_SIGNAL_INFO$videoStandard$LAYOUT_; }

@@ -278,23 +278,23 @@ class cfapi_h$constants$66 extends cfapi_h$constants$65 {
     ).withName("_TXFS_GET_METADATA_INFO_OUT");
     static final jdk.incubator.foreign.MemoryLayout _TXFS_GET_METADATA_INFO_OUT$struct$LAYOUT() { return _TXFS_GET_METADATA_INFO_OUT$struct$LAYOUT_; }
 
-    static final MemoryLayout TxfFileId$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _TXFS_GET_METADATA_INFO_OUT$TxfFileId$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONGLONG.withName("LowPart"),
         C_LONGLONG.withName("HighPart")
     );
-    static final jdk.incubator.foreign.MemoryLayout TxfFileId$struct$LAYOUT() { return TxfFileId$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _TXFS_GET_METADATA_INFO_OUT$TxfFileId$struct$LAYOUT() { return _TXFS_GET_METADATA_INFO_OUT$TxfFileId$struct$LAYOUT_; }
 
-    static final MemoryLayout TxfFileId$LowPart$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout TxfFileId$LowPart$LAYOUT() { return TxfFileId$LowPart$LAYOUT_; }
+    static final MemoryLayout _TXFS_GET_METADATA_INFO_OUT$TxfFileId$LowPart$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _TXFS_GET_METADATA_INFO_OUT$TxfFileId$LowPart$LAYOUT() { return _TXFS_GET_METADATA_INFO_OUT$TxfFileId$LowPart$LAYOUT_; }
 
-    static final VarHandle TxfFileId$LowPart$VH_ = TxfFileId$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("LowPart"));
-    static final java.lang.invoke.VarHandle TxfFileId$LowPart$VH() { return TxfFileId$LowPart$VH_; }
+    static final VarHandle _TXFS_GET_METADATA_INFO_OUT$TxfFileId$LowPart$VH_ = _TXFS_GET_METADATA_INFO_OUT$TxfFileId$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("LowPart"));
+    static final java.lang.invoke.VarHandle _TXFS_GET_METADATA_INFO_OUT$TxfFileId$LowPart$VH() { return _TXFS_GET_METADATA_INFO_OUT$TxfFileId$LowPart$VH_; }
 
-    static final MemoryLayout TxfFileId$HighPart$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout TxfFileId$HighPart$LAYOUT() { return TxfFileId$HighPart$LAYOUT_; }
+    static final MemoryLayout _TXFS_GET_METADATA_INFO_OUT$TxfFileId$HighPart$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _TXFS_GET_METADATA_INFO_OUT$TxfFileId$HighPart$LAYOUT() { return _TXFS_GET_METADATA_INFO_OUT$TxfFileId$HighPart$LAYOUT_; }
 
-    static final VarHandle TxfFileId$HighPart$VH_ = TxfFileId$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HighPart"));
-    static final java.lang.invoke.VarHandle TxfFileId$HighPart$VH() { return TxfFileId$HighPart$VH_; }
+    static final VarHandle _TXFS_GET_METADATA_INFO_OUT$TxfFileId$HighPart$VH_ = _TXFS_GET_METADATA_INFO_OUT$TxfFileId$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HighPart"));
+    static final java.lang.invoke.VarHandle _TXFS_GET_METADATA_INFO_OUT$TxfFileId$HighPart$VH() { return _TXFS_GET_METADATA_INFO_OUT$TxfFileId$HighPart$VH_; }
 
     static final MemoryLayout _TXFS_GET_METADATA_INFO_OUT$LastLsn$LAYOUT_ = C_LONGLONG;
     static final jdk.incubator.foreign.MemoryLayout _TXFS_GET_METADATA_INFO_OUT$LastLsn$LAYOUT() { return _TXFS_GET_METADATA_INFO_OUT$LastLsn$LAYOUT_; }

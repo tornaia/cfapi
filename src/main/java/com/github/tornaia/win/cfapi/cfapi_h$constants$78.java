@@ -1092,30 +1092,30 @@ class cfapi_h$constants$78 extends cfapi_h$constants$77 {
     static final VarHandle _GDI_OBJECT$ObjectType$VH_ = _GDI_OBJECT$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ObjectType"));
     static final java.lang.invoke.VarHandle _GDI_OBJECT$ObjectType$VH() { return _GDI_OBJECT$ObjectType$VH_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0002$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _GDI_OBJECT$__MIDL_IAdviseSink_0002$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_POINTER.withName("hBitmap"),
         C_POINTER.withName("hPalette"),
         C_POINTER.withName("hGeneric")
     ).withName("__MIDL_IAdviseSink_0002");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0002$struct$LAYOUT() { return __MIDL_IAdviseSink_0002$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _GDI_OBJECT$__MIDL_IAdviseSink_0002$union$LAYOUT() { return _GDI_OBJECT$__MIDL_IAdviseSink_0002$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0002$hBitmap$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0002$hBitmap$LAYOUT() { return __MIDL_IAdviseSink_0002$hBitmap$LAYOUT_; }
+    static final MemoryLayout _GDI_OBJECT$__MIDL_IAdviseSink_0002$hBitmap$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _GDI_OBJECT$__MIDL_IAdviseSink_0002$hBitmap$LAYOUT() { return _GDI_OBJECT$__MIDL_IAdviseSink_0002$hBitmap$LAYOUT_; }
 
-    static final VarHandle __MIDL_IAdviseSink_0002$hBitmap$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IAdviseSink_0002$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hBitmap")));
-    static final java.lang.invoke.VarHandle __MIDL_IAdviseSink_0002$hBitmap$VH() { return __MIDL_IAdviseSink_0002$hBitmap$VH_; }
+    static final VarHandle _GDI_OBJECT$__MIDL_IAdviseSink_0002$hBitmap$VH_ = MemoryHandles.asAddressVarHandle(_GDI_OBJECT$__MIDL_IAdviseSink_0002$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hBitmap")));
+    static final java.lang.invoke.VarHandle _GDI_OBJECT$__MIDL_IAdviseSink_0002$hBitmap$VH() { return _GDI_OBJECT$__MIDL_IAdviseSink_0002$hBitmap$VH_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0002$hPalette$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0002$hPalette$LAYOUT() { return __MIDL_IAdviseSink_0002$hPalette$LAYOUT_; }
+    static final MemoryLayout _GDI_OBJECT$__MIDL_IAdviseSink_0002$hPalette$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _GDI_OBJECT$__MIDL_IAdviseSink_0002$hPalette$LAYOUT() { return _GDI_OBJECT$__MIDL_IAdviseSink_0002$hPalette$LAYOUT_; }
 
-    static final VarHandle __MIDL_IAdviseSink_0002$hPalette$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IAdviseSink_0002$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hPalette")));
-    static final java.lang.invoke.VarHandle __MIDL_IAdviseSink_0002$hPalette$VH() { return __MIDL_IAdviseSink_0002$hPalette$VH_; }
+    static final VarHandle _GDI_OBJECT$__MIDL_IAdviseSink_0002$hPalette$VH_ = MemoryHandles.asAddressVarHandle(_GDI_OBJECT$__MIDL_IAdviseSink_0002$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hPalette")));
+    static final java.lang.invoke.VarHandle _GDI_OBJECT$__MIDL_IAdviseSink_0002$hPalette$VH() { return _GDI_OBJECT$__MIDL_IAdviseSink_0002$hPalette$VH_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0002$hGeneric$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0002$hGeneric$LAYOUT() { return __MIDL_IAdviseSink_0002$hGeneric$LAYOUT_; }
+    static final MemoryLayout _GDI_OBJECT$__MIDL_IAdviseSink_0002$hGeneric$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _GDI_OBJECT$__MIDL_IAdviseSink_0002$hGeneric$LAYOUT() { return _GDI_OBJECT$__MIDL_IAdviseSink_0002$hGeneric$LAYOUT_; }
 
-    static final VarHandle __MIDL_IAdviseSink_0002$hGeneric$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IAdviseSink_0002$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hGeneric")));
-    static final java.lang.invoke.VarHandle __MIDL_IAdviseSink_0002$hGeneric$VH() { return __MIDL_IAdviseSink_0002$hGeneric$VH_; }
+    static final VarHandle _GDI_OBJECT$__MIDL_IAdviseSink_0002$hGeneric$VH_ = MemoryHandles.asAddressVarHandle(_GDI_OBJECT$__MIDL_IAdviseSink_0002$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hGeneric")));
+    static final java.lang.invoke.VarHandle _GDI_OBJECT$__MIDL_IAdviseSink_0002$hGeneric$VH() { return _GDI_OBJECT$__MIDL_IAdviseSink_0002$hGeneric$VH_; }
 
     static final MemoryLayout _userSTGMEDIUM$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofPaddingBits(128),
@@ -1123,7 +1123,7 @@ class cfapi_h$constants$78 extends cfapi_h$constants$77 {
     ).withName("_userSTGMEDIUM");
     static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$struct$LAYOUT() { return _userSTGMEDIUM$struct$LAYOUT_; }
 
-    static final MemoryLayout _STGMEDIUM_UNION$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("tymed"),
         MemoryLayout.ofPaddingBits(32),
         MemoryLayout.ofUnion(
@@ -1136,15 +1136,15 @@ class cfapi_h$constants$78 extends cfapi_h$constants$77 {
             C_POINTER.withName("pstg")
         ).withName("u")
     ).withName("_STGMEDIUM_UNION");
-    static final jdk.incubator.foreign.MemoryLayout _STGMEDIUM_UNION$struct$LAYOUT() { return _STGMEDIUM_UNION$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$struct$LAYOUT() { return _userSTGMEDIUM$_STGMEDIUM_UNION$struct$LAYOUT_; }
 
-    static final MemoryLayout _STGMEDIUM_UNION$tymed$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout _STGMEDIUM_UNION$tymed$LAYOUT() { return _STGMEDIUM_UNION$tymed$LAYOUT_; }
+    static final MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$tymed$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$tymed$LAYOUT() { return _userSTGMEDIUM$_STGMEDIUM_UNION$tymed$LAYOUT_; }
 
-    static final VarHandle _STGMEDIUM_UNION$tymed$VH_ = _STGMEDIUM_UNION$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("tymed"));
-    static final java.lang.invoke.VarHandle _STGMEDIUM_UNION$tymed$VH() { return _STGMEDIUM_UNION$tymed$VH_; }
+    static final VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$tymed$VH_ = _userSTGMEDIUM$_STGMEDIUM_UNION$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("tymed"));
+    static final java.lang.invoke.VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$tymed$VH() { return _userSTGMEDIUM$_STGMEDIUM_UNION$tymed$VH_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0003$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_POINTER.withName("hMetaFilePict"),
         C_POINTER.withName("hHEnhMetaFile"),
         C_POINTER.withName("hGdiHandle"),
@@ -1153,49 +1153,49 @@ class cfapi_h$constants$78 extends cfapi_h$constants$77 {
         C_POINTER.withName("pstm"),
         C_POINTER.withName("pstg")
     ).withName("__MIDL_IAdviseSink_0003");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0003$struct$LAYOUT() { return __MIDL_IAdviseSink_0003$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$union$LAYOUT() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0003$hMetaFilePict$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0003$hMetaFilePict$LAYOUT() { return __MIDL_IAdviseSink_0003$hMetaFilePict$LAYOUT_; }
+    static final MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hMetaFilePict$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hMetaFilePict$LAYOUT() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hMetaFilePict$LAYOUT_; }
 
-    static final VarHandle __MIDL_IAdviseSink_0003$hMetaFilePict$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IAdviseSink_0003$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hMetaFilePict")));
-    static final java.lang.invoke.VarHandle __MIDL_IAdviseSink_0003$hMetaFilePict$VH() { return __MIDL_IAdviseSink_0003$hMetaFilePict$VH_; }
+    static final VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hMetaFilePict$VH_ = MemoryHandles.asAddressVarHandle(_userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hMetaFilePict")));
+    static final java.lang.invoke.VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hMetaFilePict$VH() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hMetaFilePict$VH_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0003$hHEnhMetaFile$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0003$hHEnhMetaFile$LAYOUT() { return __MIDL_IAdviseSink_0003$hHEnhMetaFile$LAYOUT_; }
+    static final MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hHEnhMetaFile$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hHEnhMetaFile$LAYOUT() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hHEnhMetaFile$LAYOUT_; }
 
-    static final VarHandle __MIDL_IAdviseSink_0003$hHEnhMetaFile$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IAdviseSink_0003$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hHEnhMetaFile")));
-    static final java.lang.invoke.VarHandle __MIDL_IAdviseSink_0003$hHEnhMetaFile$VH() { return __MIDL_IAdviseSink_0003$hHEnhMetaFile$VH_; }
+    static final VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hHEnhMetaFile$VH_ = MemoryHandles.asAddressVarHandle(_userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hHEnhMetaFile")));
+    static final java.lang.invoke.VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hHEnhMetaFile$VH() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hHEnhMetaFile$VH_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0003$hGdiHandle$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0003$hGdiHandle$LAYOUT() { return __MIDL_IAdviseSink_0003$hGdiHandle$LAYOUT_; }
+    static final MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGdiHandle$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGdiHandle$LAYOUT() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGdiHandle$LAYOUT_; }
 
-    static final VarHandle __MIDL_IAdviseSink_0003$hGdiHandle$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IAdviseSink_0003$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hGdiHandle")));
-    static final java.lang.invoke.VarHandle __MIDL_IAdviseSink_0003$hGdiHandle$VH() { return __MIDL_IAdviseSink_0003$hGdiHandle$VH_; }
+    static final VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGdiHandle$VH_ = MemoryHandles.asAddressVarHandle(_userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hGdiHandle")));
+    static final java.lang.invoke.VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGdiHandle$VH() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGdiHandle$VH_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0003$hGlobal$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0003$hGlobal$LAYOUT() { return __MIDL_IAdviseSink_0003$hGlobal$LAYOUT_; }
+    static final MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGlobal$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGlobal$LAYOUT() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGlobal$LAYOUT_; }
 
-    static final VarHandle __MIDL_IAdviseSink_0003$hGlobal$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IAdviseSink_0003$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hGlobal")));
-    static final java.lang.invoke.VarHandle __MIDL_IAdviseSink_0003$hGlobal$VH() { return __MIDL_IAdviseSink_0003$hGlobal$VH_; }
+    static final VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGlobal$VH_ = MemoryHandles.asAddressVarHandle(_userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hGlobal")));
+    static final java.lang.invoke.VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGlobal$VH() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$hGlobal$VH_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0003$lpszFileName$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0003$lpszFileName$LAYOUT() { return __MIDL_IAdviseSink_0003$lpszFileName$LAYOUT_; }
+    static final MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$lpszFileName$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$lpszFileName$LAYOUT() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$lpszFileName$LAYOUT_; }
 
-    static final VarHandle __MIDL_IAdviseSink_0003$lpszFileName$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IAdviseSink_0003$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpszFileName")));
-    static final java.lang.invoke.VarHandle __MIDL_IAdviseSink_0003$lpszFileName$VH() { return __MIDL_IAdviseSink_0003$lpszFileName$VH_; }
+    static final VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$lpszFileName$VH_ = MemoryHandles.asAddressVarHandle(_userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpszFileName")));
+    static final java.lang.invoke.VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$lpszFileName$VH() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$lpszFileName$VH_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0003$pstm$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0003$pstm$LAYOUT() { return __MIDL_IAdviseSink_0003$pstm$LAYOUT_; }
+    static final MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstm$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstm$LAYOUT() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstm$LAYOUT_; }
 
-    static final VarHandle __MIDL_IAdviseSink_0003$pstm$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IAdviseSink_0003$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pstm")));
-    static final java.lang.invoke.VarHandle __MIDL_IAdviseSink_0003$pstm$VH() { return __MIDL_IAdviseSink_0003$pstm$VH_; }
+    static final VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstm$VH_ = MemoryHandles.asAddressVarHandle(_userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pstm")));
+    static final java.lang.invoke.VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstm$VH() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstm$VH_; }
 
-    static final MemoryLayout __MIDL_IAdviseSink_0003$pstg$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IAdviseSink_0003$pstg$LAYOUT() { return __MIDL_IAdviseSink_0003$pstg$LAYOUT_; }
+    static final MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstg$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstg$LAYOUT() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstg$LAYOUT_; }
 
-    static final VarHandle __MIDL_IAdviseSink_0003$pstg$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IAdviseSink_0003$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pstg")));
-    static final java.lang.invoke.VarHandle __MIDL_IAdviseSink_0003$pstg$VH() { return __MIDL_IAdviseSink_0003$pstg$VH_; }
+    static final VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstg$VH_ = MemoryHandles.asAddressVarHandle(_userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pstg")));
+    static final java.lang.invoke.VarHandle _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstg$VH() { return _userSTGMEDIUM$_STGMEDIUM_UNION$__MIDL_IAdviseSink_0003$pstg$VH_; }
 
     static final MemoryLayout _userSTGMEDIUM$pUnkForRelease$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _userSTGMEDIUM$pUnkForRelease$LAYOUT() { return _userSTGMEDIUM$pUnkForRelease$LAYOUT_; }

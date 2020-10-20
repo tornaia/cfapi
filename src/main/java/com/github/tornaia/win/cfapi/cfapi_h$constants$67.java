@@ -116,7 +116,7 @@ class cfapi_h$constants$67 extends cfapi_h$constants$66 {
     static final VarHandle _QUERY_FILE_LAYOUT_INPUT$Reserved$VH_ = _QUERY_FILE_LAYOUT_INPUT$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reserved"));
     static final java.lang.invoke.VarHandle _QUERY_FILE_LAYOUT_INPUT$Reserved$VH() { return _QUERY_FILE_LAYOUT_INPUT$Reserved$VH_; }
 
-    static final MemoryLayout Filter$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _QUERY_FILE_LAYOUT_INPUT$Filter$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofSequence(1, MemoryLayout.ofStruct(
             MemoryLayout.ofUnion(
                 C_LONG.withName("LowPart"),
@@ -143,7 +143,7 @@ class cfapi_h$constants$67 extends cfapi_h$constants$66 {
         ).withName("_FILE_REFERENCE_RANGE")).withName("FileReferenceRanges"),
         MemoryLayout.ofSequence(1, C_INT).withName("StorageReserveIds")
     );
-    static final jdk.incubator.foreign.MemoryLayout Filter$struct$LAYOUT() { return Filter$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _QUERY_FILE_LAYOUT_INPUT$Filter$union$LAYOUT() { return _QUERY_FILE_LAYOUT_INPUT$Filter$union$LAYOUT_; }
 
     static final MemoryLayout _QUERY_FILE_LAYOUT_OUTPUT$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("FileEntryCount"),
@@ -334,7 +334,7 @@ class cfapi_h$constants$67 extends cfapi_h$constants$66 {
     ).withName("_FILE_LAYOUT_INFO_ENTRY");
     static final jdk.incubator.foreign.MemoryLayout _FILE_LAYOUT_INFO_ENTRY$struct$LAYOUT() { return _FILE_LAYOUT_INFO_ENTRY$struct$LAYOUT_; }
 
-    static final MemoryLayout BasicInformation$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _FILE_LAYOUT_INFO_ENTRY$BasicInformation$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofUnion(
             C_LONG.withName("LowPart"),
             C_LONG.withName("HighPart"),
@@ -374,13 +374,13 @@ class cfapi_h$constants$67 extends cfapi_h$constants$66 {
         C_LONG.withName("FileAttributes"),
         MemoryLayout.ofPaddingBits(32)
     );
-    static final jdk.incubator.foreign.MemoryLayout BasicInformation$struct$LAYOUT() { return BasicInformation$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _FILE_LAYOUT_INFO_ENTRY$BasicInformation$struct$LAYOUT() { return _FILE_LAYOUT_INFO_ENTRY$BasicInformation$struct$LAYOUT_; }
 
-    static final MemoryLayout BasicInformation$FileAttributes$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout BasicInformation$FileAttributes$LAYOUT() { return BasicInformation$FileAttributes$LAYOUT_; }
+    static final MemoryLayout _FILE_LAYOUT_INFO_ENTRY$BasicInformation$FileAttributes$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _FILE_LAYOUT_INFO_ENTRY$BasicInformation$FileAttributes$LAYOUT() { return _FILE_LAYOUT_INFO_ENTRY$BasicInformation$FileAttributes$LAYOUT_; }
 
-    static final VarHandle BasicInformation$FileAttributes$VH_ = BasicInformation$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("FileAttributes"));
-    static final java.lang.invoke.VarHandle BasicInformation$FileAttributes$VH() { return BasicInformation$FileAttributes$VH_; }
+    static final VarHandle _FILE_LAYOUT_INFO_ENTRY$BasicInformation$FileAttributes$VH_ = _FILE_LAYOUT_INFO_ENTRY$BasicInformation$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("FileAttributes"));
+    static final java.lang.invoke.VarHandle _FILE_LAYOUT_INFO_ENTRY$BasicInformation$FileAttributes$VH() { return _FILE_LAYOUT_INFO_ENTRY$BasicInformation$FileAttributes$VH_; }
 
     static final MemoryLayout _FILE_LAYOUT_INFO_ENTRY$OwnerId$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _FILE_LAYOUT_INFO_ENTRY$OwnerId$LAYOUT() { return _FILE_LAYOUT_INFO_ENTRY$OwnerId$LAYOUT_; }
@@ -533,7 +533,7 @@ class cfapi_h$constants$67 extends cfapi_h$constants$66 {
     static final VarHandle _STREAM_EXTENT_ENTRY$Flags$VH_ = _STREAM_EXTENT_ENTRY$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
     static final java.lang.invoke.VarHandle _STREAM_EXTENT_ENTRY$Flags$VH() { return _STREAM_EXTENT_ENTRY$Flags$VH_; }
 
-    static final MemoryLayout ExtentInformation$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _STREAM_EXTENT_ENTRY$ExtentInformation$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_LONG.withName("ExtentCount"),
             MemoryLayout.ofPaddingBits(32),
@@ -568,7 +568,7 @@ class cfapi_h$constants$67 extends cfapi_h$constants$66 {
             )).withName("Extents")
         ).withName("RetrievalPointers")
     );
-    static final jdk.incubator.foreign.MemoryLayout ExtentInformation$struct$LAYOUT() { return ExtentInformation$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_EXTENT_ENTRY$ExtentInformation$union$LAYOUT() { return _STREAM_EXTENT_ENTRY$ExtentInformation$union$LAYOUT_; }
 
     static final MemoryLayout _FSCTL_GET_INTEGRITY_INFORMATION_BUFFER$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("ChecksumAlgorithm"),
@@ -1166,7 +1166,7 @@ class cfapi_h$constants$67 extends cfapi_h$constants$66 {
     static final VarHandle _STREAM_INFORMATION_ENTRY$Flags$VH_ = _STREAM_INFORMATION_ENTRY$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
     static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$Flags$VH() { return _STREAM_INFORMATION_ENTRY$Flags$VH_; }
 
-    static final MemoryLayout _StreamInformation$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_INT.withName("Class"),
             C_LONG.withName("Flags")
@@ -1190,121 +1190,121 @@ class cfapi_h$constants$67 extends cfapi_h$constants$66 {
             C_LONG.withName("EaInformationOffset")
         ).withName("Ea")
     ).withName("_StreamInformation");
-    static final jdk.incubator.foreign.MemoryLayout _StreamInformation$struct$LAYOUT() { return _StreamInformation$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$union$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$union$LAYOUT_; }
 
-    static final MemoryLayout _DesiredStorageClass$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Class"),
         C_LONG.withName("Flags")
     ).withName("_DesiredStorageClass");
-    static final jdk.incubator.foreign.MemoryLayout _DesiredStorageClass$struct$LAYOUT() { return _DesiredStorageClass$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$struct$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$struct$LAYOUT_; }
 
-    static final MemoryLayout _DesiredStorageClass$Class$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout _DesiredStorageClass$Class$LAYOUT() { return _DesiredStorageClass$Class$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Class$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Class$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Class$LAYOUT_; }
 
-    static final VarHandle _DesiredStorageClass$Class$VH_ = _DesiredStorageClass$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Class"));
-    static final java.lang.invoke.VarHandle _DesiredStorageClass$Class$VH() { return _DesiredStorageClass$Class$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Class$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Class"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Class$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Class$VH_; }
 
-    static final MemoryLayout _DesiredStorageClass$Flags$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout _DesiredStorageClass$Flags$LAYOUT() { return _DesiredStorageClass$Flags$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Flags$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Flags$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Flags$LAYOUT_; }
 
-    static final VarHandle _DesiredStorageClass$Flags$VH_ = _DesiredStorageClass$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle _DesiredStorageClass$Flags$VH() { return _DesiredStorageClass$Flags$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Flags$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Flags$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DesiredStorageClass$Flags$VH_; }
 
-    static final MemoryLayout _DataStream$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("Length"),
         C_SHORT.withName("Flags"),
         C_LONG.withName("Reserved"),
         C_LONGLONG.withName("Vdl")
     ).withName("_DataStream");
-    static final jdk.incubator.foreign.MemoryLayout _DataStream$struct$LAYOUT() { return _DataStream$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$struct$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$struct$LAYOUT_; }
 
-    static final MemoryLayout _DataStream$Length$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout _DataStream$Length$LAYOUT() { return _DataStream$Length$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Length$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Length$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Length$LAYOUT_; }
 
-    static final VarHandle _DataStream$Length$VH_ = _DataStream$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Length"));
-    static final java.lang.invoke.VarHandle _DataStream$Length$VH() { return _DataStream$Length$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Length$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Length"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Length$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Length$VH_; }
 
-    static final MemoryLayout _DataStream$Flags$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout _DataStream$Flags$LAYOUT() { return _DataStream$Flags$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Flags$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Flags$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Flags$LAYOUT_; }
 
-    static final VarHandle _DataStream$Flags$VH_ = _DataStream$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle _DataStream$Flags$VH() { return _DataStream$Flags$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Flags$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Flags$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Flags$VH_; }
 
-    static final MemoryLayout _DataStream$Reserved$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout _DataStream$Reserved$LAYOUT() { return _DataStream$Reserved$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Reserved$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Reserved$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Reserved$LAYOUT_; }
 
-    static final VarHandle _DataStream$Reserved$VH_ = _DataStream$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reserved"));
-    static final java.lang.invoke.VarHandle _DataStream$Reserved$VH() { return _DataStream$Reserved$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Reserved$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reserved"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Reserved$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Reserved$VH_; }
 
-    static final MemoryLayout _DataStream$Vdl$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout _DataStream$Vdl$LAYOUT() { return _DataStream$Vdl$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Vdl$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Vdl$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Vdl$LAYOUT_; }
 
-    static final VarHandle _DataStream$Vdl$VH_ = _DataStream$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Vdl"));
-    static final java.lang.invoke.VarHandle _DataStream$Vdl$VH() { return _DataStream$Vdl$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Vdl$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Vdl"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Vdl$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_DataStream$Vdl$VH_; }
 
-    static final MemoryLayout _Reparse$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("Length"),
         C_SHORT.withName("Flags"),
         C_LONG.withName("ReparseDataSize"),
         C_LONG.withName("ReparseDataOffset")
     ).withName("_Reparse");
-    static final jdk.incubator.foreign.MemoryLayout _Reparse$struct$LAYOUT() { return _Reparse$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$struct$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$struct$LAYOUT_; }
 
-    static final MemoryLayout _Reparse$Length$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout _Reparse$Length$LAYOUT() { return _Reparse$Length$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Length$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Length$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Length$LAYOUT_; }
 
-    static final VarHandle _Reparse$Length$VH_ = _Reparse$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Length"));
-    static final java.lang.invoke.VarHandle _Reparse$Length$VH() { return _Reparse$Length$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Length$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Length"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Length$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Length$VH_; }
 
-    static final MemoryLayout _Reparse$Flags$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout _Reparse$Flags$LAYOUT() { return _Reparse$Flags$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Flags$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Flags$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Flags$LAYOUT_; }
 
-    static final VarHandle _Reparse$Flags$VH_ = _Reparse$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle _Reparse$Flags$VH() { return _Reparse$Flags$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Flags$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Flags$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$Flags$VH_; }
 
-    static final MemoryLayout _Reparse$ReparseDataSize$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout _Reparse$ReparseDataSize$LAYOUT() { return _Reparse$ReparseDataSize$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataSize$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataSize$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataSize$LAYOUT_; }
 
-    static final VarHandle _Reparse$ReparseDataSize$VH_ = _Reparse$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ReparseDataSize"));
-    static final java.lang.invoke.VarHandle _Reparse$ReparseDataSize$VH() { return _Reparse$ReparseDataSize$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataSize$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ReparseDataSize"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataSize$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataSize$VH_; }
 
-    static final MemoryLayout _Reparse$ReparseDataOffset$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout _Reparse$ReparseDataOffset$LAYOUT() { return _Reparse$ReparseDataOffset$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataOffset$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataOffset$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataOffset$LAYOUT_; }
 
-    static final VarHandle _Reparse$ReparseDataOffset$VH_ = _Reparse$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ReparseDataOffset"));
-    static final java.lang.invoke.VarHandle _Reparse$ReparseDataOffset$VH() { return _Reparse$ReparseDataOffset$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataOffset$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ReparseDataOffset"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataOffset$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Reparse$ReparseDataOffset$VH_; }
 
-    static final MemoryLayout _Ea$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("Length"),
         C_SHORT.withName("Flags"),
         C_LONG.withName("EaSize"),
         C_LONG.withName("EaInformationOffset")
     ).withName("_Ea");
-    static final jdk.incubator.foreign.MemoryLayout _Ea$struct$LAYOUT() { return _Ea$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$struct$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$struct$LAYOUT_; }
 
-    static final MemoryLayout _Ea$Length$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout _Ea$Length$LAYOUT() { return _Ea$Length$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Length$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Length$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Length$LAYOUT_; }
 
-    static final VarHandle _Ea$Length$VH_ = _Ea$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Length"));
-    static final java.lang.invoke.VarHandle _Ea$Length$VH() { return _Ea$Length$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Length$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Length"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Length$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Length$VH_; }
 
-    static final MemoryLayout _Ea$Flags$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout _Ea$Flags$LAYOUT() { return _Ea$Flags$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Flags$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Flags$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Flags$LAYOUT_; }
 
-    static final VarHandle _Ea$Flags$VH_ = _Ea$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle _Ea$Flags$VH() { return _Ea$Flags$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Flags$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Flags$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$Flags$VH_; }
 
-    static final MemoryLayout _Ea$EaSize$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout _Ea$EaSize$LAYOUT() { return _Ea$EaSize$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaSize$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaSize$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaSize$LAYOUT_; }
 
-    static final VarHandle _Ea$EaSize$VH_ = _Ea$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("EaSize"));
-    static final java.lang.invoke.VarHandle _Ea$EaSize$VH() { return _Ea$EaSize$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaSize$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("EaSize"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaSize$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaSize$VH_; }
 
-    static final MemoryLayout _Ea$EaInformationOffset$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout _Ea$EaInformationOffset$LAYOUT() { return _Ea$EaInformationOffset$LAYOUT_; }
+    static final MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaInformationOffset$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaInformationOffset$LAYOUT() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaInformationOffset$LAYOUT_; }
 
-    static final VarHandle _Ea$EaInformationOffset$VH_ = _Ea$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("EaInformationOffset"));
-    static final java.lang.invoke.VarHandle _Ea$EaInformationOffset$VH() { return _Ea$EaInformationOffset$VH_; }
+    static final VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaInformationOffset$VH_ = _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("EaInformationOffset"));
+    static final java.lang.invoke.VarHandle _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaInformationOffset$VH() { return _STREAM_INFORMATION_ENTRY$_StreamInformation$_Ea$EaInformationOffset$VH_; }
 
     static final MemoryLayout _FSCTL_QUERY_REGION_INFO_INPUT$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Version"),

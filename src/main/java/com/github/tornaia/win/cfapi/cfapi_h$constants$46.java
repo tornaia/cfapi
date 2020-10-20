@@ -122,11 +122,16 @@ class cfapi_h$constants$46 extends cfapi_h$constants$45 {
     static final VarHandle _RPC_SECURITY_QOS_V2_W$AdditionalSecurityInfoType$VH_ = _RPC_SECURITY_QOS_V2_W$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AdditionalSecurityInfoType"));
     static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V2_W$AdditionalSecurityInfoType$VH() { return _RPC_SECURITY_QOS_V2_W$AdditionalSecurityInfoType$VH_; }
 
-    static final MemoryLayout u$HttpCredentials$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout u$HttpCredentials$LAYOUT() { return u$HttpCredentials$LAYOUT_; }
+    static final MemoryLayout _RPC_SECURITY_QOS_V2_W$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("HttpCredentials")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V2_W$u$union$LAYOUT() { return _RPC_SECURITY_QOS_V2_W$u$union$LAYOUT_; }
 
-    static final VarHandle u$HttpCredentials$VH_ = MemoryHandles.asAddressVarHandle(u$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HttpCredentials")));
-    static final java.lang.invoke.VarHandle u$HttpCredentials$VH() { return u$HttpCredentials$VH_; }
+    static final MemoryLayout _RPC_SECURITY_QOS_V2_W$u$HttpCredentials$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V2_W$u$HttpCredentials$LAYOUT() { return _RPC_SECURITY_QOS_V2_W$u$HttpCredentials$LAYOUT_; }
+
+    static final VarHandle _RPC_SECURITY_QOS_V2_W$u$HttpCredentials$VH_ = MemoryHandles.asAddressVarHandle(_RPC_SECURITY_QOS_V2_W$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HttpCredentials")));
+    static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V2_W$u$HttpCredentials$VH() { return _RPC_SECURITY_QOS_V2_W$u$HttpCredentials$VH_; }
 
     static final MemoryLayout _RPC_SECURITY_QOS_V2_A$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Version"),
@@ -171,6 +176,17 @@ class cfapi_h$constants$46 extends cfapi_h$constants$45 {
     static final VarHandle _RPC_SECURITY_QOS_V2_A$AdditionalSecurityInfoType$VH_ = _RPC_SECURITY_QOS_V2_A$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AdditionalSecurityInfoType"));
     static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V2_A$AdditionalSecurityInfoType$VH() { return _RPC_SECURITY_QOS_V2_A$AdditionalSecurityInfoType$VH_; }
 
+    static final MemoryLayout _RPC_SECURITY_QOS_V2_A$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("HttpCredentials")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V2_A$u$union$LAYOUT() { return _RPC_SECURITY_QOS_V2_A$u$union$LAYOUT_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V2_A$u$HttpCredentials$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V2_A$u$HttpCredentials$LAYOUT() { return _RPC_SECURITY_QOS_V2_A$u$HttpCredentials$LAYOUT_; }
+
+    static final VarHandle _RPC_SECURITY_QOS_V2_A$u$HttpCredentials$VH_ = MemoryHandles.asAddressVarHandle(_RPC_SECURITY_QOS_V2_A$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HttpCredentials")));
+    static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V2_A$u$HttpCredentials$VH() { return _RPC_SECURITY_QOS_V2_A$u$HttpCredentials$VH_; }
+
     static final MemoryLayout _RPC_SECURITY_QOS_V3_W$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Version"),
         C_LONG.withName("Capabilities"),
@@ -214,6 +230,17 @@ class cfapi_h$constants$46 extends cfapi_h$constants$45 {
 
     static final VarHandle _RPC_SECURITY_QOS_V3_W$AdditionalSecurityInfoType$VH_ = _RPC_SECURITY_QOS_V3_W$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AdditionalSecurityInfoType"));
     static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V3_W$AdditionalSecurityInfoType$VH() { return _RPC_SECURITY_QOS_V3_W$AdditionalSecurityInfoType$VH_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V3_W$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("HttpCredentials")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V3_W$u$union$LAYOUT() { return _RPC_SECURITY_QOS_V3_W$u$union$LAYOUT_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V3_W$u$HttpCredentials$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V3_W$u$HttpCredentials$LAYOUT() { return _RPC_SECURITY_QOS_V3_W$u$HttpCredentials$LAYOUT_; }
+
+    static final VarHandle _RPC_SECURITY_QOS_V3_W$u$HttpCredentials$VH_ = MemoryHandles.asAddressVarHandle(_RPC_SECURITY_QOS_V3_W$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HttpCredentials")));
+    static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V3_W$u$HttpCredentials$VH() { return _RPC_SECURITY_QOS_V3_W$u$HttpCredentials$VH_; }
 
     static final MemoryLayout _RPC_SECURITY_QOS_V3_W$Sid$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V3_W$Sid$LAYOUT() { return _RPC_SECURITY_QOS_V3_W$Sid$LAYOUT_; }
@@ -264,6 +291,17 @@ class cfapi_h$constants$46 extends cfapi_h$constants$45 {
 
     static final VarHandle _RPC_SECURITY_QOS_V3_A$AdditionalSecurityInfoType$VH_ = _RPC_SECURITY_QOS_V3_A$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AdditionalSecurityInfoType"));
     static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V3_A$AdditionalSecurityInfoType$VH() { return _RPC_SECURITY_QOS_V3_A$AdditionalSecurityInfoType$VH_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V3_A$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("HttpCredentials")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V3_A$u$union$LAYOUT() { return _RPC_SECURITY_QOS_V3_A$u$union$LAYOUT_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V3_A$u$HttpCredentials$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V3_A$u$HttpCredentials$LAYOUT() { return _RPC_SECURITY_QOS_V3_A$u$HttpCredentials$LAYOUT_; }
+
+    static final VarHandle _RPC_SECURITY_QOS_V3_A$u$HttpCredentials$VH_ = MemoryHandles.asAddressVarHandle(_RPC_SECURITY_QOS_V3_A$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HttpCredentials")));
+    static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V3_A$u$HttpCredentials$VH() { return _RPC_SECURITY_QOS_V3_A$u$HttpCredentials$VH_; }
 
     static final MemoryLayout _RPC_SECURITY_QOS_V3_A$Sid$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V3_A$Sid$LAYOUT() { return _RPC_SECURITY_QOS_V3_A$Sid$LAYOUT_; }
@@ -316,6 +354,17 @@ class cfapi_h$constants$46 extends cfapi_h$constants$45 {
 
     static final VarHandle _RPC_SECURITY_QOS_V4_W$AdditionalSecurityInfoType$VH_ = _RPC_SECURITY_QOS_V4_W$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AdditionalSecurityInfoType"));
     static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V4_W$AdditionalSecurityInfoType$VH() { return _RPC_SECURITY_QOS_V4_W$AdditionalSecurityInfoType$VH_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V4_W$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("HttpCredentials")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V4_W$u$union$LAYOUT() { return _RPC_SECURITY_QOS_V4_W$u$union$LAYOUT_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V4_W$u$HttpCredentials$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V4_W$u$HttpCredentials$LAYOUT() { return _RPC_SECURITY_QOS_V4_W$u$HttpCredentials$LAYOUT_; }
+
+    static final VarHandle _RPC_SECURITY_QOS_V4_W$u$HttpCredentials$VH_ = MemoryHandles.asAddressVarHandle(_RPC_SECURITY_QOS_V4_W$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HttpCredentials")));
+    static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V4_W$u$HttpCredentials$VH() { return _RPC_SECURITY_QOS_V4_W$u$HttpCredentials$VH_; }
 
     static final MemoryLayout _RPC_SECURITY_QOS_V4_W$Sid$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V4_W$Sid$LAYOUT() { return _RPC_SECURITY_QOS_V4_W$Sid$LAYOUT_; }
@@ -375,6 +424,17 @@ class cfapi_h$constants$46 extends cfapi_h$constants$45 {
     static final VarHandle _RPC_SECURITY_QOS_V4_A$AdditionalSecurityInfoType$VH_ = _RPC_SECURITY_QOS_V4_A$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AdditionalSecurityInfoType"));
     static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V4_A$AdditionalSecurityInfoType$VH() { return _RPC_SECURITY_QOS_V4_A$AdditionalSecurityInfoType$VH_; }
 
+    static final MemoryLayout _RPC_SECURITY_QOS_V4_A$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("HttpCredentials")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V4_A$u$union$LAYOUT() { return _RPC_SECURITY_QOS_V4_A$u$union$LAYOUT_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V4_A$u$HttpCredentials$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V4_A$u$HttpCredentials$LAYOUT() { return _RPC_SECURITY_QOS_V4_A$u$HttpCredentials$LAYOUT_; }
+
+    static final VarHandle _RPC_SECURITY_QOS_V4_A$u$HttpCredentials$VH_ = MemoryHandles.asAddressVarHandle(_RPC_SECURITY_QOS_V4_A$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HttpCredentials")));
+    static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V4_A$u$HttpCredentials$VH() { return _RPC_SECURITY_QOS_V4_A$u$HttpCredentials$VH_; }
+
     static final MemoryLayout _RPC_SECURITY_QOS_V4_A$Sid$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V4_A$Sid$LAYOUT() { return _RPC_SECURITY_QOS_V4_A$Sid$LAYOUT_; }
 
@@ -433,6 +493,17 @@ class cfapi_h$constants$46 extends cfapi_h$constants$45 {
 
     static final VarHandle _RPC_SECURITY_QOS_V5_W$AdditionalSecurityInfoType$VH_ = _RPC_SECURITY_QOS_V5_W$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AdditionalSecurityInfoType"));
     static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V5_W$AdditionalSecurityInfoType$VH() { return _RPC_SECURITY_QOS_V5_W$AdditionalSecurityInfoType$VH_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V5_W$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("HttpCredentials")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V5_W$u$union$LAYOUT() { return _RPC_SECURITY_QOS_V5_W$u$union$LAYOUT_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V5_W$u$HttpCredentials$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V5_W$u$HttpCredentials$LAYOUT() { return _RPC_SECURITY_QOS_V5_W$u$HttpCredentials$LAYOUT_; }
+
+    static final VarHandle _RPC_SECURITY_QOS_V5_W$u$HttpCredentials$VH_ = MemoryHandles.asAddressVarHandle(_RPC_SECURITY_QOS_V5_W$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HttpCredentials")));
+    static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V5_W$u$HttpCredentials$VH() { return _RPC_SECURITY_QOS_V5_W$u$HttpCredentials$VH_; }
 
     static final MemoryLayout _RPC_SECURITY_QOS_V5_W$Sid$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V5_W$Sid$LAYOUT() { return _RPC_SECURITY_QOS_V5_W$Sid$LAYOUT_; }
@@ -498,6 +569,17 @@ class cfapi_h$constants$46 extends cfapi_h$constants$45 {
 
     static final VarHandle _RPC_SECURITY_QOS_V5_A$AdditionalSecurityInfoType$VH_ = _RPC_SECURITY_QOS_V5_A$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("AdditionalSecurityInfoType"));
     static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V5_A$AdditionalSecurityInfoType$VH() { return _RPC_SECURITY_QOS_V5_A$AdditionalSecurityInfoType$VH_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V5_A$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("HttpCredentials")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V5_A$u$union$LAYOUT() { return _RPC_SECURITY_QOS_V5_A$u$union$LAYOUT_; }
+
+    static final MemoryLayout _RPC_SECURITY_QOS_V5_A$u$HttpCredentials$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V5_A$u$HttpCredentials$LAYOUT() { return _RPC_SECURITY_QOS_V5_A$u$HttpCredentials$LAYOUT_; }
+
+    static final VarHandle _RPC_SECURITY_QOS_V5_A$u$HttpCredentials$VH_ = MemoryHandles.asAddressVarHandle(_RPC_SECURITY_QOS_V5_A$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HttpCredentials")));
+    static final java.lang.invoke.VarHandle _RPC_SECURITY_QOS_V5_A$u$HttpCredentials$VH() { return _RPC_SECURITY_QOS_V5_A$u$HttpCredentials$VH_; }
 
     static final MemoryLayout _RPC_SECURITY_QOS_V5_A$Sid$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _RPC_SECURITY_QOS_V5_A$Sid$LAYOUT() { return _RPC_SECURITY_QOS_V5_A$Sid$LAYOUT_; }
@@ -566,11 +648,16 @@ class cfapi_h$constants$46 extends cfapi_h$constants$45 {
     static final VarHandle _RPC_BINDING_HANDLE_TEMPLATE_V1_W$StringEndpoint$VH_ = MemoryHandles.asAddressVarHandle(_RPC_BINDING_HANDLE_TEMPLATE_V1_W$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("StringEndpoint")));
     static final java.lang.invoke.VarHandle _RPC_BINDING_HANDLE_TEMPLATE_V1_W$StringEndpoint$VH() { return _RPC_BINDING_HANDLE_TEMPLATE_V1_W$StringEndpoint$VH_; }
 
-    static final MemoryLayout u1$Reserved$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout u1$Reserved$LAYOUT() { return u1$Reserved$LAYOUT_; }
+    static final MemoryLayout _RPC_BINDING_HANDLE_TEMPLATE_V1_W$u1$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("Reserved")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _RPC_BINDING_HANDLE_TEMPLATE_V1_W$u1$union$LAYOUT() { return _RPC_BINDING_HANDLE_TEMPLATE_V1_W$u1$union$LAYOUT_; }
 
-    static final VarHandle u1$Reserved$VH_ = MemoryHandles.asAddressVarHandle(u1$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Reserved")));
-    static final java.lang.invoke.VarHandle u1$Reserved$VH() { return u1$Reserved$VH_; }
+    static final MemoryLayout _RPC_BINDING_HANDLE_TEMPLATE_V1_W$u1$Reserved$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_BINDING_HANDLE_TEMPLATE_V1_W$u1$Reserved$LAYOUT() { return _RPC_BINDING_HANDLE_TEMPLATE_V1_W$u1$Reserved$LAYOUT_; }
+
+    static final VarHandle _RPC_BINDING_HANDLE_TEMPLATE_V1_W$u1$Reserved$VH_ = MemoryHandles.asAddressVarHandle(_RPC_BINDING_HANDLE_TEMPLATE_V1_W$u1$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Reserved")));
+    static final java.lang.invoke.VarHandle _RPC_BINDING_HANDLE_TEMPLATE_V1_W$u1$Reserved$VH() { return _RPC_BINDING_HANDLE_TEMPLATE_V1_W$u1$Reserved$VH_; }
 
     static final MemoryLayout _RPC_BINDING_HANDLE_TEMPLATE_V1_A$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Version"),
@@ -620,6 +707,17 @@ class cfapi_h$constants$46 extends cfapi_h$constants$45 {
 
     static final VarHandle _RPC_BINDING_HANDLE_TEMPLATE_V1_A$StringEndpoint$VH_ = MemoryHandles.asAddressVarHandle(_RPC_BINDING_HANDLE_TEMPLATE_V1_A$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("StringEndpoint")));
     static final java.lang.invoke.VarHandle _RPC_BINDING_HANDLE_TEMPLATE_V1_A$StringEndpoint$VH() { return _RPC_BINDING_HANDLE_TEMPLATE_V1_A$StringEndpoint$VH_; }
+
+    static final MemoryLayout _RPC_BINDING_HANDLE_TEMPLATE_V1_A$u1$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_POINTER.withName("Reserved")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _RPC_BINDING_HANDLE_TEMPLATE_V1_A$u1$union$LAYOUT() { return _RPC_BINDING_HANDLE_TEMPLATE_V1_A$u1$union$LAYOUT_; }
+
+    static final MemoryLayout _RPC_BINDING_HANDLE_TEMPLATE_V1_A$u1$Reserved$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _RPC_BINDING_HANDLE_TEMPLATE_V1_A$u1$Reserved$LAYOUT() { return _RPC_BINDING_HANDLE_TEMPLATE_V1_A$u1$Reserved$LAYOUT_; }
+
+    static final VarHandle _RPC_BINDING_HANDLE_TEMPLATE_V1_A$u1$Reserved$VH_ = MemoryHandles.asAddressVarHandle(_RPC_BINDING_HANDLE_TEMPLATE_V1_A$u1$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Reserved")));
+    static final java.lang.invoke.VarHandle _RPC_BINDING_HANDLE_TEMPLATE_V1_A$u1$Reserved$VH() { return _RPC_BINDING_HANDLE_TEMPLATE_V1_A$u1$Reserved$VH_; }
 
     static final MemoryLayout _RPC_BINDING_HANDLE_SECURITY_V1_W$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Version"),

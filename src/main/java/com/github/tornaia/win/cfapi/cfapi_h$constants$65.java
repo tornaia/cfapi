@@ -10,29 +10,29 @@ import static jdk.incubator.foreign.CLinker.*;
 class cfapi_h$constants$65 extends cfapi_h$constants$64 {
 
     /* package-private */ cfapi_h$constants$65() {}
-    static final MemoryLayout Mft2WritesUserLevel$Write$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Mft2WritesUserLevel$Write$LAYOUT() { return Mft2WritesUserLevel$Write$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Mft2WritesUserLevel$Write$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Mft2WritesUserLevel$Write$LAYOUT() { return _NTFS_STATISTICS$Mft2WritesUserLevel$Write$LAYOUT_; }
 
-    static final VarHandle Mft2WritesUserLevel$Write$VH_ = Mft2WritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Write"));
-    static final java.lang.invoke.VarHandle Mft2WritesUserLevel$Write$VH() { return Mft2WritesUserLevel$Write$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Mft2WritesUserLevel$Write$VH_ = _NTFS_STATISTICS$Mft2WritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Write"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Mft2WritesUserLevel$Write$VH() { return _NTFS_STATISTICS$Mft2WritesUserLevel$Write$VH_; }
 
-    static final MemoryLayout Mft2WritesUserLevel$Create$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Mft2WritesUserLevel$Create$LAYOUT() { return Mft2WritesUserLevel$Create$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Mft2WritesUserLevel$Create$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Mft2WritesUserLevel$Create$LAYOUT() { return _NTFS_STATISTICS$Mft2WritesUserLevel$Create$LAYOUT_; }
 
-    static final VarHandle Mft2WritesUserLevel$Create$VH_ = Mft2WritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Create"));
-    static final java.lang.invoke.VarHandle Mft2WritesUserLevel$Create$VH() { return Mft2WritesUserLevel$Create$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Mft2WritesUserLevel$Create$VH_ = _NTFS_STATISTICS$Mft2WritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Create"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Mft2WritesUserLevel$Create$VH() { return _NTFS_STATISTICS$Mft2WritesUserLevel$Create$VH_; }
 
-    static final MemoryLayout Mft2WritesUserLevel$SetInfo$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Mft2WritesUserLevel$SetInfo$LAYOUT() { return Mft2WritesUserLevel$SetInfo$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Mft2WritesUserLevel$SetInfo$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Mft2WritesUserLevel$SetInfo$LAYOUT() { return _NTFS_STATISTICS$Mft2WritesUserLevel$SetInfo$LAYOUT_; }
 
-    static final VarHandle Mft2WritesUserLevel$SetInfo$VH_ = Mft2WritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("SetInfo"));
-    static final java.lang.invoke.VarHandle Mft2WritesUserLevel$SetInfo$VH() { return Mft2WritesUserLevel$SetInfo$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Mft2WritesUserLevel$SetInfo$VH_ = _NTFS_STATISTICS$Mft2WritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("SetInfo"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Mft2WritesUserLevel$SetInfo$VH() { return _NTFS_STATISTICS$Mft2WritesUserLevel$SetInfo$VH_; }
 
-    static final MemoryLayout Mft2WritesUserLevel$Flush$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Mft2WritesUserLevel$Flush$LAYOUT() { return Mft2WritesUserLevel$Flush$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Mft2WritesUserLevel$Flush$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Mft2WritesUserLevel$Flush$LAYOUT() { return _NTFS_STATISTICS$Mft2WritesUserLevel$Flush$LAYOUT_; }
 
-    static final VarHandle Mft2WritesUserLevel$Flush$VH_ = Mft2WritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flush"));
-    static final java.lang.invoke.VarHandle Mft2WritesUserLevel$Flush$VH() { return Mft2WritesUserLevel$Flush$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Mft2WritesUserLevel$Flush$VH_ = _NTFS_STATISTICS$Mft2WritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flush"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Mft2WritesUserLevel$Flush$VH() { return _NTFS_STATISTICS$Mft2WritesUserLevel$Flush$VH_; }
 
     static final MemoryLayout _NTFS_STATISTICS$Mft2WritesFlushForLogFileFull$LAYOUT_ = C_SHORT;
     static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Mft2WritesFlushForLogFileFull$LAYOUT() { return _NTFS_STATISTICS$Mft2WritesFlushForLogFileFull$LAYOUT_; }
@@ -118,30 +118,30 @@ class cfapi_h$constants$65 extends cfapi_h$constants$64 {
     static final VarHandle _NTFS_STATISTICS$BitmapWritesUserRequest$VH_ = _NTFS_STATISTICS$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("BitmapWritesUserRequest"));
     static final java.lang.invoke.VarHandle _NTFS_STATISTICS$BitmapWritesUserRequest$VH() { return _NTFS_STATISTICS$BitmapWritesUserRequest$VH_; }
 
-    static final MemoryLayout BitmapWritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _NTFS_STATISTICS$BitmapWritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("Write"),
         C_SHORT.withName("Create"),
         C_SHORT.withName("SetInfo")
     );
-    static final jdk.incubator.foreign.MemoryLayout BitmapWritesUserLevel$struct$LAYOUT() { return BitmapWritesUserLevel$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$BitmapWritesUserLevel$struct$LAYOUT() { return _NTFS_STATISTICS$BitmapWritesUserLevel$struct$LAYOUT_; }
 
-    static final MemoryLayout BitmapWritesUserLevel$Write$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout BitmapWritesUserLevel$Write$LAYOUT() { return BitmapWritesUserLevel$Write$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$BitmapWritesUserLevel$Write$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$BitmapWritesUserLevel$Write$LAYOUT() { return _NTFS_STATISTICS$BitmapWritesUserLevel$Write$LAYOUT_; }
 
-    static final VarHandle BitmapWritesUserLevel$Write$VH_ = BitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Write"));
-    static final java.lang.invoke.VarHandle BitmapWritesUserLevel$Write$VH() { return BitmapWritesUserLevel$Write$VH_; }
+    static final VarHandle _NTFS_STATISTICS$BitmapWritesUserLevel$Write$VH_ = _NTFS_STATISTICS$BitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Write"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$BitmapWritesUserLevel$Write$VH() { return _NTFS_STATISTICS$BitmapWritesUserLevel$Write$VH_; }
 
-    static final MemoryLayout BitmapWritesUserLevel$Create$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout BitmapWritesUserLevel$Create$LAYOUT() { return BitmapWritesUserLevel$Create$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$BitmapWritesUserLevel$Create$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$BitmapWritesUserLevel$Create$LAYOUT() { return _NTFS_STATISTICS$BitmapWritesUserLevel$Create$LAYOUT_; }
 
-    static final VarHandle BitmapWritesUserLevel$Create$VH_ = BitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Create"));
-    static final java.lang.invoke.VarHandle BitmapWritesUserLevel$Create$VH() { return BitmapWritesUserLevel$Create$VH_; }
+    static final VarHandle _NTFS_STATISTICS$BitmapWritesUserLevel$Create$VH_ = _NTFS_STATISTICS$BitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Create"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$BitmapWritesUserLevel$Create$VH() { return _NTFS_STATISTICS$BitmapWritesUserLevel$Create$VH_; }
 
-    static final MemoryLayout BitmapWritesUserLevel$SetInfo$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout BitmapWritesUserLevel$SetInfo$LAYOUT() { return BitmapWritesUserLevel$SetInfo$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$BitmapWritesUserLevel$SetInfo$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$BitmapWritesUserLevel$SetInfo$LAYOUT() { return _NTFS_STATISTICS$BitmapWritesUserLevel$SetInfo$LAYOUT_; }
 
-    static final VarHandle BitmapWritesUserLevel$SetInfo$VH_ = BitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("SetInfo"));
-    static final java.lang.invoke.VarHandle BitmapWritesUserLevel$SetInfo$VH() { return BitmapWritesUserLevel$SetInfo$VH_; }
+    static final VarHandle _NTFS_STATISTICS$BitmapWritesUserLevel$SetInfo$VH_ = _NTFS_STATISTICS$BitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("SetInfo"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$BitmapWritesUserLevel$SetInfo$VH() { return _NTFS_STATISTICS$BitmapWritesUserLevel$SetInfo$VH_; }
 
     static final MemoryLayout _NTFS_STATISTICS$MftBitmapReads$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftBitmapReads$LAYOUT() { return _NTFS_STATISTICS$MftBitmapReads$LAYOUT_; }
@@ -185,37 +185,37 @@ class cfapi_h$constants$65 extends cfapi_h$constants$64 {
     static final VarHandle _NTFS_STATISTICS$MftBitmapWritesUserRequest$VH_ = _NTFS_STATISTICS$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("MftBitmapWritesUserRequest"));
     static final java.lang.invoke.VarHandle _NTFS_STATISTICS$MftBitmapWritesUserRequest$VH() { return _NTFS_STATISTICS$MftBitmapWritesUserRequest$VH_; }
 
-    static final MemoryLayout MftBitmapWritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _NTFS_STATISTICS$MftBitmapWritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("Write"),
         C_SHORT.withName("Create"),
         C_SHORT.withName("SetInfo"),
         C_SHORT.withName("Flush")
     );
-    static final jdk.incubator.foreign.MemoryLayout MftBitmapWritesUserLevel$struct$LAYOUT() { return MftBitmapWritesUserLevel$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftBitmapWritesUserLevel$struct$LAYOUT() { return _NTFS_STATISTICS$MftBitmapWritesUserLevel$struct$LAYOUT_; }
 
-    static final MemoryLayout MftBitmapWritesUserLevel$Write$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout MftBitmapWritesUserLevel$Write$LAYOUT() { return MftBitmapWritesUserLevel$Write$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$MftBitmapWritesUserLevel$Write$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftBitmapWritesUserLevel$Write$LAYOUT() { return _NTFS_STATISTICS$MftBitmapWritesUserLevel$Write$LAYOUT_; }
 
-    static final VarHandle MftBitmapWritesUserLevel$Write$VH_ = MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Write"));
-    static final java.lang.invoke.VarHandle MftBitmapWritesUserLevel$Write$VH() { return MftBitmapWritesUserLevel$Write$VH_; }
+    static final VarHandle _NTFS_STATISTICS$MftBitmapWritesUserLevel$Write$VH_ = _NTFS_STATISTICS$MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Write"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$MftBitmapWritesUserLevel$Write$VH() { return _NTFS_STATISTICS$MftBitmapWritesUserLevel$Write$VH_; }
 
-    static final MemoryLayout MftBitmapWritesUserLevel$Create$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout MftBitmapWritesUserLevel$Create$LAYOUT() { return MftBitmapWritesUserLevel$Create$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$MftBitmapWritesUserLevel$Create$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftBitmapWritesUserLevel$Create$LAYOUT() { return _NTFS_STATISTICS$MftBitmapWritesUserLevel$Create$LAYOUT_; }
 
-    static final VarHandle MftBitmapWritesUserLevel$Create$VH_ = MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Create"));
-    static final java.lang.invoke.VarHandle MftBitmapWritesUserLevel$Create$VH() { return MftBitmapWritesUserLevel$Create$VH_; }
+    static final VarHandle _NTFS_STATISTICS$MftBitmapWritesUserLevel$Create$VH_ = _NTFS_STATISTICS$MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Create"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$MftBitmapWritesUserLevel$Create$VH() { return _NTFS_STATISTICS$MftBitmapWritesUserLevel$Create$VH_; }
 
-    static final MemoryLayout MftBitmapWritesUserLevel$SetInfo$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout MftBitmapWritesUserLevel$SetInfo$LAYOUT() { return MftBitmapWritesUserLevel$SetInfo$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$MftBitmapWritesUserLevel$SetInfo$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftBitmapWritesUserLevel$SetInfo$LAYOUT() { return _NTFS_STATISTICS$MftBitmapWritesUserLevel$SetInfo$LAYOUT_; }
 
-    static final VarHandle MftBitmapWritesUserLevel$SetInfo$VH_ = MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("SetInfo"));
-    static final java.lang.invoke.VarHandle MftBitmapWritesUserLevel$SetInfo$VH() { return MftBitmapWritesUserLevel$SetInfo$VH_; }
+    static final VarHandle _NTFS_STATISTICS$MftBitmapWritesUserLevel$SetInfo$VH_ = _NTFS_STATISTICS$MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("SetInfo"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$MftBitmapWritesUserLevel$SetInfo$VH() { return _NTFS_STATISTICS$MftBitmapWritesUserLevel$SetInfo$VH_; }
 
-    static final MemoryLayout MftBitmapWritesUserLevel$Flush$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout MftBitmapWritesUserLevel$Flush$LAYOUT() { return MftBitmapWritesUserLevel$Flush$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$MftBitmapWritesUserLevel$Flush$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftBitmapWritesUserLevel$Flush$LAYOUT() { return _NTFS_STATISTICS$MftBitmapWritesUserLevel$Flush$LAYOUT_; }
 
-    static final VarHandle MftBitmapWritesUserLevel$Flush$VH_ = MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flush"));
-    static final java.lang.invoke.VarHandle MftBitmapWritesUserLevel$Flush$VH() { return MftBitmapWritesUserLevel$Flush$VH_; }
+    static final VarHandle _NTFS_STATISTICS$MftBitmapWritesUserLevel$Flush$VH_ = _NTFS_STATISTICS$MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flush"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$MftBitmapWritesUserLevel$Flush$VH() { return _NTFS_STATISTICS$MftBitmapWritesUserLevel$Flush$VH_; }
 
     static final MemoryLayout _NTFS_STATISTICS$UserIndexReads$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$UserIndexReads$LAYOUT() { return _NTFS_STATISTICS$UserIndexReads$LAYOUT_; }
@@ -265,7 +265,7 @@ class cfapi_h$constants$65 extends cfapi_h$constants$64 {
     static final VarHandle _NTFS_STATISTICS$LogFileWriteBytes$VH_ = _NTFS_STATISTICS$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("LogFileWriteBytes"));
     static final java.lang.invoke.VarHandle _NTFS_STATISTICS$LogFileWriteBytes$VH() { return _NTFS_STATISTICS$LogFileWriteBytes$VH_; }
 
-    static final MemoryLayout Allocate$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _NTFS_STATISTICS$Allocate$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Calls"),
         C_LONG.withName("Clusters"),
         C_LONG.withName("Hints"),
@@ -277,67 +277,67 @@ class cfapi_h$constants$65 extends cfapi_h$constants$64 {
         C_LONG.withName("CacheMiss"),
         C_LONG.withName("CacheMissClusters")
     );
-    static final jdk.incubator.foreign.MemoryLayout Allocate$struct$LAYOUT() { return Allocate$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Allocate$struct$LAYOUT() { return _NTFS_STATISTICS$Allocate$struct$LAYOUT_; }
 
-    static final MemoryLayout Allocate$Calls$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Allocate$Calls$LAYOUT() { return Allocate$Calls$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Allocate$Calls$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Allocate$Calls$LAYOUT() { return _NTFS_STATISTICS$Allocate$Calls$LAYOUT_; }
 
-    static final VarHandle Allocate$Calls$VH_ = Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Calls"));
-    static final java.lang.invoke.VarHandle Allocate$Calls$VH() { return Allocate$Calls$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Allocate$Calls$VH_ = _NTFS_STATISTICS$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Calls"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Allocate$Calls$VH() { return _NTFS_STATISTICS$Allocate$Calls$VH_; }
 
-    static final MemoryLayout Allocate$Clusters$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Allocate$Clusters$LAYOUT() { return Allocate$Clusters$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Allocate$Clusters$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Allocate$Clusters$LAYOUT() { return _NTFS_STATISTICS$Allocate$Clusters$LAYOUT_; }
 
-    static final VarHandle Allocate$Clusters$VH_ = Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Clusters"));
-    static final java.lang.invoke.VarHandle Allocate$Clusters$VH() { return Allocate$Clusters$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Allocate$Clusters$VH_ = _NTFS_STATISTICS$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Clusters"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Allocate$Clusters$VH() { return _NTFS_STATISTICS$Allocate$Clusters$VH_; }
 
-    static final MemoryLayout Allocate$Hints$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Allocate$Hints$LAYOUT() { return Allocate$Hints$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Allocate$Hints$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Allocate$Hints$LAYOUT() { return _NTFS_STATISTICS$Allocate$Hints$LAYOUT_; }
 
-    static final VarHandle Allocate$Hints$VH_ = Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Hints"));
-    static final java.lang.invoke.VarHandle Allocate$Hints$VH() { return Allocate$Hints$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Allocate$Hints$VH_ = _NTFS_STATISTICS$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Hints"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Allocate$Hints$VH() { return _NTFS_STATISTICS$Allocate$Hints$VH_; }
 
-    static final MemoryLayout Allocate$RunsReturned$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Allocate$RunsReturned$LAYOUT() { return Allocate$RunsReturned$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Allocate$RunsReturned$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Allocate$RunsReturned$LAYOUT() { return _NTFS_STATISTICS$Allocate$RunsReturned$LAYOUT_; }
 
-    static final VarHandle Allocate$RunsReturned$VH_ = Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("RunsReturned"));
-    static final java.lang.invoke.VarHandle Allocate$RunsReturned$VH() { return Allocate$RunsReturned$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Allocate$RunsReturned$VH_ = _NTFS_STATISTICS$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("RunsReturned"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Allocate$RunsReturned$VH() { return _NTFS_STATISTICS$Allocate$RunsReturned$VH_; }
 
-    static final MemoryLayout Allocate$HintsHonored$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Allocate$HintsHonored$LAYOUT() { return Allocate$HintsHonored$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Allocate$HintsHonored$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Allocate$HintsHonored$LAYOUT() { return _NTFS_STATISTICS$Allocate$HintsHonored$LAYOUT_; }
 
-    static final VarHandle Allocate$HintsHonored$VH_ = Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("HintsHonored"));
-    static final java.lang.invoke.VarHandle Allocate$HintsHonored$VH() { return Allocate$HintsHonored$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Allocate$HintsHonored$VH_ = _NTFS_STATISTICS$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("HintsHonored"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Allocate$HintsHonored$VH() { return _NTFS_STATISTICS$Allocate$HintsHonored$VH_; }
 
-    static final MemoryLayout Allocate$HintsClusters$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Allocate$HintsClusters$LAYOUT() { return Allocate$HintsClusters$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Allocate$HintsClusters$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Allocate$HintsClusters$LAYOUT() { return _NTFS_STATISTICS$Allocate$HintsClusters$LAYOUT_; }
 
-    static final VarHandle Allocate$HintsClusters$VH_ = Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("HintsClusters"));
-    static final java.lang.invoke.VarHandle Allocate$HintsClusters$VH() { return Allocate$HintsClusters$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Allocate$HintsClusters$VH_ = _NTFS_STATISTICS$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("HintsClusters"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Allocate$HintsClusters$VH() { return _NTFS_STATISTICS$Allocate$HintsClusters$VH_; }
 
-    static final MemoryLayout Allocate$Cache$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Allocate$Cache$LAYOUT() { return Allocate$Cache$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Allocate$Cache$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Allocate$Cache$LAYOUT() { return _NTFS_STATISTICS$Allocate$Cache$LAYOUT_; }
 
-    static final VarHandle Allocate$Cache$VH_ = Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Cache"));
-    static final java.lang.invoke.VarHandle Allocate$Cache$VH() { return Allocate$Cache$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Allocate$Cache$VH_ = _NTFS_STATISTICS$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Cache"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Allocate$Cache$VH() { return _NTFS_STATISTICS$Allocate$Cache$VH_; }
 
-    static final MemoryLayout Allocate$CacheClusters$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Allocate$CacheClusters$LAYOUT() { return Allocate$CacheClusters$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Allocate$CacheClusters$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Allocate$CacheClusters$LAYOUT() { return _NTFS_STATISTICS$Allocate$CacheClusters$LAYOUT_; }
 
-    static final VarHandle Allocate$CacheClusters$VH_ = Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CacheClusters"));
-    static final java.lang.invoke.VarHandle Allocate$CacheClusters$VH() { return Allocate$CacheClusters$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Allocate$CacheClusters$VH_ = _NTFS_STATISTICS$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CacheClusters"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Allocate$CacheClusters$VH() { return _NTFS_STATISTICS$Allocate$CacheClusters$VH_; }
 
-    static final MemoryLayout Allocate$CacheMiss$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Allocate$CacheMiss$LAYOUT() { return Allocate$CacheMiss$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Allocate$CacheMiss$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Allocate$CacheMiss$LAYOUT() { return _NTFS_STATISTICS$Allocate$CacheMiss$LAYOUT_; }
 
-    static final VarHandle Allocate$CacheMiss$VH_ = Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CacheMiss"));
-    static final java.lang.invoke.VarHandle Allocate$CacheMiss$VH() { return Allocate$CacheMiss$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Allocate$CacheMiss$VH_ = _NTFS_STATISTICS$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CacheMiss"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Allocate$CacheMiss$VH() { return _NTFS_STATISTICS$Allocate$CacheMiss$VH_; }
 
-    static final MemoryLayout Allocate$CacheMissClusters$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Allocate$CacheMissClusters$LAYOUT() { return Allocate$CacheMissClusters$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$Allocate$CacheMissClusters$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Allocate$CacheMissClusters$LAYOUT() { return _NTFS_STATISTICS$Allocate$CacheMissClusters$LAYOUT_; }
 
-    static final VarHandle Allocate$CacheMissClusters$VH_ = Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CacheMissClusters"));
-    static final java.lang.invoke.VarHandle Allocate$CacheMissClusters$VH() { return Allocate$CacheMissClusters$VH_; }
+    static final VarHandle _NTFS_STATISTICS$Allocate$CacheMissClusters$VH_ = _NTFS_STATISTICS$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CacheMissClusters"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Allocate$CacheMissClusters$VH() { return _NTFS_STATISTICS$Allocate$CacheMissClusters$VH_; }
 
     static final MemoryLayout _NTFS_STATISTICS$DiskResourcesExhausted$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$DiskResourcesExhausted$LAYOUT() { return _NTFS_STATISTICS$DiskResourcesExhausted$LAYOUT_; }
@@ -587,6 +587,38 @@ class cfapi_h$constants$65 extends cfapi_h$constants$64 {
     static final VarHandle _NTFS_STATISTICS_EX$MftWriteBytes$VH_ = _NTFS_STATISTICS_EX$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("MftWriteBytes"));
     static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$MftWriteBytes$VH() { return _NTFS_STATISTICS_EX$MftWriteBytes$VH_; }
 
+    static final MemoryLayout _NTFS_STATISTICS_EX$MftWritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_LONG.withName("Write"),
+        C_LONG.withName("Create"),
+        C_LONG.withName("SetInfo"),
+        C_LONG.withName("Flush")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftWritesUserLevel$struct$LAYOUT() { return _NTFS_STATISTICS_EX$MftWritesUserLevel$struct$LAYOUT_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$MftWritesUserLevel$Write$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftWritesUserLevel$Write$LAYOUT() { return _NTFS_STATISTICS_EX$MftWritesUserLevel$Write$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$MftWritesUserLevel$Write$VH_ = _NTFS_STATISTICS_EX$MftWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Write"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$MftWritesUserLevel$Write$VH() { return _NTFS_STATISTICS_EX$MftWritesUserLevel$Write$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$MftWritesUserLevel$Create$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftWritesUserLevel$Create$LAYOUT() { return _NTFS_STATISTICS_EX$MftWritesUserLevel$Create$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$MftWritesUserLevel$Create$VH_ = _NTFS_STATISTICS_EX$MftWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Create"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$MftWritesUserLevel$Create$VH() { return _NTFS_STATISTICS_EX$MftWritesUserLevel$Create$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$MftWritesUserLevel$SetInfo$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftWritesUserLevel$SetInfo$LAYOUT() { return _NTFS_STATISTICS_EX$MftWritesUserLevel$SetInfo$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$MftWritesUserLevel$SetInfo$VH_ = _NTFS_STATISTICS_EX$MftWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SetInfo"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$MftWritesUserLevel$SetInfo$VH() { return _NTFS_STATISTICS_EX$MftWritesUserLevel$SetInfo$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$MftWritesUserLevel$Flush$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftWritesUserLevel$Flush$LAYOUT() { return _NTFS_STATISTICS_EX$MftWritesUserLevel$Flush$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$MftWritesUserLevel$Flush$VH_ = _NTFS_STATISTICS_EX$MftWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flush"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$MftWritesUserLevel$Flush$VH() { return _NTFS_STATISTICS_EX$MftWritesUserLevel$Flush$VH_; }
+
     static final MemoryLayout _NTFS_STATISTICS_EX$MftWritesFlushForLogFileFull$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftWritesFlushForLogFileFull$LAYOUT() { return _NTFS_STATISTICS_EX$MftWritesFlushForLogFileFull$LAYOUT_; }
 
@@ -616,6 +648,38 @@ class cfapi_h$constants$65 extends cfapi_h$constants$64 {
 
     static final VarHandle _NTFS_STATISTICS_EX$Mft2WriteBytes$VH_ = _NTFS_STATISTICS_EX$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Mft2WriteBytes"));
     static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Mft2WriteBytes$VH() { return _NTFS_STATISTICS_EX$Mft2WriteBytes$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_LONG.withName("Write"),
+        C_LONG.withName("Create"),
+        C_LONG.withName("SetInfo"),
+        C_LONG.withName("Flush")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesUserLevel$struct$LAYOUT() { return _NTFS_STATISTICS_EX$Mft2WritesUserLevel$struct$LAYOUT_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Write$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Write$LAYOUT() { return _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Write$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Write$VH_ = _NTFS_STATISTICS_EX$Mft2WritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Write"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Write$VH() { return _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Write$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Create$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Create$LAYOUT() { return _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Create$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Create$VH_ = _NTFS_STATISTICS_EX$Mft2WritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Create"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Create$VH() { return _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Create$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesUserLevel$SetInfo$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesUserLevel$SetInfo$LAYOUT() { return _NTFS_STATISTICS_EX$Mft2WritesUserLevel$SetInfo$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Mft2WritesUserLevel$SetInfo$VH_ = _NTFS_STATISTICS_EX$Mft2WritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SetInfo"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Mft2WritesUserLevel$SetInfo$VH() { return _NTFS_STATISTICS_EX$Mft2WritesUserLevel$SetInfo$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Flush$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Flush$LAYOUT() { return _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Flush$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Flush$VH_ = _NTFS_STATISTICS_EX$Mft2WritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flush"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Flush$VH() { return _NTFS_STATISTICS_EX$Mft2WritesUserLevel$Flush$VH_; }
 
     static final MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesFlushForLogFileFull$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Mft2WritesFlushForLogFileFull$LAYOUT() { return _NTFS_STATISTICS_EX$Mft2WritesFlushForLogFileFull$LAYOUT_; }
@@ -701,11 +765,37 @@ class cfapi_h$constants$65 extends cfapi_h$constants$64 {
     static final VarHandle _NTFS_STATISTICS_EX$BitmapWritesUserRequest$VH_ = _NTFS_STATISTICS_EX$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("BitmapWritesUserRequest"));
     static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$BitmapWritesUserRequest$VH() { return _NTFS_STATISTICS_EX$BitmapWritesUserRequest$VH_; }
 
-    static final MemoryLayout BitmapWritesUserLevel$Flush$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout BitmapWritesUserLevel$Flush$LAYOUT() { return BitmapWritesUserLevel$Flush$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS_EX$BitmapWritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_LONG.withName("Write"),
+        C_LONG.withName("Create"),
+        C_LONG.withName("SetInfo"),
+        C_LONG.withName("Flush")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$BitmapWritesUserLevel$struct$LAYOUT() { return _NTFS_STATISTICS_EX$BitmapWritesUserLevel$struct$LAYOUT_; }
 
-    static final VarHandle BitmapWritesUserLevel$Flush$VH_ = BitmapWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flush"));
-    static final java.lang.invoke.VarHandle BitmapWritesUserLevel$Flush$VH() { return BitmapWritesUserLevel$Flush$VH_; }
+    static final MemoryLayout _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Write$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Write$LAYOUT() { return _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Write$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Write$VH_ = _NTFS_STATISTICS_EX$BitmapWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Write"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Write$VH() { return _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Write$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Create$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Create$LAYOUT() { return _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Create$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Create$VH_ = _NTFS_STATISTICS_EX$BitmapWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Create"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Create$VH() { return _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Create$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$BitmapWritesUserLevel$SetInfo$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$BitmapWritesUserLevel$SetInfo$LAYOUT() { return _NTFS_STATISTICS_EX$BitmapWritesUserLevel$SetInfo$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$BitmapWritesUserLevel$SetInfo$VH_ = _NTFS_STATISTICS_EX$BitmapWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SetInfo"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$BitmapWritesUserLevel$SetInfo$VH() { return _NTFS_STATISTICS_EX$BitmapWritesUserLevel$SetInfo$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Flush$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Flush$LAYOUT() { return _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Flush$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Flush$VH_ = _NTFS_STATISTICS_EX$BitmapWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flush"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Flush$VH() { return _NTFS_STATISTICS_EX$BitmapWritesUserLevel$Flush$VH_; }
 
     static final MemoryLayout _NTFS_STATISTICS_EX$MftBitmapReads$LAYOUT_ = C_LONGLONG;
     static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftBitmapReads$LAYOUT() { return _NTFS_STATISTICS_EX$MftBitmapReads$LAYOUT_; }
@@ -748,6 +838,38 @@ class cfapi_h$constants$65 extends cfapi_h$constants$64 {
 
     static final VarHandle _NTFS_STATISTICS_EX$MftBitmapWritesUserRequest$VH_ = _NTFS_STATISTICS_EX$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MftBitmapWritesUserRequest"));
     static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$MftBitmapWritesUserRequest$VH() { return _NTFS_STATISTICS_EX$MftBitmapWritesUserRequest$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_LONG.withName("Write"),
+        C_LONG.withName("Create"),
+        C_LONG.withName("SetInfo"),
+        C_LONG.withName("Flush")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$struct$LAYOUT() { return _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$struct$LAYOUT_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Write$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Write$LAYOUT() { return _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Write$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Write$VH_ = _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Write"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Write$VH() { return _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Write$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Create$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Create$LAYOUT() { return _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Create$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Create$VH_ = _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Create"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Create$VH() { return _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Create$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$SetInfo$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$SetInfo$LAYOUT() { return _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$SetInfo$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$SetInfo$VH_ = _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SetInfo"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$SetInfo$VH() { return _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$SetInfo$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Flush$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Flush$LAYOUT() { return _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Flush$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Flush$VH_ = _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flush"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Flush$VH() { return _NTFS_STATISTICS_EX$MftBitmapWritesUserLevel$Flush$VH_; }
 
     static final MemoryLayout _NTFS_STATISTICS_EX$UserIndexReads$LAYOUT_ = C_LONGLONG;
     static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$UserIndexReads$LAYOUT() { return _NTFS_STATISTICS_EX$UserIndexReads$LAYOUT_; }
@@ -796,6 +918,80 @@ class cfapi_h$constants$65 extends cfapi_h$constants$64 {
 
     static final VarHandle _NTFS_STATISTICS_EX$LogFileWriteBytes$VH_ = _NTFS_STATISTICS_EX$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("LogFileWriteBytes"));
     static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$LogFileWriteBytes$VH() { return _NTFS_STATISTICS_EX$LogFileWriteBytes$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_LONG.withName("Calls"),
+        C_LONG.withName("RunsReturned"),
+        C_LONG.withName("Hints"),
+        C_LONG.withName("HintsHonored"),
+        C_LONG.withName("Cache"),
+        C_LONG.withName("CacheMiss"),
+        C_LONGLONG.withName("Clusters"),
+        C_LONGLONG.withName("HintsClusters"),
+        C_LONGLONG.withName("CacheClusters"),
+        C_LONGLONG.withName("CacheMissClusters")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT() { return _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Allocate$Calls$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Allocate$Calls$LAYOUT() { return _NTFS_STATISTICS_EX$Allocate$Calls$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Allocate$Calls$VH_ = _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Calls"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Allocate$Calls$VH() { return _NTFS_STATISTICS_EX$Allocate$Calls$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Allocate$RunsReturned$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Allocate$RunsReturned$LAYOUT() { return _NTFS_STATISTICS_EX$Allocate$RunsReturned$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Allocate$RunsReturned$VH_ = _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("RunsReturned"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Allocate$RunsReturned$VH() { return _NTFS_STATISTICS_EX$Allocate$RunsReturned$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Allocate$Hints$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Allocate$Hints$LAYOUT() { return _NTFS_STATISTICS_EX$Allocate$Hints$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Allocate$Hints$VH_ = _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Hints"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Allocate$Hints$VH() { return _NTFS_STATISTICS_EX$Allocate$Hints$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Allocate$HintsHonored$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Allocate$HintsHonored$LAYOUT() { return _NTFS_STATISTICS_EX$Allocate$HintsHonored$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Allocate$HintsHonored$VH_ = _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("HintsHonored"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Allocate$HintsHonored$VH() { return _NTFS_STATISTICS_EX$Allocate$HintsHonored$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Allocate$Cache$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Allocate$Cache$LAYOUT() { return _NTFS_STATISTICS_EX$Allocate$Cache$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Allocate$Cache$VH_ = _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Cache"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Allocate$Cache$VH() { return _NTFS_STATISTICS_EX$Allocate$Cache$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Allocate$CacheMiss$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Allocate$CacheMiss$LAYOUT() { return _NTFS_STATISTICS_EX$Allocate$CacheMiss$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Allocate$CacheMiss$VH_ = _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CacheMiss"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Allocate$CacheMiss$VH() { return _NTFS_STATISTICS_EX$Allocate$CacheMiss$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Allocate$Clusters$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Allocate$Clusters$LAYOUT() { return _NTFS_STATISTICS_EX$Allocate$Clusters$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Allocate$Clusters$VH_ = _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Clusters"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Allocate$Clusters$VH() { return _NTFS_STATISTICS_EX$Allocate$Clusters$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Allocate$HintsClusters$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Allocate$HintsClusters$LAYOUT() { return _NTFS_STATISTICS_EX$Allocate$HintsClusters$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Allocate$HintsClusters$VH_ = _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("HintsClusters"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Allocate$HintsClusters$VH() { return _NTFS_STATISTICS_EX$Allocate$HintsClusters$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Allocate$CacheClusters$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Allocate$CacheClusters$LAYOUT() { return _NTFS_STATISTICS_EX$Allocate$CacheClusters$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Allocate$CacheClusters$VH_ = _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("CacheClusters"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Allocate$CacheClusters$VH() { return _NTFS_STATISTICS_EX$Allocate$CacheClusters$VH_; }
+
+    static final MemoryLayout _NTFS_STATISTICS_EX$Allocate$CacheMissClusters$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$Allocate$CacheMissClusters$LAYOUT() { return _NTFS_STATISTICS_EX$Allocate$CacheMissClusters$LAYOUT_; }
+
+    static final VarHandle _NTFS_STATISTICS_EX$Allocate$CacheMissClusters$VH_ = _NTFS_STATISTICS_EX$Allocate$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("CacheMissClusters"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS_EX$Allocate$CacheMissClusters$VH() { return _NTFS_STATISTICS_EX$Allocate$CacheMissClusters$VH_; }
 
     static final MemoryLayout _NTFS_STATISTICS_EX$DiskResourcesExhausted$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS_EX$DiskResourcesExhausted$LAYOUT() { return _NTFS_STATISTICS_EX$DiskResourcesExhausted$LAYOUT_; }

@@ -782,7 +782,7 @@ class cfapi_h$constants$64 extends cfapi_h$constants$63 {
     static final VarHandle USN_RECORD_V4$ExtentSize$VH_ = USN_RECORD_V4$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("ExtentSize"));
     static final java.lang.invoke.VarHandle USN_RECORD_V4$ExtentSize$VH() { return USN_RECORD_V4$ExtentSize$VH_; }
 
-    static final MemoryLayout USN_RECORD_UNION$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout USN_RECORD_UNION$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_LONG.withName("RecordLength"),
             C_SHORT.withName("MajorVersion"),
@@ -866,7 +866,7 @@ class cfapi_h$constants$64 extends cfapi_h$constants$63 {
             )).withName("Extents")
         ).withName("V4")
     );
-    static final jdk.incubator.foreign.MemoryLayout USN_RECORD_UNION$struct$LAYOUT() { return USN_RECORD_UNION$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout USN_RECORD_UNION$union$LAYOUT() { return USN_RECORD_UNION$union$LAYOUT_; }
 
     static final MemoryLayout USN_JOURNAL_DATA_V0$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONGLONG.withName("UsnJournalID"),
@@ -1649,37 +1649,37 @@ class cfapi_h$constants$64 extends cfapi_h$constants$63 {
     static final VarHandle _NTFS_STATISTICS$MftWriteBytes$VH_ = _NTFS_STATISTICS$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MftWriteBytes"));
     static final java.lang.invoke.VarHandle _NTFS_STATISTICS$MftWriteBytes$VH() { return _NTFS_STATISTICS$MftWriteBytes$VH_; }
 
-    static final MemoryLayout MftWritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _NTFS_STATISTICS$MftWritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("Write"),
         C_SHORT.withName("Create"),
         C_SHORT.withName("SetInfo"),
         C_SHORT.withName("Flush")
     );
-    static final jdk.incubator.foreign.MemoryLayout MftWritesUserLevel$struct$LAYOUT() { return MftWritesUserLevel$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftWritesUserLevel$struct$LAYOUT() { return _NTFS_STATISTICS$MftWritesUserLevel$struct$LAYOUT_; }
 
-    static final MemoryLayout MftWritesUserLevel$Write$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout MftWritesUserLevel$Write$LAYOUT() { return MftWritesUserLevel$Write$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$MftWritesUserLevel$Write$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftWritesUserLevel$Write$LAYOUT() { return _NTFS_STATISTICS$MftWritesUserLevel$Write$LAYOUT_; }
 
-    static final VarHandle MftWritesUserLevel$Write$VH_ = MftWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Write"));
-    static final java.lang.invoke.VarHandle MftWritesUserLevel$Write$VH() { return MftWritesUserLevel$Write$VH_; }
+    static final VarHandle _NTFS_STATISTICS$MftWritesUserLevel$Write$VH_ = _NTFS_STATISTICS$MftWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Write"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$MftWritesUserLevel$Write$VH() { return _NTFS_STATISTICS$MftWritesUserLevel$Write$VH_; }
 
-    static final MemoryLayout MftWritesUserLevel$Create$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout MftWritesUserLevel$Create$LAYOUT() { return MftWritesUserLevel$Create$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$MftWritesUserLevel$Create$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftWritesUserLevel$Create$LAYOUT() { return _NTFS_STATISTICS$MftWritesUserLevel$Create$LAYOUT_; }
 
-    static final VarHandle MftWritesUserLevel$Create$VH_ = MftWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Create"));
-    static final java.lang.invoke.VarHandle MftWritesUserLevel$Create$VH() { return MftWritesUserLevel$Create$VH_; }
+    static final VarHandle _NTFS_STATISTICS$MftWritesUserLevel$Create$VH_ = _NTFS_STATISTICS$MftWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Create"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$MftWritesUserLevel$Create$VH() { return _NTFS_STATISTICS$MftWritesUserLevel$Create$VH_; }
 
-    static final MemoryLayout MftWritesUserLevel$SetInfo$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout MftWritesUserLevel$SetInfo$LAYOUT() { return MftWritesUserLevel$SetInfo$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$MftWritesUserLevel$SetInfo$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftWritesUserLevel$SetInfo$LAYOUT() { return _NTFS_STATISTICS$MftWritesUserLevel$SetInfo$LAYOUT_; }
 
-    static final VarHandle MftWritesUserLevel$SetInfo$VH_ = MftWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("SetInfo"));
-    static final java.lang.invoke.VarHandle MftWritesUserLevel$SetInfo$VH() { return MftWritesUserLevel$SetInfo$VH_; }
+    static final VarHandle _NTFS_STATISTICS$MftWritesUserLevel$SetInfo$VH_ = _NTFS_STATISTICS$MftWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("SetInfo"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$MftWritesUserLevel$SetInfo$VH() { return _NTFS_STATISTICS$MftWritesUserLevel$SetInfo$VH_; }
 
-    static final MemoryLayout MftWritesUserLevel$Flush$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout MftWritesUserLevel$Flush$LAYOUT() { return MftWritesUserLevel$Flush$LAYOUT_; }
+    static final MemoryLayout _NTFS_STATISTICS$MftWritesUserLevel$Flush$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftWritesUserLevel$Flush$LAYOUT() { return _NTFS_STATISTICS$MftWritesUserLevel$Flush$LAYOUT_; }
 
-    static final VarHandle MftWritesUserLevel$Flush$VH_ = MftWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flush"));
-    static final java.lang.invoke.VarHandle MftWritesUserLevel$Flush$VH() { return MftWritesUserLevel$Flush$VH_; }
+    static final VarHandle _NTFS_STATISTICS$MftWritesUserLevel$Flush$VH_ = _NTFS_STATISTICS$MftWritesUserLevel$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Flush"));
+    static final java.lang.invoke.VarHandle _NTFS_STATISTICS$MftWritesUserLevel$Flush$VH() { return _NTFS_STATISTICS$MftWritesUserLevel$Flush$VH_; }
 
     static final MemoryLayout _NTFS_STATISTICS$MftWritesFlushForLogFileFull$LAYOUT_ = C_SHORT;
     static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$MftWritesFlushForLogFileFull$LAYOUT() { return _NTFS_STATISTICS$MftWritesFlushForLogFileFull$LAYOUT_; }
@@ -1711,13 +1711,13 @@ class cfapi_h$constants$64 extends cfapi_h$constants$63 {
     static final VarHandle _NTFS_STATISTICS$Mft2WriteBytes$VH_ = _NTFS_STATISTICS$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Mft2WriteBytes"));
     static final java.lang.invoke.VarHandle _NTFS_STATISTICS$Mft2WriteBytes$VH() { return _NTFS_STATISTICS$Mft2WriteBytes$VH_; }
 
-    static final MemoryLayout Mft2WritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _NTFS_STATISTICS$Mft2WritesUserLevel$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("Write"),
         C_SHORT.withName("Create"),
         C_SHORT.withName("SetInfo"),
         C_SHORT.withName("Flush")
     );
-    static final jdk.incubator.foreign.MemoryLayout Mft2WritesUserLevel$struct$LAYOUT() { return Mft2WritesUserLevel$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _NTFS_STATISTICS$Mft2WritesUserLevel$struct$LAYOUT() { return _NTFS_STATISTICS$Mft2WritesUserLevel$struct$LAYOUT_; }
 
 }
 

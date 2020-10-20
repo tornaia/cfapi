@@ -340,50 +340,50 @@ class cfapi_h$constants$24 extends cfapi_h$constants$23 {
     static final VarHandle _PROCESS_HEAP_ENTRY$wFlags$VH_ = _PROCESS_HEAP_ENTRY$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("wFlags"));
     static final java.lang.invoke.VarHandle _PROCESS_HEAP_ENTRY$wFlags$VH() { return _PROCESS_HEAP_ENTRY$wFlags$VH_; }
 
-    static final MemoryLayout Block$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _PROCESS_HEAP_ENTRY$Block$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_POINTER.withName("hMem"),
         MemoryLayout.ofSequence(3, C_LONG).withName("dwReserved"),
         MemoryLayout.ofPaddingBits(32)
     );
-    static final jdk.incubator.foreign.MemoryLayout Block$struct$LAYOUT() { return Block$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _PROCESS_HEAP_ENTRY$Block$struct$LAYOUT() { return _PROCESS_HEAP_ENTRY$Block$struct$LAYOUT_; }
 
-    static final MemoryLayout Block$hMem$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Block$hMem$LAYOUT() { return Block$hMem$LAYOUT_; }
+    static final MemoryLayout _PROCESS_HEAP_ENTRY$Block$hMem$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _PROCESS_HEAP_ENTRY$Block$hMem$LAYOUT() { return _PROCESS_HEAP_ENTRY$Block$hMem$LAYOUT_; }
 
-    static final VarHandle Block$hMem$VH_ = MemoryHandles.asAddressVarHandle(Block$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hMem")));
-    static final java.lang.invoke.VarHandle Block$hMem$VH() { return Block$hMem$VH_; }
+    static final VarHandle _PROCESS_HEAP_ENTRY$Block$hMem$VH_ = MemoryHandles.asAddressVarHandle(_PROCESS_HEAP_ENTRY$Block$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hMem")));
+    static final java.lang.invoke.VarHandle _PROCESS_HEAP_ENTRY$Block$hMem$VH() { return _PROCESS_HEAP_ENTRY$Block$hMem$VH_; }
 
-    static final MemoryLayout Region$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _PROCESS_HEAP_ENTRY$Region$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("dwCommittedSize"),
         C_LONG.withName("dwUnCommittedSize"),
         C_POINTER.withName("lpFirstBlock"),
         C_POINTER.withName("lpLastBlock")
     );
-    static final jdk.incubator.foreign.MemoryLayout Region$struct$LAYOUT() { return Region$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _PROCESS_HEAP_ENTRY$Region$struct$LAYOUT() { return _PROCESS_HEAP_ENTRY$Region$struct$LAYOUT_; }
 
-    static final MemoryLayout Region$dwCommittedSize$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Region$dwCommittedSize$LAYOUT() { return Region$dwCommittedSize$LAYOUT_; }
+    static final MemoryLayout _PROCESS_HEAP_ENTRY$Region$dwCommittedSize$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _PROCESS_HEAP_ENTRY$Region$dwCommittedSize$LAYOUT() { return _PROCESS_HEAP_ENTRY$Region$dwCommittedSize$LAYOUT_; }
 
-    static final VarHandle Region$dwCommittedSize$VH_ = Region$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwCommittedSize"));
-    static final java.lang.invoke.VarHandle Region$dwCommittedSize$VH() { return Region$dwCommittedSize$VH_; }
+    static final VarHandle _PROCESS_HEAP_ENTRY$Region$dwCommittedSize$VH_ = _PROCESS_HEAP_ENTRY$Region$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwCommittedSize"));
+    static final java.lang.invoke.VarHandle _PROCESS_HEAP_ENTRY$Region$dwCommittedSize$VH() { return _PROCESS_HEAP_ENTRY$Region$dwCommittedSize$VH_; }
 
-    static final MemoryLayout Region$dwUnCommittedSize$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Region$dwUnCommittedSize$LAYOUT() { return Region$dwUnCommittedSize$LAYOUT_; }
+    static final MemoryLayout _PROCESS_HEAP_ENTRY$Region$dwUnCommittedSize$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _PROCESS_HEAP_ENTRY$Region$dwUnCommittedSize$LAYOUT() { return _PROCESS_HEAP_ENTRY$Region$dwUnCommittedSize$LAYOUT_; }
 
-    static final VarHandle Region$dwUnCommittedSize$VH_ = Region$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwUnCommittedSize"));
-    static final java.lang.invoke.VarHandle Region$dwUnCommittedSize$VH() { return Region$dwUnCommittedSize$VH_; }
+    static final VarHandle _PROCESS_HEAP_ENTRY$Region$dwUnCommittedSize$VH_ = _PROCESS_HEAP_ENTRY$Region$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwUnCommittedSize"));
+    static final java.lang.invoke.VarHandle _PROCESS_HEAP_ENTRY$Region$dwUnCommittedSize$VH() { return _PROCESS_HEAP_ENTRY$Region$dwUnCommittedSize$VH_; }
 
-    static final MemoryLayout Region$lpFirstBlock$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Region$lpFirstBlock$LAYOUT() { return Region$lpFirstBlock$LAYOUT_; }
+    static final MemoryLayout _PROCESS_HEAP_ENTRY$Region$lpFirstBlock$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _PROCESS_HEAP_ENTRY$Region$lpFirstBlock$LAYOUT() { return _PROCESS_HEAP_ENTRY$Region$lpFirstBlock$LAYOUT_; }
 
-    static final VarHandle Region$lpFirstBlock$VH_ = MemoryHandles.asAddressVarHandle(Region$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpFirstBlock")));
-    static final java.lang.invoke.VarHandle Region$lpFirstBlock$VH() { return Region$lpFirstBlock$VH_; }
+    static final VarHandle _PROCESS_HEAP_ENTRY$Region$lpFirstBlock$VH_ = MemoryHandles.asAddressVarHandle(_PROCESS_HEAP_ENTRY$Region$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpFirstBlock")));
+    static final java.lang.invoke.VarHandle _PROCESS_HEAP_ENTRY$Region$lpFirstBlock$VH() { return _PROCESS_HEAP_ENTRY$Region$lpFirstBlock$VH_; }
 
-    static final MemoryLayout Region$lpLastBlock$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Region$lpLastBlock$LAYOUT() { return Region$lpLastBlock$LAYOUT_; }
+    static final MemoryLayout _PROCESS_HEAP_ENTRY$Region$lpLastBlock$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _PROCESS_HEAP_ENTRY$Region$lpLastBlock$LAYOUT() { return _PROCESS_HEAP_ENTRY$Region$lpLastBlock$LAYOUT_; }
 
-    static final VarHandle Region$lpLastBlock$VH_ = MemoryHandles.asAddressVarHandle(Region$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpLastBlock")));
-    static final java.lang.invoke.VarHandle Region$lpLastBlock$VH() { return Region$lpLastBlock$VH_; }
+    static final VarHandle _PROCESS_HEAP_ENTRY$Region$lpLastBlock$VH_ = MemoryHandles.asAddressVarHandle(_PROCESS_HEAP_ENTRY$Region$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("lpLastBlock")));
+    static final java.lang.invoke.VarHandle _PROCESS_HEAP_ENTRY$Region$lpLastBlock$VH() { return _PROCESS_HEAP_ENTRY$Region$lpLastBlock$VH_; }
 
     static final MemoryLayout _REASON_CONTEXT$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Version"),
@@ -412,7 +412,7 @@ class cfapi_h$constants$24 extends cfapi_h$constants$23 {
     static final VarHandle _REASON_CONTEXT$Flags$VH_ = _REASON_CONTEXT$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
     static final java.lang.invoke.VarHandle _REASON_CONTEXT$Flags$VH() { return _REASON_CONTEXT$Flags$VH_; }
 
-    static final MemoryLayout Reason$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _REASON_CONTEXT$Reason$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_POINTER.withName("LocalizedReasonModule"),
             C_LONG.withName("LocalizedReasonId"),
@@ -421,45 +421,45 @@ class cfapi_h$constants$24 extends cfapi_h$constants$23 {
         ).withName("Detailed"),
         C_POINTER.withName("SimpleReasonString")
     );
-    static final jdk.incubator.foreign.MemoryLayout Reason$struct$LAYOUT() { return Reason$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _REASON_CONTEXT$Reason$union$LAYOUT() { return _REASON_CONTEXT$Reason$union$LAYOUT_; }
 
-    static final MemoryLayout Detailed$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _REASON_CONTEXT$Reason$Detailed$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_POINTER.withName("LocalizedReasonModule"),
         C_LONG.withName("LocalizedReasonId"),
         C_LONG.withName("ReasonStringCount"),
         C_POINTER.withName("ReasonStrings")
     );
-    static final jdk.incubator.foreign.MemoryLayout Detailed$struct$LAYOUT() { return Detailed$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _REASON_CONTEXT$Reason$Detailed$struct$LAYOUT() { return _REASON_CONTEXT$Reason$Detailed$struct$LAYOUT_; }
 
-    static final MemoryLayout Detailed$LocalizedReasonModule$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Detailed$LocalizedReasonModule$LAYOUT() { return Detailed$LocalizedReasonModule$LAYOUT_; }
+    static final MemoryLayout _REASON_CONTEXT$Reason$Detailed$LocalizedReasonModule$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _REASON_CONTEXT$Reason$Detailed$LocalizedReasonModule$LAYOUT() { return _REASON_CONTEXT$Reason$Detailed$LocalizedReasonModule$LAYOUT_; }
 
-    static final VarHandle Detailed$LocalizedReasonModule$VH_ = MemoryHandles.asAddressVarHandle(Detailed$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("LocalizedReasonModule")));
-    static final java.lang.invoke.VarHandle Detailed$LocalizedReasonModule$VH() { return Detailed$LocalizedReasonModule$VH_; }
+    static final VarHandle _REASON_CONTEXT$Reason$Detailed$LocalizedReasonModule$VH_ = MemoryHandles.asAddressVarHandle(_REASON_CONTEXT$Reason$Detailed$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("LocalizedReasonModule")));
+    static final java.lang.invoke.VarHandle _REASON_CONTEXT$Reason$Detailed$LocalizedReasonModule$VH() { return _REASON_CONTEXT$Reason$Detailed$LocalizedReasonModule$VH_; }
 
-    static final MemoryLayout Detailed$LocalizedReasonId$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Detailed$LocalizedReasonId$LAYOUT() { return Detailed$LocalizedReasonId$LAYOUT_; }
+    static final MemoryLayout _REASON_CONTEXT$Reason$Detailed$LocalizedReasonId$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _REASON_CONTEXT$Reason$Detailed$LocalizedReasonId$LAYOUT() { return _REASON_CONTEXT$Reason$Detailed$LocalizedReasonId$LAYOUT_; }
 
-    static final VarHandle Detailed$LocalizedReasonId$VH_ = Detailed$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("LocalizedReasonId"));
-    static final java.lang.invoke.VarHandle Detailed$LocalizedReasonId$VH() { return Detailed$LocalizedReasonId$VH_; }
+    static final VarHandle _REASON_CONTEXT$Reason$Detailed$LocalizedReasonId$VH_ = _REASON_CONTEXT$Reason$Detailed$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("LocalizedReasonId"));
+    static final java.lang.invoke.VarHandle _REASON_CONTEXT$Reason$Detailed$LocalizedReasonId$VH() { return _REASON_CONTEXT$Reason$Detailed$LocalizedReasonId$VH_; }
 
-    static final MemoryLayout Detailed$ReasonStringCount$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Detailed$ReasonStringCount$LAYOUT() { return Detailed$ReasonStringCount$LAYOUT_; }
+    static final MemoryLayout _REASON_CONTEXT$Reason$Detailed$ReasonStringCount$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _REASON_CONTEXT$Reason$Detailed$ReasonStringCount$LAYOUT() { return _REASON_CONTEXT$Reason$Detailed$ReasonStringCount$LAYOUT_; }
 
-    static final VarHandle Detailed$ReasonStringCount$VH_ = Detailed$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ReasonStringCount"));
-    static final java.lang.invoke.VarHandle Detailed$ReasonStringCount$VH() { return Detailed$ReasonStringCount$VH_; }
+    static final VarHandle _REASON_CONTEXT$Reason$Detailed$ReasonStringCount$VH_ = _REASON_CONTEXT$Reason$Detailed$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ReasonStringCount"));
+    static final java.lang.invoke.VarHandle _REASON_CONTEXT$Reason$Detailed$ReasonStringCount$VH() { return _REASON_CONTEXT$Reason$Detailed$ReasonStringCount$VH_; }
 
-    static final MemoryLayout Detailed$ReasonStrings$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Detailed$ReasonStrings$LAYOUT() { return Detailed$ReasonStrings$LAYOUT_; }
+    static final MemoryLayout _REASON_CONTEXT$Reason$Detailed$ReasonStrings$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _REASON_CONTEXT$Reason$Detailed$ReasonStrings$LAYOUT() { return _REASON_CONTEXT$Reason$Detailed$ReasonStrings$LAYOUT_; }
 
-    static final VarHandle Detailed$ReasonStrings$VH_ = MemoryHandles.asAddressVarHandle(Detailed$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("ReasonStrings")));
-    static final java.lang.invoke.VarHandle Detailed$ReasonStrings$VH() { return Detailed$ReasonStrings$VH_; }
+    static final VarHandle _REASON_CONTEXT$Reason$Detailed$ReasonStrings$VH_ = MemoryHandles.asAddressVarHandle(_REASON_CONTEXT$Reason$Detailed$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("ReasonStrings")));
+    static final java.lang.invoke.VarHandle _REASON_CONTEXT$Reason$Detailed$ReasonStrings$VH() { return _REASON_CONTEXT$Reason$Detailed$ReasonStrings$VH_; }
 
-    static final MemoryLayout Reason$SimpleReasonString$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Reason$SimpleReasonString$LAYOUT() { return Reason$SimpleReasonString$LAYOUT_; }
+    static final MemoryLayout _REASON_CONTEXT$Reason$SimpleReasonString$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _REASON_CONTEXT$Reason$SimpleReasonString$LAYOUT() { return _REASON_CONTEXT$Reason$SimpleReasonString$LAYOUT_; }
 
-    static final VarHandle Reason$SimpleReasonString$VH_ = MemoryHandles.asAddressVarHandle(Reason$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("SimpleReasonString")));
-    static final java.lang.invoke.VarHandle Reason$SimpleReasonString$VH() { return Reason$SimpleReasonString$VH_; }
+    static final VarHandle _REASON_CONTEXT$Reason$SimpleReasonString$VH_ = MemoryHandles.asAddressVarHandle(_REASON_CONTEXT$Reason$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("SimpleReasonString")));
+    static final java.lang.invoke.VarHandle _REASON_CONTEXT$Reason$SimpleReasonString$VH() { return _REASON_CONTEXT$Reason$SimpleReasonString$VH_; }
 
     static final MemoryLayout _EXCEPTION_DEBUG_INFO$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofStruct(
@@ -792,6 +792,69 @@ class cfapi_h$constants$24 extends cfapi_h$constants$23 {
 
     static final VarHandle _DEBUG_EVENT$dwThreadId$VH_ = _DEBUG_EVENT$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwThreadId"));
     static final java.lang.invoke.VarHandle _DEBUG_EVENT$dwThreadId$VH() { return _DEBUG_EVENT$dwThreadId$VH_; }
+
+    static final MemoryLayout _DEBUG_EVENT$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        MemoryLayout.ofStruct(
+            MemoryLayout.ofStruct(
+                C_LONG.withName("ExceptionCode"),
+                C_LONG.withName("ExceptionFlags"),
+                C_POINTER.withName("ExceptionRecord"),
+                C_POINTER.withName("ExceptionAddress"),
+                C_LONG.withName("NumberParameters"),
+                MemoryLayout.ofPaddingBits(32),
+                MemoryLayout.ofSequence(15, C_LONGLONG).withName("ExceptionInformation")
+            ).withName("ExceptionRecord"),
+            C_LONG.withName("dwFirstChance"),
+            MemoryLayout.ofPaddingBits(32)
+        ).withName("Exception"),
+        MemoryLayout.ofStruct(
+            C_POINTER.withName("hThread"),
+            C_POINTER.withName("lpThreadLocalBase"),
+            C_POINTER.withName("lpStartAddress")
+        ).withName("CreateThread"),
+        MemoryLayout.ofStruct(
+            C_POINTER.withName("hFile"),
+            C_POINTER.withName("hProcess"),
+            C_POINTER.withName("hThread"),
+            C_POINTER.withName("lpBaseOfImage"),
+            C_LONG.withName("dwDebugInfoFileOffset"),
+            C_LONG.withName("nDebugInfoSize"),
+            C_POINTER.withName("lpThreadLocalBase"),
+            C_POINTER.withName("lpStartAddress"),
+            C_POINTER.withName("lpImageName"),
+            C_SHORT.withName("fUnicode"),
+            MemoryLayout.ofPaddingBits(48)
+        ).withName("CreateProcessInfo"),
+        MemoryLayout.ofStruct(
+            C_LONG.withName("dwExitCode")
+        ).withName("ExitThread"),
+        MemoryLayout.ofStruct(
+            C_LONG.withName("dwExitCode")
+        ).withName("ExitProcess"),
+        MemoryLayout.ofStruct(
+            C_POINTER.withName("hFile"),
+            C_POINTER.withName("lpBaseOfDll"),
+            C_LONG.withName("dwDebugInfoFileOffset"),
+            C_LONG.withName("nDebugInfoSize"),
+            C_POINTER.withName("lpImageName"),
+            C_SHORT.withName("fUnicode"),
+            MemoryLayout.ofPaddingBits(48)
+        ).withName("LoadDll"),
+        MemoryLayout.ofStruct(
+            C_POINTER.withName("lpBaseOfDll")
+        ).withName("UnloadDll"),
+        MemoryLayout.ofStruct(
+            C_POINTER.withName("lpDebugStringData"),
+            C_SHORT.withName("fUnicode"),
+            C_SHORT.withName("nDebugStringLength"),
+            MemoryLayout.ofPaddingBits(32)
+        ).withName("DebugString"),
+        MemoryLayout.ofStruct(
+            C_LONG.withName("dwError"),
+            C_LONG.withName("dwType")
+        ).withName("RipInfo")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _DEBUG_EVENT$u$union$LAYOUT() { return _DEBUG_EVENT$u$union$LAYOUT_; }
 
     static final FunctionDescriptor IsApiSetImplemented$FUNC_ = FunctionDescriptor.of(C_INT,
         C_POINTER

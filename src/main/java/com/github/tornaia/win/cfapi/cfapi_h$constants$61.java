@@ -1218,23 +1218,23 @@ class cfapi_h$constants$61 extends cfapi_h$constants$60 {
     static final VarHandle _PERSISTENT_RESERVE_COMMAND$Size$VH_ = _PERSISTENT_RESERVE_COMMAND$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Size"));
     static final java.lang.invoke.VarHandle _PERSISTENT_RESERVE_COMMAND$Size$VH() { return _PERSISTENT_RESERVE_COMMAND$Size$VH_; }
 
-    static final MemoryLayout PR_IN$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _PERSISTENT_RESERVE_COMMAND$PR_IN$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT,
         C_SHORT.withName("AllocationLength")
     );
-    static final jdk.incubator.foreign.MemoryLayout PR_IN$struct$LAYOUT() { return PR_IN$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _PERSISTENT_RESERVE_COMMAND$PR_IN$struct$LAYOUT() { return _PERSISTENT_RESERVE_COMMAND$PR_IN$struct$LAYOUT_; }
 
-    static final MemoryLayout PR_IN$AllocationLength$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout PR_IN$AllocationLength$LAYOUT() { return PR_IN$AllocationLength$LAYOUT_; }
+    static final MemoryLayout _PERSISTENT_RESERVE_COMMAND$PR_IN$AllocationLength$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _PERSISTENT_RESERVE_COMMAND$PR_IN$AllocationLength$LAYOUT() { return _PERSISTENT_RESERVE_COMMAND$PR_IN$AllocationLength$LAYOUT_; }
 
-    static final VarHandle PR_IN$AllocationLength$VH_ = PR_IN$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("AllocationLength"));
-    static final java.lang.invoke.VarHandle PR_IN$AllocationLength$VH() { return PR_IN$AllocationLength$VH_; }
+    static final VarHandle _PERSISTENT_RESERVE_COMMAND$PR_IN$AllocationLength$VH_ = _PERSISTENT_RESERVE_COMMAND$PR_IN$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("AllocationLength"));
+    static final java.lang.invoke.VarHandle _PERSISTENT_RESERVE_COMMAND$PR_IN$AllocationLength$VH() { return _PERSISTENT_RESERVE_COMMAND$PR_IN$AllocationLength$VH_; }
 
-    static final MemoryLayout PR_OUT$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _PERSISTENT_RESERVE_COMMAND$PR_OUT$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT,
         MemoryLayout.ofSequence(0, C_CHAR).withName("ParameterList")
     );
-    static final jdk.incubator.foreign.MemoryLayout PR_OUT$struct$LAYOUT() { return PR_OUT$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _PERSISTENT_RESERVE_COMMAND$PR_OUT$struct$LAYOUT() { return _PERSISTENT_RESERVE_COMMAND$PR_OUT$struct$LAYOUT_; }
 
     static final int TCCollectionBugCheck() { return (int)1L; }
 
@@ -1489,7 +1489,7 @@ class cfapi_h$constants$61 extends cfapi_h$constants$60 {
     static final VarHandle _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$OperationError$VH_ = _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("OperationError"));
     static final java.lang.invoke.VarHandle _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$OperationError$VH() { return _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$OperationError$VH_; }
 
-    static final MemoryLayout StackSpecific$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_LONG.withName("dwReserved")
         ).withName("ExternalStack"),
@@ -1500,40 +1500,40 @@ class cfapi_h$constants$61 extends cfapi_h$constants$60 {
             C_LONG.withName("SrbTag")
         ).withName("StorPort")
     );
-    static final jdk.incubator.foreign.MemoryLayout StackSpecific$struct$LAYOUT() { return StackSpecific$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$union$LAYOUT() { return _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$union$LAYOUT_; }
 
-    static final MemoryLayout ExternalStack$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$ExternalStack$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("dwReserved")
     );
-    static final jdk.incubator.foreign.MemoryLayout ExternalStack$struct$LAYOUT() { return ExternalStack$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$ExternalStack$struct$LAYOUT() { return _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$ExternalStack$struct$LAYOUT_; }
 
-    static final MemoryLayout ExternalStack$dwReserved$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ExternalStack$dwReserved$LAYOUT() { return ExternalStack$dwReserved$LAYOUT_; }
+    static final MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$ExternalStack$dwReserved$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$ExternalStack$dwReserved$LAYOUT() { return _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$ExternalStack$dwReserved$LAYOUT_; }
 
-    static final VarHandle ExternalStack$dwReserved$VH_ = ExternalStack$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
-    static final java.lang.invoke.VarHandle ExternalStack$dwReserved$VH() { return ExternalStack$dwReserved$VH_; }
+    static final VarHandle _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$ExternalStack$dwReserved$VH_ = _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$ExternalStack$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
+    static final java.lang.invoke.VarHandle _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$ExternalStack$dwReserved$VH() { return _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$ExternalStack$dwReserved$VH_; }
 
-    static final MemoryLayout AtaPort$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$AtaPort$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("dwAtaPortSpecific")
     );
-    static final jdk.incubator.foreign.MemoryLayout AtaPort$struct$LAYOUT() { return AtaPort$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$AtaPort$struct$LAYOUT() { return _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$AtaPort$struct$LAYOUT_; }
 
-    static final MemoryLayout AtaPort$dwAtaPortSpecific$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout AtaPort$dwAtaPortSpecific$LAYOUT() { return AtaPort$dwAtaPortSpecific$LAYOUT_; }
+    static final MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$AtaPort$dwAtaPortSpecific$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$AtaPort$dwAtaPortSpecific$LAYOUT() { return _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$AtaPort$dwAtaPortSpecific$LAYOUT_; }
 
-    static final VarHandle AtaPort$dwAtaPortSpecific$VH_ = AtaPort$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwAtaPortSpecific"));
-    static final java.lang.invoke.VarHandle AtaPort$dwAtaPortSpecific$VH() { return AtaPort$dwAtaPortSpecific$VH_; }
+    static final VarHandle _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$AtaPort$dwAtaPortSpecific$VH_ = _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$AtaPort$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwAtaPortSpecific"));
+    static final java.lang.invoke.VarHandle _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$AtaPort$dwAtaPortSpecific$VH() { return _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$AtaPort$dwAtaPortSpecific$VH_; }
 
-    static final MemoryLayout StorPort$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$StorPort$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("SrbTag")
     );
-    static final jdk.incubator.foreign.MemoryLayout StorPort$struct$LAYOUT() { return StorPort$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$StorPort$struct$LAYOUT() { return _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$StorPort$struct$LAYOUT_; }
 
-    static final MemoryLayout StorPort$SrbTag$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout StorPort$SrbTag$LAYOUT() { return StorPort$SrbTag$LAYOUT_; }
+    static final MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$StorPort$SrbTag$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$StorPort$SrbTag$LAYOUT() { return _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$StorPort$SrbTag$LAYOUT_; }
 
-    static final VarHandle StorPort$SrbTag$VH_ = StorPort$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SrbTag"));
-    static final java.lang.invoke.VarHandle StorPort$SrbTag$VH() { return StorPort$SrbTag$VH_; }
+    static final VarHandle _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$StorPort$SrbTag$VH_ = _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$StorPort$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SrbTag"));
+    static final java.lang.invoke.VarHandle _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$StorPort$SrbTag$VH() { return _DEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD$StackSpecific$StorPort$SrbTag$VH_; }
 
     static final MemoryLayout _DEVICEDUMP_STORAGESTACK_PUBLIC_DUMP$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofStruct(
@@ -1787,38 +1787,38 @@ class cfapi_h$constants$61 extends cfapi_h$constants$60 {
     static final VarHandle _STORAGE_COUNTER$Type$VH_ = _STORAGE_COUNTER$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Type"));
     static final java.lang.invoke.VarHandle _STORAGE_COUNTER$Type$VH() { return _STORAGE_COUNTER$Type$VH_; }
 
-    static final MemoryLayout Value$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _STORAGE_COUNTER$Value$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_LONG.withName("Week"),
             C_LONG.withName("Year")
         ).withName("ManufactureDate"),
         C_LONGLONG.withName("AsUlonglong")
     );
-    static final jdk.incubator.foreign.MemoryLayout Value$struct$LAYOUT() { return Value$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_COUNTER$Value$union$LAYOUT() { return _STORAGE_COUNTER$Value$union$LAYOUT_; }
 
-    static final MemoryLayout ManufactureDate$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _STORAGE_COUNTER$Value$ManufactureDate$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Week"),
         C_LONG.withName("Year")
     );
-    static final jdk.incubator.foreign.MemoryLayout ManufactureDate$struct$LAYOUT() { return ManufactureDate$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_COUNTER$Value$ManufactureDate$struct$LAYOUT() { return _STORAGE_COUNTER$Value$ManufactureDate$struct$LAYOUT_; }
 
-    static final MemoryLayout ManufactureDate$Week$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ManufactureDate$Week$LAYOUT() { return ManufactureDate$Week$LAYOUT_; }
+    static final MemoryLayout _STORAGE_COUNTER$Value$ManufactureDate$Week$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_COUNTER$Value$ManufactureDate$Week$LAYOUT() { return _STORAGE_COUNTER$Value$ManufactureDate$Week$LAYOUT_; }
 
-    static final VarHandle ManufactureDate$Week$VH_ = ManufactureDate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Week"));
-    static final java.lang.invoke.VarHandle ManufactureDate$Week$VH() { return ManufactureDate$Week$VH_; }
+    static final VarHandle _STORAGE_COUNTER$Value$ManufactureDate$Week$VH_ = _STORAGE_COUNTER$Value$ManufactureDate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Week"));
+    static final java.lang.invoke.VarHandle _STORAGE_COUNTER$Value$ManufactureDate$Week$VH() { return _STORAGE_COUNTER$Value$ManufactureDate$Week$VH_; }
 
-    static final MemoryLayout ManufactureDate$Year$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ManufactureDate$Year$LAYOUT() { return ManufactureDate$Year$LAYOUT_; }
+    static final MemoryLayout _STORAGE_COUNTER$Value$ManufactureDate$Year$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_COUNTER$Value$ManufactureDate$Year$LAYOUT() { return _STORAGE_COUNTER$Value$ManufactureDate$Year$LAYOUT_; }
 
-    static final VarHandle ManufactureDate$Year$VH_ = ManufactureDate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Year"));
-    static final java.lang.invoke.VarHandle ManufactureDate$Year$VH() { return ManufactureDate$Year$VH_; }
+    static final VarHandle _STORAGE_COUNTER$Value$ManufactureDate$Year$VH_ = _STORAGE_COUNTER$Value$ManufactureDate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Year"));
+    static final java.lang.invoke.VarHandle _STORAGE_COUNTER$Value$ManufactureDate$Year$VH() { return _STORAGE_COUNTER$Value$ManufactureDate$Year$VH_; }
 
-    static final MemoryLayout Value$AsUlonglong$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout Value$AsUlonglong$LAYOUT() { return Value$AsUlonglong$LAYOUT_; }
+    static final MemoryLayout _STORAGE_COUNTER$Value$AsUlonglong$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _STORAGE_COUNTER$Value$AsUlonglong$LAYOUT() { return _STORAGE_COUNTER$Value$AsUlonglong$LAYOUT_; }
 
-    static final VarHandle Value$AsUlonglong$VH_ = Value$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("AsUlonglong"));
-    static final java.lang.invoke.VarHandle Value$AsUlonglong$VH() { return Value$AsUlonglong$VH_; }
+    static final VarHandle _STORAGE_COUNTER$Value$AsUlonglong$VH_ = _STORAGE_COUNTER$Value$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("AsUlonglong"));
+    static final java.lang.invoke.VarHandle _STORAGE_COUNTER$Value$AsUlonglong$VH() { return _STORAGE_COUNTER$Value$AsUlonglong$VH_; }
 
     static final MemoryLayout _STORAGE_COUNTERS$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Version"),

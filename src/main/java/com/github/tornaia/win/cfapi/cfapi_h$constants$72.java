@@ -2435,7 +2435,7 @@ class cfapi_h$constants$72 extends cfapi_h$constants$71 {
     static final VarHandle _PRINTER_NOTIFY_INFO_DATA$Id$VH_ = _PRINTER_NOTIFY_INFO_DATA$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Id"));
     static final java.lang.invoke.VarHandle _PRINTER_NOTIFY_INFO_DATA$Id$VH() { return _PRINTER_NOTIFY_INFO_DATA$Id$VH_; }
 
-    static final MemoryLayout NotifyData$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _PRINTER_NOTIFY_INFO_DATA$NotifyData$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofSequence(2, C_LONG).withName("adwData"),
         MemoryLayout.ofStruct(
             C_LONG.withName("cbBuf"),
@@ -2443,26 +2443,26 @@ class cfapi_h$constants$72 extends cfapi_h$constants$71 {
             C_POINTER.withName("pBuf")
         ).withName("Data")
     );
-    static final jdk.incubator.foreign.MemoryLayout NotifyData$struct$LAYOUT() { return NotifyData$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _PRINTER_NOTIFY_INFO_DATA$NotifyData$union$LAYOUT() { return _PRINTER_NOTIFY_INFO_DATA$NotifyData$union$LAYOUT_; }
 
-    static final MemoryLayout Data$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("cbBuf"),
         MemoryLayout.ofPaddingBits(32),
         C_POINTER.withName("pBuf")
     );
-    static final jdk.incubator.foreign.MemoryLayout Data$struct$LAYOUT() { return Data$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$struct$LAYOUT() { return _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$struct$LAYOUT_; }
 
-    static final MemoryLayout Data$cbBuf$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Data$cbBuf$LAYOUT() { return Data$cbBuf$LAYOUT_; }
+    static final MemoryLayout _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$cbBuf$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$cbBuf$LAYOUT() { return _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$cbBuf$LAYOUT_; }
 
-    static final VarHandle Data$cbBuf$VH_ = Data$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbBuf"));
-    static final java.lang.invoke.VarHandle Data$cbBuf$VH() { return Data$cbBuf$VH_; }
+    static final VarHandle _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$cbBuf$VH_ = _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbBuf"));
+    static final java.lang.invoke.VarHandle _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$cbBuf$VH() { return _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$cbBuf$VH_; }
 
-    static final MemoryLayout Data$pBuf$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Data$pBuf$LAYOUT() { return Data$pBuf$LAYOUT_; }
+    static final MemoryLayout _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$pBuf$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$pBuf$LAYOUT() { return _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$pBuf$LAYOUT_; }
 
-    static final VarHandle Data$pBuf$VH_ = MemoryHandles.asAddressVarHandle(Data$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pBuf")));
-    static final java.lang.invoke.VarHandle Data$pBuf$VH() { return Data$pBuf$VH_; }
+    static final VarHandle _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$pBuf$VH_ = MemoryHandles.asAddressVarHandle(_PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pBuf")));
+    static final java.lang.invoke.VarHandle _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$pBuf$VH() { return _PRINTER_NOTIFY_INFO_DATA$NotifyData$Data$pBuf$VH_; }
 
     static final MemoryLayout _PRINTER_NOTIFY_INFO$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Version"),
@@ -2547,29 +2547,42 @@ class cfapi_h$constants$72 extends cfapi_h$constants$71 {
     static final VarHandle _BIDI_DATA$dwBidiType$VH_ = _BIDI_DATA$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwBidiType"));
     static final java.lang.invoke.VarHandle _BIDI_DATA$dwBidiType$VH() { return _BIDI_DATA$dwBidiType$VH_; }
 
-    static final MemoryLayout u$bData$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout u$bData$LAYOUT() { return u$bData$LAYOUT_; }
+    static final MemoryLayout _BIDI_DATA$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_INT.withName("bData"),
+        C_LONG.withName("iData"),
+        C_POINTER.withName("sData"),
+        C_FLOAT.withName("fData"),
+        MemoryLayout.ofStruct(
+            C_LONG.withName("cbBuf"),
+            MemoryLayout.ofPaddingBits(32),
+            C_POINTER.withName("pData")
+        ).withName("biData")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _BIDI_DATA$u$union$LAYOUT() { return _BIDI_DATA$u$union$LAYOUT_; }
 
-    static final VarHandle u$bData$VH_ = u$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("bData"));
-    static final java.lang.invoke.VarHandle u$bData$VH() { return u$bData$VH_; }
+    static final MemoryLayout _BIDI_DATA$u$bData$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout _BIDI_DATA$u$bData$LAYOUT() { return _BIDI_DATA$u$bData$LAYOUT_; }
 
-    static final MemoryLayout u$iData$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout u$iData$LAYOUT() { return u$iData$LAYOUT_; }
+    static final VarHandle _BIDI_DATA$u$bData$VH_ = _BIDI_DATA$u$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("bData"));
+    static final java.lang.invoke.VarHandle _BIDI_DATA$u$bData$VH() { return _BIDI_DATA$u$bData$VH_; }
 
-    static final VarHandle u$iData$VH_ = u$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("iData"));
-    static final java.lang.invoke.VarHandle u$iData$VH() { return u$iData$VH_; }
+    static final MemoryLayout _BIDI_DATA$u$iData$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _BIDI_DATA$u$iData$LAYOUT() { return _BIDI_DATA$u$iData$LAYOUT_; }
 
-    static final MemoryLayout u$sData$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout u$sData$LAYOUT() { return u$sData$LAYOUT_; }
+    static final VarHandle _BIDI_DATA$u$iData$VH_ = _BIDI_DATA$u$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("iData"));
+    static final java.lang.invoke.VarHandle _BIDI_DATA$u$iData$VH() { return _BIDI_DATA$u$iData$VH_; }
 
-    static final VarHandle u$sData$VH_ = MemoryHandles.asAddressVarHandle(u$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("sData")));
-    static final java.lang.invoke.VarHandle u$sData$VH() { return u$sData$VH_; }
+    static final MemoryLayout _BIDI_DATA$u$sData$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _BIDI_DATA$u$sData$LAYOUT() { return _BIDI_DATA$u$sData$LAYOUT_; }
 
-    static final MemoryLayout u$fData$LAYOUT_ = C_FLOAT;
-    static final jdk.incubator.foreign.MemoryLayout u$fData$LAYOUT() { return u$fData$LAYOUT_; }
+    static final VarHandle _BIDI_DATA$u$sData$VH_ = MemoryHandles.asAddressVarHandle(_BIDI_DATA$u$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("sData")));
+    static final java.lang.invoke.VarHandle _BIDI_DATA$u$sData$VH() { return _BIDI_DATA$u$sData$VH_; }
 
-    static final VarHandle u$fData$VH_ = u$struct$LAYOUT_.varHandle(float.class, MemoryLayout.PathElement.groupElement("fData"));
-    static final java.lang.invoke.VarHandle u$fData$VH() { return u$fData$VH_; }
+    static final MemoryLayout _BIDI_DATA$u$fData$LAYOUT_ = C_FLOAT;
+    static final jdk.incubator.foreign.MemoryLayout _BIDI_DATA$u$fData$LAYOUT() { return _BIDI_DATA$u$fData$LAYOUT_; }
+
+    static final VarHandle _BIDI_DATA$u$fData$VH_ = _BIDI_DATA$u$union$LAYOUT_.varHandle(float.class, MemoryLayout.PathElement.groupElement("fData"));
+    static final java.lang.invoke.VarHandle _BIDI_DATA$u$fData$VH() { return _BIDI_DATA$u$fData$VH_; }
 
     static final MemoryLayout _BIDI_REQUEST_DATA$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("dwReqNumber"),

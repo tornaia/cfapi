@@ -2164,31 +2164,51 @@ class cfapi_h$constants$41 extends cfapi_h$constants$40 {
     static final VarHandle mmtime_tag$wType$VH_ = mmtime_tag$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("wType"));
     static final java.lang.invoke.VarHandle mmtime_tag$wType$VH() { return mmtime_tag$wType$VH_; }
 
-    static final MemoryLayout u$ms$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout u$ms$LAYOUT() { return u$ms$LAYOUT_; }
+    static final MemoryLayout mmtime_tag$u$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_LONG.withName("ms"),
+        C_LONG.withName("sample"),
+        C_LONG.withName("cb"),
+        C_LONG.withName("ticks"),
+        MemoryLayout.ofStruct(
+            C_CHAR.withName("hour"),
+            C_CHAR.withName("min"),
+            C_CHAR.withName("sec"),
+            C_CHAR.withName("frame"),
+            C_CHAR.withName("fps"),
+            C_CHAR.withName("dummy"),
+            MemoryLayout.ofSequence(2, C_CHAR).withName("pad")
+        ).withName("smpte"),
+        MemoryLayout.ofStruct(
+            C_LONG.withName("songptrpos")
+        ).withName("midi")
+    );
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$union$LAYOUT() { return mmtime_tag$u$union$LAYOUT_; }
 
-    static final VarHandle u$ms$VH_ = u$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ms"));
-    static final java.lang.invoke.VarHandle u$ms$VH() { return u$ms$VH_; }
+    static final MemoryLayout mmtime_tag$u$ms$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$ms$LAYOUT() { return mmtime_tag$u$ms$LAYOUT_; }
 
-    static final MemoryLayout u$sample$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout u$sample$LAYOUT() { return u$sample$LAYOUT_; }
+    static final VarHandle mmtime_tag$u$ms$VH_ = mmtime_tag$u$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ms"));
+    static final java.lang.invoke.VarHandle mmtime_tag$u$ms$VH() { return mmtime_tag$u$ms$VH_; }
 
-    static final VarHandle u$sample$VH_ = u$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("sample"));
-    static final java.lang.invoke.VarHandle u$sample$VH() { return u$sample$VH_; }
+    static final MemoryLayout mmtime_tag$u$sample$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$sample$LAYOUT() { return mmtime_tag$u$sample$LAYOUT_; }
 
-    static final MemoryLayout u$cb$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout u$cb$LAYOUT() { return u$cb$LAYOUT_; }
+    static final VarHandle mmtime_tag$u$sample$VH_ = mmtime_tag$u$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("sample"));
+    static final java.lang.invoke.VarHandle mmtime_tag$u$sample$VH() { return mmtime_tag$u$sample$VH_; }
 
-    static final VarHandle u$cb$VH_ = u$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cb"));
-    static final java.lang.invoke.VarHandle u$cb$VH() { return u$cb$VH_; }
+    static final MemoryLayout mmtime_tag$u$cb$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$cb$LAYOUT() { return mmtime_tag$u$cb$LAYOUT_; }
 
-    static final MemoryLayout u$ticks$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout u$ticks$LAYOUT() { return u$ticks$LAYOUT_; }
+    static final VarHandle mmtime_tag$u$cb$VH_ = mmtime_tag$u$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cb"));
+    static final java.lang.invoke.VarHandle mmtime_tag$u$cb$VH() { return mmtime_tag$u$cb$VH_; }
 
-    static final VarHandle u$ticks$VH_ = u$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ticks"));
-    static final java.lang.invoke.VarHandle u$ticks$VH() { return u$ticks$VH_; }
+    static final MemoryLayout mmtime_tag$u$ticks$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$ticks$LAYOUT() { return mmtime_tag$u$ticks$LAYOUT_; }
 
-    static final MemoryLayout smpte$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final VarHandle mmtime_tag$u$ticks$VH_ = mmtime_tag$u$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ticks"));
+    static final java.lang.invoke.VarHandle mmtime_tag$u$ticks$VH() { return mmtime_tag$u$ticks$VH_; }
+
+    static final MemoryLayout mmtime_tag$u$smpte$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_CHAR.withName("hour"),
         C_CHAR.withName("min"),
         C_CHAR.withName("sec"),
@@ -2197,54 +2217,54 @@ class cfapi_h$constants$41 extends cfapi_h$constants$40 {
         C_CHAR.withName("dummy"),
         MemoryLayout.ofSequence(2, C_CHAR).withName("pad")
     );
-    static final jdk.incubator.foreign.MemoryLayout smpte$struct$LAYOUT() { return smpte$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$smpte$struct$LAYOUT() { return mmtime_tag$u$smpte$struct$LAYOUT_; }
 
-    static final MemoryLayout smpte$hour$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout smpte$hour$LAYOUT() { return smpte$hour$LAYOUT_; }
+    static final MemoryLayout mmtime_tag$u$smpte$hour$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$smpte$hour$LAYOUT() { return mmtime_tag$u$smpte$hour$LAYOUT_; }
 
-    static final VarHandle smpte$hour$VH_ = smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("hour"));
-    static final java.lang.invoke.VarHandle smpte$hour$VH() { return smpte$hour$VH_; }
+    static final VarHandle mmtime_tag$u$smpte$hour$VH_ = mmtime_tag$u$smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("hour"));
+    static final java.lang.invoke.VarHandle mmtime_tag$u$smpte$hour$VH() { return mmtime_tag$u$smpte$hour$VH_; }
 
-    static final MemoryLayout smpte$min$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout smpte$min$LAYOUT() { return smpte$min$LAYOUT_; }
+    static final MemoryLayout mmtime_tag$u$smpte$min$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$smpte$min$LAYOUT() { return mmtime_tag$u$smpte$min$LAYOUT_; }
 
-    static final VarHandle smpte$min$VH_ = smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("min"));
-    static final java.lang.invoke.VarHandle smpte$min$VH() { return smpte$min$VH_; }
+    static final VarHandle mmtime_tag$u$smpte$min$VH_ = mmtime_tag$u$smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("min"));
+    static final java.lang.invoke.VarHandle mmtime_tag$u$smpte$min$VH() { return mmtime_tag$u$smpte$min$VH_; }
 
-    static final MemoryLayout smpte$sec$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout smpte$sec$LAYOUT() { return smpte$sec$LAYOUT_; }
+    static final MemoryLayout mmtime_tag$u$smpte$sec$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$smpte$sec$LAYOUT() { return mmtime_tag$u$smpte$sec$LAYOUT_; }
 
-    static final VarHandle smpte$sec$VH_ = smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("sec"));
-    static final java.lang.invoke.VarHandle smpte$sec$VH() { return smpte$sec$VH_; }
+    static final VarHandle mmtime_tag$u$smpte$sec$VH_ = mmtime_tag$u$smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("sec"));
+    static final java.lang.invoke.VarHandle mmtime_tag$u$smpte$sec$VH() { return mmtime_tag$u$smpte$sec$VH_; }
 
-    static final MemoryLayout smpte$frame$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout smpte$frame$LAYOUT() { return smpte$frame$LAYOUT_; }
+    static final MemoryLayout mmtime_tag$u$smpte$frame$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$smpte$frame$LAYOUT() { return mmtime_tag$u$smpte$frame$LAYOUT_; }
 
-    static final VarHandle smpte$frame$VH_ = smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("frame"));
-    static final java.lang.invoke.VarHandle smpte$frame$VH() { return smpte$frame$VH_; }
+    static final VarHandle mmtime_tag$u$smpte$frame$VH_ = mmtime_tag$u$smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("frame"));
+    static final java.lang.invoke.VarHandle mmtime_tag$u$smpte$frame$VH() { return mmtime_tag$u$smpte$frame$VH_; }
 
-    static final MemoryLayout smpte$fps$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout smpte$fps$LAYOUT() { return smpte$fps$LAYOUT_; }
+    static final MemoryLayout mmtime_tag$u$smpte$fps$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$smpte$fps$LAYOUT() { return mmtime_tag$u$smpte$fps$LAYOUT_; }
 
-    static final VarHandle smpte$fps$VH_ = smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("fps"));
-    static final java.lang.invoke.VarHandle smpte$fps$VH() { return smpte$fps$VH_; }
+    static final VarHandle mmtime_tag$u$smpte$fps$VH_ = mmtime_tag$u$smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("fps"));
+    static final java.lang.invoke.VarHandle mmtime_tag$u$smpte$fps$VH() { return mmtime_tag$u$smpte$fps$VH_; }
 
-    static final MemoryLayout smpte$dummy$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout smpte$dummy$LAYOUT() { return smpte$dummy$LAYOUT_; }
+    static final MemoryLayout mmtime_tag$u$smpte$dummy$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$smpte$dummy$LAYOUT() { return mmtime_tag$u$smpte$dummy$LAYOUT_; }
 
-    static final VarHandle smpte$dummy$VH_ = smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("dummy"));
-    static final java.lang.invoke.VarHandle smpte$dummy$VH() { return smpte$dummy$VH_; }
+    static final VarHandle mmtime_tag$u$smpte$dummy$VH_ = mmtime_tag$u$smpte$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("dummy"));
+    static final java.lang.invoke.VarHandle mmtime_tag$u$smpte$dummy$VH() { return mmtime_tag$u$smpte$dummy$VH_; }
 
-    static final MemoryLayout midi$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout mmtime_tag$u$midi$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("songptrpos")
     );
-    static final jdk.incubator.foreign.MemoryLayout midi$struct$LAYOUT() { return midi$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$midi$struct$LAYOUT() { return mmtime_tag$u$midi$struct$LAYOUT_; }
 
-    static final MemoryLayout midi$songptrpos$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout midi$songptrpos$LAYOUT() { return midi$songptrpos$LAYOUT_; }
+    static final MemoryLayout mmtime_tag$u$midi$songptrpos$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout mmtime_tag$u$midi$songptrpos$LAYOUT() { return mmtime_tag$u$midi$songptrpos$LAYOUT_; }
 
-    static final VarHandle midi$songptrpos$VH_ = midi$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("songptrpos"));
-    static final java.lang.invoke.VarHandle midi$songptrpos$VH() { return midi$songptrpos$VH_; }
+    static final VarHandle mmtime_tag$u$midi$songptrpos$VH_ = mmtime_tag$u$midi$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("songptrpos"));
+    static final java.lang.invoke.VarHandle mmtime_tag$u$midi$songptrpos$VH() { return mmtime_tag$u$midi$songptrpos$VH_; }
 
     static final MemoryLayout HDRVR__$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("unused")

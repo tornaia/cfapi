@@ -1912,7 +1912,7 @@ class cfapi_h$constants$99 extends cfapi_h$constants$98 {
     static final VarHandle CF_CALLBACK_PARAMETERS$ParamSize$VH_ = CF_CALLBACK_PARAMETERS$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ParamSize"));
     static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$ParamSize$VH() { return CF_CALLBACK_PARAMETERS$ParamSize$VH_; }
 
-    static final MemoryLayout Cancel$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$Cancel$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         MemoryLayout.ofPaddingBits(32),
         MemoryLayout.ofStruct(
@@ -1936,15 +1936,15 @@ class cfapi_h$constants$99 extends cfapi_h$constants$98 {
             ).withName("Length")
         ).withName("FetchData")
     );
-    static final jdk.incubator.foreign.MemoryLayout Cancel$struct$LAYOUT() { return Cancel$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$Cancel$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$Cancel$struct$LAYOUT_; }
 
-    static final MemoryLayout Cancel$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout Cancel$Flags$LAYOUT() { return Cancel$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$Cancel$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$Cancel$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$Cancel$Flags$LAYOUT_; }
 
-    static final VarHandle Cancel$Flags$VH_ = Cancel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle Cancel$Flags$VH() { return Cancel$Flags$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$Cancel$Flags$VH_ = CF_CALLBACK_PARAMETERS$Cancel$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$Cancel$Flags$VH() { return CF_CALLBACK_PARAMETERS$Cancel$Flags$VH_; }
 
-    static final MemoryLayout FetchData$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$Cancel$FetchData$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofUnion(
             C_LONG.withName("LowPart"),
             C_LONG.withName("HighPart"),
@@ -1964,21 +1964,74 @@ class cfapi_h$constants$99 extends cfapi_h$constants$98 {
             C_LONGLONG.withName("QuadPart")
         ).withName("Length")
     );
-    static final jdk.incubator.foreign.MemoryLayout FetchData$struct$LAYOUT() { return FetchData$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$Cancel$FetchData$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$Cancel$FetchData$struct$LAYOUT_; }
 
-    static final MemoryLayout FetchData$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout FetchData$Flags$LAYOUT() { return FetchData$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$FetchData$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_INT.withName("Flags"),
+        MemoryLayout.ofPaddingBits(32),
+        MemoryLayout.ofUnion(
+            C_LONG.withName("LowPart"),
+            C_LONG.withName("HighPart"),
+            MemoryLayout.ofStruct(
+                C_LONG.withName("LowPart"),
+                C_LONG.withName("HighPart")
+            ).withName("u"),
+            C_LONGLONG.withName("QuadPart")
+        ).withName("RequiredFileOffset"),
+        MemoryLayout.ofUnion(
+            C_LONG.withName("LowPart"),
+            C_LONG.withName("HighPart"),
+            MemoryLayout.ofStruct(
+                C_LONG.withName("LowPart"),
+                C_LONG.withName("HighPart")
+            ).withName("u"),
+            C_LONGLONG.withName("QuadPart")
+        ).withName("RequiredLength"),
+        MemoryLayout.ofUnion(
+            C_LONG.withName("LowPart"),
+            C_LONG.withName("HighPart"),
+            MemoryLayout.ofStruct(
+                C_LONG.withName("LowPart"),
+                C_LONG.withName("HighPart")
+            ).withName("u"),
+            C_LONGLONG.withName("QuadPart")
+        ).withName("OptionalFileOffset"),
+        MemoryLayout.ofUnion(
+            C_LONG.withName("LowPart"),
+            C_LONG.withName("HighPart"),
+            MemoryLayout.ofStruct(
+                C_LONG.withName("LowPart"),
+                C_LONG.withName("HighPart")
+            ).withName("u"),
+            C_LONGLONG.withName("QuadPart")
+        ).withName("OptionalLength"),
+        MemoryLayout.ofUnion(
+            C_LONG.withName("LowPart"),
+            C_LONG.withName("HighPart"),
+            MemoryLayout.ofStruct(
+                C_LONG.withName("LowPart"),
+                C_LONG.withName("HighPart")
+            ).withName("u"),
+            C_LONGLONG.withName("QuadPart")
+        ).withName("LastDehydrationTime"),
+        C_INT.withName("LastDehydrationReason"),
+        MemoryLayout.ofPaddingBits(32)
+    );
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$FetchData$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$FetchData$struct$LAYOUT_; }
 
-    static final VarHandle FetchData$Flags$VH_ = FetchData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle FetchData$Flags$VH() { return FetchData$Flags$VH_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$FetchData$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$FetchData$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$FetchData$Flags$LAYOUT_; }
 
-    static final MemoryLayout FetchData$LastDehydrationReason$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout FetchData$LastDehydrationReason$LAYOUT() { return FetchData$LastDehydrationReason$LAYOUT_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$FetchData$Flags$VH_ = CF_CALLBACK_PARAMETERS$FetchData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$FetchData$Flags$VH() { return CF_CALLBACK_PARAMETERS$FetchData$Flags$VH_; }
 
-    static final VarHandle FetchData$LastDehydrationReason$VH_ = FetchData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("LastDehydrationReason"));
-    static final java.lang.invoke.VarHandle FetchData$LastDehydrationReason$VH() { return FetchData$LastDehydrationReason$VH_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$FetchData$LastDehydrationReason$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$FetchData$LastDehydrationReason$LAYOUT() { return CF_CALLBACK_PARAMETERS$FetchData$LastDehydrationReason$LAYOUT_; }
 
-    static final MemoryLayout ValidateData$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final VarHandle CF_CALLBACK_PARAMETERS$FetchData$LastDehydrationReason$VH_ = CF_CALLBACK_PARAMETERS$FetchData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("LastDehydrationReason"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$FetchData$LastDehydrationReason$VH() { return CF_CALLBACK_PARAMETERS$FetchData$LastDehydrationReason$VH_; }
+
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$ValidateData$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         MemoryLayout.ofPaddingBits(32),
         MemoryLayout.ofUnion(
@@ -2000,150 +2053,150 @@ class cfapi_h$constants$99 extends cfapi_h$constants$98 {
             C_LONGLONG.withName("QuadPart")
         ).withName("RequiredLength")
     );
-    static final jdk.incubator.foreign.MemoryLayout ValidateData$struct$LAYOUT() { return ValidateData$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$ValidateData$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$ValidateData$struct$LAYOUT_; }
 
-    static final MemoryLayout ValidateData$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout ValidateData$Flags$LAYOUT() { return ValidateData$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$ValidateData$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$ValidateData$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$ValidateData$Flags$LAYOUT_; }
 
-    static final VarHandle ValidateData$Flags$VH_ = ValidateData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle ValidateData$Flags$VH() { return ValidateData$Flags$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$ValidateData$Flags$VH_ = CF_CALLBACK_PARAMETERS$ValidateData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$ValidateData$Flags$VH() { return CF_CALLBACK_PARAMETERS$ValidateData$Flags$VH_; }
 
-    static final MemoryLayout FetchPlaceholders$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$FetchPlaceholders$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         MemoryLayout.ofPaddingBits(32),
         C_POINTER.withName("Pattern")
     );
-    static final jdk.incubator.foreign.MemoryLayout FetchPlaceholders$struct$LAYOUT() { return FetchPlaceholders$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$FetchPlaceholders$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$FetchPlaceholders$struct$LAYOUT_; }
 
-    static final MemoryLayout FetchPlaceholders$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout FetchPlaceholders$Flags$LAYOUT() { return FetchPlaceholders$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$FetchPlaceholders$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$FetchPlaceholders$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$FetchPlaceholders$Flags$LAYOUT_; }
 
-    static final VarHandle FetchPlaceholders$Flags$VH_ = FetchPlaceholders$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle FetchPlaceholders$Flags$VH() { return FetchPlaceholders$Flags$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$FetchPlaceholders$Flags$VH_ = CF_CALLBACK_PARAMETERS$FetchPlaceholders$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$FetchPlaceholders$Flags$VH() { return CF_CALLBACK_PARAMETERS$FetchPlaceholders$Flags$VH_; }
 
-    static final MemoryLayout FetchPlaceholders$Pattern$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout FetchPlaceholders$Pattern$LAYOUT() { return FetchPlaceholders$Pattern$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$FetchPlaceholders$Pattern$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$FetchPlaceholders$Pattern$LAYOUT() { return CF_CALLBACK_PARAMETERS$FetchPlaceholders$Pattern$LAYOUT_; }
 
-    static final VarHandle FetchPlaceholders$Pattern$VH_ = MemoryHandles.asAddressVarHandle(FetchPlaceholders$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Pattern")));
-    static final java.lang.invoke.VarHandle FetchPlaceholders$Pattern$VH() { return FetchPlaceholders$Pattern$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$FetchPlaceholders$Pattern$VH_ = MemoryHandles.asAddressVarHandle(CF_CALLBACK_PARAMETERS$FetchPlaceholders$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Pattern")));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$FetchPlaceholders$Pattern$VH() { return CF_CALLBACK_PARAMETERS$FetchPlaceholders$Pattern$VH_; }
 
-    static final MemoryLayout OpenCompletion$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$OpenCompletion$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags")
     );
-    static final jdk.incubator.foreign.MemoryLayout OpenCompletion$struct$LAYOUT() { return OpenCompletion$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$OpenCompletion$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$OpenCompletion$struct$LAYOUT_; }
 
-    static final MemoryLayout OpenCompletion$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout OpenCompletion$Flags$LAYOUT() { return OpenCompletion$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$OpenCompletion$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$OpenCompletion$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$OpenCompletion$Flags$LAYOUT_; }
 
-    static final VarHandle OpenCompletion$Flags$VH_ = OpenCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle OpenCompletion$Flags$VH() { return OpenCompletion$Flags$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$OpenCompletion$Flags$VH_ = CF_CALLBACK_PARAMETERS$OpenCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$OpenCompletion$Flags$VH() { return CF_CALLBACK_PARAMETERS$OpenCompletion$Flags$VH_; }
 
-    static final MemoryLayout CloseCompletion$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$CloseCompletion$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags")
     );
-    static final jdk.incubator.foreign.MemoryLayout CloseCompletion$struct$LAYOUT() { return CloseCompletion$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$CloseCompletion$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$CloseCompletion$struct$LAYOUT_; }
 
-    static final MemoryLayout CloseCompletion$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout CloseCompletion$Flags$LAYOUT() { return CloseCompletion$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$CloseCompletion$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$CloseCompletion$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$CloseCompletion$Flags$LAYOUT_; }
 
-    static final VarHandle CloseCompletion$Flags$VH_ = CloseCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle CloseCompletion$Flags$VH() { return CloseCompletion$Flags$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$CloseCompletion$Flags$VH_ = CF_CALLBACK_PARAMETERS$CloseCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$CloseCompletion$Flags$VH() { return CF_CALLBACK_PARAMETERS$CloseCompletion$Flags$VH_; }
 
-    static final MemoryLayout Dehydrate$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$Dehydrate$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         C_INT.withName("Reason")
     );
-    static final jdk.incubator.foreign.MemoryLayout Dehydrate$struct$LAYOUT() { return Dehydrate$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$Dehydrate$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$Dehydrate$struct$LAYOUT_; }
 
-    static final MemoryLayout Dehydrate$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout Dehydrate$Flags$LAYOUT() { return Dehydrate$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$Dehydrate$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$Dehydrate$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$Dehydrate$Flags$LAYOUT_; }
 
-    static final VarHandle Dehydrate$Flags$VH_ = Dehydrate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle Dehydrate$Flags$VH() { return Dehydrate$Flags$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$Dehydrate$Flags$VH_ = CF_CALLBACK_PARAMETERS$Dehydrate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$Dehydrate$Flags$VH() { return CF_CALLBACK_PARAMETERS$Dehydrate$Flags$VH_; }
 
-    static final MemoryLayout Dehydrate$Reason$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout Dehydrate$Reason$LAYOUT() { return Dehydrate$Reason$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$Dehydrate$Reason$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$Dehydrate$Reason$LAYOUT() { return CF_CALLBACK_PARAMETERS$Dehydrate$Reason$LAYOUT_; }
 
-    static final VarHandle Dehydrate$Reason$VH_ = Dehydrate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reason"));
-    static final java.lang.invoke.VarHandle Dehydrate$Reason$VH() { return Dehydrate$Reason$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$Dehydrate$Reason$VH_ = CF_CALLBACK_PARAMETERS$Dehydrate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reason"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$Dehydrate$Reason$VH() { return CF_CALLBACK_PARAMETERS$Dehydrate$Reason$VH_; }
 
-    static final MemoryLayout DehydrateCompletion$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$DehydrateCompletion$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         C_INT.withName("Reason")
     );
-    static final jdk.incubator.foreign.MemoryLayout DehydrateCompletion$struct$LAYOUT() { return DehydrateCompletion$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$DehydrateCompletion$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$DehydrateCompletion$struct$LAYOUT_; }
 
-    static final MemoryLayout DehydrateCompletion$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout DehydrateCompletion$Flags$LAYOUT() { return DehydrateCompletion$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$DehydrateCompletion$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$DehydrateCompletion$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$DehydrateCompletion$Flags$LAYOUT_; }
 
-    static final VarHandle DehydrateCompletion$Flags$VH_ = DehydrateCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle DehydrateCompletion$Flags$VH() { return DehydrateCompletion$Flags$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$DehydrateCompletion$Flags$VH_ = CF_CALLBACK_PARAMETERS$DehydrateCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$DehydrateCompletion$Flags$VH() { return CF_CALLBACK_PARAMETERS$DehydrateCompletion$Flags$VH_; }
 
-    static final MemoryLayout DehydrateCompletion$Reason$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout DehydrateCompletion$Reason$LAYOUT() { return DehydrateCompletion$Reason$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$DehydrateCompletion$Reason$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$DehydrateCompletion$Reason$LAYOUT() { return CF_CALLBACK_PARAMETERS$DehydrateCompletion$Reason$LAYOUT_; }
 
-    static final VarHandle DehydrateCompletion$Reason$VH_ = DehydrateCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reason"));
-    static final java.lang.invoke.VarHandle DehydrateCompletion$Reason$VH() { return DehydrateCompletion$Reason$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$DehydrateCompletion$Reason$VH_ = CF_CALLBACK_PARAMETERS$DehydrateCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Reason"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$DehydrateCompletion$Reason$VH() { return CF_CALLBACK_PARAMETERS$DehydrateCompletion$Reason$VH_; }
 
-    static final MemoryLayout Delete$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$Delete$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags")
     );
-    static final jdk.incubator.foreign.MemoryLayout Delete$struct$LAYOUT() { return Delete$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$Delete$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$Delete$struct$LAYOUT_; }
 
-    static final MemoryLayout Delete$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout Delete$Flags$LAYOUT() { return Delete$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$Delete$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$Delete$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$Delete$Flags$LAYOUT_; }
 
-    static final VarHandle Delete$Flags$VH_ = Delete$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle Delete$Flags$VH() { return Delete$Flags$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$Delete$Flags$VH_ = CF_CALLBACK_PARAMETERS$Delete$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$Delete$Flags$VH() { return CF_CALLBACK_PARAMETERS$Delete$Flags$VH_; }
 
-    static final MemoryLayout DeleteCompletion$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$DeleteCompletion$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags")
     );
-    static final jdk.incubator.foreign.MemoryLayout DeleteCompletion$struct$LAYOUT() { return DeleteCompletion$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$DeleteCompletion$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$DeleteCompletion$struct$LAYOUT_; }
 
-    static final MemoryLayout DeleteCompletion$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout DeleteCompletion$Flags$LAYOUT() { return DeleteCompletion$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$DeleteCompletion$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$DeleteCompletion$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$DeleteCompletion$Flags$LAYOUT_; }
 
-    static final VarHandle DeleteCompletion$Flags$VH_ = DeleteCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle DeleteCompletion$Flags$VH() { return DeleteCompletion$Flags$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$DeleteCompletion$Flags$VH_ = CF_CALLBACK_PARAMETERS$DeleteCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$DeleteCompletion$Flags$VH() { return CF_CALLBACK_PARAMETERS$DeleteCompletion$Flags$VH_; }
 
-    static final MemoryLayout Rename$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$Rename$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         MemoryLayout.ofPaddingBits(32),
         C_POINTER.withName("TargetPath")
     );
-    static final jdk.incubator.foreign.MemoryLayout Rename$struct$LAYOUT() { return Rename$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$Rename$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$Rename$struct$LAYOUT_; }
 
-    static final MemoryLayout Rename$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout Rename$Flags$LAYOUT() { return Rename$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$Rename$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$Rename$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$Rename$Flags$LAYOUT_; }
 
-    static final VarHandle Rename$Flags$VH_ = Rename$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle Rename$Flags$VH() { return Rename$Flags$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$Rename$Flags$VH_ = CF_CALLBACK_PARAMETERS$Rename$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$Rename$Flags$VH() { return CF_CALLBACK_PARAMETERS$Rename$Flags$VH_; }
 
-    static final MemoryLayout Rename$TargetPath$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout Rename$TargetPath$LAYOUT() { return Rename$TargetPath$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$Rename$TargetPath$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$Rename$TargetPath$LAYOUT() { return CF_CALLBACK_PARAMETERS$Rename$TargetPath$LAYOUT_; }
 
-    static final VarHandle Rename$TargetPath$VH_ = MemoryHandles.asAddressVarHandle(Rename$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("TargetPath")));
-    static final java.lang.invoke.VarHandle Rename$TargetPath$VH() { return Rename$TargetPath$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$Rename$TargetPath$VH_ = MemoryHandles.asAddressVarHandle(CF_CALLBACK_PARAMETERS$Rename$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("TargetPath")));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$Rename$TargetPath$VH() { return CF_CALLBACK_PARAMETERS$Rename$TargetPath$VH_; }
 
-    static final MemoryLayout RenameCompletion$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$RenameCompletion$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         MemoryLayout.ofPaddingBits(32),
         C_POINTER.withName("SourcePath")
     );
-    static final jdk.incubator.foreign.MemoryLayout RenameCompletion$struct$LAYOUT() { return RenameCompletion$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$RenameCompletion$struct$LAYOUT() { return CF_CALLBACK_PARAMETERS$RenameCompletion$struct$LAYOUT_; }
 
-    static final MemoryLayout RenameCompletion$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout RenameCompletion$Flags$LAYOUT() { return RenameCompletion$Flags$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$RenameCompletion$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$RenameCompletion$Flags$LAYOUT() { return CF_CALLBACK_PARAMETERS$RenameCompletion$Flags$LAYOUT_; }
 
-    static final VarHandle RenameCompletion$Flags$VH_ = RenameCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle RenameCompletion$Flags$VH() { return RenameCompletion$Flags$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$RenameCompletion$Flags$VH_ = CF_CALLBACK_PARAMETERS$RenameCompletion$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$RenameCompletion$Flags$VH() { return CF_CALLBACK_PARAMETERS$RenameCompletion$Flags$VH_; }
 
-    static final MemoryLayout RenameCompletion$SourcePath$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout RenameCompletion$SourcePath$LAYOUT() { return RenameCompletion$SourcePath$LAYOUT_; }
+    static final MemoryLayout CF_CALLBACK_PARAMETERS$RenameCompletion$SourcePath$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout CF_CALLBACK_PARAMETERS$RenameCompletion$SourcePath$LAYOUT() { return CF_CALLBACK_PARAMETERS$RenameCompletion$SourcePath$LAYOUT_; }
 
-    static final VarHandle RenameCompletion$SourcePath$VH_ = MemoryHandles.asAddressVarHandle(RenameCompletion$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("SourcePath")));
-    static final java.lang.invoke.VarHandle RenameCompletion$SourcePath$VH() { return RenameCompletion$SourcePath$VH_; }
+    static final VarHandle CF_CALLBACK_PARAMETERS$RenameCompletion$SourcePath$VH_ = MemoryHandles.asAddressVarHandle(CF_CALLBACK_PARAMETERS$RenameCompletion$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("SourcePath")));
+    static final java.lang.invoke.VarHandle CF_CALLBACK_PARAMETERS$RenameCompletion$SourcePath$VH() { return CF_CALLBACK_PARAMETERS$RenameCompletion$SourcePath$VH_; }
 
     static final int CF_CALLBACK_TYPE_FETCH_DATA() { return (int)0L; }
 
@@ -2521,7 +2574,7 @@ class cfapi_h$constants$99 extends cfapi_h$constants$98 {
     static final VarHandle CF_OPERATION_PARAMETERS$ParamSize$VH_ = CF_OPERATION_PARAMETERS$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ParamSize"));
     static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$ParamSize$VH() { return CF_OPERATION_PARAMETERS$ParamSize$VH_; }
 
-    static final MemoryLayout TransferData$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_OPERATION_PARAMETERS$TransferData$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         C_LONG.withName("CompletionStatus"),
         C_POINTER.withName("Buffer"),
@@ -2544,27 +2597,27 @@ class cfapi_h$constants$99 extends cfapi_h$constants$98 {
             C_LONGLONG.withName("QuadPart")
         ).withName("Length")
     );
-    static final jdk.incubator.foreign.MemoryLayout TransferData$struct$LAYOUT() { return TransferData$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$TransferData$struct$LAYOUT() { return CF_OPERATION_PARAMETERS$TransferData$struct$LAYOUT_; }
 
-    static final MemoryLayout TransferData$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout TransferData$Flags$LAYOUT() { return TransferData$Flags$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$TransferData$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$TransferData$Flags$LAYOUT() { return CF_OPERATION_PARAMETERS$TransferData$Flags$LAYOUT_; }
 
-    static final VarHandle TransferData$Flags$VH_ = TransferData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle TransferData$Flags$VH() { return TransferData$Flags$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$TransferData$Flags$VH_ = CF_OPERATION_PARAMETERS$TransferData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$TransferData$Flags$VH() { return CF_OPERATION_PARAMETERS$TransferData$Flags$VH_; }
 
-    static final MemoryLayout TransferData$CompletionStatus$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout TransferData$CompletionStatus$LAYOUT() { return TransferData$CompletionStatus$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$TransferData$CompletionStatus$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$TransferData$CompletionStatus$LAYOUT() { return CF_OPERATION_PARAMETERS$TransferData$CompletionStatus$LAYOUT_; }
 
-    static final VarHandle TransferData$CompletionStatus$VH_ = TransferData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
-    static final java.lang.invoke.VarHandle TransferData$CompletionStatus$VH() { return TransferData$CompletionStatus$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$TransferData$CompletionStatus$VH_ = CF_OPERATION_PARAMETERS$TransferData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$TransferData$CompletionStatus$VH() { return CF_OPERATION_PARAMETERS$TransferData$CompletionStatus$VH_; }
 
-    static final MemoryLayout TransferData$Buffer$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout TransferData$Buffer$LAYOUT() { return TransferData$Buffer$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$TransferData$Buffer$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$TransferData$Buffer$LAYOUT() { return CF_OPERATION_PARAMETERS$TransferData$Buffer$LAYOUT_; }
 
-    static final VarHandle TransferData$Buffer$VH_ = MemoryHandles.asAddressVarHandle(TransferData$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Buffer")));
-    static final java.lang.invoke.VarHandle TransferData$Buffer$VH() { return TransferData$Buffer$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$TransferData$Buffer$VH_ = MemoryHandles.asAddressVarHandle(CF_OPERATION_PARAMETERS$TransferData$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Buffer")));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$TransferData$Buffer$VH() { return CF_OPERATION_PARAMETERS$TransferData$Buffer$VH_; }
 
-    static final MemoryLayout RetrieveData$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_OPERATION_PARAMETERS$RetrieveData$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         MemoryLayout.ofPaddingBits(32),
         C_POINTER.withName("Buffer"),
@@ -2596,21 +2649,21 @@ class cfapi_h$constants$99 extends cfapi_h$constants$98 {
             C_LONGLONG.withName("QuadPart")
         ).withName("ReturnedLength")
     );
-    static final jdk.incubator.foreign.MemoryLayout RetrieveData$struct$LAYOUT() { return RetrieveData$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$RetrieveData$struct$LAYOUT() { return CF_OPERATION_PARAMETERS$RetrieveData$struct$LAYOUT_; }
 
-    static final MemoryLayout RetrieveData$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout RetrieveData$Flags$LAYOUT() { return RetrieveData$Flags$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$RetrieveData$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$RetrieveData$Flags$LAYOUT() { return CF_OPERATION_PARAMETERS$RetrieveData$Flags$LAYOUT_; }
 
-    static final VarHandle RetrieveData$Flags$VH_ = RetrieveData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle RetrieveData$Flags$VH() { return RetrieveData$Flags$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$RetrieveData$Flags$VH_ = CF_OPERATION_PARAMETERS$RetrieveData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$RetrieveData$Flags$VH() { return CF_OPERATION_PARAMETERS$RetrieveData$Flags$VH_; }
 
-    static final MemoryLayout RetrieveData$Buffer$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout RetrieveData$Buffer$LAYOUT() { return RetrieveData$Buffer$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$RetrieveData$Buffer$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$RetrieveData$Buffer$LAYOUT() { return CF_OPERATION_PARAMETERS$RetrieveData$Buffer$LAYOUT_; }
 
-    static final VarHandle RetrieveData$Buffer$VH_ = MemoryHandles.asAddressVarHandle(RetrieveData$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Buffer")));
-    static final java.lang.invoke.VarHandle RetrieveData$Buffer$VH() { return RetrieveData$Buffer$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$RetrieveData$Buffer$VH_ = MemoryHandles.asAddressVarHandle(CF_OPERATION_PARAMETERS$RetrieveData$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Buffer")));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$RetrieveData$Buffer$VH() { return CF_OPERATION_PARAMETERS$RetrieveData$Buffer$VH_; }
 
-    static final MemoryLayout AckData$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckData$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         C_LONG.withName("CompletionStatus"),
         MemoryLayout.ofUnion(
@@ -2632,21 +2685,21 @@ class cfapi_h$constants$99 extends cfapi_h$constants$98 {
             C_LONGLONG.withName("QuadPart")
         ).withName("Length")
     );
-    static final jdk.incubator.foreign.MemoryLayout AckData$struct$LAYOUT() { return AckData$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckData$struct$LAYOUT() { return CF_OPERATION_PARAMETERS$AckData$struct$LAYOUT_; }
 
-    static final MemoryLayout AckData$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout AckData$Flags$LAYOUT() { return AckData$Flags$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckData$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckData$Flags$LAYOUT() { return CF_OPERATION_PARAMETERS$AckData$Flags$LAYOUT_; }
 
-    static final VarHandle AckData$Flags$VH_ = AckData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle AckData$Flags$VH() { return AckData$Flags$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$AckData$Flags$VH_ = CF_OPERATION_PARAMETERS$AckData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$AckData$Flags$VH() { return CF_OPERATION_PARAMETERS$AckData$Flags$VH_; }
 
-    static final MemoryLayout AckData$CompletionStatus$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout AckData$CompletionStatus$LAYOUT() { return AckData$CompletionStatus$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckData$CompletionStatus$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckData$CompletionStatus$LAYOUT() { return CF_OPERATION_PARAMETERS$AckData$CompletionStatus$LAYOUT_; }
 
-    static final VarHandle AckData$CompletionStatus$VH_ = AckData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
-    static final java.lang.invoke.VarHandle AckData$CompletionStatus$VH() { return AckData$CompletionStatus$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$AckData$CompletionStatus$VH_ = CF_OPERATION_PARAMETERS$AckData$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$AckData$CompletionStatus$VH() { return CF_OPERATION_PARAMETERS$AckData$CompletionStatus$VH_; }
 
-    static final MemoryLayout RestartHydration$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_OPERATION_PARAMETERS$RestartHydration$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         MemoryLayout.ofPaddingBits(32),
         C_POINTER.withName("FsMetadata"),
@@ -2654,33 +2707,33 @@ class cfapi_h$constants$99 extends cfapi_h$constants$98 {
         C_LONG.withName("FileIdentityLength"),
         MemoryLayout.ofPaddingBits(32)
     );
-    static final jdk.incubator.foreign.MemoryLayout RestartHydration$struct$LAYOUT() { return RestartHydration$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$RestartHydration$struct$LAYOUT() { return CF_OPERATION_PARAMETERS$RestartHydration$struct$LAYOUT_; }
 
-    static final MemoryLayout RestartHydration$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout RestartHydration$Flags$LAYOUT() { return RestartHydration$Flags$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$RestartHydration$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$RestartHydration$Flags$LAYOUT() { return CF_OPERATION_PARAMETERS$RestartHydration$Flags$LAYOUT_; }
 
-    static final VarHandle RestartHydration$Flags$VH_ = RestartHydration$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle RestartHydration$Flags$VH() { return RestartHydration$Flags$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$RestartHydration$Flags$VH_ = CF_OPERATION_PARAMETERS$RestartHydration$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$RestartHydration$Flags$VH() { return CF_OPERATION_PARAMETERS$RestartHydration$Flags$VH_; }
 
-    static final MemoryLayout RestartHydration$FsMetadata$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout RestartHydration$FsMetadata$LAYOUT() { return RestartHydration$FsMetadata$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$RestartHydration$FsMetadata$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$RestartHydration$FsMetadata$LAYOUT() { return CF_OPERATION_PARAMETERS$RestartHydration$FsMetadata$LAYOUT_; }
 
-    static final VarHandle RestartHydration$FsMetadata$VH_ = MemoryHandles.asAddressVarHandle(RestartHydration$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("FsMetadata")));
-    static final java.lang.invoke.VarHandle RestartHydration$FsMetadata$VH() { return RestartHydration$FsMetadata$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$RestartHydration$FsMetadata$VH_ = MemoryHandles.asAddressVarHandle(CF_OPERATION_PARAMETERS$RestartHydration$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("FsMetadata")));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$RestartHydration$FsMetadata$VH() { return CF_OPERATION_PARAMETERS$RestartHydration$FsMetadata$VH_; }
 
-    static final MemoryLayout RestartHydration$FileIdentity$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout RestartHydration$FileIdentity$LAYOUT() { return RestartHydration$FileIdentity$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$RestartHydration$FileIdentity$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$RestartHydration$FileIdentity$LAYOUT() { return CF_OPERATION_PARAMETERS$RestartHydration$FileIdentity$LAYOUT_; }
 
-    static final VarHandle RestartHydration$FileIdentity$VH_ = MemoryHandles.asAddressVarHandle(RestartHydration$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("FileIdentity")));
-    static final java.lang.invoke.VarHandle RestartHydration$FileIdentity$VH() { return RestartHydration$FileIdentity$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$RestartHydration$FileIdentity$VH_ = MemoryHandles.asAddressVarHandle(CF_OPERATION_PARAMETERS$RestartHydration$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("FileIdentity")));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$RestartHydration$FileIdentity$VH() { return CF_OPERATION_PARAMETERS$RestartHydration$FileIdentity$VH_; }
 
-    static final MemoryLayout RestartHydration$FileIdentityLength$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout RestartHydration$FileIdentityLength$LAYOUT() { return RestartHydration$FileIdentityLength$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$RestartHydration$FileIdentityLength$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$RestartHydration$FileIdentityLength$LAYOUT() { return CF_OPERATION_PARAMETERS$RestartHydration$FileIdentityLength$LAYOUT_; }
 
-    static final VarHandle RestartHydration$FileIdentityLength$VH_ = RestartHydration$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("FileIdentityLength"));
-    static final java.lang.invoke.VarHandle RestartHydration$FileIdentityLength$VH() { return RestartHydration$FileIdentityLength$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$RestartHydration$FileIdentityLength$VH_ = CF_OPERATION_PARAMETERS$RestartHydration$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("FileIdentityLength"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$RestartHydration$FileIdentityLength$VH() { return CF_OPERATION_PARAMETERS$RestartHydration$FileIdentityLength$VH_; }
 
-    static final MemoryLayout TransferPlaceholders$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         C_LONG.withName("CompletionStatus"),
         MemoryLayout.ofUnion(
@@ -2696,106 +2749,106 @@ class cfapi_h$constants$99 extends cfapi_h$constants$98 {
         C_LONG.withName("PlaceholderCount"),
         C_LONG.withName("EntriesProcessed")
     );
-    static final jdk.incubator.foreign.MemoryLayout TransferPlaceholders$struct$LAYOUT() { return TransferPlaceholders$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$struct$LAYOUT() { return CF_OPERATION_PARAMETERS$TransferPlaceholders$struct$LAYOUT_; }
 
-    static final MemoryLayout TransferPlaceholders$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout TransferPlaceholders$Flags$LAYOUT() { return TransferPlaceholders$Flags$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$Flags$LAYOUT() { return CF_OPERATION_PARAMETERS$TransferPlaceholders$Flags$LAYOUT_; }
 
-    static final VarHandle TransferPlaceholders$Flags$VH_ = TransferPlaceholders$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle TransferPlaceholders$Flags$VH() { return TransferPlaceholders$Flags$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$TransferPlaceholders$Flags$VH_ = CF_OPERATION_PARAMETERS$TransferPlaceholders$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$TransferPlaceholders$Flags$VH() { return CF_OPERATION_PARAMETERS$TransferPlaceholders$Flags$VH_; }
 
-    static final MemoryLayout TransferPlaceholders$CompletionStatus$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout TransferPlaceholders$CompletionStatus$LAYOUT() { return TransferPlaceholders$CompletionStatus$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$CompletionStatus$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$CompletionStatus$LAYOUT() { return CF_OPERATION_PARAMETERS$TransferPlaceholders$CompletionStatus$LAYOUT_; }
 
-    static final VarHandle TransferPlaceholders$CompletionStatus$VH_ = TransferPlaceholders$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
-    static final java.lang.invoke.VarHandle TransferPlaceholders$CompletionStatus$VH() { return TransferPlaceholders$CompletionStatus$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$TransferPlaceholders$CompletionStatus$VH_ = CF_OPERATION_PARAMETERS$TransferPlaceholders$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$TransferPlaceholders$CompletionStatus$VH() { return CF_OPERATION_PARAMETERS$TransferPlaceholders$CompletionStatus$VH_; }
 
-    static final MemoryLayout TransferPlaceholders$PlaceholderArray$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout TransferPlaceholders$PlaceholderArray$LAYOUT() { return TransferPlaceholders$PlaceholderArray$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderArray$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderArray$LAYOUT() { return CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderArray$LAYOUT_; }
 
-    static final VarHandle TransferPlaceholders$PlaceholderArray$VH_ = MemoryHandles.asAddressVarHandle(TransferPlaceholders$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("PlaceholderArray")));
-    static final java.lang.invoke.VarHandle TransferPlaceholders$PlaceholderArray$VH() { return TransferPlaceholders$PlaceholderArray$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderArray$VH_ = MemoryHandles.asAddressVarHandle(CF_OPERATION_PARAMETERS$TransferPlaceholders$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("PlaceholderArray")));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderArray$VH() { return CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderArray$VH_; }
 
-    static final MemoryLayout TransferPlaceholders$PlaceholderCount$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout TransferPlaceholders$PlaceholderCount$LAYOUT() { return TransferPlaceholders$PlaceholderCount$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderCount$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderCount$LAYOUT() { return CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderCount$LAYOUT_; }
 
-    static final VarHandle TransferPlaceholders$PlaceholderCount$VH_ = TransferPlaceholders$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("PlaceholderCount"));
-    static final java.lang.invoke.VarHandle TransferPlaceholders$PlaceholderCount$VH() { return TransferPlaceholders$PlaceholderCount$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderCount$VH_ = CF_OPERATION_PARAMETERS$TransferPlaceholders$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("PlaceholderCount"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderCount$VH() { return CF_OPERATION_PARAMETERS$TransferPlaceholders$PlaceholderCount$VH_; }
 
-    static final MemoryLayout TransferPlaceholders$EntriesProcessed$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout TransferPlaceholders$EntriesProcessed$LAYOUT() { return TransferPlaceholders$EntriesProcessed$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$EntriesProcessed$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$TransferPlaceholders$EntriesProcessed$LAYOUT() { return CF_OPERATION_PARAMETERS$TransferPlaceholders$EntriesProcessed$LAYOUT_; }
 
-    static final VarHandle TransferPlaceholders$EntriesProcessed$VH_ = TransferPlaceholders$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("EntriesProcessed"));
-    static final java.lang.invoke.VarHandle TransferPlaceholders$EntriesProcessed$VH() { return TransferPlaceholders$EntriesProcessed$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$TransferPlaceholders$EntriesProcessed$VH_ = CF_OPERATION_PARAMETERS$TransferPlaceholders$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("EntriesProcessed"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$TransferPlaceholders$EntriesProcessed$VH() { return CF_OPERATION_PARAMETERS$TransferPlaceholders$EntriesProcessed$VH_; }
 
-    static final MemoryLayout AckDehydrate$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckDehydrate$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         C_LONG.withName("CompletionStatus"),
         C_POINTER.withName("FileIdentity"),
         C_LONG.withName("FileIdentityLength"),
         MemoryLayout.ofPaddingBits(32)
     );
-    static final jdk.incubator.foreign.MemoryLayout AckDehydrate$struct$LAYOUT() { return AckDehydrate$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckDehydrate$struct$LAYOUT() { return CF_OPERATION_PARAMETERS$AckDehydrate$struct$LAYOUT_; }
 
-    static final MemoryLayout AckDehydrate$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout AckDehydrate$Flags$LAYOUT() { return AckDehydrate$Flags$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckDehydrate$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckDehydrate$Flags$LAYOUT() { return CF_OPERATION_PARAMETERS$AckDehydrate$Flags$LAYOUT_; }
 
-    static final VarHandle AckDehydrate$Flags$VH_ = AckDehydrate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle AckDehydrate$Flags$VH() { return AckDehydrate$Flags$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$AckDehydrate$Flags$VH_ = CF_OPERATION_PARAMETERS$AckDehydrate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$AckDehydrate$Flags$VH() { return CF_OPERATION_PARAMETERS$AckDehydrate$Flags$VH_; }
 
-    static final MemoryLayout AckDehydrate$CompletionStatus$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout AckDehydrate$CompletionStatus$LAYOUT() { return AckDehydrate$CompletionStatus$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckDehydrate$CompletionStatus$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckDehydrate$CompletionStatus$LAYOUT() { return CF_OPERATION_PARAMETERS$AckDehydrate$CompletionStatus$LAYOUT_; }
 
-    static final VarHandle AckDehydrate$CompletionStatus$VH_ = AckDehydrate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
-    static final java.lang.invoke.VarHandle AckDehydrate$CompletionStatus$VH() { return AckDehydrate$CompletionStatus$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$AckDehydrate$CompletionStatus$VH_ = CF_OPERATION_PARAMETERS$AckDehydrate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$AckDehydrate$CompletionStatus$VH() { return CF_OPERATION_PARAMETERS$AckDehydrate$CompletionStatus$VH_; }
 
-    static final MemoryLayout AckDehydrate$FileIdentity$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout AckDehydrate$FileIdentity$LAYOUT() { return AckDehydrate$FileIdentity$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentity$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentity$LAYOUT() { return CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentity$LAYOUT_; }
 
-    static final VarHandle AckDehydrate$FileIdentity$VH_ = MemoryHandles.asAddressVarHandle(AckDehydrate$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("FileIdentity")));
-    static final java.lang.invoke.VarHandle AckDehydrate$FileIdentity$VH() { return AckDehydrate$FileIdentity$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentity$VH_ = MemoryHandles.asAddressVarHandle(CF_OPERATION_PARAMETERS$AckDehydrate$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("FileIdentity")));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentity$VH() { return CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentity$VH_; }
 
-    static final MemoryLayout AckDehydrate$FileIdentityLength$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout AckDehydrate$FileIdentityLength$LAYOUT() { return AckDehydrate$FileIdentityLength$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentityLength$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentityLength$LAYOUT() { return CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentityLength$LAYOUT_; }
 
-    static final VarHandle AckDehydrate$FileIdentityLength$VH_ = AckDehydrate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("FileIdentityLength"));
-    static final java.lang.invoke.VarHandle AckDehydrate$FileIdentityLength$VH() { return AckDehydrate$FileIdentityLength$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentityLength$VH_ = CF_OPERATION_PARAMETERS$AckDehydrate$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("FileIdentityLength"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentityLength$VH() { return CF_OPERATION_PARAMETERS$AckDehydrate$FileIdentityLength$VH_; }
 
-    static final MemoryLayout AckRename$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckRename$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         C_LONG.withName("CompletionStatus")
     );
-    static final jdk.incubator.foreign.MemoryLayout AckRename$struct$LAYOUT() { return AckRename$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckRename$struct$LAYOUT() { return CF_OPERATION_PARAMETERS$AckRename$struct$LAYOUT_; }
 
-    static final MemoryLayout AckRename$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout AckRename$Flags$LAYOUT() { return AckRename$Flags$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckRename$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckRename$Flags$LAYOUT() { return CF_OPERATION_PARAMETERS$AckRename$Flags$LAYOUT_; }
 
-    static final VarHandle AckRename$Flags$VH_ = AckRename$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle AckRename$Flags$VH() { return AckRename$Flags$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$AckRename$Flags$VH_ = CF_OPERATION_PARAMETERS$AckRename$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$AckRename$Flags$VH() { return CF_OPERATION_PARAMETERS$AckRename$Flags$VH_; }
 
-    static final MemoryLayout AckRename$CompletionStatus$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout AckRename$CompletionStatus$LAYOUT() { return AckRename$CompletionStatus$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckRename$CompletionStatus$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckRename$CompletionStatus$LAYOUT() { return CF_OPERATION_PARAMETERS$AckRename$CompletionStatus$LAYOUT_; }
 
-    static final VarHandle AckRename$CompletionStatus$VH_ = AckRename$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
-    static final java.lang.invoke.VarHandle AckRename$CompletionStatus$VH() { return AckRename$CompletionStatus$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$AckRename$CompletionStatus$VH_ = CF_OPERATION_PARAMETERS$AckRename$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$AckRename$CompletionStatus$VH() { return CF_OPERATION_PARAMETERS$AckRename$CompletionStatus$VH_; }
 
-    static final MemoryLayout AckDelete$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckDelete$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("Flags"),
         C_LONG.withName("CompletionStatus")
     );
-    static final jdk.incubator.foreign.MemoryLayout AckDelete$struct$LAYOUT() { return AckDelete$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckDelete$struct$LAYOUT() { return CF_OPERATION_PARAMETERS$AckDelete$struct$LAYOUT_; }
 
-    static final MemoryLayout AckDelete$Flags$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout AckDelete$Flags$LAYOUT() { return AckDelete$Flags$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckDelete$Flags$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckDelete$Flags$LAYOUT() { return CF_OPERATION_PARAMETERS$AckDelete$Flags$LAYOUT_; }
 
-    static final VarHandle AckDelete$Flags$VH_ = AckDelete$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
-    static final java.lang.invoke.VarHandle AckDelete$Flags$VH() { return AckDelete$Flags$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$AckDelete$Flags$VH_ = CF_OPERATION_PARAMETERS$AckDelete$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Flags"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$AckDelete$Flags$VH() { return CF_OPERATION_PARAMETERS$AckDelete$Flags$VH_; }
 
-    static final MemoryLayout AckDelete$CompletionStatus$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout AckDelete$CompletionStatus$LAYOUT() { return AckDelete$CompletionStatus$LAYOUT_; }
+    static final MemoryLayout CF_OPERATION_PARAMETERS$AckDelete$CompletionStatus$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout CF_OPERATION_PARAMETERS$AckDelete$CompletionStatus$LAYOUT() { return CF_OPERATION_PARAMETERS$AckDelete$CompletionStatus$LAYOUT_; }
 
-    static final VarHandle AckDelete$CompletionStatus$VH_ = AckDelete$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
-    static final java.lang.invoke.VarHandle AckDelete$CompletionStatus$VH() { return AckDelete$CompletionStatus$VH_; }
+    static final VarHandle CF_OPERATION_PARAMETERS$AckDelete$CompletionStatus$VH_ = CF_OPERATION_PARAMETERS$AckDelete$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CompletionStatus"));
+    static final java.lang.invoke.VarHandle CF_OPERATION_PARAMETERS$AckDelete$CompletionStatus$VH() { return CF_OPERATION_PARAMETERS$AckDelete$CompletionStatus$VH_; }
 
     static final FunctionDescriptor CfExecute$FUNC_ = FunctionDescriptor.of(C_LONG,
         C_POINTER,

@@ -527,25 +527,25 @@ class cfapi_h$constants$63 extends cfapi_h$constants$62 {
     static final VarHandle _DISK_PARTITION_INFO$PartitionStyle$VH_ = _DISK_PARTITION_INFO$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("PartitionStyle"));
     static final java.lang.invoke.VarHandle _DISK_PARTITION_INFO$PartitionStyle$VH() { return _DISK_PARTITION_INFO$PartitionStyle$VH_; }
 
-    static final MemoryLayout Mbr$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _DISK_PARTITION_INFO$Mbr$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Signature"),
         C_LONG.withName("CheckSum")
     );
-    static final jdk.incubator.foreign.MemoryLayout Mbr$struct$LAYOUT() { return Mbr$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DISK_PARTITION_INFO$Mbr$struct$LAYOUT() { return _DISK_PARTITION_INFO$Mbr$struct$LAYOUT_; }
 
-    static final MemoryLayout Mbr$Signature$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Mbr$Signature$LAYOUT() { return Mbr$Signature$LAYOUT_; }
+    static final MemoryLayout _DISK_PARTITION_INFO$Mbr$Signature$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DISK_PARTITION_INFO$Mbr$Signature$LAYOUT() { return _DISK_PARTITION_INFO$Mbr$Signature$LAYOUT_; }
 
-    static final VarHandle Mbr$Signature$VH_ = Mbr$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Signature"));
-    static final java.lang.invoke.VarHandle Mbr$Signature$VH() { return Mbr$Signature$VH_; }
+    static final VarHandle _DISK_PARTITION_INFO$Mbr$Signature$VH_ = _DISK_PARTITION_INFO$Mbr$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Signature"));
+    static final java.lang.invoke.VarHandle _DISK_PARTITION_INFO$Mbr$Signature$VH() { return _DISK_PARTITION_INFO$Mbr$Signature$VH_; }
 
-    static final MemoryLayout Mbr$CheckSum$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Mbr$CheckSum$LAYOUT() { return Mbr$CheckSum$LAYOUT_; }
+    static final MemoryLayout _DISK_PARTITION_INFO$Mbr$CheckSum$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DISK_PARTITION_INFO$Mbr$CheckSum$LAYOUT() { return _DISK_PARTITION_INFO$Mbr$CheckSum$LAYOUT_; }
 
-    static final VarHandle Mbr$CheckSum$VH_ = Mbr$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CheckSum"));
-    static final java.lang.invoke.VarHandle Mbr$CheckSum$VH() { return Mbr$CheckSum$VH_; }
+    static final VarHandle _DISK_PARTITION_INFO$Mbr$CheckSum$VH_ = _DISK_PARTITION_INFO$Mbr$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CheckSum"));
+    static final java.lang.invoke.VarHandle _DISK_PARTITION_INFO$Mbr$CheckSum$VH() { return _DISK_PARTITION_INFO$Mbr$CheckSum$VH_; }
 
-    static final MemoryLayout Gpt$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _DISK_PARTITION_INFO$Gpt$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofStruct(
             C_LONG.withName("Data1"),
             C_SHORT.withName("Data2"),
@@ -553,7 +553,7 @@ class cfapi_h$constants$63 extends cfapi_h$constants$62 {
             MemoryLayout.ofSequence(8, C_CHAR).withName("Data4")
         ).withName("DiskId")
     );
-    static final jdk.incubator.foreign.MemoryLayout Gpt$struct$LAYOUT() { return Gpt$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DISK_PARTITION_INFO$Gpt$struct$LAYOUT() { return _DISK_PARTITION_INFO$Gpt$struct$LAYOUT_; }
 
     static final MemoryLayout _DISK_GEOMETRY_EX$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofStruct(
@@ -674,48 +674,48 @@ class cfapi_h$constants$63 extends cfapi_h$constants$62 {
     static final VarHandle _DISK_CACHE_INFORMATION$PrefetchScalar$VH_ = _DISK_CACHE_INFORMATION$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("PrefetchScalar"));
     static final java.lang.invoke.VarHandle _DISK_CACHE_INFORMATION$PrefetchScalar$VH() { return _DISK_CACHE_INFORMATION$PrefetchScalar$VH_; }
 
-    static final MemoryLayout ScalarPrefetch$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _DISK_CACHE_INFORMATION$ScalarPrefetch$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("Minimum"),
         C_SHORT.withName("Maximum"),
         C_SHORT.withName("MaximumBlocks")
     );
-    static final jdk.incubator.foreign.MemoryLayout ScalarPrefetch$struct$LAYOUT() { return ScalarPrefetch$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DISK_CACHE_INFORMATION$ScalarPrefetch$struct$LAYOUT() { return _DISK_CACHE_INFORMATION$ScalarPrefetch$struct$LAYOUT_; }
 
-    static final MemoryLayout ScalarPrefetch$Minimum$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout ScalarPrefetch$Minimum$LAYOUT() { return ScalarPrefetch$Minimum$LAYOUT_; }
+    static final MemoryLayout _DISK_CACHE_INFORMATION$ScalarPrefetch$Minimum$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _DISK_CACHE_INFORMATION$ScalarPrefetch$Minimum$LAYOUT() { return _DISK_CACHE_INFORMATION$ScalarPrefetch$Minimum$LAYOUT_; }
 
-    static final VarHandle ScalarPrefetch$Minimum$VH_ = ScalarPrefetch$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Minimum"));
-    static final java.lang.invoke.VarHandle ScalarPrefetch$Minimum$VH() { return ScalarPrefetch$Minimum$VH_; }
+    static final VarHandle _DISK_CACHE_INFORMATION$ScalarPrefetch$Minimum$VH_ = _DISK_CACHE_INFORMATION$ScalarPrefetch$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Minimum"));
+    static final java.lang.invoke.VarHandle _DISK_CACHE_INFORMATION$ScalarPrefetch$Minimum$VH() { return _DISK_CACHE_INFORMATION$ScalarPrefetch$Minimum$VH_; }
 
-    static final MemoryLayout ScalarPrefetch$Maximum$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout ScalarPrefetch$Maximum$LAYOUT() { return ScalarPrefetch$Maximum$LAYOUT_; }
+    static final MemoryLayout _DISK_CACHE_INFORMATION$ScalarPrefetch$Maximum$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _DISK_CACHE_INFORMATION$ScalarPrefetch$Maximum$LAYOUT() { return _DISK_CACHE_INFORMATION$ScalarPrefetch$Maximum$LAYOUT_; }
 
-    static final VarHandle ScalarPrefetch$Maximum$VH_ = ScalarPrefetch$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Maximum"));
-    static final java.lang.invoke.VarHandle ScalarPrefetch$Maximum$VH() { return ScalarPrefetch$Maximum$VH_; }
+    static final VarHandle _DISK_CACHE_INFORMATION$ScalarPrefetch$Maximum$VH_ = _DISK_CACHE_INFORMATION$ScalarPrefetch$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Maximum"));
+    static final java.lang.invoke.VarHandle _DISK_CACHE_INFORMATION$ScalarPrefetch$Maximum$VH() { return _DISK_CACHE_INFORMATION$ScalarPrefetch$Maximum$VH_; }
 
-    static final MemoryLayout ScalarPrefetch$MaximumBlocks$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout ScalarPrefetch$MaximumBlocks$LAYOUT() { return ScalarPrefetch$MaximumBlocks$LAYOUT_; }
+    static final MemoryLayout _DISK_CACHE_INFORMATION$ScalarPrefetch$MaximumBlocks$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _DISK_CACHE_INFORMATION$ScalarPrefetch$MaximumBlocks$LAYOUT() { return _DISK_CACHE_INFORMATION$ScalarPrefetch$MaximumBlocks$LAYOUT_; }
 
-    static final VarHandle ScalarPrefetch$MaximumBlocks$VH_ = ScalarPrefetch$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("MaximumBlocks"));
-    static final java.lang.invoke.VarHandle ScalarPrefetch$MaximumBlocks$VH() { return ScalarPrefetch$MaximumBlocks$VH_; }
+    static final VarHandle _DISK_CACHE_INFORMATION$ScalarPrefetch$MaximumBlocks$VH_ = _DISK_CACHE_INFORMATION$ScalarPrefetch$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("MaximumBlocks"));
+    static final java.lang.invoke.VarHandle _DISK_CACHE_INFORMATION$ScalarPrefetch$MaximumBlocks$VH() { return _DISK_CACHE_INFORMATION$ScalarPrefetch$MaximumBlocks$VH_; }
 
-    static final MemoryLayout BlockPrefetch$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _DISK_CACHE_INFORMATION$BlockPrefetch$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_SHORT.withName("Minimum"),
         C_SHORT.withName("Maximum")
     );
-    static final jdk.incubator.foreign.MemoryLayout BlockPrefetch$struct$LAYOUT() { return BlockPrefetch$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DISK_CACHE_INFORMATION$BlockPrefetch$struct$LAYOUT() { return _DISK_CACHE_INFORMATION$BlockPrefetch$struct$LAYOUT_; }
 
-    static final MemoryLayout BlockPrefetch$Minimum$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout BlockPrefetch$Minimum$LAYOUT() { return BlockPrefetch$Minimum$LAYOUT_; }
+    static final MemoryLayout _DISK_CACHE_INFORMATION$BlockPrefetch$Minimum$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _DISK_CACHE_INFORMATION$BlockPrefetch$Minimum$LAYOUT() { return _DISK_CACHE_INFORMATION$BlockPrefetch$Minimum$LAYOUT_; }
 
-    static final VarHandle BlockPrefetch$Minimum$VH_ = BlockPrefetch$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Minimum"));
-    static final java.lang.invoke.VarHandle BlockPrefetch$Minimum$VH() { return BlockPrefetch$Minimum$VH_; }
+    static final VarHandle _DISK_CACHE_INFORMATION$BlockPrefetch$Minimum$VH_ = _DISK_CACHE_INFORMATION$BlockPrefetch$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Minimum"));
+    static final java.lang.invoke.VarHandle _DISK_CACHE_INFORMATION$BlockPrefetch$Minimum$VH() { return _DISK_CACHE_INFORMATION$BlockPrefetch$Minimum$VH_; }
 
-    static final MemoryLayout BlockPrefetch$Maximum$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout BlockPrefetch$Maximum$LAYOUT() { return BlockPrefetch$Maximum$LAYOUT_; }
+    static final MemoryLayout _DISK_CACHE_INFORMATION$BlockPrefetch$Maximum$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout _DISK_CACHE_INFORMATION$BlockPrefetch$Maximum$LAYOUT() { return _DISK_CACHE_INFORMATION$BlockPrefetch$Maximum$LAYOUT_; }
 
-    static final VarHandle BlockPrefetch$Maximum$VH_ = BlockPrefetch$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Maximum"));
-    static final java.lang.invoke.VarHandle BlockPrefetch$Maximum$VH() { return BlockPrefetch$Maximum$VH_; }
+    static final VarHandle _DISK_CACHE_INFORMATION$BlockPrefetch$Maximum$VH_ = _DISK_CACHE_INFORMATION$BlockPrefetch$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Maximum"));
+    static final java.lang.invoke.VarHandle _DISK_CACHE_INFORMATION$BlockPrefetch$Maximum$VH() { return _DISK_CACHE_INFORMATION$BlockPrefetch$Maximum$VH_; }
 
     static final MemoryLayout _DISK_GROW_PARTITION$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("PartitionNumber"),

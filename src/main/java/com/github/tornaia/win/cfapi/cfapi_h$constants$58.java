@@ -241,23 +241,23 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     static final VarHandle _userCLIPFORMAT$fContext$VH_ = _userCLIPFORMAT$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("fContext"));
     static final java.lang.invoke.VarHandle _userCLIPFORMAT$fContext$VH() { return _userCLIPFORMAT$fContext$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0001$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _userCLIPFORMAT$__MIDL_IWinTypes_0001$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("dwValue"),
         C_POINTER.withName("pwszName")
     ).withName("__MIDL_IWinTypes_0001");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0001$struct$LAYOUT() { return __MIDL_IWinTypes_0001$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _userCLIPFORMAT$__MIDL_IWinTypes_0001$union$LAYOUT() { return _userCLIPFORMAT$__MIDL_IWinTypes_0001$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0001$dwValue$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0001$dwValue$LAYOUT() { return __MIDL_IWinTypes_0001$dwValue$LAYOUT_; }
+    static final MemoryLayout _userCLIPFORMAT$__MIDL_IWinTypes_0001$dwValue$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _userCLIPFORMAT$__MIDL_IWinTypes_0001$dwValue$LAYOUT() { return _userCLIPFORMAT$__MIDL_IWinTypes_0001$dwValue$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0001$dwValue$VH_ = __MIDL_IWinTypes_0001$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwValue"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0001$dwValue$VH() { return __MIDL_IWinTypes_0001$dwValue$VH_; }
+    static final VarHandle _userCLIPFORMAT$__MIDL_IWinTypes_0001$dwValue$VH_ = _userCLIPFORMAT$__MIDL_IWinTypes_0001$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwValue"));
+    static final java.lang.invoke.VarHandle _userCLIPFORMAT$__MIDL_IWinTypes_0001$dwValue$VH() { return _userCLIPFORMAT$__MIDL_IWinTypes_0001$dwValue$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0001$pwszName$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0001$pwszName$LAYOUT() { return __MIDL_IWinTypes_0001$pwszName$LAYOUT_; }
+    static final MemoryLayout _userCLIPFORMAT$__MIDL_IWinTypes_0001$pwszName$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userCLIPFORMAT$__MIDL_IWinTypes_0001$pwszName$LAYOUT() { return _userCLIPFORMAT$__MIDL_IWinTypes_0001$pwszName$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0001$pwszName$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IWinTypes_0001$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pwszName")));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0001$pwszName$VH() { return __MIDL_IWinTypes_0001$pwszName$VH_; }
+    static final VarHandle _userCLIPFORMAT$__MIDL_IWinTypes_0001$pwszName$VH_ = MemoryHandles.asAddressVarHandle(_userCLIPFORMAT$__MIDL_IWinTypes_0001$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pwszName")));
+    static final java.lang.invoke.VarHandle _userCLIPFORMAT$__MIDL_IWinTypes_0001$pwszName$VH() { return _userCLIPFORMAT$__MIDL_IWinTypes_0001$pwszName$VH_; }
 
     static final MemoryLayout _GDI_NONREMOTE$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("fContext"),
@@ -275,23 +275,23 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     static final VarHandle _GDI_NONREMOTE$fContext$VH_ = _GDI_NONREMOTE$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("fContext"));
     static final java.lang.invoke.VarHandle _GDI_NONREMOTE$fContext$VH() { return _GDI_NONREMOTE$fContext$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0002$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _GDI_NONREMOTE$__MIDL_IWinTypes_0002$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("hInproc"),
         C_POINTER.withName("hRemote")
     ).withName("__MIDL_IWinTypes_0002");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0002$struct$LAYOUT() { return __MIDL_IWinTypes_0002$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _GDI_NONREMOTE$__MIDL_IWinTypes_0002$union$LAYOUT() { return _GDI_NONREMOTE$__MIDL_IWinTypes_0002$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0002$hInproc$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0002$hInproc$LAYOUT() { return __MIDL_IWinTypes_0002$hInproc$LAYOUT_; }
+    static final MemoryLayout _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hInproc$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hInproc$LAYOUT() { return _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hInproc$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0002$hInproc$VH_ = __MIDL_IWinTypes_0002$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0002$hInproc$VH() { return __MIDL_IWinTypes_0002$hInproc$VH_; }
+    static final VarHandle _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hInproc$VH_ = _GDI_NONREMOTE$__MIDL_IWinTypes_0002$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
+    static final java.lang.invoke.VarHandle _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hInproc$VH() { return _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hInproc$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0002$hRemote$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0002$hRemote$LAYOUT() { return __MIDL_IWinTypes_0002$hRemote$LAYOUT_; }
+    static final MemoryLayout _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hRemote$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hRemote$LAYOUT() { return _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hRemote$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0002$hRemote$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IWinTypes_0002$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0002$hRemote$VH() { return __MIDL_IWinTypes_0002$hRemote$VH_; }
+    static final VarHandle _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hRemote$VH_ = MemoryHandles.asAddressVarHandle(_GDI_NONREMOTE$__MIDL_IWinTypes_0002$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
+    static final java.lang.invoke.VarHandle _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hRemote$VH() { return _GDI_NONREMOTE$__MIDL_IWinTypes_0002$hRemote$VH_; }
 
     static final MemoryLayout _userHGLOBAL$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("fContext"),
@@ -310,30 +310,30 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     static final VarHandle _userHGLOBAL$fContext$VH_ = _userHGLOBAL$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("fContext"));
     static final java.lang.invoke.VarHandle _userHGLOBAL$fContext$VH() { return _userHGLOBAL$fContext$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0003$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _userHGLOBAL$__MIDL_IWinTypes_0003$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("hInproc"),
         C_POINTER.withName("hRemote"),
         C_LONGLONG.withName("hInproc64")
     ).withName("__MIDL_IWinTypes_0003");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0003$struct$LAYOUT() { return __MIDL_IWinTypes_0003$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _userHGLOBAL$__MIDL_IWinTypes_0003$union$LAYOUT() { return _userHGLOBAL$__MIDL_IWinTypes_0003$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0003$hInproc$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0003$hInproc$LAYOUT() { return __MIDL_IWinTypes_0003$hInproc$LAYOUT_; }
+    static final MemoryLayout _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc$LAYOUT() { return _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0003$hInproc$VH_ = __MIDL_IWinTypes_0003$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0003$hInproc$VH() { return __MIDL_IWinTypes_0003$hInproc$VH_; }
+    static final VarHandle _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc$VH_ = _userHGLOBAL$__MIDL_IWinTypes_0003$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
+    static final java.lang.invoke.VarHandle _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc$VH() { return _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0003$hRemote$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0003$hRemote$LAYOUT() { return __MIDL_IWinTypes_0003$hRemote$LAYOUT_; }
+    static final MemoryLayout _userHGLOBAL$__MIDL_IWinTypes_0003$hRemote$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userHGLOBAL$__MIDL_IWinTypes_0003$hRemote$LAYOUT() { return _userHGLOBAL$__MIDL_IWinTypes_0003$hRemote$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0003$hRemote$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IWinTypes_0003$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0003$hRemote$VH() { return __MIDL_IWinTypes_0003$hRemote$VH_; }
+    static final VarHandle _userHGLOBAL$__MIDL_IWinTypes_0003$hRemote$VH_ = MemoryHandles.asAddressVarHandle(_userHGLOBAL$__MIDL_IWinTypes_0003$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
+    static final java.lang.invoke.VarHandle _userHGLOBAL$__MIDL_IWinTypes_0003$hRemote$VH() { return _userHGLOBAL$__MIDL_IWinTypes_0003$hRemote$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0003$hInproc64$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0003$hInproc64$LAYOUT() { return __MIDL_IWinTypes_0003$hInproc64$LAYOUT_; }
+    static final MemoryLayout _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc64$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc64$LAYOUT() { return _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc64$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0003$hInproc64$VH_ = __MIDL_IWinTypes_0003$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0003$hInproc64$VH() { return __MIDL_IWinTypes_0003$hInproc64$VH_; }
+    static final VarHandle _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc64$VH_ = _userHGLOBAL$__MIDL_IWinTypes_0003$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
+    static final java.lang.invoke.VarHandle _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc64$VH() { return _userHGLOBAL$__MIDL_IWinTypes_0003$hInproc64$VH_; }
 
     static final MemoryLayout _userHMETAFILE$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("fContext"),
@@ -352,30 +352,30 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     static final VarHandle _userHMETAFILE$fContext$VH_ = _userHMETAFILE$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("fContext"));
     static final java.lang.invoke.VarHandle _userHMETAFILE$fContext$VH() { return _userHMETAFILE$fContext$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0004$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _userHMETAFILE$__MIDL_IWinTypes_0004$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("hInproc"),
         C_POINTER.withName("hRemote"),
         C_LONGLONG.withName("hInproc64")
     ).withName("__MIDL_IWinTypes_0004");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0004$struct$LAYOUT() { return __MIDL_IWinTypes_0004$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _userHMETAFILE$__MIDL_IWinTypes_0004$union$LAYOUT() { return _userHMETAFILE$__MIDL_IWinTypes_0004$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0004$hInproc$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0004$hInproc$LAYOUT() { return __MIDL_IWinTypes_0004$hInproc$LAYOUT_; }
+    static final MemoryLayout _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc$LAYOUT() { return _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0004$hInproc$VH_ = __MIDL_IWinTypes_0004$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0004$hInproc$VH() { return __MIDL_IWinTypes_0004$hInproc$VH_; }
+    static final VarHandle _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc$VH_ = _userHMETAFILE$__MIDL_IWinTypes_0004$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
+    static final java.lang.invoke.VarHandle _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc$VH() { return _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0004$hRemote$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0004$hRemote$LAYOUT() { return __MIDL_IWinTypes_0004$hRemote$LAYOUT_; }
+    static final MemoryLayout _userHMETAFILE$__MIDL_IWinTypes_0004$hRemote$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userHMETAFILE$__MIDL_IWinTypes_0004$hRemote$LAYOUT() { return _userHMETAFILE$__MIDL_IWinTypes_0004$hRemote$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0004$hRemote$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IWinTypes_0004$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0004$hRemote$VH() { return __MIDL_IWinTypes_0004$hRemote$VH_; }
+    static final VarHandle _userHMETAFILE$__MIDL_IWinTypes_0004$hRemote$VH_ = MemoryHandles.asAddressVarHandle(_userHMETAFILE$__MIDL_IWinTypes_0004$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
+    static final java.lang.invoke.VarHandle _userHMETAFILE$__MIDL_IWinTypes_0004$hRemote$VH() { return _userHMETAFILE$__MIDL_IWinTypes_0004$hRemote$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0004$hInproc64$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0004$hInproc64$LAYOUT() { return __MIDL_IWinTypes_0004$hInproc64$LAYOUT_; }
+    static final MemoryLayout _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc64$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc64$LAYOUT() { return _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc64$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0004$hInproc64$VH_ = __MIDL_IWinTypes_0004$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0004$hInproc64$VH() { return __MIDL_IWinTypes_0004$hInproc64$VH_; }
+    static final VarHandle _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc64$VH_ = _userHMETAFILE$__MIDL_IWinTypes_0004$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
+    static final java.lang.invoke.VarHandle _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc64$VH() { return _userHMETAFILE$__MIDL_IWinTypes_0004$hInproc64$VH_; }
 
     static final MemoryLayout _remoteMETAFILEPICT$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("mm"),
@@ -427,30 +427,30 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     static final VarHandle _userHMETAFILEPICT$fContext$VH_ = _userHMETAFILEPICT$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("fContext"));
     static final java.lang.invoke.VarHandle _userHMETAFILEPICT$fContext$VH() { return _userHMETAFILEPICT$fContext$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0005$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _userHMETAFILEPICT$__MIDL_IWinTypes_0005$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("hInproc"),
         C_POINTER.withName("hRemote"),
         C_LONGLONG.withName("hInproc64")
     ).withName("__MIDL_IWinTypes_0005");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0005$struct$LAYOUT() { return __MIDL_IWinTypes_0005$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _userHMETAFILEPICT$__MIDL_IWinTypes_0005$union$LAYOUT() { return _userHMETAFILEPICT$__MIDL_IWinTypes_0005$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0005$hInproc$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0005$hInproc$LAYOUT() { return __MIDL_IWinTypes_0005$hInproc$LAYOUT_; }
+    static final MemoryLayout _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc$LAYOUT() { return _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0005$hInproc$VH_ = __MIDL_IWinTypes_0005$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0005$hInproc$VH() { return __MIDL_IWinTypes_0005$hInproc$VH_; }
+    static final VarHandle _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc$VH_ = _userHMETAFILEPICT$__MIDL_IWinTypes_0005$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
+    static final java.lang.invoke.VarHandle _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc$VH() { return _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0005$hRemote$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0005$hRemote$LAYOUT() { return __MIDL_IWinTypes_0005$hRemote$LAYOUT_; }
+    static final MemoryLayout _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hRemote$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hRemote$LAYOUT() { return _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hRemote$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0005$hRemote$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IWinTypes_0005$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0005$hRemote$VH() { return __MIDL_IWinTypes_0005$hRemote$VH_; }
+    static final VarHandle _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hRemote$VH_ = MemoryHandles.asAddressVarHandle(_userHMETAFILEPICT$__MIDL_IWinTypes_0005$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
+    static final java.lang.invoke.VarHandle _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hRemote$VH() { return _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hRemote$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0005$hInproc64$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0005$hInproc64$LAYOUT() { return __MIDL_IWinTypes_0005$hInproc64$LAYOUT_; }
+    static final MemoryLayout _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc64$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc64$LAYOUT() { return _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc64$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0005$hInproc64$VH_ = __MIDL_IWinTypes_0005$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0005$hInproc64$VH() { return __MIDL_IWinTypes_0005$hInproc64$VH_; }
+    static final VarHandle _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc64$VH_ = _userHMETAFILEPICT$__MIDL_IWinTypes_0005$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
+    static final java.lang.invoke.VarHandle _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc64$VH() { return _userHMETAFILEPICT$__MIDL_IWinTypes_0005$hInproc64$VH_; }
 
     static final MemoryLayout _userHENHMETAFILE$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("fContext"),
@@ -469,30 +469,30 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     static final VarHandle _userHENHMETAFILE$fContext$VH_ = _userHENHMETAFILE$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("fContext"));
     static final java.lang.invoke.VarHandle _userHENHMETAFILE$fContext$VH() { return _userHENHMETAFILE$fContext$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0006$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _userHENHMETAFILE$__MIDL_IWinTypes_0006$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("hInproc"),
         C_POINTER.withName("hRemote"),
         C_LONGLONG.withName("hInproc64")
     ).withName("__MIDL_IWinTypes_0006");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0006$struct$LAYOUT() { return __MIDL_IWinTypes_0006$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _userHENHMETAFILE$__MIDL_IWinTypes_0006$union$LAYOUT() { return _userHENHMETAFILE$__MIDL_IWinTypes_0006$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0006$hInproc$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0006$hInproc$LAYOUT() { return __MIDL_IWinTypes_0006$hInproc$LAYOUT_; }
+    static final MemoryLayout _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc$LAYOUT() { return _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0006$hInproc$VH_ = __MIDL_IWinTypes_0006$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0006$hInproc$VH() { return __MIDL_IWinTypes_0006$hInproc$VH_; }
+    static final VarHandle _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc$VH_ = _userHENHMETAFILE$__MIDL_IWinTypes_0006$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
+    static final java.lang.invoke.VarHandle _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc$VH() { return _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0006$hRemote$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0006$hRemote$LAYOUT() { return __MIDL_IWinTypes_0006$hRemote$LAYOUT_; }
+    static final MemoryLayout _userHENHMETAFILE$__MIDL_IWinTypes_0006$hRemote$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userHENHMETAFILE$__MIDL_IWinTypes_0006$hRemote$LAYOUT() { return _userHENHMETAFILE$__MIDL_IWinTypes_0006$hRemote$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0006$hRemote$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IWinTypes_0006$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0006$hRemote$VH() { return __MIDL_IWinTypes_0006$hRemote$VH_; }
+    static final VarHandle _userHENHMETAFILE$__MIDL_IWinTypes_0006$hRemote$VH_ = MemoryHandles.asAddressVarHandle(_userHENHMETAFILE$__MIDL_IWinTypes_0006$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
+    static final java.lang.invoke.VarHandle _userHENHMETAFILE$__MIDL_IWinTypes_0006$hRemote$VH() { return _userHENHMETAFILE$__MIDL_IWinTypes_0006$hRemote$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0006$hInproc64$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0006$hInproc64$LAYOUT() { return __MIDL_IWinTypes_0006$hInproc64$LAYOUT_; }
+    static final MemoryLayout _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc64$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc64$LAYOUT() { return _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc64$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0006$hInproc64$VH_ = __MIDL_IWinTypes_0006$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0006$hInproc64$VH() { return __MIDL_IWinTypes_0006$hInproc64$VH_; }
+    static final VarHandle _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc64$VH_ = _userHENHMETAFILE$__MIDL_IWinTypes_0006$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
+    static final java.lang.invoke.VarHandle _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc64$VH() { return _userHENHMETAFILE$__MIDL_IWinTypes_0006$hInproc64$VH_; }
 
     static final MemoryLayout _userBITMAP$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("bmType"),
@@ -566,30 +566,30 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     static final VarHandle _userHBITMAP$fContext$VH_ = _userHBITMAP$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("fContext"));
     static final java.lang.invoke.VarHandle _userHBITMAP$fContext$VH() { return _userHBITMAP$fContext$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0007$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _userHBITMAP$__MIDL_IWinTypes_0007$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("hInproc"),
         C_POINTER.withName("hRemote"),
         C_LONGLONG.withName("hInproc64")
     ).withName("__MIDL_IWinTypes_0007");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0007$struct$LAYOUT() { return __MIDL_IWinTypes_0007$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _userHBITMAP$__MIDL_IWinTypes_0007$union$LAYOUT() { return _userHBITMAP$__MIDL_IWinTypes_0007$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0007$hInproc$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0007$hInproc$LAYOUT() { return __MIDL_IWinTypes_0007$hInproc$LAYOUT_; }
+    static final MemoryLayout _userHBITMAP$__MIDL_IWinTypes_0007$hInproc$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHBITMAP$__MIDL_IWinTypes_0007$hInproc$LAYOUT() { return _userHBITMAP$__MIDL_IWinTypes_0007$hInproc$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0007$hInproc$VH_ = __MIDL_IWinTypes_0007$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0007$hInproc$VH() { return __MIDL_IWinTypes_0007$hInproc$VH_; }
+    static final VarHandle _userHBITMAP$__MIDL_IWinTypes_0007$hInproc$VH_ = _userHBITMAP$__MIDL_IWinTypes_0007$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
+    static final java.lang.invoke.VarHandle _userHBITMAP$__MIDL_IWinTypes_0007$hInproc$VH() { return _userHBITMAP$__MIDL_IWinTypes_0007$hInproc$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0007$hRemote$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0007$hRemote$LAYOUT() { return __MIDL_IWinTypes_0007$hRemote$LAYOUT_; }
+    static final MemoryLayout _userHBITMAP$__MIDL_IWinTypes_0007$hRemote$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userHBITMAP$__MIDL_IWinTypes_0007$hRemote$LAYOUT() { return _userHBITMAP$__MIDL_IWinTypes_0007$hRemote$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0007$hRemote$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IWinTypes_0007$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0007$hRemote$VH() { return __MIDL_IWinTypes_0007$hRemote$VH_; }
+    static final VarHandle _userHBITMAP$__MIDL_IWinTypes_0007$hRemote$VH_ = MemoryHandles.asAddressVarHandle(_userHBITMAP$__MIDL_IWinTypes_0007$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
+    static final java.lang.invoke.VarHandle _userHBITMAP$__MIDL_IWinTypes_0007$hRemote$VH() { return _userHBITMAP$__MIDL_IWinTypes_0007$hRemote$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0007$hInproc64$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0007$hInproc64$LAYOUT() { return __MIDL_IWinTypes_0007$hInproc64$LAYOUT_; }
+    static final MemoryLayout _userHBITMAP$__MIDL_IWinTypes_0007$hInproc64$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHBITMAP$__MIDL_IWinTypes_0007$hInproc64$LAYOUT() { return _userHBITMAP$__MIDL_IWinTypes_0007$hInproc64$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0007$hInproc64$VH_ = __MIDL_IWinTypes_0007$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0007$hInproc64$VH() { return __MIDL_IWinTypes_0007$hInproc64$VH_; }
+    static final VarHandle _userHBITMAP$__MIDL_IWinTypes_0007$hInproc64$VH_ = _userHBITMAP$__MIDL_IWinTypes_0007$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
+    static final java.lang.invoke.VarHandle _userHBITMAP$__MIDL_IWinTypes_0007$hInproc64$VH() { return _userHBITMAP$__MIDL_IWinTypes_0007$hInproc64$VH_; }
 
     static final MemoryLayout _userHPALETTE$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("fContext"),
@@ -608,30 +608,30 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     static final VarHandle _userHPALETTE$fContext$VH_ = _userHPALETTE$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("fContext"));
     static final java.lang.invoke.VarHandle _userHPALETTE$fContext$VH() { return _userHPALETTE$fContext$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0008$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _userHPALETTE$__MIDL_IWinTypes_0008$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("hInproc"),
         C_POINTER.withName("hRemote"),
         C_LONGLONG.withName("hInproc64")
     ).withName("__MIDL_IWinTypes_0008");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0008$struct$LAYOUT() { return __MIDL_IWinTypes_0008$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _userHPALETTE$__MIDL_IWinTypes_0008$union$LAYOUT() { return _userHPALETTE$__MIDL_IWinTypes_0008$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0008$hInproc$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0008$hInproc$LAYOUT() { return __MIDL_IWinTypes_0008$hInproc$LAYOUT_; }
+    static final MemoryLayout _userHPALETTE$__MIDL_IWinTypes_0008$hInproc$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHPALETTE$__MIDL_IWinTypes_0008$hInproc$LAYOUT() { return _userHPALETTE$__MIDL_IWinTypes_0008$hInproc$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0008$hInproc$VH_ = __MIDL_IWinTypes_0008$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0008$hInproc$VH() { return __MIDL_IWinTypes_0008$hInproc$VH_; }
+    static final VarHandle _userHPALETTE$__MIDL_IWinTypes_0008$hInproc$VH_ = _userHPALETTE$__MIDL_IWinTypes_0008$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
+    static final java.lang.invoke.VarHandle _userHPALETTE$__MIDL_IWinTypes_0008$hInproc$VH() { return _userHPALETTE$__MIDL_IWinTypes_0008$hInproc$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0008$hRemote$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0008$hRemote$LAYOUT() { return __MIDL_IWinTypes_0008$hRemote$LAYOUT_; }
+    static final MemoryLayout _userHPALETTE$__MIDL_IWinTypes_0008$hRemote$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _userHPALETTE$__MIDL_IWinTypes_0008$hRemote$LAYOUT() { return _userHPALETTE$__MIDL_IWinTypes_0008$hRemote$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0008$hRemote$VH_ = MemoryHandles.asAddressVarHandle(__MIDL_IWinTypes_0008$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0008$hRemote$VH() { return __MIDL_IWinTypes_0008$hRemote$VH_; }
+    static final VarHandle _userHPALETTE$__MIDL_IWinTypes_0008$hRemote$VH_ = MemoryHandles.asAddressVarHandle(_userHPALETTE$__MIDL_IWinTypes_0008$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hRemote")));
+    static final java.lang.invoke.VarHandle _userHPALETTE$__MIDL_IWinTypes_0008$hRemote$VH() { return _userHPALETTE$__MIDL_IWinTypes_0008$hRemote$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0008$hInproc64$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0008$hInproc64$LAYOUT() { return __MIDL_IWinTypes_0008$hInproc64$LAYOUT_; }
+    static final MemoryLayout _userHPALETTE$__MIDL_IWinTypes_0008$hInproc64$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout _userHPALETTE$__MIDL_IWinTypes_0008$hInproc64$LAYOUT() { return _userHPALETTE$__MIDL_IWinTypes_0008$hInproc64$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0008$hInproc64$VH_ = __MIDL_IWinTypes_0008$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0008$hInproc64$VH() { return __MIDL_IWinTypes_0008$hInproc64$VH_; }
+    static final VarHandle _userHPALETTE$__MIDL_IWinTypes_0008$hInproc64$VH_ = _userHPALETTE$__MIDL_IWinTypes_0008$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hInproc64"));
+    static final java.lang.invoke.VarHandle _userHPALETTE$__MIDL_IWinTypes_0008$hInproc64$VH() { return _userHPALETTE$__MIDL_IWinTypes_0008$hInproc64$VH_; }
 
     static final MemoryLayout _RemotableHandle$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("fContext"),
@@ -648,23 +648,23 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     static final VarHandle _RemotableHandle$fContext$VH_ = _RemotableHandle$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("fContext"));
     static final java.lang.invoke.VarHandle _RemotableHandle$fContext$VH() { return _RemotableHandle$fContext$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0009$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _RemotableHandle$__MIDL_IWinTypes_0009$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("hInproc"),
         C_LONG.withName("hRemote")
     ).withName("__MIDL_IWinTypes_0009");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0009$struct$LAYOUT() { return __MIDL_IWinTypes_0009$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _RemotableHandle$__MIDL_IWinTypes_0009$union$LAYOUT() { return _RemotableHandle$__MIDL_IWinTypes_0009$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0009$hInproc$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0009$hInproc$LAYOUT() { return __MIDL_IWinTypes_0009$hInproc$LAYOUT_; }
+    static final MemoryLayout _RemotableHandle$__MIDL_IWinTypes_0009$hInproc$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _RemotableHandle$__MIDL_IWinTypes_0009$hInproc$LAYOUT() { return _RemotableHandle$__MIDL_IWinTypes_0009$hInproc$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0009$hInproc$VH_ = __MIDL_IWinTypes_0009$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0009$hInproc$VH() { return __MIDL_IWinTypes_0009$hInproc$VH_; }
+    static final VarHandle _RemotableHandle$__MIDL_IWinTypes_0009$hInproc$VH_ = _RemotableHandle$__MIDL_IWinTypes_0009$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hInproc"));
+    static final java.lang.invoke.VarHandle _RemotableHandle$__MIDL_IWinTypes_0009$hInproc$VH() { return _RemotableHandle$__MIDL_IWinTypes_0009$hInproc$VH_; }
 
-    static final MemoryLayout __MIDL_IWinTypes_0009$hRemote$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL_IWinTypes_0009$hRemote$LAYOUT() { return __MIDL_IWinTypes_0009$hRemote$LAYOUT_; }
+    static final MemoryLayout _RemotableHandle$__MIDL_IWinTypes_0009$hRemote$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _RemotableHandle$__MIDL_IWinTypes_0009$hRemote$LAYOUT() { return _RemotableHandle$__MIDL_IWinTypes_0009$hRemote$LAYOUT_; }
 
-    static final VarHandle __MIDL_IWinTypes_0009$hRemote$VH_ = __MIDL_IWinTypes_0009$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hRemote"));
-    static final java.lang.invoke.VarHandle __MIDL_IWinTypes_0009$hRemote$VH() { return __MIDL_IWinTypes_0009$hRemote$VH_; }
+    static final VarHandle _RemotableHandle$__MIDL_IWinTypes_0009$hRemote$VH_ = _RemotableHandle$__MIDL_IWinTypes_0009$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hRemote"));
+    static final java.lang.invoke.VarHandle _RemotableHandle$__MIDL_IWinTypes_0009$hRemote$VH() { return _RemotableHandle$__MIDL_IWinTypes_0009$hRemote$VH_; }
 
     static final MemoryLayout IWinTypes_v0_1_c_ifspec$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout IWinTypes_v0_1_c_ifspec$LAYOUT() { return IWinTypes_v0_1_c_ifspec$LAYOUT_; }
@@ -684,29 +684,29 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     static final MemorySegment IWinTypes_v0_1_s_ifspec$SEGMENT_ = RuntimeHelper.lookupGlobalVariable(LIBRARIES, "IWinTypes_v0_1_s_ifspec", IWinTypes_v0_1_s_ifspec$LAYOUT_);
     static final jdk.incubator.foreign.MemorySegment IWinTypes_v0_1_s_ifspec$SEGMENT() { return IWinTypes_v0_1_s_ifspec$SEGMENT_; }
 
-    static final MemoryLayout tagCY$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout tagCY$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("Lo"),
         C_LONG.withName("Hi"),
         C_LONGLONG.withName("int64")
     ).withName("tagCY");
-    static final jdk.incubator.foreign.MemoryLayout tagCY$struct$LAYOUT() { return tagCY$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout tagCY$union$LAYOUT() { return tagCY$union$LAYOUT_; }
 
     static final MemoryLayout tagCY$Lo$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout tagCY$Lo$LAYOUT() { return tagCY$Lo$LAYOUT_; }
 
-    static final VarHandle tagCY$Lo$VH_ = tagCY$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Lo"));
+    static final VarHandle tagCY$Lo$VH_ = tagCY$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Lo"));
     static final java.lang.invoke.VarHandle tagCY$Lo$VH() { return tagCY$Lo$VH_; }
 
     static final MemoryLayout tagCY$Hi$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout tagCY$Hi$LAYOUT() { return tagCY$Hi$LAYOUT_; }
 
-    static final VarHandle tagCY$Hi$VH_ = tagCY$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Hi"));
+    static final VarHandle tagCY$Hi$VH_ = tagCY$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("Hi"));
     static final java.lang.invoke.VarHandle tagCY$Hi$VH() { return tagCY$Hi$VH_; }
 
     static final MemoryLayout tagCY$int64$LAYOUT_ = C_LONGLONG;
     static final jdk.incubator.foreign.MemoryLayout tagCY$int64$LAYOUT() { return tagCY$int64$LAYOUT_; }
 
-    static final VarHandle tagCY$int64$VH_ = tagCY$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("int64"));
+    static final VarHandle tagCY$int64$VH_ = tagCY$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("int64"));
     static final java.lang.invoke.VarHandle tagCY$int64$VH() { return tagCY$int64$VH_; }
 
     static final MemoryLayout tagDEC$struct$LAYOUT_ = MemoryLayout.ofStruct(
@@ -1065,7 +1065,7 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     static final VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$tyspec$VH_ = __MIDL___MIDL_itf_wtypes_0000_0001_0001$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("tyspec"));
     static final java.lang.invoke.VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$tyspec$VH() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$tyspec$VH_; }
 
-    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0005$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_LONG.withName("Data1"),
             C_SHORT.withName("Data2"),
@@ -1100,33 +1100,33 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
             ).withName("PolicyId")
         ).withName("ByObjectId")
     ).withName("__MIDL___MIDL_itf_wtypes_0000_0001_0005");
-    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0005$struct$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0005$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$union$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$union$LAYOUT_; }
 
-    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$LAYOUT_; }
+    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$LAYOUT_; }
 
-    static final VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$VH_ = MemoryHandles.asAddressVarHandle(__MIDL___MIDL_itf_wtypes_0000_0001_0005$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pFileExt")));
-    static final java.lang.invoke.VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$VH() { return __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$VH_; }
+    static final VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$VH_ = MemoryHandles.asAddressVarHandle(__MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pFileExt")));
+    static final java.lang.invoke.VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$VH() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileExt$VH_; }
 
-    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$LAYOUT_; }
+    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$LAYOUT_; }
 
-    static final VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$VH_ = MemoryHandles.asAddressVarHandle(__MIDL___MIDL_itf_wtypes_0000_0001_0005$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pMimeType")));
-    static final java.lang.invoke.VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$VH() { return __MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$VH_; }
+    static final VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$VH_ = MemoryHandles.asAddressVarHandle(__MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pMimeType")));
+    static final java.lang.invoke.VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$VH() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pMimeType$VH_; }
 
-    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$LAYOUT_; }
+    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$LAYOUT_; }
 
-    static final VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$VH_ = MemoryHandles.asAddressVarHandle(__MIDL___MIDL_itf_wtypes_0000_0001_0005$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pProgId")));
-    static final java.lang.invoke.VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$VH() { return __MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$VH_; }
+    static final VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$VH_ = MemoryHandles.asAddressVarHandle(__MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pProgId")));
+    static final java.lang.invoke.VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$VH() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pProgId$VH_; }
 
-    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$LAYOUT_; }
+    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$LAYOUT_; }
 
-    static final VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$VH_ = MemoryHandles.asAddressVarHandle(__MIDL___MIDL_itf_wtypes_0000_0001_0005$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pFileName")));
-    static final java.lang.invoke.VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$VH() { return __MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$VH_; }
+    static final VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$VH_ = MemoryHandles.asAddressVarHandle(__MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pFileName")));
+    static final java.lang.invoke.VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$VH() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$pFileName$VH_; }
 
-    static final MemoryLayout ByName$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByName$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_POINTER.withName("pPackageName"),
         MemoryLayout.ofStruct(
             C_LONG.withName("Data1"),
@@ -1135,15 +1135,15 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
             MemoryLayout.ofSequence(8, C_CHAR).withName("Data4")
         ).withName("PolicyId")
     );
-    static final jdk.incubator.foreign.MemoryLayout ByName$struct$LAYOUT() { return ByName$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByName$struct$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByName$struct$LAYOUT_; }
 
-    static final MemoryLayout ByName$pPackageName$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout ByName$pPackageName$LAYOUT() { return ByName$pPackageName$LAYOUT_; }
+    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByName$pPackageName$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByName$pPackageName$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByName$pPackageName$LAYOUT_; }
 
-    static final VarHandle ByName$pPackageName$VH_ = MemoryHandles.asAddressVarHandle(ByName$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pPackageName")));
-    static final java.lang.invoke.VarHandle ByName$pPackageName$VH() { return ByName$pPackageName$VH_; }
+    static final VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByName$pPackageName$VH_ = MemoryHandles.asAddressVarHandle(__MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByName$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pPackageName")));
+    static final java.lang.invoke.VarHandle __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByName$pPackageName$VH() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByName$pPackageName$VH_; }
 
-    static final MemoryLayout ByObjectId$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByObjectId$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofStruct(
             C_LONG.withName("Data1"),
             C_SHORT.withName("Data2"),
@@ -1157,7 +1157,7 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
             MemoryLayout.ofSequence(8, C_CHAR).withName("Data4")
         ).withName("PolicyId")
     );
-    static final jdk.incubator.foreign.MemoryLayout ByObjectId$struct$LAYOUT() { return ByObjectId$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByObjectId$struct$LAYOUT() { return __MIDL___MIDL_itf_wtypes_0000_0001_0001$__MIDL___MIDL_itf_wtypes_0000_0001_0005$ByObjectId$struct$LAYOUT_; }
 
     static final MemoryLayout __MIDL_itf_wtypes_0000_0001_v0_0_c_ifspec$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout __MIDL_itf_wtypes_0000_0001_v0_0_c_ifspec$LAYOUT() { return __MIDL_itf_wtypes_0000_0001_v0_0_c_ifspec$LAYOUT_; }
@@ -1925,7 +1925,7 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
     ).withName("_DEVICE_MEDIA_INFO");
     static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$struct$LAYOUT() { return _DEVICE_MEDIA_INFO$struct$LAYOUT_; }
 
-    static final MemoryLayout DeviceSpecific$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             MemoryLayout.ofUnion(
                 C_LONG.withName("LowPart"),
@@ -1974,9 +1974,9 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
             MemoryLayout.ofPaddingBits(16)
         ).withName("TapeInfo")
     );
-    static final jdk.incubator.foreign.MemoryLayout DeviceSpecific$struct$LAYOUT() { return DeviceSpecific$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$union$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$union$LAYOUT_; }
 
-    static final MemoryLayout DiskInfo$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofUnion(
             C_LONG.withName("LowPart"),
             C_LONG.withName("HighPart"),
@@ -1993,45 +1993,45 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
         C_LONG.withName("NumberMediaSides"),
         C_LONG.withName("MediaCharacteristics")
     );
-    static final jdk.incubator.foreign.MemoryLayout DiskInfo$struct$LAYOUT() { return DiskInfo$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$struct$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$struct$LAYOUT_; }
 
-    static final MemoryLayout DiskInfo$MediaType$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout DiskInfo$MediaType$LAYOUT() { return DiskInfo$MediaType$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaType$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaType$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaType$LAYOUT_; }
 
-    static final VarHandle DiskInfo$MediaType$VH_ = DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaType"));
-    static final java.lang.invoke.VarHandle DiskInfo$MediaType$VH() { return DiskInfo$MediaType$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaType$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaType"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaType$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaType$VH_; }
 
-    static final MemoryLayout DiskInfo$TracksPerCylinder$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout DiskInfo$TracksPerCylinder$LAYOUT() { return DiskInfo$TracksPerCylinder$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$TracksPerCylinder$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$TracksPerCylinder$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$TracksPerCylinder$LAYOUT_; }
 
-    static final VarHandle DiskInfo$TracksPerCylinder$VH_ = DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("TracksPerCylinder"));
-    static final java.lang.invoke.VarHandle DiskInfo$TracksPerCylinder$VH() { return DiskInfo$TracksPerCylinder$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$TracksPerCylinder$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("TracksPerCylinder"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$TracksPerCylinder$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$TracksPerCylinder$VH_; }
 
-    static final MemoryLayout DiskInfo$SectorsPerTrack$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout DiskInfo$SectorsPerTrack$LAYOUT() { return DiskInfo$SectorsPerTrack$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$SectorsPerTrack$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$SectorsPerTrack$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$SectorsPerTrack$LAYOUT_; }
 
-    static final VarHandle DiskInfo$SectorsPerTrack$VH_ = DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SectorsPerTrack"));
-    static final java.lang.invoke.VarHandle DiskInfo$SectorsPerTrack$VH() { return DiskInfo$SectorsPerTrack$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$SectorsPerTrack$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SectorsPerTrack"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$SectorsPerTrack$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$SectorsPerTrack$VH_; }
 
-    static final MemoryLayout DiskInfo$BytesPerSector$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout DiskInfo$BytesPerSector$LAYOUT() { return DiskInfo$BytesPerSector$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$BytesPerSector$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$BytesPerSector$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$BytesPerSector$LAYOUT_; }
 
-    static final VarHandle DiskInfo$BytesPerSector$VH_ = DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("BytesPerSector"));
-    static final java.lang.invoke.VarHandle DiskInfo$BytesPerSector$VH() { return DiskInfo$BytesPerSector$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$BytesPerSector$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("BytesPerSector"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$BytesPerSector$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$BytesPerSector$VH_; }
 
-    static final MemoryLayout DiskInfo$NumberMediaSides$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout DiskInfo$NumberMediaSides$LAYOUT() { return DiskInfo$NumberMediaSides$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$NumberMediaSides$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$NumberMediaSides$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$NumberMediaSides$LAYOUT_; }
 
-    static final VarHandle DiskInfo$NumberMediaSides$VH_ = DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("NumberMediaSides"));
-    static final java.lang.invoke.VarHandle DiskInfo$NumberMediaSides$VH() { return DiskInfo$NumberMediaSides$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$NumberMediaSides$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("NumberMediaSides"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$NumberMediaSides$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$NumberMediaSides$VH_; }
 
-    static final MemoryLayout DiskInfo$MediaCharacteristics$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout DiskInfo$MediaCharacteristics$LAYOUT() { return DiskInfo$MediaCharacteristics$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaCharacteristics$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaCharacteristics$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaCharacteristics$LAYOUT_; }
 
-    static final VarHandle DiskInfo$MediaCharacteristics$VH_ = DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaCharacteristics"));
-    static final java.lang.invoke.VarHandle DiskInfo$MediaCharacteristics$VH() { return DiskInfo$MediaCharacteristics$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaCharacteristics$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaCharacteristics"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaCharacteristics$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$DiskInfo$MediaCharacteristics$VH_; }
 
-    static final MemoryLayout RemovableDiskInfo$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$struct$LAYOUT_ = MemoryLayout.ofStruct(
         MemoryLayout.ofUnion(
             C_LONG.withName("LowPart"),
             C_LONG.withName("HighPart"),
@@ -2048,45 +2048,45 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
         C_LONG.withName("NumberMediaSides"),
         C_LONG.withName("MediaCharacteristics")
     );
-    static final jdk.incubator.foreign.MemoryLayout RemovableDiskInfo$struct$LAYOUT() { return RemovableDiskInfo$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$struct$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$struct$LAYOUT_; }
 
-    static final MemoryLayout RemovableDiskInfo$MediaType$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout RemovableDiskInfo$MediaType$LAYOUT() { return RemovableDiskInfo$MediaType$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaType$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaType$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaType$LAYOUT_; }
 
-    static final VarHandle RemovableDiskInfo$MediaType$VH_ = RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaType"));
-    static final java.lang.invoke.VarHandle RemovableDiskInfo$MediaType$VH() { return RemovableDiskInfo$MediaType$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaType$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaType"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaType$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaType$VH_; }
 
-    static final MemoryLayout RemovableDiskInfo$TracksPerCylinder$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout RemovableDiskInfo$TracksPerCylinder$LAYOUT() { return RemovableDiskInfo$TracksPerCylinder$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$TracksPerCylinder$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$TracksPerCylinder$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$TracksPerCylinder$LAYOUT_; }
 
-    static final VarHandle RemovableDiskInfo$TracksPerCylinder$VH_ = RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("TracksPerCylinder"));
-    static final java.lang.invoke.VarHandle RemovableDiskInfo$TracksPerCylinder$VH() { return RemovableDiskInfo$TracksPerCylinder$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$TracksPerCylinder$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("TracksPerCylinder"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$TracksPerCylinder$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$TracksPerCylinder$VH_; }
 
-    static final MemoryLayout RemovableDiskInfo$SectorsPerTrack$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout RemovableDiskInfo$SectorsPerTrack$LAYOUT() { return RemovableDiskInfo$SectorsPerTrack$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$SectorsPerTrack$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$SectorsPerTrack$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$SectorsPerTrack$LAYOUT_; }
 
-    static final VarHandle RemovableDiskInfo$SectorsPerTrack$VH_ = RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SectorsPerTrack"));
-    static final java.lang.invoke.VarHandle RemovableDiskInfo$SectorsPerTrack$VH() { return RemovableDiskInfo$SectorsPerTrack$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$SectorsPerTrack$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("SectorsPerTrack"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$SectorsPerTrack$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$SectorsPerTrack$VH_; }
 
-    static final MemoryLayout RemovableDiskInfo$BytesPerSector$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout RemovableDiskInfo$BytesPerSector$LAYOUT() { return RemovableDiskInfo$BytesPerSector$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$BytesPerSector$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$BytesPerSector$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$BytesPerSector$LAYOUT_; }
 
-    static final VarHandle RemovableDiskInfo$BytesPerSector$VH_ = RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("BytesPerSector"));
-    static final java.lang.invoke.VarHandle RemovableDiskInfo$BytesPerSector$VH() { return RemovableDiskInfo$BytesPerSector$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$BytesPerSector$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("BytesPerSector"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$BytesPerSector$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$BytesPerSector$VH_; }
 
-    static final MemoryLayout RemovableDiskInfo$NumberMediaSides$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout RemovableDiskInfo$NumberMediaSides$LAYOUT() { return RemovableDiskInfo$NumberMediaSides$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$NumberMediaSides$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$NumberMediaSides$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$NumberMediaSides$LAYOUT_; }
 
-    static final VarHandle RemovableDiskInfo$NumberMediaSides$VH_ = RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("NumberMediaSides"));
-    static final java.lang.invoke.VarHandle RemovableDiskInfo$NumberMediaSides$VH() { return RemovableDiskInfo$NumberMediaSides$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$NumberMediaSides$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("NumberMediaSides"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$NumberMediaSides$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$NumberMediaSides$VH_; }
 
-    static final MemoryLayout RemovableDiskInfo$MediaCharacteristics$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout RemovableDiskInfo$MediaCharacteristics$LAYOUT() { return RemovableDiskInfo$MediaCharacteristics$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaCharacteristics$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaCharacteristics$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaCharacteristics$LAYOUT_; }
 
-    static final VarHandle RemovableDiskInfo$MediaCharacteristics$VH_ = RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaCharacteristics"));
-    static final java.lang.invoke.VarHandle RemovableDiskInfo$MediaCharacteristics$VH() { return RemovableDiskInfo$MediaCharacteristics$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaCharacteristics$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaCharacteristics"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaCharacteristics$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$RemovableDiskInfo$MediaCharacteristics$VH_; }
 
-    static final MemoryLayout TapeInfo$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("MediaType"),
         C_LONG.withName("MediaCharacteristics"),
         C_LONG.withName("CurrentBlockSize"),
@@ -2099,57 +2099,57 @@ class cfapi_h$constants$58 extends cfapi_h$constants$57 {
         ).withName("BusSpecificData"),
         MemoryLayout.ofPaddingBits(16)
     );
-    static final jdk.incubator.foreign.MemoryLayout TapeInfo$struct$LAYOUT() { return TapeInfo$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$struct$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$struct$LAYOUT_; }
 
-    static final MemoryLayout TapeInfo$MediaType$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout TapeInfo$MediaType$LAYOUT() { return TapeInfo$MediaType$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaType$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaType$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaType$LAYOUT_; }
 
-    static final VarHandle TapeInfo$MediaType$VH_ = TapeInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaType"));
-    static final java.lang.invoke.VarHandle TapeInfo$MediaType$VH() { return TapeInfo$MediaType$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaType$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaType"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaType$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaType$VH_; }
 
-    static final MemoryLayout TapeInfo$MediaCharacteristics$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout TapeInfo$MediaCharacteristics$LAYOUT() { return TapeInfo$MediaCharacteristics$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaCharacteristics$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaCharacteristics$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaCharacteristics$LAYOUT_; }
 
-    static final VarHandle TapeInfo$MediaCharacteristics$VH_ = TapeInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaCharacteristics"));
-    static final java.lang.invoke.VarHandle TapeInfo$MediaCharacteristics$VH() { return TapeInfo$MediaCharacteristics$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaCharacteristics$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MediaCharacteristics"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaCharacteristics$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$MediaCharacteristics$VH_; }
 
-    static final MemoryLayout TapeInfo$CurrentBlockSize$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout TapeInfo$CurrentBlockSize$LAYOUT() { return TapeInfo$CurrentBlockSize$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$CurrentBlockSize$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$CurrentBlockSize$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$CurrentBlockSize$LAYOUT_; }
 
-    static final VarHandle TapeInfo$CurrentBlockSize$VH_ = TapeInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CurrentBlockSize"));
-    static final java.lang.invoke.VarHandle TapeInfo$CurrentBlockSize$VH() { return TapeInfo$CurrentBlockSize$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$CurrentBlockSize$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CurrentBlockSize"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$CurrentBlockSize$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$CurrentBlockSize$VH_; }
 
-    static final MemoryLayout TapeInfo$BusType$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout TapeInfo$BusType$LAYOUT() { return TapeInfo$BusType$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusType$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusType$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusType$LAYOUT_; }
 
-    static final VarHandle TapeInfo$BusType$VH_ = TapeInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("BusType"));
-    static final java.lang.invoke.VarHandle TapeInfo$BusType$VH() { return TapeInfo$BusType$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusType$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("BusType"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusType$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusType$VH_; }
 
-    static final MemoryLayout BusSpecificData$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_CHAR.withName("MediumType"),
             C_CHAR.withName("DensityCode")
         ).withName("ScsiInformation")
     );
-    static final jdk.incubator.foreign.MemoryLayout BusSpecificData$struct$LAYOUT() { return BusSpecificData$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$union$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$union$LAYOUT_; }
 
-    static final MemoryLayout ScsiInformation$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_CHAR.withName("MediumType"),
         C_CHAR.withName("DensityCode")
     );
-    static final jdk.incubator.foreign.MemoryLayout ScsiInformation$struct$LAYOUT() { return ScsiInformation$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$struct$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$struct$LAYOUT_; }
 
-    static final MemoryLayout ScsiInformation$MediumType$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout ScsiInformation$MediumType$LAYOUT() { return ScsiInformation$MediumType$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$MediumType$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$MediumType$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$MediumType$LAYOUT_; }
 
-    static final VarHandle ScsiInformation$MediumType$VH_ = ScsiInformation$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("MediumType"));
-    static final java.lang.invoke.VarHandle ScsiInformation$MediumType$VH() { return ScsiInformation$MediumType$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$MediumType$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("MediumType"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$MediumType$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$MediumType$VH_; }
 
-    static final MemoryLayout ScsiInformation$DensityCode$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout ScsiInformation$DensityCode$LAYOUT() { return ScsiInformation$DensityCode$LAYOUT_; }
+    static final MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$DensityCode$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$DensityCode$LAYOUT() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$DensityCode$LAYOUT_; }
 
-    static final VarHandle ScsiInformation$DensityCode$VH_ = ScsiInformation$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("DensityCode"));
-    static final java.lang.invoke.VarHandle ScsiInformation$DensityCode$VH() { return ScsiInformation$DensityCode$VH_; }
+    static final VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$DensityCode$VH_ = _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("DensityCode"));
+    static final java.lang.invoke.VarHandle _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$DensityCode$VH() { return _DEVICE_MEDIA_INFO$DeviceSpecific$TapeInfo$BusSpecificData$ScsiInformation$DensityCode$VH_; }
 
     static final MemoryLayout _GET_MEDIA_TYPES$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("DeviceType"),

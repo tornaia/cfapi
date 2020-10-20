@@ -57,6 +57,56 @@ class cfapi_h$constants$14 extends cfapi_h$constants$13 {
     static final VarHandle _WOW64_LDT_ENTRY$BaseLow$VH_ = _WOW64_LDT_ENTRY$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("BaseLow"));
     static final java.lang.invoke.VarHandle _WOW64_LDT_ENTRY$BaseLow$VH() { return _WOW64_LDT_ENTRY$BaseLow$VH_; }
 
+    static final MemoryLayout _WOW64_LDT_ENTRY$HighWord$union$LAYOUT_ = MemoryLayout.ofUnion(
+        MemoryLayout.ofStruct(
+            C_CHAR.withName("BaseMid"),
+            C_CHAR.withName("Flags1"),
+            C_CHAR.withName("Flags2"),
+            C_CHAR.withName("BaseHi")
+        ).withName("Bytes"),
+        MemoryLayout.ofStruct(
+            C_INT
+        ).withName("Bits")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _WOW64_LDT_ENTRY$HighWord$union$LAYOUT() { return _WOW64_LDT_ENTRY$HighWord$union$LAYOUT_; }
+
+    static final MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_CHAR.withName("BaseMid"),
+        C_CHAR.withName("Flags1"),
+        C_CHAR.withName("Flags2"),
+        C_CHAR.withName("BaseHi")
+    );
+    static final jdk.incubator.foreign.MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bytes$struct$LAYOUT() { return _WOW64_LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_; }
+
+    static final MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bytes$BaseMid$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bytes$BaseMid$LAYOUT() { return _WOW64_LDT_ENTRY$HighWord$Bytes$BaseMid$LAYOUT_; }
+
+    static final VarHandle _WOW64_LDT_ENTRY$HighWord$Bytes$BaseMid$VH_ = _WOW64_LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("BaseMid"));
+    static final java.lang.invoke.VarHandle _WOW64_LDT_ENTRY$HighWord$Bytes$BaseMid$VH() { return _WOW64_LDT_ENTRY$HighWord$Bytes$BaseMid$VH_; }
+
+    static final MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bytes$Flags1$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bytes$Flags1$LAYOUT() { return _WOW64_LDT_ENTRY$HighWord$Bytes$Flags1$LAYOUT_; }
+
+    static final VarHandle _WOW64_LDT_ENTRY$HighWord$Bytes$Flags1$VH_ = _WOW64_LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Flags1"));
+    static final java.lang.invoke.VarHandle _WOW64_LDT_ENTRY$HighWord$Bytes$Flags1$VH() { return _WOW64_LDT_ENTRY$HighWord$Bytes$Flags1$VH_; }
+
+    static final MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bytes$Flags2$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bytes$Flags2$LAYOUT() { return _WOW64_LDT_ENTRY$HighWord$Bytes$Flags2$LAYOUT_; }
+
+    static final VarHandle _WOW64_LDT_ENTRY$HighWord$Bytes$Flags2$VH_ = _WOW64_LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Flags2"));
+    static final java.lang.invoke.VarHandle _WOW64_LDT_ENTRY$HighWord$Bytes$Flags2$VH() { return _WOW64_LDT_ENTRY$HighWord$Bytes$Flags2$VH_; }
+
+    static final MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bytes$BaseHi$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bytes$BaseHi$LAYOUT() { return _WOW64_LDT_ENTRY$HighWord$Bytes$BaseHi$LAYOUT_; }
+
+    static final VarHandle _WOW64_LDT_ENTRY$HighWord$Bytes$BaseHi$VH_ = _WOW64_LDT_ENTRY$HighWord$Bytes$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("BaseHi"));
+    static final java.lang.invoke.VarHandle _WOW64_LDT_ENTRY$HighWord$Bytes$BaseHi$VH() { return _WOW64_LDT_ENTRY$HighWord$Bytes$BaseHi$VH_; }
+
+    static final MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bits$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_INT
+    );
+    static final jdk.incubator.foreign.MemoryLayout _WOW64_LDT_ENTRY$HighWord$Bits$struct$LAYOUT() { return _WOW64_LDT_ENTRY$HighWord$Bits$struct$LAYOUT_; }
+
     static final MemoryLayout _WOW64_DESCRIPTOR_TABLE_ENTRY$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("Selector"),
         MemoryLayout.ofStruct(
@@ -303,7 +353,7 @@ class cfapi_h$constants$14 extends cfapi_h$constants$13 {
     static final VarHandle _SID$SubAuthorityCount$VH_ = _SID$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("SubAuthorityCount"));
     static final java.lang.invoke.VarHandle _SID$SubAuthorityCount$VH() { return _SID$SubAuthorityCount$VH_; }
 
-    static final MemoryLayout _SE_SID$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _SE_SID$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_CHAR.withName("Revision"),
             C_CHAR.withName("SubAuthorityCount"),
@@ -314,7 +364,7 @@ class cfapi_h$constants$14 extends cfapi_h$constants$13 {
         ).withName("Sid"),
         MemoryLayout.ofSequence(68, C_CHAR).withName("Buffer")
     ).withName("_SE_SID");
-    static final jdk.incubator.foreign.MemoryLayout _SE_SID$struct$LAYOUT() { return _SE_SID$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _SE_SID$union$LAYOUT() { return _SE_SID$union$LAYOUT_; }
 
     static final int SidTypeUser() { return (int)1L; }
 

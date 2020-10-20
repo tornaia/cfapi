@@ -22,30 +22,30 @@ class cfapi_h$constants$57 extends cfapi_h$constants$56 {
     static final VarHandle _MIDL_STUB_DESC$pfnFree$VH_ = MemoryHandles.asAddressVarHandle(_MIDL_STUB_DESC$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pfnFree")));
     static final java.lang.invoke.VarHandle _MIDL_STUB_DESC$pfnFree$VH() { return _MIDL_STUB_DESC$pfnFree$VH_; }
 
-    static final MemoryLayout IMPLICIT_HANDLE_INFO$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_POINTER.withName("pAutoHandle"),
         C_POINTER.withName("pPrimitiveHandle"),
         C_POINTER.withName("pGenericBindingInfo")
     );
-    static final jdk.incubator.foreign.MemoryLayout IMPLICIT_HANDLE_INFO$struct$LAYOUT() { return IMPLICIT_HANDLE_INFO$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$union$LAYOUT() { return _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$union$LAYOUT_; }
 
-    static final MemoryLayout IMPLICIT_HANDLE_INFO$pAutoHandle$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout IMPLICIT_HANDLE_INFO$pAutoHandle$LAYOUT() { return IMPLICIT_HANDLE_INFO$pAutoHandle$LAYOUT_; }
+    static final MemoryLayout _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pAutoHandle$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pAutoHandle$LAYOUT() { return _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pAutoHandle$LAYOUT_; }
 
-    static final VarHandle IMPLICIT_HANDLE_INFO$pAutoHandle$VH_ = MemoryHandles.asAddressVarHandle(IMPLICIT_HANDLE_INFO$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pAutoHandle")));
-    static final java.lang.invoke.VarHandle IMPLICIT_HANDLE_INFO$pAutoHandle$VH() { return IMPLICIT_HANDLE_INFO$pAutoHandle$VH_; }
+    static final VarHandle _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pAutoHandle$VH_ = MemoryHandles.asAddressVarHandle(_MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pAutoHandle")));
+    static final java.lang.invoke.VarHandle _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pAutoHandle$VH() { return _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pAutoHandle$VH_; }
 
-    static final MemoryLayout IMPLICIT_HANDLE_INFO$pPrimitiveHandle$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout IMPLICIT_HANDLE_INFO$pPrimitiveHandle$LAYOUT() { return IMPLICIT_HANDLE_INFO$pPrimitiveHandle$LAYOUT_; }
+    static final MemoryLayout _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pPrimitiveHandle$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pPrimitiveHandle$LAYOUT() { return _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pPrimitiveHandle$LAYOUT_; }
 
-    static final VarHandle IMPLICIT_HANDLE_INFO$pPrimitiveHandle$VH_ = MemoryHandles.asAddressVarHandle(IMPLICIT_HANDLE_INFO$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pPrimitiveHandle")));
-    static final java.lang.invoke.VarHandle IMPLICIT_HANDLE_INFO$pPrimitiveHandle$VH() { return IMPLICIT_HANDLE_INFO$pPrimitiveHandle$VH_; }
+    static final VarHandle _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pPrimitiveHandle$VH_ = MemoryHandles.asAddressVarHandle(_MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pPrimitiveHandle")));
+    static final java.lang.invoke.VarHandle _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pPrimitiveHandle$VH() { return _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pPrimitiveHandle$VH_; }
 
-    static final MemoryLayout IMPLICIT_HANDLE_INFO$pGenericBindingInfo$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout IMPLICIT_HANDLE_INFO$pGenericBindingInfo$LAYOUT() { return IMPLICIT_HANDLE_INFO$pGenericBindingInfo$LAYOUT_; }
+    static final MemoryLayout _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pGenericBindingInfo$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pGenericBindingInfo$LAYOUT() { return _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pGenericBindingInfo$LAYOUT_; }
 
-    static final VarHandle IMPLICIT_HANDLE_INFO$pGenericBindingInfo$VH_ = MemoryHandles.asAddressVarHandle(IMPLICIT_HANDLE_INFO$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pGenericBindingInfo")));
-    static final java.lang.invoke.VarHandle IMPLICIT_HANDLE_INFO$pGenericBindingInfo$VH() { return IMPLICIT_HANDLE_INFO$pGenericBindingInfo$VH_; }
+    static final VarHandle _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pGenericBindingInfo$VH_ = MemoryHandles.asAddressVarHandle(_MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pGenericBindingInfo")));
+    static final java.lang.invoke.VarHandle _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pGenericBindingInfo$VH() { return _MIDL_STUB_DESC$IMPLICIT_HANDLE_INFO$pGenericBindingInfo$VH_; }
 
     static final MemoryLayout _MIDL_STUB_DESC$apfnNdrRundownRoutines$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _MIDL_STUB_DESC$apfnNdrRundownRoutines$LAYOUT() { return _MIDL_STUB_DESC$apfnNdrRundownRoutines$LAYOUT_; }
@@ -384,22 +384,22 @@ class cfapi_h$constants$57 extends cfapi_h$constants$56 {
     static final VarHandle _MIDL_SYNTAX_INFO$pReserved2$VH_ = _MIDL_SYNTAX_INFO$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pReserved2"));
     static final java.lang.invoke.VarHandle _MIDL_SYNTAX_INFO$pReserved2$VH() { return _MIDL_SYNTAX_INFO$pReserved2$VH_; }
 
-    static final MemoryLayout _CLIENT_CALL_RETURN$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout _CLIENT_CALL_RETURN$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_POINTER.withName("Pointer"),
         C_LONGLONG.withName("Simple")
     ).withName("_CLIENT_CALL_RETURN");
-    static final jdk.incubator.foreign.MemoryLayout _CLIENT_CALL_RETURN$struct$LAYOUT() { return _CLIENT_CALL_RETURN$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout _CLIENT_CALL_RETURN$union$LAYOUT() { return _CLIENT_CALL_RETURN$union$LAYOUT_; }
 
     static final MemoryLayout _CLIENT_CALL_RETURN$Pointer$LAYOUT_ = C_POINTER;
     static final jdk.incubator.foreign.MemoryLayout _CLIENT_CALL_RETURN$Pointer$LAYOUT() { return _CLIENT_CALL_RETURN$Pointer$LAYOUT_; }
 
-    static final VarHandle _CLIENT_CALL_RETURN$Pointer$VH_ = MemoryHandles.asAddressVarHandle(_CLIENT_CALL_RETURN$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Pointer")));
+    static final VarHandle _CLIENT_CALL_RETURN$Pointer$VH_ = MemoryHandles.asAddressVarHandle(_CLIENT_CALL_RETURN$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Pointer")));
     static final java.lang.invoke.VarHandle _CLIENT_CALL_RETURN$Pointer$VH() { return _CLIENT_CALL_RETURN$Pointer$VH_; }
 
     static final MemoryLayout _CLIENT_CALL_RETURN$Simple$LAYOUT_ = C_LONGLONG;
     static final jdk.incubator.foreign.MemoryLayout _CLIENT_CALL_RETURN$Simple$LAYOUT() { return _CLIENT_CALL_RETURN$Simple$LAYOUT_; }
 
-    static final VarHandle _CLIENT_CALL_RETURN$Simple$VH_ = _CLIENT_CALL_RETURN$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Simple"));
+    static final VarHandle _CLIENT_CALL_RETURN$Simple$VH_ = _CLIENT_CALL_RETURN$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("Simple"));
     static final java.lang.invoke.VarHandle _CLIENT_CALL_RETURN$Simple$VH() { return _CLIENT_CALL_RETURN$Simple$VH_; }
 
     static final int XLAT_SERVER() { return (int)1L; }

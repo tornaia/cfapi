@@ -1344,17 +1344,17 @@ class cfapi_h$constants$18 extends cfapi_h$constants$17 {
     static final VarHandle PROCESSOR_IDLESTATE_POLICY$Revision$VH_ = PROCESSOR_IDLESTATE_POLICY$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("Revision"));
     static final java.lang.invoke.VarHandle PROCESSOR_IDLESTATE_POLICY$Revision$VH() { return PROCESSOR_IDLESTATE_POLICY$Revision$VH_; }
 
-    static final MemoryLayout Flags$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout PROCESSOR_IDLESTATE_POLICY$Flags$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_SHORT.withName("AsWORD"),
         C_SHORT
     );
-    static final jdk.incubator.foreign.MemoryLayout Flags$struct$LAYOUT() { return Flags$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout PROCESSOR_IDLESTATE_POLICY$Flags$union$LAYOUT() { return PROCESSOR_IDLESTATE_POLICY$Flags$union$LAYOUT_; }
 
-    static final MemoryLayout Flags$AsWORD$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Flags$AsWORD$LAYOUT() { return Flags$AsWORD$LAYOUT_; }
+    static final MemoryLayout PROCESSOR_IDLESTATE_POLICY$Flags$AsWORD$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout PROCESSOR_IDLESTATE_POLICY$Flags$AsWORD$LAYOUT() { return PROCESSOR_IDLESTATE_POLICY$Flags$AsWORD$LAYOUT_; }
 
-    static final VarHandle Flags$AsWORD$VH_ = Flags$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("AsWORD"));
-    static final java.lang.invoke.VarHandle Flags$AsWORD$VH() { return Flags$AsWORD$VH_; }
+    static final VarHandle PROCESSOR_IDLESTATE_POLICY$Flags$AsWORD$VH_ = PROCESSOR_IDLESTATE_POLICY$Flags$union$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("AsWORD"));
+    static final java.lang.invoke.VarHandle PROCESSOR_IDLESTATE_POLICY$Flags$AsWORD$VH() { return PROCESSOR_IDLESTATE_POLICY$Flags$AsWORD$VH_; }
 
     static final MemoryLayout PROCESSOR_IDLESTATE_POLICY$PolicyCount$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout PROCESSOR_IDLESTATE_POLICY$PolicyCount$LAYOUT() { return PROCESSOR_IDLESTATE_POLICY$PolicyCount$LAYOUT_; }
@@ -1487,11 +1487,17 @@ class cfapi_h$constants$18 extends cfapi_h$constants$17 {
     static final VarHandle PROCESSOR_PERFSTATE_POLICY$Spare$VH_ = PROCESSOR_PERFSTATE_POLICY$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("Spare"));
     static final java.lang.invoke.VarHandle PROCESSOR_PERFSTATE_POLICY$Spare$VH() { return PROCESSOR_PERFSTATE_POLICY$Spare$VH_; }
 
-    static final MemoryLayout Flags$AsBYTE$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout Flags$AsBYTE$LAYOUT() { return Flags$AsBYTE$LAYOUT_; }
+    static final MemoryLayout PROCESSOR_PERFSTATE_POLICY$Flags$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_CHAR.withName("AsBYTE"),
+        C_CHAR
+    );
+    static final jdk.incubator.foreign.MemoryLayout PROCESSOR_PERFSTATE_POLICY$Flags$union$LAYOUT() { return PROCESSOR_PERFSTATE_POLICY$Flags$union$LAYOUT_; }
 
-    static final VarHandle Flags$AsBYTE$VH_ = Flags$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("AsBYTE"));
-    static final java.lang.invoke.VarHandle Flags$AsBYTE$VH() { return Flags$AsBYTE$VH_; }
+    static final MemoryLayout PROCESSOR_PERFSTATE_POLICY$Flags$AsBYTE$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout PROCESSOR_PERFSTATE_POLICY$Flags$AsBYTE$LAYOUT() { return PROCESSOR_PERFSTATE_POLICY$Flags$AsBYTE$LAYOUT_; }
+
+    static final VarHandle PROCESSOR_PERFSTATE_POLICY$Flags$AsBYTE$VH_ = PROCESSOR_PERFSTATE_POLICY$Flags$union$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("AsBYTE"));
+    static final java.lang.invoke.VarHandle PROCESSOR_PERFSTATE_POLICY$Flags$AsBYTE$VH() { return PROCESSOR_PERFSTATE_POLICY$Flags$AsBYTE$VH_; }
 
     static final MemoryLayout PROCESSOR_PERFSTATE_POLICY$TimeCheck$LAYOUT_ = C_LONG;
     static final jdk.incubator.foreign.MemoryLayout PROCESSOR_PERFSTATE_POLICY$TimeCheck$LAYOUT() { return PROCESSOR_PERFSTATE_POLICY$TimeCheck$LAYOUT_; }

@@ -4047,7 +4047,7 @@ class cfapi_h$constants$27 extends cfapi_h$constants$26 {
     static final VarHandle COPYFILE2_MESSAGE$dwPadding$VH_ = COPYFILE2_MESSAGE$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwPadding"));
     static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$dwPadding$VH() { return COPYFILE2_MESSAGE$dwPadding$VH_; }
 
-    static final MemoryLayout Info$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_LONG.withName("dwStreamNumber"),
             C_LONG.withName("dwReserved"),
@@ -4271,9 +4271,9 @@ class cfapi_h$constants$27 extends cfapi_h$constants$26 {
             ).withName("uliTotalBytesTransferred")
         ).withName("Error")
     );
-    static final jdk.incubator.foreign.MemoryLayout Info$struct$LAYOUT() { return Info$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$union$LAYOUT() { return COPYFILE2_MESSAGE$Info$union$LAYOUT_; }
 
-    static final MemoryLayout ChunkStarted$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$ChunkStarted$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("dwStreamNumber"),
         C_LONG.withName("dwReserved"),
         C_POINTER.withName("hSourceFile"),
@@ -4315,33 +4315,33 @@ class cfapi_h$constants$27 extends cfapi_h$constants$26 {
             C_LONGLONG.withName("QuadPart")
         ).withName("uliTotalFileSize")
     );
-    static final jdk.incubator.foreign.MemoryLayout ChunkStarted$struct$LAYOUT() { return ChunkStarted$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$ChunkStarted$struct$LAYOUT() { return COPYFILE2_MESSAGE$Info$ChunkStarted$struct$LAYOUT_; }
 
-    static final MemoryLayout ChunkStarted$dwStreamNumber$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ChunkStarted$dwStreamNumber$LAYOUT() { return ChunkStarted$dwStreamNumber$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$ChunkStarted$dwStreamNumber$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$ChunkStarted$dwStreamNumber$LAYOUT() { return COPYFILE2_MESSAGE$Info$ChunkStarted$dwStreamNumber$LAYOUT_; }
 
-    static final VarHandle ChunkStarted$dwStreamNumber$VH_ = ChunkStarted$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwStreamNumber"));
-    static final java.lang.invoke.VarHandle ChunkStarted$dwStreamNumber$VH() { return ChunkStarted$dwStreamNumber$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$ChunkStarted$dwStreamNumber$VH_ = COPYFILE2_MESSAGE$Info$ChunkStarted$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwStreamNumber"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$ChunkStarted$dwStreamNumber$VH() { return COPYFILE2_MESSAGE$Info$ChunkStarted$dwStreamNumber$VH_; }
 
-    static final MemoryLayout ChunkStarted$dwReserved$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ChunkStarted$dwReserved$LAYOUT() { return ChunkStarted$dwReserved$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$ChunkStarted$dwReserved$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$ChunkStarted$dwReserved$LAYOUT() { return COPYFILE2_MESSAGE$Info$ChunkStarted$dwReserved$LAYOUT_; }
 
-    static final VarHandle ChunkStarted$dwReserved$VH_ = ChunkStarted$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
-    static final java.lang.invoke.VarHandle ChunkStarted$dwReserved$VH() { return ChunkStarted$dwReserved$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$ChunkStarted$dwReserved$VH_ = COPYFILE2_MESSAGE$Info$ChunkStarted$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$ChunkStarted$dwReserved$VH() { return COPYFILE2_MESSAGE$Info$ChunkStarted$dwReserved$VH_; }
 
-    static final MemoryLayout ChunkStarted$hSourceFile$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout ChunkStarted$hSourceFile$LAYOUT() { return ChunkStarted$hSourceFile$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$ChunkStarted$hSourceFile$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$ChunkStarted$hSourceFile$LAYOUT() { return COPYFILE2_MESSAGE$Info$ChunkStarted$hSourceFile$LAYOUT_; }
 
-    static final VarHandle ChunkStarted$hSourceFile$VH_ = MemoryHandles.asAddressVarHandle(ChunkStarted$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hSourceFile")));
-    static final java.lang.invoke.VarHandle ChunkStarted$hSourceFile$VH() { return ChunkStarted$hSourceFile$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$ChunkStarted$hSourceFile$VH_ = MemoryHandles.asAddressVarHandle(COPYFILE2_MESSAGE$Info$ChunkStarted$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hSourceFile")));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$ChunkStarted$hSourceFile$VH() { return COPYFILE2_MESSAGE$Info$ChunkStarted$hSourceFile$VH_; }
 
-    static final MemoryLayout ChunkStarted$hDestinationFile$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout ChunkStarted$hDestinationFile$LAYOUT() { return ChunkStarted$hDestinationFile$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$ChunkStarted$hDestinationFile$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$ChunkStarted$hDestinationFile$LAYOUT() { return COPYFILE2_MESSAGE$Info$ChunkStarted$hDestinationFile$LAYOUT_; }
 
-    static final VarHandle ChunkStarted$hDestinationFile$VH_ = MemoryHandles.asAddressVarHandle(ChunkStarted$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hDestinationFile")));
-    static final java.lang.invoke.VarHandle ChunkStarted$hDestinationFile$VH() { return ChunkStarted$hDestinationFile$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$ChunkStarted$hDestinationFile$VH_ = MemoryHandles.asAddressVarHandle(COPYFILE2_MESSAGE$Info$ChunkStarted$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hDestinationFile")));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$ChunkStarted$hDestinationFile$VH() { return COPYFILE2_MESSAGE$Info$ChunkStarted$hDestinationFile$VH_; }
 
-    static final MemoryLayout ChunkFinished$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$ChunkFinished$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("dwStreamNumber"),
         C_LONG.withName("dwFlags"),
         C_POINTER.withName("hSourceFile"),
@@ -4401,33 +4401,33 @@ class cfapi_h$constants$27 extends cfapi_h$constants$26 {
             C_LONGLONG.withName("QuadPart")
         ).withName("uliTotalBytesTransferred")
     );
-    static final jdk.incubator.foreign.MemoryLayout ChunkFinished$struct$LAYOUT() { return ChunkFinished$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$ChunkFinished$struct$LAYOUT() { return COPYFILE2_MESSAGE$Info$ChunkFinished$struct$LAYOUT_; }
 
-    static final MemoryLayout ChunkFinished$dwStreamNumber$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ChunkFinished$dwStreamNumber$LAYOUT() { return ChunkFinished$dwStreamNumber$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$ChunkFinished$dwStreamNumber$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$ChunkFinished$dwStreamNumber$LAYOUT() { return COPYFILE2_MESSAGE$Info$ChunkFinished$dwStreamNumber$LAYOUT_; }
 
-    static final VarHandle ChunkFinished$dwStreamNumber$VH_ = ChunkFinished$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwStreamNumber"));
-    static final java.lang.invoke.VarHandle ChunkFinished$dwStreamNumber$VH() { return ChunkFinished$dwStreamNumber$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$ChunkFinished$dwStreamNumber$VH_ = COPYFILE2_MESSAGE$Info$ChunkFinished$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwStreamNumber"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$ChunkFinished$dwStreamNumber$VH() { return COPYFILE2_MESSAGE$Info$ChunkFinished$dwStreamNumber$VH_; }
 
-    static final MemoryLayout ChunkFinished$dwFlags$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ChunkFinished$dwFlags$LAYOUT() { return ChunkFinished$dwFlags$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$ChunkFinished$dwFlags$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$ChunkFinished$dwFlags$LAYOUT() { return COPYFILE2_MESSAGE$Info$ChunkFinished$dwFlags$LAYOUT_; }
 
-    static final VarHandle ChunkFinished$dwFlags$VH_ = ChunkFinished$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwFlags"));
-    static final java.lang.invoke.VarHandle ChunkFinished$dwFlags$VH() { return ChunkFinished$dwFlags$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$ChunkFinished$dwFlags$VH_ = COPYFILE2_MESSAGE$Info$ChunkFinished$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwFlags"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$ChunkFinished$dwFlags$VH() { return COPYFILE2_MESSAGE$Info$ChunkFinished$dwFlags$VH_; }
 
-    static final MemoryLayout ChunkFinished$hSourceFile$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout ChunkFinished$hSourceFile$LAYOUT() { return ChunkFinished$hSourceFile$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$ChunkFinished$hSourceFile$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$ChunkFinished$hSourceFile$LAYOUT() { return COPYFILE2_MESSAGE$Info$ChunkFinished$hSourceFile$LAYOUT_; }
 
-    static final VarHandle ChunkFinished$hSourceFile$VH_ = MemoryHandles.asAddressVarHandle(ChunkFinished$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hSourceFile")));
-    static final java.lang.invoke.VarHandle ChunkFinished$hSourceFile$VH() { return ChunkFinished$hSourceFile$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$ChunkFinished$hSourceFile$VH_ = MemoryHandles.asAddressVarHandle(COPYFILE2_MESSAGE$Info$ChunkFinished$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hSourceFile")));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$ChunkFinished$hSourceFile$VH() { return COPYFILE2_MESSAGE$Info$ChunkFinished$hSourceFile$VH_; }
 
-    static final MemoryLayout ChunkFinished$hDestinationFile$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout ChunkFinished$hDestinationFile$LAYOUT() { return ChunkFinished$hDestinationFile$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$ChunkFinished$hDestinationFile$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$ChunkFinished$hDestinationFile$LAYOUT() { return COPYFILE2_MESSAGE$Info$ChunkFinished$hDestinationFile$LAYOUT_; }
 
-    static final VarHandle ChunkFinished$hDestinationFile$VH_ = MemoryHandles.asAddressVarHandle(ChunkFinished$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hDestinationFile")));
-    static final java.lang.invoke.VarHandle ChunkFinished$hDestinationFile$VH() { return ChunkFinished$hDestinationFile$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$ChunkFinished$hDestinationFile$VH_ = MemoryHandles.asAddressVarHandle(COPYFILE2_MESSAGE$Info$ChunkFinished$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hDestinationFile")));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$ChunkFinished$hDestinationFile$VH() { return COPYFILE2_MESSAGE$Info$ChunkFinished$hDestinationFile$VH_; }
 
-    static final MemoryLayout StreamStarted$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$StreamStarted$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("dwStreamNumber"),
         C_LONG.withName("dwReserved"),
         C_POINTER.withName("hSourceFile"),
@@ -4451,33 +4451,33 @@ class cfapi_h$constants$27 extends cfapi_h$constants$26 {
             C_LONGLONG.withName("QuadPart")
         ).withName("uliTotalFileSize")
     );
-    static final jdk.incubator.foreign.MemoryLayout StreamStarted$struct$LAYOUT() { return StreamStarted$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$StreamStarted$struct$LAYOUT() { return COPYFILE2_MESSAGE$Info$StreamStarted$struct$LAYOUT_; }
 
-    static final MemoryLayout StreamStarted$dwStreamNumber$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout StreamStarted$dwStreamNumber$LAYOUT() { return StreamStarted$dwStreamNumber$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$StreamStarted$dwStreamNumber$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$StreamStarted$dwStreamNumber$LAYOUT() { return COPYFILE2_MESSAGE$Info$StreamStarted$dwStreamNumber$LAYOUT_; }
 
-    static final VarHandle StreamStarted$dwStreamNumber$VH_ = StreamStarted$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwStreamNumber"));
-    static final java.lang.invoke.VarHandle StreamStarted$dwStreamNumber$VH() { return StreamStarted$dwStreamNumber$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$StreamStarted$dwStreamNumber$VH_ = COPYFILE2_MESSAGE$Info$StreamStarted$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwStreamNumber"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$StreamStarted$dwStreamNumber$VH() { return COPYFILE2_MESSAGE$Info$StreamStarted$dwStreamNumber$VH_; }
 
-    static final MemoryLayout StreamStarted$dwReserved$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout StreamStarted$dwReserved$LAYOUT() { return StreamStarted$dwReserved$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$StreamStarted$dwReserved$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$StreamStarted$dwReserved$LAYOUT() { return COPYFILE2_MESSAGE$Info$StreamStarted$dwReserved$LAYOUT_; }
 
-    static final VarHandle StreamStarted$dwReserved$VH_ = StreamStarted$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
-    static final java.lang.invoke.VarHandle StreamStarted$dwReserved$VH() { return StreamStarted$dwReserved$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$StreamStarted$dwReserved$VH_ = COPYFILE2_MESSAGE$Info$StreamStarted$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$StreamStarted$dwReserved$VH() { return COPYFILE2_MESSAGE$Info$StreamStarted$dwReserved$VH_; }
 
-    static final MemoryLayout StreamStarted$hSourceFile$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout StreamStarted$hSourceFile$LAYOUT() { return StreamStarted$hSourceFile$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$StreamStarted$hSourceFile$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$StreamStarted$hSourceFile$LAYOUT() { return COPYFILE2_MESSAGE$Info$StreamStarted$hSourceFile$LAYOUT_; }
 
-    static final VarHandle StreamStarted$hSourceFile$VH_ = MemoryHandles.asAddressVarHandle(StreamStarted$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hSourceFile")));
-    static final java.lang.invoke.VarHandle StreamStarted$hSourceFile$VH() { return StreamStarted$hSourceFile$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$StreamStarted$hSourceFile$VH_ = MemoryHandles.asAddressVarHandle(COPYFILE2_MESSAGE$Info$StreamStarted$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hSourceFile")));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$StreamStarted$hSourceFile$VH() { return COPYFILE2_MESSAGE$Info$StreamStarted$hSourceFile$VH_; }
 
-    static final MemoryLayout StreamStarted$hDestinationFile$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout StreamStarted$hDestinationFile$LAYOUT() { return StreamStarted$hDestinationFile$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$StreamStarted$hDestinationFile$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$StreamStarted$hDestinationFile$LAYOUT() { return COPYFILE2_MESSAGE$Info$StreamStarted$hDestinationFile$LAYOUT_; }
 
-    static final VarHandle StreamStarted$hDestinationFile$VH_ = MemoryHandles.asAddressVarHandle(StreamStarted$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hDestinationFile")));
-    static final java.lang.invoke.VarHandle StreamStarted$hDestinationFile$VH() { return StreamStarted$hDestinationFile$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$StreamStarted$hDestinationFile$VH_ = MemoryHandles.asAddressVarHandle(COPYFILE2_MESSAGE$Info$StreamStarted$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hDestinationFile")));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$StreamStarted$hDestinationFile$VH() { return COPYFILE2_MESSAGE$Info$StreamStarted$hDestinationFile$VH_; }
 
-    static final MemoryLayout StreamFinished$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$StreamFinished$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("dwStreamNumber"),
         C_LONG.withName("dwReserved"),
         C_POINTER.withName("hSourceFile"),
@@ -4519,44 +4519,44 @@ class cfapi_h$constants$27 extends cfapi_h$constants$26 {
             C_LONGLONG.withName("QuadPart")
         ).withName("uliTotalBytesTransferred")
     );
-    static final jdk.incubator.foreign.MemoryLayout StreamFinished$struct$LAYOUT() { return StreamFinished$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$StreamFinished$struct$LAYOUT() { return COPYFILE2_MESSAGE$Info$StreamFinished$struct$LAYOUT_; }
 
-    static final MemoryLayout StreamFinished$dwStreamNumber$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout StreamFinished$dwStreamNumber$LAYOUT() { return StreamFinished$dwStreamNumber$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$StreamFinished$dwStreamNumber$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$StreamFinished$dwStreamNumber$LAYOUT() { return COPYFILE2_MESSAGE$Info$StreamFinished$dwStreamNumber$LAYOUT_; }
 
-    static final VarHandle StreamFinished$dwStreamNumber$VH_ = StreamFinished$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwStreamNumber"));
-    static final java.lang.invoke.VarHandle StreamFinished$dwStreamNumber$VH() { return StreamFinished$dwStreamNumber$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$StreamFinished$dwStreamNumber$VH_ = COPYFILE2_MESSAGE$Info$StreamFinished$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwStreamNumber"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$StreamFinished$dwStreamNumber$VH() { return COPYFILE2_MESSAGE$Info$StreamFinished$dwStreamNumber$VH_; }
 
-    static final MemoryLayout StreamFinished$dwReserved$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout StreamFinished$dwReserved$LAYOUT() { return StreamFinished$dwReserved$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$StreamFinished$dwReserved$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$StreamFinished$dwReserved$LAYOUT() { return COPYFILE2_MESSAGE$Info$StreamFinished$dwReserved$LAYOUT_; }
 
-    static final VarHandle StreamFinished$dwReserved$VH_ = StreamFinished$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
-    static final java.lang.invoke.VarHandle StreamFinished$dwReserved$VH() { return StreamFinished$dwReserved$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$StreamFinished$dwReserved$VH_ = COPYFILE2_MESSAGE$Info$StreamFinished$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$StreamFinished$dwReserved$VH() { return COPYFILE2_MESSAGE$Info$StreamFinished$dwReserved$VH_; }
 
-    static final MemoryLayout StreamFinished$hSourceFile$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout StreamFinished$hSourceFile$LAYOUT() { return StreamFinished$hSourceFile$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$StreamFinished$hSourceFile$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$StreamFinished$hSourceFile$LAYOUT() { return COPYFILE2_MESSAGE$Info$StreamFinished$hSourceFile$LAYOUT_; }
 
-    static final VarHandle StreamFinished$hSourceFile$VH_ = MemoryHandles.asAddressVarHandle(StreamFinished$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hSourceFile")));
-    static final java.lang.invoke.VarHandle StreamFinished$hSourceFile$VH() { return StreamFinished$hSourceFile$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$StreamFinished$hSourceFile$VH_ = MemoryHandles.asAddressVarHandle(COPYFILE2_MESSAGE$Info$StreamFinished$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hSourceFile")));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$StreamFinished$hSourceFile$VH() { return COPYFILE2_MESSAGE$Info$StreamFinished$hSourceFile$VH_; }
 
-    static final MemoryLayout StreamFinished$hDestinationFile$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout StreamFinished$hDestinationFile$LAYOUT() { return StreamFinished$hDestinationFile$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$StreamFinished$hDestinationFile$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$StreamFinished$hDestinationFile$LAYOUT() { return COPYFILE2_MESSAGE$Info$StreamFinished$hDestinationFile$LAYOUT_; }
 
-    static final VarHandle StreamFinished$hDestinationFile$VH_ = MemoryHandles.asAddressVarHandle(StreamFinished$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hDestinationFile")));
-    static final java.lang.invoke.VarHandle StreamFinished$hDestinationFile$VH() { return StreamFinished$hDestinationFile$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$StreamFinished$hDestinationFile$VH_ = MemoryHandles.asAddressVarHandle(COPYFILE2_MESSAGE$Info$StreamFinished$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("hDestinationFile")));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$StreamFinished$hDestinationFile$VH() { return COPYFILE2_MESSAGE$Info$StreamFinished$hDestinationFile$VH_; }
 
-    static final MemoryLayout PollContinue$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$PollContinue$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("dwReserved")
     );
-    static final jdk.incubator.foreign.MemoryLayout PollContinue$struct$LAYOUT() { return PollContinue$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$PollContinue$struct$LAYOUT() { return COPYFILE2_MESSAGE$Info$PollContinue$struct$LAYOUT_; }
 
-    static final MemoryLayout PollContinue$dwReserved$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout PollContinue$dwReserved$LAYOUT() { return PollContinue$dwReserved$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$PollContinue$dwReserved$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$PollContinue$dwReserved$LAYOUT() { return COPYFILE2_MESSAGE$Info$PollContinue$dwReserved$LAYOUT_; }
 
-    static final VarHandle PollContinue$dwReserved$VH_ = PollContinue$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
-    static final java.lang.invoke.VarHandle PollContinue$dwReserved$VH() { return PollContinue$dwReserved$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$PollContinue$dwReserved$VH_ = COPYFILE2_MESSAGE$Info$PollContinue$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$PollContinue$dwReserved$VH() { return COPYFILE2_MESSAGE$Info$PollContinue$dwReserved$VH_; }
 
-    static final MemoryLayout Error$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$Error$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_INT.withName("CopyPhase"),
         C_LONG.withName("dwStreamNumber"),
         C_LONG.withName("hrFailure"),
@@ -4607,31 +4607,31 @@ class cfapi_h$constants$27 extends cfapi_h$constants$26 {
             C_LONGLONG.withName("QuadPart")
         ).withName("uliTotalBytesTransferred")
     );
-    static final jdk.incubator.foreign.MemoryLayout Error$struct$LAYOUT() { return Error$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$Error$struct$LAYOUT() { return COPYFILE2_MESSAGE$Info$Error$struct$LAYOUT_; }
 
-    static final MemoryLayout Error$CopyPhase$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout Error$CopyPhase$LAYOUT() { return Error$CopyPhase$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$Error$CopyPhase$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$Error$CopyPhase$LAYOUT() { return COPYFILE2_MESSAGE$Info$Error$CopyPhase$LAYOUT_; }
 
-    static final VarHandle Error$CopyPhase$VH_ = Error$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CopyPhase"));
-    static final java.lang.invoke.VarHandle Error$CopyPhase$VH() { return Error$CopyPhase$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$Error$CopyPhase$VH_ = COPYFILE2_MESSAGE$Info$Error$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("CopyPhase"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$Error$CopyPhase$VH() { return COPYFILE2_MESSAGE$Info$Error$CopyPhase$VH_; }
 
-    static final MemoryLayout Error$dwStreamNumber$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Error$dwStreamNumber$LAYOUT() { return Error$dwStreamNumber$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$Error$dwStreamNumber$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$Error$dwStreamNumber$LAYOUT() { return COPYFILE2_MESSAGE$Info$Error$dwStreamNumber$LAYOUT_; }
 
-    static final VarHandle Error$dwStreamNumber$VH_ = Error$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwStreamNumber"));
-    static final java.lang.invoke.VarHandle Error$dwStreamNumber$VH() { return Error$dwStreamNumber$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$Error$dwStreamNumber$VH_ = COPYFILE2_MESSAGE$Info$Error$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwStreamNumber"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$Error$dwStreamNumber$VH() { return COPYFILE2_MESSAGE$Info$Error$dwStreamNumber$VH_; }
 
-    static final MemoryLayout Error$hrFailure$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Error$hrFailure$LAYOUT() { return Error$hrFailure$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$Error$hrFailure$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$Error$hrFailure$LAYOUT() { return COPYFILE2_MESSAGE$Info$Error$hrFailure$LAYOUT_; }
 
-    static final VarHandle Error$hrFailure$VH_ = Error$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hrFailure"));
-    static final java.lang.invoke.VarHandle Error$hrFailure$VH() { return Error$hrFailure$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$Error$hrFailure$VH_ = COPYFILE2_MESSAGE$Info$Error$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("hrFailure"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$Error$hrFailure$VH() { return COPYFILE2_MESSAGE$Info$Error$hrFailure$VH_; }
 
-    static final MemoryLayout Error$dwReserved$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Error$dwReserved$LAYOUT() { return Error$dwReserved$LAYOUT_; }
+    static final MemoryLayout COPYFILE2_MESSAGE$Info$Error$dwReserved$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout COPYFILE2_MESSAGE$Info$Error$dwReserved$LAYOUT() { return COPYFILE2_MESSAGE$Info$Error$dwReserved$LAYOUT_; }
 
-    static final VarHandle Error$dwReserved$VH_ = Error$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
-    static final java.lang.invoke.VarHandle Error$dwReserved$VH() { return Error$dwReserved$VH_; }
+    static final VarHandle COPYFILE2_MESSAGE$Info$Error$dwReserved$VH_ = COPYFILE2_MESSAGE$Info$Error$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwReserved"));
+    static final java.lang.invoke.VarHandle COPYFILE2_MESSAGE$Info$Error$dwReserved$VH() { return COPYFILE2_MESSAGE$Info$Error$dwReserved$VH_; }
 
     static final MemoryLayout COPYFILE2_EXTENDED_PARAMETERS$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("dwSize"),

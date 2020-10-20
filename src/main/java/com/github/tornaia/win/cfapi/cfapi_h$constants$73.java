@@ -1265,7 +1265,7 @@ class cfapi_h$constants$73 extends cfapi_h$constants$72 {
     static final VarHandle PrintPropertyValue$ePropertyType$VH_ = PrintPropertyValue$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("ePropertyType"));
     static final java.lang.invoke.VarHandle PrintPropertyValue$ePropertyType$VH() { return PrintPropertyValue$ePropertyType$VH_; }
 
-    static final MemoryLayout value$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout PrintPropertyValue$value$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_CHAR.withName("propertyByte"),
         C_POINTER.withName("propertyString"),
         C_LONG.withName("propertyInt32"),
@@ -1276,50 +1276,50 @@ class cfapi_h$constants$73 extends cfapi_h$constants$72 {
             C_POINTER.withName("pBuf")
         ).withName("propertyBlob")
     );
-    static final jdk.incubator.foreign.MemoryLayout value$struct$LAYOUT() { return value$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout PrintPropertyValue$value$union$LAYOUT() { return PrintPropertyValue$value$union$LAYOUT_; }
 
-    static final MemoryLayout value$propertyByte$LAYOUT_ = C_CHAR;
-    static final jdk.incubator.foreign.MemoryLayout value$propertyByte$LAYOUT() { return value$propertyByte$LAYOUT_; }
+    static final MemoryLayout PrintPropertyValue$value$propertyByte$LAYOUT_ = C_CHAR;
+    static final jdk.incubator.foreign.MemoryLayout PrintPropertyValue$value$propertyByte$LAYOUT() { return PrintPropertyValue$value$propertyByte$LAYOUT_; }
 
-    static final VarHandle value$propertyByte$VH_ = value$struct$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("propertyByte"));
-    static final java.lang.invoke.VarHandle value$propertyByte$VH() { return value$propertyByte$VH_; }
+    static final VarHandle PrintPropertyValue$value$propertyByte$VH_ = PrintPropertyValue$value$union$LAYOUT_.varHandle(byte.class, MemoryLayout.PathElement.groupElement("propertyByte"));
+    static final java.lang.invoke.VarHandle PrintPropertyValue$value$propertyByte$VH() { return PrintPropertyValue$value$propertyByte$VH_; }
 
-    static final MemoryLayout value$propertyString$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout value$propertyString$LAYOUT() { return value$propertyString$LAYOUT_; }
+    static final MemoryLayout PrintPropertyValue$value$propertyString$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout PrintPropertyValue$value$propertyString$LAYOUT() { return PrintPropertyValue$value$propertyString$LAYOUT_; }
 
-    static final VarHandle value$propertyString$VH_ = MemoryHandles.asAddressVarHandle(value$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("propertyString")));
-    static final java.lang.invoke.VarHandle value$propertyString$VH() { return value$propertyString$VH_; }
+    static final VarHandle PrintPropertyValue$value$propertyString$VH_ = MemoryHandles.asAddressVarHandle(PrintPropertyValue$value$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("propertyString")));
+    static final java.lang.invoke.VarHandle PrintPropertyValue$value$propertyString$VH() { return PrintPropertyValue$value$propertyString$VH_; }
 
-    static final MemoryLayout value$propertyInt32$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout value$propertyInt32$LAYOUT() { return value$propertyInt32$LAYOUT_; }
+    static final MemoryLayout PrintPropertyValue$value$propertyInt32$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout PrintPropertyValue$value$propertyInt32$LAYOUT() { return PrintPropertyValue$value$propertyInt32$LAYOUT_; }
 
-    static final VarHandle value$propertyInt32$VH_ = value$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("propertyInt32"));
-    static final java.lang.invoke.VarHandle value$propertyInt32$VH() { return value$propertyInt32$VH_; }
+    static final VarHandle PrintPropertyValue$value$propertyInt32$VH_ = PrintPropertyValue$value$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("propertyInt32"));
+    static final java.lang.invoke.VarHandle PrintPropertyValue$value$propertyInt32$VH() { return PrintPropertyValue$value$propertyInt32$VH_; }
 
-    static final MemoryLayout value$propertyInt64$LAYOUT_ = C_LONGLONG;
-    static final jdk.incubator.foreign.MemoryLayout value$propertyInt64$LAYOUT() { return value$propertyInt64$LAYOUT_; }
+    static final MemoryLayout PrintPropertyValue$value$propertyInt64$LAYOUT_ = C_LONGLONG;
+    static final jdk.incubator.foreign.MemoryLayout PrintPropertyValue$value$propertyInt64$LAYOUT() { return PrintPropertyValue$value$propertyInt64$LAYOUT_; }
 
-    static final VarHandle value$propertyInt64$VH_ = value$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("propertyInt64"));
-    static final java.lang.invoke.VarHandle value$propertyInt64$VH() { return value$propertyInt64$VH_; }
+    static final VarHandle PrintPropertyValue$value$propertyInt64$VH_ = PrintPropertyValue$value$union$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("propertyInt64"));
+    static final java.lang.invoke.VarHandle PrintPropertyValue$value$propertyInt64$VH() { return PrintPropertyValue$value$propertyInt64$VH_; }
 
-    static final MemoryLayout propertyBlob$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout PrintPropertyValue$value$propertyBlob$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("cbBuf"),
         MemoryLayout.ofPaddingBits(32),
         C_POINTER.withName("pBuf")
     );
-    static final jdk.incubator.foreign.MemoryLayout propertyBlob$struct$LAYOUT() { return propertyBlob$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout PrintPropertyValue$value$propertyBlob$struct$LAYOUT() { return PrintPropertyValue$value$propertyBlob$struct$LAYOUT_; }
 
-    static final MemoryLayout propertyBlob$cbBuf$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout propertyBlob$cbBuf$LAYOUT() { return propertyBlob$cbBuf$LAYOUT_; }
+    static final MemoryLayout PrintPropertyValue$value$propertyBlob$cbBuf$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout PrintPropertyValue$value$propertyBlob$cbBuf$LAYOUT() { return PrintPropertyValue$value$propertyBlob$cbBuf$LAYOUT_; }
 
-    static final VarHandle propertyBlob$cbBuf$VH_ = propertyBlob$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbBuf"));
-    static final java.lang.invoke.VarHandle propertyBlob$cbBuf$VH() { return propertyBlob$cbBuf$VH_; }
+    static final VarHandle PrintPropertyValue$value$propertyBlob$cbBuf$VH_ = PrintPropertyValue$value$propertyBlob$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbBuf"));
+    static final java.lang.invoke.VarHandle PrintPropertyValue$value$propertyBlob$cbBuf$VH() { return PrintPropertyValue$value$propertyBlob$cbBuf$VH_; }
 
-    static final MemoryLayout propertyBlob$pBuf$LAYOUT_ = C_POINTER;
-    static final jdk.incubator.foreign.MemoryLayout propertyBlob$pBuf$LAYOUT() { return propertyBlob$pBuf$LAYOUT_; }
+    static final MemoryLayout PrintPropertyValue$value$propertyBlob$pBuf$LAYOUT_ = C_POINTER;
+    static final jdk.incubator.foreign.MemoryLayout PrintPropertyValue$value$propertyBlob$pBuf$LAYOUT() { return PrintPropertyValue$value$propertyBlob$pBuf$LAYOUT_; }
 
-    static final VarHandle propertyBlob$pBuf$VH_ = MemoryHandles.asAddressVarHandle(propertyBlob$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pBuf")));
-    static final java.lang.invoke.VarHandle propertyBlob$pBuf$VH() { return propertyBlob$pBuf$VH_; }
+    static final VarHandle PrintPropertyValue$value$propertyBlob$pBuf$VH_ = MemoryHandles.asAddressVarHandle(PrintPropertyValue$value$propertyBlob$struct$LAYOUT_.varHandle(long.class, MemoryLayout.PathElement.groupElement("pBuf")));
+    static final java.lang.invoke.VarHandle PrintPropertyValue$value$propertyBlob$pBuf$VH() { return PrintPropertyValue$value$propertyBlob$pBuf$VH_; }
 
     static final MemoryLayout PrintNamedProperty$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_POINTER.withName("propertyName"),

@@ -2274,7 +2274,7 @@ class cfapi_h$constants$68 extends cfapi_h$constants$67 {
     static final VarHandle READER_SEL_REQUEST$MatchType$VH_ = READER_SEL_REQUEST$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("MatchType"));
     static final java.lang.invoke.VarHandle READER_SEL_REQUEST$MatchType$VH() { return READER_SEL_REQUEST$MatchType$VH_; }
 
-    static final MemoryLayout ReaderAndContainerParameter$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("cbReaderNameOffset"),
         C_LONG.withName("cchReaderNameLength"),
         C_LONG.withName("cbContainerNameOffset"),
@@ -2282,68 +2282,68 @@ class cfapi_h$constants$68 extends cfapi_h$constants$67 {
         C_LONG.withName("dwDesiredCardModuleVersion"),
         C_LONG.withName("dwCspFlags")
     );
-    static final jdk.incubator.foreign.MemoryLayout ReaderAndContainerParameter$struct$LAYOUT() { return ReaderAndContainerParameter$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$struct$LAYOUT() { return READER_SEL_REQUEST$ReaderAndContainerParameter$struct$LAYOUT_; }
 
-    static final MemoryLayout ReaderAndContainerParameter$cbReaderNameOffset$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ReaderAndContainerParameter$cbReaderNameOffset$LAYOUT() { return ReaderAndContainerParameter$cbReaderNameOffset$LAYOUT_; }
+    static final MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$cbReaderNameOffset$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$cbReaderNameOffset$LAYOUT() { return READER_SEL_REQUEST$ReaderAndContainerParameter$cbReaderNameOffset$LAYOUT_; }
 
-    static final VarHandle ReaderAndContainerParameter$cbReaderNameOffset$VH_ = ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbReaderNameOffset"));
-    static final java.lang.invoke.VarHandle ReaderAndContainerParameter$cbReaderNameOffset$VH() { return ReaderAndContainerParameter$cbReaderNameOffset$VH_; }
+    static final VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$cbReaderNameOffset$VH_ = READER_SEL_REQUEST$ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbReaderNameOffset"));
+    static final java.lang.invoke.VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$cbReaderNameOffset$VH() { return READER_SEL_REQUEST$ReaderAndContainerParameter$cbReaderNameOffset$VH_; }
 
-    static final MemoryLayout ReaderAndContainerParameter$cchReaderNameLength$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ReaderAndContainerParameter$cchReaderNameLength$LAYOUT() { return ReaderAndContainerParameter$cchReaderNameLength$LAYOUT_; }
+    static final MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$cchReaderNameLength$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$cchReaderNameLength$LAYOUT() { return READER_SEL_REQUEST$ReaderAndContainerParameter$cchReaderNameLength$LAYOUT_; }
 
-    static final VarHandle ReaderAndContainerParameter$cchReaderNameLength$VH_ = ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cchReaderNameLength"));
-    static final java.lang.invoke.VarHandle ReaderAndContainerParameter$cchReaderNameLength$VH() { return ReaderAndContainerParameter$cchReaderNameLength$VH_; }
+    static final VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$cchReaderNameLength$VH_ = READER_SEL_REQUEST$ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cchReaderNameLength"));
+    static final java.lang.invoke.VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$cchReaderNameLength$VH() { return READER_SEL_REQUEST$ReaderAndContainerParameter$cchReaderNameLength$VH_; }
 
-    static final MemoryLayout ReaderAndContainerParameter$cbContainerNameOffset$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ReaderAndContainerParameter$cbContainerNameOffset$LAYOUT() { return ReaderAndContainerParameter$cbContainerNameOffset$LAYOUT_; }
+    static final MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$cbContainerNameOffset$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$cbContainerNameOffset$LAYOUT() { return READER_SEL_REQUEST$ReaderAndContainerParameter$cbContainerNameOffset$LAYOUT_; }
 
-    static final VarHandle ReaderAndContainerParameter$cbContainerNameOffset$VH_ = ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbContainerNameOffset"));
-    static final java.lang.invoke.VarHandle ReaderAndContainerParameter$cbContainerNameOffset$VH() { return ReaderAndContainerParameter$cbContainerNameOffset$VH_; }
+    static final VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$cbContainerNameOffset$VH_ = READER_SEL_REQUEST$ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbContainerNameOffset"));
+    static final java.lang.invoke.VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$cbContainerNameOffset$VH() { return READER_SEL_REQUEST$ReaderAndContainerParameter$cbContainerNameOffset$VH_; }
 
-    static final MemoryLayout ReaderAndContainerParameter$cchContainerNameLength$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ReaderAndContainerParameter$cchContainerNameLength$LAYOUT() { return ReaderAndContainerParameter$cchContainerNameLength$LAYOUT_; }
+    static final MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$cchContainerNameLength$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$cchContainerNameLength$LAYOUT() { return READER_SEL_REQUEST$ReaderAndContainerParameter$cchContainerNameLength$LAYOUT_; }
 
-    static final VarHandle ReaderAndContainerParameter$cchContainerNameLength$VH_ = ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cchContainerNameLength"));
-    static final java.lang.invoke.VarHandle ReaderAndContainerParameter$cchContainerNameLength$VH() { return ReaderAndContainerParameter$cchContainerNameLength$VH_; }
+    static final VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$cchContainerNameLength$VH_ = READER_SEL_REQUEST$ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cchContainerNameLength"));
+    static final java.lang.invoke.VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$cchContainerNameLength$VH() { return READER_SEL_REQUEST$ReaderAndContainerParameter$cchContainerNameLength$VH_; }
 
-    static final MemoryLayout ReaderAndContainerParameter$dwDesiredCardModuleVersion$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ReaderAndContainerParameter$dwDesiredCardModuleVersion$LAYOUT() { return ReaderAndContainerParameter$dwDesiredCardModuleVersion$LAYOUT_; }
+    static final MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$dwDesiredCardModuleVersion$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$dwDesiredCardModuleVersion$LAYOUT() { return READER_SEL_REQUEST$ReaderAndContainerParameter$dwDesiredCardModuleVersion$LAYOUT_; }
 
-    static final VarHandle ReaderAndContainerParameter$dwDesiredCardModuleVersion$VH_ = ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwDesiredCardModuleVersion"));
-    static final java.lang.invoke.VarHandle ReaderAndContainerParameter$dwDesiredCardModuleVersion$VH() { return ReaderAndContainerParameter$dwDesiredCardModuleVersion$VH_; }
+    static final VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$dwDesiredCardModuleVersion$VH_ = READER_SEL_REQUEST$ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwDesiredCardModuleVersion"));
+    static final java.lang.invoke.VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$dwDesiredCardModuleVersion$VH() { return READER_SEL_REQUEST$ReaderAndContainerParameter$dwDesiredCardModuleVersion$VH_; }
 
-    static final MemoryLayout ReaderAndContainerParameter$dwCspFlags$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout ReaderAndContainerParameter$dwCspFlags$LAYOUT() { return ReaderAndContainerParameter$dwCspFlags$LAYOUT_; }
+    static final MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$dwCspFlags$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout READER_SEL_REQUEST$ReaderAndContainerParameter$dwCspFlags$LAYOUT() { return READER_SEL_REQUEST$ReaderAndContainerParameter$dwCspFlags$LAYOUT_; }
 
-    static final VarHandle ReaderAndContainerParameter$dwCspFlags$VH_ = ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwCspFlags"));
-    static final java.lang.invoke.VarHandle ReaderAndContainerParameter$dwCspFlags$VH() { return ReaderAndContainerParameter$dwCspFlags$VH_; }
+    static final VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$dwCspFlags$VH_ = READER_SEL_REQUEST$ReaderAndContainerParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwCspFlags"));
+    static final java.lang.invoke.VarHandle READER_SEL_REQUEST$ReaderAndContainerParameter$dwCspFlags$VH() { return READER_SEL_REQUEST$ReaderAndContainerParameter$dwCspFlags$VH_; }
 
-    static final MemoryLayout SerialNumberParameter$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout READER_SEL_REQUEST$SerialNumberParameter$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("cbSerialNumberOffset"),
         C_LONG.withName("cbSerialNumberLength"),
         C_LONG.withName("dwDesiredCardModuleVersion")
     );
-    static final jdk.incubator.foreign.MemoryLayout SerialNumberParameter$struct$LAYOUT() { return SerialNumberParameter$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout READER_SEL_REQUEST$SerialNumberParameter$struct$LAYOUT() { return READER_SEL_REQUEST$SerialNumberParameter$struct$LAYOUT_; }
 
-    static final MemoryLayout SerialNumberParameter$cbSerialNumberOffset$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout SerialNumberParameter$cbSerialNumberOffset$LAYOUT() { return SerialNumberParameter$cbSerialNumberOffset$LAYOUT_; }
+    static final MemoryLayout READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberOffset$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberOffset$LAYOUT() { return READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberOffset$LAYOUT_; }
 
-    static final VarHandle SerialNumberParameter$cbSerialNumberOffset$VH_ = SerialNumberParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbSerialNumberOffset"));
-    static final java.lang.invoke.VarHandle SerialNumberParameter$cbSerialNumberOffset$VH() { return SerialNumberParameter$cbSerialNumberOffset$VH_; }
+    static final VarHandle READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberOffset$VH_ = READER_SEL_REQUEST$SerialNumberParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbSerialNumberOffset"));
+    static final java.lang.invoke.VarHandle READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberOffset$VH() { return READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberOffset$VH_; }
 
-    static final MemoryLayout SerialNumberParameter$cbSerialNumberLength$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout SerialNumberParameter$cbSerialNumberLength$LAYOUT() { return SerialNumberParameter$cbSerialNumberLength$LAYOUT_; }
+    static final MemoryLayout READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberLength$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberLength$LAYOUT() { return READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberLength$LAYOUT_; }
 
-    static final VarHandle SerialNumberParameter$cbSerialNumberLength$VH_ = SerialNumberParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbSerialNumberLength"));
-    static final java.lang.invoke.VarHandle SerialNumberParameter$cbSerialNumberLength$VH() { return SerialNumberParameter$cbSerialNumberLength$VH_; }
+    static final VarHandle READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberLength$VH_ = READER_SEL_REQUEST$SerialNumberParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbSerialNumberLength"));
+    static final java.lang.invoke.VarHandle READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberLength$VH() { return READER_SEL_REQUEST$SerialNumberParameter$cbSerialNumberLength$VH_; }
 
-    static final MemoryLayout SerialNumberParameter$dwDesiredCardModuleVersion$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout SerialNumberParameter$dwDesiredCardModuleVersion$LAYOUT() { return SerialNumberParameter$dwDesiredCardModuleVersion$LAYOUT_; }
+    static final MemoryLayout READER_SEL_REQUEST$SerialNumberParameter$dwDesiredCardModuleVersion$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout READER_SEL_REQUEST$SerialNumberParameter$dwDesiredCardModuleVersion$LAYOUT() { return READER_SEL_REQUEST$SerialNumberParameter$dwDesiredCardModuleVersion$LAYOUT_; }
 
-    static final VarHandle SerialNumberParameter$dwDesiredCardModuleVersion$VH_ = SerialNumberParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwDesiredCardModuleVersion"));
-    static final java.lang.invoke.VarHandle SerialNumberParameter$dwDesiredCardModuleVersion$VH() { return SerialNumberParameter$dwDesiredCardModuleVersion$VH_; }
+    static final VarHandle READER_SEL_REQUEST$SerialNumberParameter$dwDesiredCardModuleVersion$VH_ = READER_SEL_REQUEST$SerialNumberParameter$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwDesiredCardModuleVersion"));
+    static final java.lang.invoke.VarHandle READER_SEL_REQUEST$SerialNumberParameter$dwDesiredCardModuleVersion$VH() { return READER_SEL_REQUEST$SerialNumberParameter$dwDesiredCardModuleVersion$VH_; }
 
     static final MemoryLayout READER_SEL_RESPONSE$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("cbReaderNameOffset"),

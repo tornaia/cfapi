@@ -602,7 +602,7 @@ class cfapi_h$constants$44 extends cfapi_h$constants$43 {
     static final VarHandle tagMIXERLINEA$cControls$VH_ = tagMIXERLINEA$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cControls"));
     static final java.lang.invoke.VarHandle tagMIXERLINEA$cControls$VH() { return tagMIXERLINEA$cControls$VH_; }
 
-    static final MemoryLayout Target$struct$LAYOUT_ = MemoryLayout.ofStruct(
+    static final MemoryLayout tagMIXERLINEA$Target$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("dwType"),
         C_LONG.withName("dwDeviceID"),
         C_SHORT.withName("wMid"),
@@ -610,37 +610,37 @@ class cfapi_h$constants$44 extends cfapi_h$constants$43 {
         C_INT.withName("vDriverVersion"),
         MemoryLayout.ofSequence(32, C_CHAR).withName("szPname")
     );
-    static final jdk.incubator.foreign.MemoryLayout Target$struct$LAYOUT() { return Target$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEA$Target$struct$LAYOUT() { return tagMIXERLINEA$Target$struct$LAYOUT_; }
 
-    static final MemoryLayout Target$dwType$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Target$dwType$LAYOUT() { return Target$dwType$LAYOUT_; }
+    static final MemoryLayout tagMIXERLINEA$Target$dwType$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEA$Target$dwType$LAYOUT() { return tagMIXERLINEA$Target$dwType$LAYOUT_; }
 
-    static final VarHandle Target$dwType$VH_ = Target$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwType"));
-    static final java.lang.invoke.VarHandle Target$dwType$VH() { return Target$dwType$VH_; }
+    static final VarHandle tagMIXERLINEA$Target$dwType$VH_ = tagMIXERLINEA$Target$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwType"));
+    static final java.lang.invoke.VarHandle tagMIXERLINEA$Target$dwType$VH() { return tagMIXERLINEA$Target$dwType$VH_; }
 
-    static final MemoryLayout Target$dwDeviceID$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Target$dwDeviceID$LAYOUT() { return Target$dwDeviceID$LAYOUT_; }
+    static final MemoryLayout tagMIXERLINEA$Target$dwDeviceID$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEA$Target$dwDeviceID$LAYOUT() { return tagMIXERLINEA$Target$dwDeviceID$LAYOUT_; }
 
-    static final VarHandle Target$dwDeviceID$VH_ = Target$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwDeviceID"));
-    static final java.lang.invoke.VarHandle Target$dwDeviceID$VH() { return Target$dwDeviceID$VH_; }
+    static final VarHandle tagMIXERLINEA$Target$dwDeviceID$VH_ = tagMIXERLINEA$Target$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwDeviceID"));
+    static final java.lang.invoke.VarHandle tagMIXERLINEA$Target$dwDeviceID$VH() { return tagMIXERLINEA$Target$dwDeviceID$VH_; }
 
-    static final MemoryLayout Target$wMid$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Target$wMid$LAYOUT() { return Target$wMid$LAYOUT_; }
+    static final MemoryLayout tagMIXERLINEA$Target$wMid$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEA$Target$wMid$LAYOUT() { return tagMIXERLINEA$Target$wMid$LAYOUT_; }
 
-    static final VarHandle Target$wMid$VH_ = Target$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("wMid"));
-    static final java.lang.invoke.VarHandle Target$wMid$VH() { return Target$wMid$VH_; }
+    static final VarHandle tagMIXERLINEA$Target$wMid$VH_ = tagMIXERLINEA$Target$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("wMid"));
+    static final java.lang.invoke.VarHandle tagMIXERLINEA$Target$wMid$VH() { return tagMIXERLINEA$Target$wMid$VH_; }
 
-    static final MemoryLayout Target$wPid$LAYOUT_ = C_SHORT;
-    static final jdk.incubator.foreign.MemoryLayout Target$wPid$LAYOUT() { return Target$wPid$LAYOUT_; }
+    static final MemoryLayout tagMIXERLINEA$Target$wPid$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEA$Target$wPid$LAYOUT() { return tagMIXERLINEA$Target$wPid$LAYOUT_; }
 
-    static final VarHandle Target$wPid$VH_ = Target$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("wPid"));
-    static final java.lang.invoke.VarHandle Target$wPid$VH() { return Target$wPid$VH_; }
+    static final VarHandle tagMIXERLINEA$Target$wPid$VH_ = tagMIXERLINEA$Target$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("wPid"));
+    static final java.lang.invoke.VarHandle tagMIXERLINEA$Target$wPid$VH() { return tagMIXERLINEA$Target$wPid$VH_; }
 
-    static final MemoryLayout Target$vDriverVersion$LAYOUT_ = C_INT;
-    static final jdk.incubator.foreign.MemoryLayout Target$vDriverVersion$LAYOUT() { return Target$vDriverVersion$LAYOUT_; }
+    static final MemoryLayout tagMIXERLINEA$Target$vDriverVersion$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEA$Target$vDriverVersion$LAYOUT() { return tagMIXERLINEA$Target$vDriverVersion$LAYOUT_; }
 
-    static final VarHandle Target$vDriverVersion$VH_ = Target$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("vDriverVersion"));
-    static final java.lang.invoke.VarHandle Target$vDriverVersion$VH() { return Target$vDriverVersion$VH_; }
+    static final VarHandle tagMIXERLINEA$Target$vDriverVersion$VH_ = tagMIXERLINEA$Target$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("vDriverVersion"));
+    static final java.lang.invoke.VarHandle tagMIXERLINEA$Target$vDriverVersion$VH() { return tagMIXERLINEA$Target$vDriverVersion$VH_; }
 
     static final MemoryLayout tagMIXERLINEW$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("cbStruct"),
@@ -725,6 +725,46 @@ class cfapi_h$constants$44 extends cfapi_h$constants$43 {
 
     static final VarHandle tagMIXERLINEW$cControls$VH_ = tagMIXERLINEW$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cControls"));
     static final java.lang.invoke.VarHandle tagMIXERLINEW$cControls$VH() { return tagMIXERLINEW$cControls$VH_; }
+
+    static final MemoryLayout tagMIXERLINEW$Target$struct$LAYOUT_ = MemoryLayout.ofStruct(
+        C_LONG.withName("dwType"),
+        C_LONG.withName("dwDeviceID"),
+        C_SHORT.withName("wMid"),
+        C_SHORT.withName("wPid"),
+        C_INT.withName("vDriverVersion"),
+        MemoryLayout.ofSequence(32, C_SHORT).withName("szPname")
+    );
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEW$Target$struct$LAYOUT() { return tagMIXERLINEW$Target$struct$LAYOUT_; }
+
+    static final MemoryLayout tagMIXERLINEW$Target$dwType$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEW$Target$dwType$LAYOUT() { return tagMIXERLINEW$Target$dwType$LAYOUT_; }
+
+    static final VarHandle tagMIXERLINEW$Target$dwType$VH_ = tagMIXERLINEW$Target$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwType"));
+    static final java.lang.invoke.VarHandle tagMIXERLINEW$Target$dwType$VH() { return tagMIXERLINEW$Target$dwType$VH_; }
+
+    static final MemoryLayout tagMIXERLINEW$Target$dwDeviceID$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEW$Target$dwDeviceID$LAYOUT() { return tagMIXERLINEW$Target$dwDeviceID$LAYOUT_; }
+
+    static final VarHandle tagMIXERLINEW$Target$dwDeviceID$VH_ = tagMIXERLINEW$Target$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwDeviceID"));
+    static final java.lang.invoke.VarHandle tagMIXERLINEW$Target$dwDeviceID$VH() { return tagMIXERLINEW$Target$dwDeviceID$VH_; }
+
+    static final MemoryLayout tagMIXERLINEW$Target$wMid$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEW$Target$wMid$LAYOUT() { return tagMIXERLINEW$Target$wMid$LAYOUT_; }
+
+    static final VarHandle tagMIXERLINEW$Target$wMid$VH_ = tagMIXERLINEW$Target$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("wMid"));
+    static final java.lang.invoke.VarHandle tagMIXERLINEW$Target$wMid$VH() { return tagMIXERLINEW$Target$wMid$VH_; }
+
+    static final MemoryLayout tagMIXERLINEW$Target$wPid$LAYOUT_ = C_SHORT;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEW$Target$wPid$LAYOUT() { return tagMIXERLINEW$Target$wPid$LAYOUT_; }
+
+    static final VarHandle tagMIXERLINEW$Target$wPid$VH_ = tagMIXERLINEW$Target$struct$LAYOUT_.varHandle(short.class, MemoryLayout.PathElement.groupElement("wPid"));
+    static final java.lang.invoke.VarHandle tagMIXERLINEW$Target$wPid$VH() { return tagMIXERLINEW$Target$wPid$VH_; }
+
+    static final MemoryLayout tagMIXERLINEW$Target$vDriverVersion$LAYOUT_ = C_INT;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERLINEW$Target$vDriverVersion$LAYOUT() { return tagMIXERLINEW$Target$vDriverVersion$LAYOUT_; }
+
+    static final VarHandle tagMIXERLINEW$Target$vDriverVersion$VH_ = tagMIXERLINEW$Target$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("vDriverVersion"));
+    static final java.lang.invoke.VarHandle tagMIXERLINEW$Target$vDriverVersion$VH() { return tagMIXERLINEW$Target$vDriverVersion$VH_; }
 
     static final FunctionDescriptor mixerGetLineInfoA$FUNC_ = FunctionDescriptor.of(C_INT,
         C_POINTER,
@@ -821,57 +861,57 @@ class cfapi_h$constants$44 extends cfapi_h$constants$43 {
     static final VarHandle tagMIXERCONTROLA$cMultipleItems$VH_ = tagMIXERCONTROLA$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cMultipleItems"));
     static final java.lang.invoke.VarHandle tagMIXERCONTROLA$cMultipleItems$VH() { return tagMIXERCONTROLA$cMultipleItems$VH_; }
 
-    static final MemoryLayout Bounds$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout tagMIXERCONTROLA$Bounds$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("lMinimum"),
         C_LONG.withName("lMaximum"),
         C_LONG.withName("dwMinimum"),
         C_LONG.withName("dwMaximum"),
         MemoryLayout.ofSequence(6, C_LONG).withName("dwReserved")
     );
-    static final jdk.incubator.foreign.MemoryLayout Bounds$struct$LAYOUT() { return Bounds$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLA$Bounds$union$LAYOUT() { return tagMIXERCONTROLA$Bounds$union$LAYOUT_; }
 
-    static final MemoryLayout Bounds$lMinimum$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Bounds$lMinimum$LAYOUT() { return Bounds$lMinimum$LAYOUT_; }
+    static final MemoryLayout tagMIXERCONTROLA$Bounds$lMinimum$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLA$Bounds$lMinimum$LAYOUT() { return tagMIXERCONTROLA$Bounds$lMinimum$LAYOUT_; }
 
-    static final VarHandle Bounds$lMinimum$VH_ = Bounds$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("lMinimum"));
-    static final java.lang.invoke.VarHandle Bounds$lMinimum$VH() { return Bounds$lMinimum$VH_; }
+    static final VarHandle tagMIXERCONTROLA$Bounds$lMinimum$VH_ = tagMIXERCONTROLA$Bounds$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("lMinimum"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLA$Bounds$lMinimum$VH() { return tagMIXERCONTROLA$Bounds$lMinimum$VH_; }
 
-    static final MemoryLayout Bounds$lMaximum$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Bounds$lMaximum$LAYOUT() { return Bounds$lMaximum$LAYOUT_; }
+    static final MemoryLayout tagMIXERCONTROLA$Bounds$lMaximum$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLA$Bounds$lMaximum$LAYOUT() { return tagMIXERCONTROLA$Bounds$lMaximum$LAYOUT_; }
 
-    static final VarHandle Bounds$lMaximum$VH_ = Bounds$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("lMaximum"));
-    static final java.lang.invoke.VarHandle Bounds$lMaximum$VH() { return Bounds$lMaximum$VH_; }
+    static final VarHandle tagMIXERCONTROLA$Bounds$lMaximum$VH_ = tagMIXERCONTROLA$Bounds$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("lMaximum"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLA$Bounds$lMaximum$VH() { return tagMIXERCONTROLA$Bounds$lMaximum$VH_; }
 
-    static final MemoryLayout Bounds$dwMinimum$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Bounds$dwMinimum$LAYOUT() { return Bounds$dwMinimum$LAYOUT_; }
+    static final MemoryLayout tagMIXERCONTROLA$Bounds$dwMinimum$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLA$Bounds$dwMinimum$LAYOUT() { return tagMIXERCONTROLA$Bounds$dwMinimum$LAYOUT_; }
 
-    static final VarHandle Bounds$dwMinimum$VH_ = Bounds$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwMinimum"));
-    static final java.lang.invoke.VarHandle Bounds$dwMinimum$VH() { return Bounds$dwMinimum$VH_; }
+    static final VarHandle tagMIXERCONTROLA$Bounds$dwMinimum$VH_ = tagMIXERCONTROLA$Bounds$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwMinimum"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLA$Bounds$dwMinimum$VH() { return tagMIXERCONTROLA$Bounds$dwMinimum$VH_; }
 
-    static final MemoryLayout Bounds$dwMaximum$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Bounds$dwMaximum$LAYOUT() { return Bounds$dwMaximum$LAYOUT_; }
+    static final MemoryLayout tagMIXERCONTROLA$Bounds$dwMaximum$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLA$Bounds$dwMaximum$LAYOUT() { return tagMIXERCONTROLA$Bounds$dwMaximum$LAYOUT_; }
 
-    static final VarHandle Bounds$dwMaximum$VH_ = Bounds$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwMaximum"));
-    static final java.lang.invoke.VarHandle Bounds$dwMaximum$VH() { return Bounds$dwMaximum$VH_; }
+    static final VarHandle tagMIXERCONTROLA$Bounds$dwMaximum$VH_ = tagMIXERCONTROLA$Bounds$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwMaximum"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLA$Bounds$dwMaximum$VH() { return tagMIXERCONTROLA$Bounds$dwMaximum$VH_; }
 
-    static final MemoryLayout Metrics$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout tagMIXERCONTROLA$Metrics$union$LAYOUT_ = MemoryLayout.ofUnion(
         C_LONG.withName("cSteps"),
         C_LONG.withName("cbCustomData"),
         MemoryLayout.ofSequence(6, C_LONG).withName("dwReserved")
     );
-    static final jdk.incubator.foreign.MemoryLayout Metrics$struct$LAYOUT() { return Metrics$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLA$Metrics$union$LAYOUT() { return tagMIXERCONTROLA$Metrics$union$LAYOUT_; }
 
-    static final MemoryLayout Metrics$cSteps$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Metrics$cSteps$LAYOUT() { return Metrics$cSteps$LAYOUT_; }
+    static final MemoryLayout tagMIXERCONTROLA$Metrics$cSteps$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLA$Metrics$cSteps$LAYOUT() { return tagMIXERCONTROLA$Metrics$cSteps$LAYOUT_; }
 
-    static final VarHandle Metrics$cSteps$VH_ = Metrics$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cSteps"));
-    static final java.lang.invoke.VarHandle Metrics$cSteps$VH() { return Metrics$cSteps$VH_; }
+    static final VarHandle tagMIXERCONTROLA$Metrics$cSteps$VH_ = tagMIXERCONTROLA$Metrics$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cSteps"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLA$Metrics$cSteps$VH() { return tagMIXERCONTROLA$Metrics$cSteps$VH_; }
 
-    static final MemoryLayout Metrics$cbCustomData$LAYOUT_ = C_LONG;
-    static final jdk.incubator.foreign.MemoryLayout Metrics$cbCustomData$LAYOUT() { return Metrics$cbCustomData$LAYOUT_; }
+    static final MemoryLayout tagMIXERCONTROLA$Metrics$cbCustomData$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLA$Metrics$cbCustomData$LAYOUT() { return tagMIXERCONTROLA$Metrics$cbCustomData$LAYOUT_; }
 
-    static final VarHandle Metrics$cbCustomData$VH_ = Metrics$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbCustomData"));
-    static final java.lang.invoke.VarHandle Metrics$cbCustomData$VH() { return Metrics$cbCustomData$VH_; }
+    static final VarHandle tagMIXERCONTROLA$Metrics$cbCustomData$VH_ = tagMIXERCONTROLA$Metrics$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbCustomData"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLA$Metrics$cbCustomData$VH() { return tagMIXERCONTROLA$Metrics$cbCustomData$VH_; }
 
     static final MemoryLayout tagMIXERCONTROLW$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("cbStruct"),
@@ -925,6 +965,58 @@ class cfapi_h$constants$44 extends cfapi_h$constants$43 {
 
     static final VarHandle tagMIXERCONTROLW$cMultipleItems$VH_ = tagMIXERCONTROLW$struct$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cMultipleItems"));
     static final java.lang.invoke.VarHandle tagMIXERCONTROLW$cMultipleItems$VH() { return tagMIXERCONTROLW$cMultipleItems$VH_; }
+
+    static final MemoryLayout tagMIXERCONTROLW$Bounds$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_LONG.withName("lMinimum"),
+        C_LONG.withName("lMaximum"),
+        C_LONG.withName("dwMinimum"),
+        C_LONG.withName("dwMaximum"),
+        MemoryLayout.ofSequence(6, C_LONG).withName("dwReserved")
+    );
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLW$Bounds$union$LAYOUT() { return tagMIXERCONTROLW$Bounds$union$LAYOUT_; }
+
+    static final MemoryLayout tagMIXERCONTROLW$Bounds$lMinimum$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLW$Bounds$lMinimum$LAYOUT() { return tagMIXERCONTROLW$Bounds$lMinimum$LAYOUT_; }
+
+    static final VarHandle tagMIXERCONTROLW$Bounds$lMinimum$VH_ = tagMIXERCONTROLW$Bounds$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("lMinimum"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLW$Bounds$lMinimum$VH() { return tagMIXERCONTROLW$Bounds$lMinimum$VH_; }
+
+    static final MemoryLayout tagMIXERCONTROLW$Bounds$lMaximum$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLW$Bounds$lMaximum$LAYOUT() { return tagMIXERCONTROLW$Bounds$lMaximum$LAYOUT_; }
+
+    static final VarHandle tagMIXERCONTROLW$Bounds$lMaximum$VH_ = tagMIXERCONTROLW$Bounds$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("lMaximum"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLW$Bounds$lMaximum$VH() { return tagMIXERCONTROLW$Bounds$lMaximum$VH_; }
+
+    static final MemoryLayout tagMIXERCONTROLW$Bounds$dwMinimum$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLW$Bounds$dwMinimum$LAYOUT() { return tagMIXERCONTROLW$Bounds$dwMinimum$LAYOUT_; }
+
+    static final VarHandle tagMIXERCONTROLW$Bounds$dwMinimum$VH_ = tagMIXERCONTROLW$Bounds$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwMinimum"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLW$Bounds$dwMinimum$VH() { return tagMIXERCONTROLW$Bounds$dwMinimum$VH_; }
+
+    static final MemoryLayout tagMIXERCONTROLW$Bounds$dwMaximum$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLW$Bounds$dwMaximum$LAYOUT() { return tagMIXERCONTROLW$Bounds$dwMaximum$LAYOUT_; }
+
+    static final VarHandle tagMIXERCONTROLW$Bounds$dwMaximum$VH_ = tagMIXERCONTROLW$Bounds$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("dwMaximum"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLW$Bounds$dwMaximum$VH() { return tagMIXERCONTROLW$Bounds$dwMaximum$VH_; }
+
+    static final MemoryLayout tagMIXERCONTROLW$Metrics$union$LAYOUT_ = MemoryLayout.ofUnion(
+        C_LONG.withName("cSteps"),
+        C_LONG.withName("cbCustomData"),
+        MemoryLayout.ofSequence(6, C_LONG).withName("dwReserved")
+    );
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLW$Metrics$union$LAYOUT() { return tagMIXERCONTROLW$Metrics$union$LAYOUT_; }
+
+    static final MemoryLayout tagMIXERCONTROLW$Metrics$cSteps$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLW$Metrics$cSteps$LAYOUT() { return tagMIXERCONTROLW$Metrics$cSteps$LAYOUT_; }
+
+    static final VarHandle tagMIXERCONTROLW$Metrics$cSteps$VH_ = tagMIXERCONTROLW$Metrics$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cSteps"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLW$Metrics$cSteps$VH() { return tagMIXERCONTROLW$Metrics$cSteps$VH_; }
+
+    static final MemoryLayout tagMIXERCONTROLW$Metrics$cbCustomData$LAYOUT_ = C_LONG;
+    static final jdk.incubator.foreign.MemoryLayout tagMIXERCONTROLW$Metrics$cbCustomData$LAYOUT() { return tagMIXERCONTROLW$Metrics$cbCustomData$LAYOUT_; }
+
+    static final VarHandle tagMIXERCONTROLW$Metrics$cbCustomData$VH_ = tagMIXERCONTROLW$Metrics$union$LAYOUT_.varHandle(int.class, MemoryLayout.PathElement.groupElement("cbCustomData"));
+    static final java.lang.invoke.VarHandle tagMIXERCONTROLW$Metrics$cbCustomData$VH() { return tagMIXERCONTROLW$Metrics$cbCustomData$VH_; }
 
     static final MemoryLayout tagMIXERLINECONTROLSA$struct$LAYOUT_ = MemoryLayout.ofStruct(
         C_LONG.withName("cbStruct"),

@@ -67,7 +67,7 @@ class cfapi_h$constants$39 extends cfapi_h$constants$38 {
     ).withName("tagRAWINPUT");
     static final jdk.incubator.foreign.MemoryLayout tagRAWINPUT$struct$LAYOUT() { return tagRAWINPUT$struct$LAYOUT_; }
 
-    static final MemoryLayout data$struct$LAYOUT_ = MemoryLayout.ofUnion(
+    static final MemoryLayout tagRAWINPUT$data$union$LAYOUT_ = MemoryLayout.ofUnion(
         MemoryLayout.ofStruct(
             C_SHORT.withName("usFlags"),
             MemoryLayout.ofPaddingBits(16),
@@ -94,7 +94,7 @@ class cfapi_h$constants$39 extends cfapi_h$constants$38 {
             MemoryLayout.ofPaddingBits(24)
         ).withName("hid")
     );
-    static final jdk.incubator.foreign.MemoryLayout data$struct$LAYOUT() { return data$struct$LAYOUT_; }
+    static final jdk.incubator.foreign.MemoryLayout tagRAWINPUT$data$union$LAYOUT() { return tagRAWINPUT$data$union$LAYOUT_; }
 
     static final FunctionDescriptor GetRawInputData$FUNC_ = FunctionDescriptor.of(C_INT,
         C_POINTER,
